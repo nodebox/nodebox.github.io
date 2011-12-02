@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | NodeBox</title>
+  <meta name="author" content="Experimental Media Research Group">
+  <meta name="generator" content="Jekyll">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!--[if lt IE 9]>
+    <script src="/media/js/html5.js"></script>
+  <![endif]-->
+
+  <link type="text/css" rel="stylesheet" media="screen" href="/media/css/skeleton.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/media/css/syntax.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/media/css/layout.css">
+
+  <link href="/media/img/apple-touch-icon.png" rel="apple-touch-icon">
+</head>
+<body id="{{ page.section }}">
+<div class="container">
+
+  <!-- Header -->
+  <header class="sixteen columns">
+    <h1><a target="_top" href="/">NodeBox</a></h1>
+    <nav><ul>
+      <li><a class="home" href="/">Home</a></li>
+      <li><a class="documentation" href="/documentation/">Documentation</a></li>
+      <li><a class="download" href="/download/">Download</a></li>
+    </ul></nav>
+  </header>
+  
+  <!-- Page Title -->
+  <div id="page-title" class="sixteen columns">
+    <h2>{{ page.title }}</h2>
+  </div>
+
+  <!-- Content -->
+  <div class="sixteen columns">
+    {{ content }}
+  </div>
+
+  <!-- Footer -->
+  <footer class="sixteen columns">
+    <p>NodeBox is built and maintained by the <a href="http://www.emrg.be/">Experimental Media Research Group</a>.</p>
+    <p>All content on this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+  </footer> <!-- #footer -->
+
+</div> <!-- .container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+</body>
+</html>
