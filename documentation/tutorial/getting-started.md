@@ -46,6 +46,8 @@ Your screen should look like this:
 
 ![A pointier Star](/media/img/tutorial/star-pointier.png)
 
+Everywhere you see a number, you can drag it to see what it does. If you make a mistake, you can undo.
+
 Connecting nodes
 ----------------
 The power of NodeBox comes from connecting nodes together. In this example, we're going to filter the output of the star node and snap all its points to a grid.
