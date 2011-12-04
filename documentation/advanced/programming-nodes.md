@@ -9,4 +9,4 @@ title: Programming your own Nodes
 * Adding your own ports
 * Python + reference
 * NodeBox object model
-
+* Errors

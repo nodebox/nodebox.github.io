@@ -8,5 +8,8 @@ title: Using Expressions
 * Arithmetic operations (basics, rest in reference)
 * Math
 * Lists
+* Errors in expressions show error messages in the node. Click away and click again.
+
+
 
 Look at MVEL language guide: <http://mvel.codehaus.org/Language+Guide+for+2.0>
