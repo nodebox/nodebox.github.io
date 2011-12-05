@@ -54,5 +54,5 @@ Controlling the origin
 Try to be aware where your objects are in relation to the origin. This makes manipulations further in the network easier.
 
 * Turn the origin on in the viewer to see where your objects are.
-* Use an **align** node to move objects back to the origin after they've "wandered off".
-* Use a **fit** node to force objects back on the origin and fit them in a specified box as well.
+* Use an [align](/documentation/nodes/align.html) node to move objects back to the origin after they've "wandered off".
+* Use a [fit](/documentation/nodes/fit.html) node to force objects back on the origin and fit them in a specified box as well.
