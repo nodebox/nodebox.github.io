@@ -25,6 +25,7 @@ The transform node uses the origin to scale and rotate every object around.
 
 Note that the rectangle doesn't rotate around its center – it rotates around the origin. The same happens for scale, although the effect is much less notable.
 
+![Function of the origin point in Transform node](/media/img/using/coordinates-transform.png)
 
 The Place Node
 --------------
@@ -47,7 +48,7 @@ Note that each rectangle is centered along the edge of the ellipse. This is beca
 
 While keeping the merge node rendered, select the rect node and drag X to 50.0. Note that all rectangles now move off of the ellipse. This is because NodeBox does not take the rectangle's center into account when translating the object, but works in relation to the origin.
 
-![Function of the origin point in Place node](/media/img/using/origin-place.png)
+![Function of the origin point in Place node](/media/img/using/coordinates-place.png)
 
 Controlling the origin
 ----------------------
