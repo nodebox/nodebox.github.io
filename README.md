@@ -1,12 +1,16 @@
 nodebox.net
 ===========
-This is the website for NodeBox.
+This is the NodeBox website.
+
 
 Frameworks
 ----------
+We use the following awesome technologies to create the website:
+
 * [Jekyll][] - Transform dynamic content into a static site.
 * [Normalize][] - An alternative to CSS reset which keeps sane browser defaults and makes them consistent across browsers.
 * [Skeleton][] - A responsive CSS grid that scales nicely to mobile sizes.
+
 
 Installing on Mac
 -----------------
@@ -16,6 +20,7 @@ Install [Xcode][] first.
     sudo gem install rake jekyll RedCloth
     sudo easy_install pygments
 
+
 Installing on Ubuntu
 --------------------
 
@@ -23,6 +28,7 @@ Installing on Ubuntu
     sudo gem install rubygems-update
     sudo gem install rake jekyll RedCloth
     sudo easy_install pygments
+
 
 Running
 -------
@@ -37,6 +43,15 @@ To run the built-in server:
 To deploy to the live server:
 
     rake deploy
+
+
+Writing documentation
+---------------------
+We use Mac to capture screenshots. If you capture full-screen windows, turn off shadows. In the Terminal, type:
+
+    defaults write com.apple.screencapture disable-shadow -bool true
+    killall SystemUIServer
+
 
 License
 -------
