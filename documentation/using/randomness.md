@@ -32,6 +32,8 @@ If you look at the output of the merge node, you'll see that they both have the 
 
 In **wiggle2**, change the **seed** to 2. Note that the two stars now look different.
 
+![Same wiggled stars](/media/img/using/randomness-wiggle2.png)
+
 **The actual number of the seed is unimportant.** Seed 10 is not "more random" than seed 1. See it as the index number of a certain variation.
 
 Using seed in your own nodes
