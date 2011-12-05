@@ -17,7 +17,7 @@ Everywhere a NodeBox node uses a random value, it provides a seed parameter for 
 Here's an example:
 
 * Create a **star** node. Set the **X** to **-120.00** to move it to the left.
-* Create a **wiggle** node.
+* Create a **wiggle** node. Set the **Seed** to **1**.
 * Connect **star1** to **wiggle1**.
 * Select the two nodes, copy them, and paste them again. 
 * **Double-click wiggle2** to make it rendered.
