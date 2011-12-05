@@ -18,8 +18,3 @@ Once you've created a curve node you can draw in the viewer:
 * **Fill**: The fill color. If the alpha value is 0, the shape will have no fill.
 * **Stroke**: The stroke color.
 * **Stroke Width**: The stroke width. If the width is 0, the shape will have no stroke.
-
-Notes
------
-* The *actual* amount of points is twice the amount specified in the points parameter. For each *outer* point, star also needs to create an inner point.
-* Inner and outer diameter can be reversed.
