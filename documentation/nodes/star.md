@@ -16,5 +16,5 @@ Create a star shape.
 
 Notes
 -----
-* The *actual* amount of points is twice the amount specified in the points parameter. For each *outer* point, star also needs to create an inner point.
+* The *actual* amount of points is twice the amount specified in the points parameter. For each *outer* point, star also needs to create an *inner* point.
 * Inner and outer diameter can be reversed.
