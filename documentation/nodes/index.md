@@ -46,12 +46,12 @@ Combining Shapes
 ================
 * [Merge](merge.html): Combine shapes of multiple nodes.
 * [Compound](compound.html): Add, subtract or intersect geometry.
-* [Shapeonpath](shapeonpath.html): Copy shapes on a path.
 
 Multiplying Shapes
 ==================
 * [Copy](copy.html): Create multiple copies of a shape.
 * [Place](place.html): Place shapes on points of a template.
+* [Shapeonpath](shapeonpath.html): Copy shapes on a path.
 
 Working with External Data
 ==========================
