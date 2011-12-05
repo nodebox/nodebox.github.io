@@ -36,7 +36,7 @@ Here's a simple example:
 * Create a **sort** node.
 * Create a **connect** node. Set the **fill** to transparent (alpha value = 0).
 
-Connect them all together: ellipse1 -> resample1 -> sort1 -> connect1.
+Connect them all together: ellipse1 &rarr; resample1 &rarr; sort1 &rarr; connect1.
 
 ![Connect Example](/media/img/using/geometry-connect-network.png)
 
