@@ -110,6 +110,15 @@ nav li a:hover {
   height: 120px;
 }
 
+pre {
+  box-shadow: 0 0 4px #aaa;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  background: #ddd;
+  border-radius: 3px;
+  font-size: 90%;
+}
+
 
 /* Footer */
 
