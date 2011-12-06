@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="0.9" type="file">
+    <node name="copy1" prototype="corevector.copy" x="300" y="70">
+        <param name="copies">
+            <value>11</value>
+        </param>
+        <param name="ty">
+            <value>12.0</value>
+        </param>
+    </node>
+    <node name="copy2" prototype="corevector.copy" x="240" y="190">
+        <param name="copies">
+            <value>30</value>
+        </param>
+        <param name="ty">
+            <value>13.0</value>
+        </param>
+    </node>
+    <node name="merge1" prototype="corevector.merge" rendered="true" x="410" y="70"/>
+    <node name="rect1" prototype="corevector.rect" x="150" y="190">
+        <param name="width">
+            <value>400.0</value>
+        </param>
+        <param name="height">
+            <value>12.0</value>
+        </param>
+    </node>
+    <node name="textpath1" prototype="corevector.textpath" x="100" y="70">
+        <param name="text">
+            <value>ABCD</value>
+        </param>
+        <param name="font">
+            <value>Verdana-Bold</value>
+        </param>
+        <param name="size">
+            <value>120.0</value>
+        </param>
+    </node>
+    <node name="transform1" prototype="corevector.transform" x="200" y="70">
+        <param name="sy">
+            <value>6.0</value>
+        </param>
+    </node>
+    <node name="transform2" prototype="corevector.transform" x="330" y="190">
+        <param name="ty">
+            <expression>-FRAME/2.0</expression>
+        </param>
+    </node>
+    <conn input="transform1" output="textpath1" port="shape"/>
+    <conn input="copy1" output="transform1" port="shape"/>
+    <conn input="copy2" output="rect1" port="shape"/>
+    <conn input="transform2" output="copy2" port="shape"/>
+    <conn input="merge1" output="transform2" port="shapes"/>
+    <conn input="merge1" output="copy1" port="shapes"/>
+</ndbx>
