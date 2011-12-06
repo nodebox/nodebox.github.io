@@ -102,7 +102,18 @@ NodeBox manages documents, much in the same way you work on a Photoshop document
 
 NodeBox documents use the .ndbx extension. These documents can be opened and saved only in NodeBox. To work with other programs, use the import and export functionality.
 
-To export, choose File > Export. NodeBox can export files as PDF or PNG, and animations using a variety of popular formats. PDF files retain all vector information and can be manipulated in vector programs such as Adobe Illustrator or Inkscape.
 
+Importing Graphics
+------------------
 To import vector data use the [Import](/documentation/nodes/import.html) node.
+
+
+Exporting Graphics
+------------------
+To export the current image, choose File > Export. The export command doesn't ask for an extension but automatically exports as a PDF file. PDF files retain all vector information and can be manipulated in vector programs such as Adobe Illustrator or Inkscape.
+
+If you have an animation, you can export it in two ways:
+
+- As a sequence of images. Use File > Export Range to export a sequence of images. NodeBox will name them progressively, e.g. myimage-1.png, myimage-2.png, ...
+- As a movie. Use File > Export Movie to export a movie using a variety of popular formats. 
 
