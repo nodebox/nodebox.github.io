@@ -68,5 +68,6 @@ You can **save animation** by going to  the **File tab >> export Movie** where y
 
 * Changing the order so the letters are printed upside down.
 * Change the letters in to an svg using an [Import](../nodes/import.html) node. The Eifeltower for instance (from [Wikipedia](http://fr.wikipedia.org/wiki/Fichier:Eiffelturm-outline.svg))
+* Change **Text** into an expression over **Toggle Expression** and enter **int(FRAME/10.0)** to see a counting procedure.
 
 ![Basic Animation Eifel](/media/img/tutorial/basic-animation-eifel.png)
