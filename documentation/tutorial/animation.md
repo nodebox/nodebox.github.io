@@ -53,16 +53,16 @@ Animation asks for a few new things to be explained.
 
 You can **save animation** by going to  the **File tab >> export Movie** where you have a selection of possible formats. Enter a name for the animation and select the number of frames it has to export.
 
-<OBJECT classid='clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B' width="400"
-        height="400" codebase='http://www.apple.com/qtactivex/qtplugin.cab'>
-        <param name='src' value="/media/img/tutorial/basic_animation.mp4">
-        <param name='autoplay' value="true">
-        <param name='controller' value="true">
-        <param name='loop' value="true">
-        <EMBED src="/media/img/tutorial/basic-animation.mp4" width="400" height="400" autoplay="true" 
-        controller="true" loop="true" pluginspage='http://www.apple.com/quicktime/download/'>
-        </EMBED>
-        </OBJECT>
+<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="400"
+        height="400" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+        <param name="src" value="/media/img/tutorial/basic_animation.mp4" />
+        <param name="autoplay" value="true" />
+        <param name="controller" value="true" />
+        <param name="loop" value="true" />
+        <embed src="/media/img/tutorial/basic-animation.mp4" width="400" height="400" autoplay="true" 
+        controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
+        </embed>
+</object>
 
 **Try out:**
 
