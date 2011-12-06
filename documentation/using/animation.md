@@ -78,7 +78,7 @@ This argument defines the time it takes to go from the minimum to the maximum va
 Play the animation. All rectangles move up and down together, since they all use the same start offset. We can change this using [copy stamping](copy-stamping.html).
 
 * In **copy1**, turn on **Copy Stamping**.
-* In **rect1**, set **Y** to the expression <pre>wave(SINE, -100, 100, 300, FRAME + stamp("CNUM", 0) * 20)</pre>
+* In **rect1**, set **Y** to the expression <pre>wave(SINE, -100, 100, 300, FRAME + stamp("CNUM", 0) * 10)</pre>
 
 Play the animation. All the rectangles now start at a different point in the wave.
 
