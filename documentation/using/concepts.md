@@ -12,7 +12,7 @@ In the NodeBox assembly line **nodes** are the workers. They are the basic build
 
 NodeBox has two basic types of nodes:
 
-* **Generator nodes** do not take in another shape. They are used to create shapes from scratch. Examples are rect, ellipse or star.
+* **Generator nodes** do not take in another shape. They are used to create shapes from scratch. Examples are rect, ellipse or star. Since they create shapes from scratch they do not have an input port.
 * **Filter nodes** take in other shapes and change them. They are used to manipulate shapes. Examples are wiggle, transform or copy.
 
 ![A typical NodeBox script](/media/img/using/concepts-nodebox-network.png)
@@ -22,6 +22,8 @@ By connecting nodes together, you create your own assembly line where a new shap
 
 Nodes are connected using their **ports**. Geometry (vector data) moves through a connection from the output port to the input port. The behavior of a node is controlled by its **parameters**.
 
+Node Prototype
+--------------
 Each node has a **prototype**, or base node, it inherits from. When creating a new node, all data from the prototype node, such as the parameters and ports is copied over in the new node. To keep NodeBox files small, only changes between your node and the prototype are saved.
 
-The "core" nodes in NodeBox are created in the same way: they inherit from the **root node** and add their own parameters, ports and code. The core nodes are stored in a document that is loaded when NodeBox starts up. They are not "special" in any way. **Any node can function as a template for a new node**. You can [customize existing nodes](metadata.html) or [build nodes from scratch](../advanced/programming-nodes.html) and create your own libraries that are loaded when NodeBox starts.
+Even NodeBox's built-in nodes are created in the same way: they inherit from a base node and add their own parameters, ports and code. The built-in nodes are stored in a document that is loaded when NodeBox starts up. They are not "special" in any way. **Any node can function as a template for a new node**. You can [customize existing nodes](metadata.html) or [build nodes from scratch](../advanced/programming-nodes.html) and create your own libraries that are loaded when NodeBox starts.
