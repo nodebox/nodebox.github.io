@@ -6,7 +6,7 @@ NodeBox works in 2 dimensions. The x dimension goes from left to right. The y di
 
 A point in NodeBox space is represented as x, y. For example, the point 30,40 would be located 30 points from the left and 40 points from the top of the origin.
 
-The **origin** is the center of the canvas, point 0,0. All objects in NodeBox are centered around the origin. You can show the origin in the viewer panel by checking the "Origin" box at the top.
+The **origin** is the center of the canvas, point 0,0. All objects in NodeBox are centered around the origin. You can show the origin in the viewer pane by checking the "Origin" box at the top.
 
 When you create a new shape in NodeBox, it will be centered on the origin. As an example, let's create a rectangle. In the viewer, turn the origin on. Note that if we drag the width or height, the object stays centered.
 

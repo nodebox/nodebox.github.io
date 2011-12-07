@@ -15,7 +15,6 @@ NodeBox has two basic types of nodes:
 * **Filter nodes** take in other shapes and change them. They are used to manipulate shapes. Examples are wiggle, transform or copy.
 
 ![A typical NodeBox script](/media/img/using/concepts-nodebox-network.png)
-
 <small>A typical NodeBox network. line1 and rect1 are generators. The other nodes are filters.</small>
 
 By connecting nodes together, you create your own assembly line where a new shape goes in and a complex result comes out. Every step along the way can be changed and animated.

@@ -13,7 +13,6 @@ How do we create a grid where every rectangle has a different color and rotation
 Copy stamping changes nodes in the network before the copy stamp node. That means that the NodeBox engine goes back and changes the outputs of input nodes every time it loops through the network.
 
 ![Copy Stamping Network](/media/img/using/copy-stamping-network.png)
-
 <small>When copy stamping is turned on, the nodes marked in red are re-evaluated for each copy.</small>
 
 For people used to programming: nodes such as copy and place work as a loop. Copy stamping gives you variables that  input nodes can use as arguments for their parameters.
