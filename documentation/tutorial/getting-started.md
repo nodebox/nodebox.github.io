@@ -23,12 +23,11 @@ Click the highlighted **New Node** button. This pops up the node selection windo
 From this window, create the Star node. You can do this in two ways:
 
 * Scroll through the (sorted) list until you find the Star node, then double-click it.
-* Enter the first letters ("st") and press enter when the Star node is selected.
+* Enter the first letters ("st") and press enter when the Star node is selected. If there is more than one node use the arrow keys to select the node you want.
 
 ![NodeBox window with one star node](/media/img/tutorial/start-star-node.png)
 
-
-The NodeBox document window consists of four panels. These are (clockwise, from the top):
+The NodeBox document window consists of four panes. These are (clockwise, from the top):
 
 * **The Viewer Pane**, showing the composition you're working on.
 * **The Parameters Pane**, allowing you to adjust the parameter values of a node.
@@ -50,11 +49,11 @@ Everywhere you see a number, you can drag it to see what it does. If you make a 
 
 Connecting nodes
 ----------------
-The power of NodeBox comes from connecting nodes together. In this example, we're going to filter the output of the star node and snap all its points to a grid.
+The power of NodeBox comes from connecting nodes together. Nodes are connected using their ports. Each node has one output port and zero or more input ports. In this example, we're going to filter the output of the star node and snap all its points to a grid.
 
 Click the **New Node** button again, and choose the **Snap** node. Double-click it to place it in the network.
 
-You should see a grid in the viewer pane, but your star is gone. We can connect one to the other by dragging from the output port of the star1 node to the input port of the snap1 node.
+You should see a grid in the viewer pane, but your star is gone. We can connect one to the other by dragging from the output port of the star1 node to the input port of the snap1 node. 
 
 ![Star and snap node, connected together](/media/img/tutorial/start-star-snap-connected.png)
 
@@ -69,11 +68,11 @@ NodeBox nodes (such as snap) are like Photoshop filters: they change the output 
 
 Rendered and Selected Node
 --------------------------
-NodeBox can only show the output of **one node at a time**. We see the output of this **rendered node** in the viewer pane. Currently, snap1 is the rendered node.
+NodeBox can only show the output of **one node at a time**. We see the output of this **rendered node** in the viewer pane. Currently, snap1 is the rendered node, indicated by the yellow bar at the top.
 
 We can look at one node while working on the parameters of another node. We'll keep the snap1 node rendered while selecting another node.
 
-* Click the star1 node **once**. The star1 node has a blue glow, indicating it is selected. The parameters pane updates with the parameters of the star path. We've now selected it.
+* Click the star1 node **once**. The star1 node has a blue glow, indicating it is *selected*. The parameters pane updates with the parameters of the star path.
 * Click the black **fill** rectangle to change the color. Set it to **dark green** by dragging the green component to 100. Note that the color of the star changes while we're dragging the color.
 
 ![Selected vs Rendered Node](/media/img/tutorial/start-selected-vs-rendered.png)
@@ -82,12 +81,15 @@ We've just updated the star1 node, but we're still looking at the results of the
 
 To recap:
 
-* In the viewer, we look at the **rendered node**. In the network panel, the rendered node has a yellow bar at the top of the node. To change the rendered node, **double-click** a node.
-* In the parameter panel, we look at the **selected node**. In the network panel, the selected node has a blue glow around it. To change the selected node, **click** a node once.
+* In the viewer, we look at the **rendered node**. In the network pane, the rendered node has a yellow bar at the top of the node. To change the rendered node, **double-click** a node.
+* In the parameter pane, we look at the **selected node**. In the network pane, the selected node has a blue glow around it. To change the selected node, **click** a node once.
+
+![Start Node States](/media/img/tutorial/start-node-states.png)
+<small>All the different node states</small>
 
 The Copy Node
 -------------
-Click the **New Node** button again, and choose the **Copy** node. Double-click it to place it in the network.
+Click the **New Node** button again, and choose the **Copy** node (You can also right-click in the network view and choose "New Node"). Double-click it to place it in the network.
 
 Connect the output of the snap1 node to the input of the copy1 node.
 
@@ -96,7 +98,7 @@ With the copy1 node selected and rendered:
 * Change the **Rotate** to **36.00** by dragging the number to the right or double-clicking the number, typing 10, and pressing enter.
 * Change the **Copies** to **10**.
 
-NodeBox now creates ten copies, rotates them and placed them on top of each other:
+NodeBox now creates ten copies, rotates them and places them on top of each other:
 
 ![Star Copies](/media/img/tutorial/start-star-snap-copy.png)
 
@@ -107,7 +109,7 @@ Now that we have some nodes to play with, we can change the settings and see the
 
 While we're exploring, keep the copy1 node rendered.
 
-* In **star1**, change the **X** to **300.00**. The output will probably be too big to fit in the viewer. Use the *mouse wheel* to zoom in or out.
+* In **star1**, change the **X** to **300.00**. The output will probably be too big to fit in the viewer. Point your cursor over the viewer and use the *mouse wheel* to zoom in or out.
 * In **star1**, change the **Y** to **50.00**.
 * In **snap1**, drag the **Distance** to **52.00**.
 
@@ -119,7 +121,7 @@ NodeBox saves documents in the .ndbx file format. These files can only be opened
 
 Before exporting, it's a good idea to change the document settings. This allows you to crop your composition to the preferred width and height and change the the background color.
 
-To change the document settings, click on an empty space in the network view. Change them like this:
+To change the document settings, click on an empty space in the network pane. Change them like this:
 
 * Change the **Document Width** to **750.00**.
 * Change the **Document Height** to **750.00**.
@@ -132,7 +134,7 @@ Once we've changed the document settings, export the document:
   (The first time might take a while). 
 * Open this file by going to the desktop and double-clicking it. Zoom in to verify that all lines are still smooth.
 
-NodeBox will export the rendered node. In our example, if we just wanted to render the star, we need to double-click the star1 node to make it rendered, then export again.
+NodeBox will export the rendered node. In our example, if we just wanted to export the star, we need to double-click the star1 node to make it rendered, then export again.
 
 Next Steps
 ----------

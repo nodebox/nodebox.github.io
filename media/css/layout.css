@@ -105,6 +105,13 @@ nav li a:hover {
     box-shadow: 0 0 4px #aaa;
 }
 
+.columns img + small {
+  display: block;
+  margin-top: -2px;
+  text-align: center;
+  text-shadow: 0 0 4px #fff;
+}
+
 .thumb {
   display: block;
   height: 120px;

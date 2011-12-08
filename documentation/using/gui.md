@@ -55,6 +55,8 @@ You can zoom and pan the network in the same you manipulate the viewer:
 
 You can copy-paste nodes in one document and between documents. Because names in the network are unique, NodeBox will rename nodes as needed. Note that NodeBox doesn't rewrite expressions: any expressions that refer to other nodes need to be renamed manually.
 
+The difference between the selected and rendered node is explained in the [getting started tutorial](../tutorial/getting-started.html).
+
 The Source Pane
 ---------------
 ![The Source Pane](/media/img/using/gui-source-pane.png)

@@ -5,7 +5,8 @@ title: NodeBox Concepts
 
 NodeBox uses a different model from traditional applications such as Photoshop or Illustrator. It is easy to visualize: imagine an **assembly line** of workers. Each worker does one thing, and one thing only. After he or she has done their operation, the object is passed on to the next person who does his thing.
 
-![The Ford Assembly Line](/media/img/using/concepts-assembly-line.jpg)
+![The FSO Assembly Line](/media/img/using/concepts-assembly-line.jpg)
+<small><a href="http://en.wikipedia.org/wiki/Warszawa_(car)">Warszawas</a> assembled at <a href="http://en.wikipedia.org/wiki/Fabryka_Samochod%C3%B3w_Osobowych">FSO</a> in the early 1950s.</small>
 
 In the NodeBox assembly line **nodes** are the workers. They are the basic building blocks of the application.
 
@@ -15,7 +16,6 @@ NodeBox has two basic types of nodes:
 * **Filter nodes** take in other shapes and change them. They are used to manipulate shapes. Examples are wiggle, transform or copy.
 
 ![A typical NodeBox script](/media/img/using/concepts-nodebox-network.png)
-
 <small>A typical NodeBox network. line1 and rect1 are generators. The other nodes are filters.</small>
 
 By connecting nodes together, you create your own assembly line where a new shape goes in and a complex result comes out. Every step along the way can be changed and animated.
