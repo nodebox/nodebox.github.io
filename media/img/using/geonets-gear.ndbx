@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="0.9" type="file">
+    <node name="gear" prototype="corevector.geonet" x="50" y="40">
+        <param name="points" type="int">
+            <value>5</value>
+        </param>
+        <param name="fill" type="color">
+            <value>#000000ff</value>
+        </param>
+        <node name="ellipse2" prototype="corevector.ellipse" x="260" y="170">
+            <param name="width">
+                <value>40.0</value>
+            </param>
+            <param name="height">
+                <value>40.0</value>
+            </param>
+        </node>
+        <node name="ellipse1" prototype="corevector.ellipse" x="90" y="40"/>
+        <node name="compound2" prototype="corevector.compound" rendered="true" x="440" y="140">
+            <param name="function">
+                <value>subtracted</value>
+            </param>
+        </node>
+        <node name="compound1" prototype="corevector.compound" x="270" y="50">
+            <param name="function">
+                <value>intersected</value>
+            </param>
+        </node>
+        <node name="star1" prototype="corevector.star" x="90" y="150">
+            <param name="points">
+                <expression>parent.points</expression>
+            </param>
+            <param name="outer">
+                <value>150.0</value>
+            </param>
+            <param name="inner">
+                <value>70.0</value>
+            </param>
+        </node>
+        <conn input="compound1" output="ellipse1" port="shape"/>
+        <conn input="compound1" output="star1" port="shapeB"/>
+        <conn input="compound2" output="compound1" port="shape"/>
+        <conn input="compound2" output="ellipse2" port="shapeB"/>
+    </node>
+    <node name="gear1" prototype="corevector.geonet" x="50" y="140">
+        <param name="points" type="int">
+            <value>9</value>
+        </param>
+        <param name="fill" type="color">
+            <value>#ff0000ff</value>
+        </param>
+        <node name="ellipse2" prototype="corevector.ellipse" x="260" y="170">
+            <param name="width">
+                <value>40.0</value>
+            </param>
+            <param name="height">
+                <value>40.0</value>
+            </param>
+        </node>
+        <node name="ellipse1" prototype="corevector.ellipse" x="90" y="40"/>
+        <node name="compound2" prototype="corevector.compound" rendered="true" x="440" y="140">
+            <param name="function">
+                <value>subtracted</value>
+            </param>
+            <param name="fill">
+                <expression>parent.fill</expression>
+            </param>
+        </node>
+        <node name="compound1" prototype="corevector.compound" x="270" y="50">
+            <param name="function">
+                <value>intersected</value>
+            </param>
+        </node>
+        <node name="star1" prototype="corevector.star" x="90" y="150">
+            <param name="points">
+                <expression>parent.points</expression>
+            </param>
+            <param name="outer">
+                <value>150.0</value>
+            </param>
+            <param name="inner">
+                <value>70.0</value>
+            </param>
+        </node>
+        <conn input="compound2" output="compound1" port="shape"/>
+        <conn input="compound2" output="ellipse2" port="shapeB"/>
+        <conn input="compound1" output="ellipse1" port="shape"/>
+        <conn input="compound1" output="star1" port="shapeB"/>
+    </node>
+    <node name="merge1" prototype="corevector.merge" rendered="true" x="300" y="40"/>
+    <node name="transform1" prototype="corevector.transform" x="180" y="140">
+        <param name="tx">
+            <value>120.0</value>
+        </param>
+    </node>
+    <conn input="transform1" output="gear1" port="shape"/>
+    <conn input="merge1" output="gear" port="shapes"/>
+    <conn input="merge1" output="transform1" port="shapes"/>
+</ndbx>
