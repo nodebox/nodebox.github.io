@@ -22,7 +22,7 @@ Click on the geonet and press the ENTER key. You should see the address bar abov
 All other panes should be empty, in fact everything looks as if you would start a new file. 
 
 * Create an **Ellipse** node. Leave it at it's default.
-* Create a **Star** node. Change **Points** to **6**, **Outer Diameter** to **150.00* and **Inner Diameter** to **70.00*.
+* Create a **Star** node. Change **Points** to **6**, **Outer Diameter** to **150.00* and **Inner Diameter** to **70.00**.
 * Create a **Compound** node. Change **Function** to **intersect**.
 * Connect ellipse1 to **shape** port of compound1.
 * Connect star1 to **shapeB** port of compound1.
