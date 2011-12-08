@@ -77,7 +77,8 @@ nav li a {
 }
 
 nav li a:hover {
-  background: #5a5d6a;
+  /* This rule is important because the mobile version changes the background color. */
+  background: #5a5d6a !important;
   color: white;
   border-bottom: 2px solid #5a5d6a;
 }
@@ -222,7 +223,25 @@ img.node-icon {
 @media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  nav li {
+    display: block;
+    width: 100%;
+  }
+  
+  #home .home,
+  #documentation .documentation,
+  #download .download,
+  #projects .projects,
+  #software .software,
+  #people .people,
+  #publications .publications,
+  #gallery .gallery,
+  #contact .contact {
+    border-bottom: none;
+    background: #ddd;
+  }
+}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
