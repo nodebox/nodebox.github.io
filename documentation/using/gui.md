@@ -10,13 +10,19 @@ The Viewer Pane
 ---------------
 ![The Viewer Pane](/media/img/using/gui-viewer-pane.png)
 
-The Viewer Pane shows the actual drawing. It also shows handles for the currently selected node. In addition, it shows geometric detail such as the location of the points and their index numbers.
+The Viewer Pane shows the actual drawing. It also shows handles for the currently selected node. In addition, it can show geometric detail such as the location of the points, their index numbers and the [origin](coordinates.html).
 
-The handles allow direct manipulation of parameters in the parameter pane. 
+With your mouse in the viewer pane:
 
 - Use the scroll wheel to **zoom** the view in or out.
 - Hold the spacebar to **pan** the view.
 - Right-click and choose "Reset View" to **reset** the view back to 100% zoom.
+
+Most nodes have **handles**. They allow direct manipulation of the shape, which is generally easier than dragging numbers in the parameter pane. 
+
+![GUI Handles](/media/img/using/gui-handles.png)
+<small>Handles for the Star node</small>
+
 
 The Parameters Pane
 -------------------
@@ -56,6 +62,9 @@ You can zoom and pan the network in the same you manipulate the viewer:
 You can copy-paste nodes in one document and between documents. Because names in the network are unique, NodeBox will rename nodes as needed. Note that NodeBox doesn't rewrite expressions: any expressions that refer to other nodes need to be renamed manually.
 
 The difference between the selected and rendered node is explained in the [getting started tutorial](../tutorial/getting-started.html).
+
+To change the **Document Settings** (such as background color and document width / height), deselect all nodes. Do this by clicking on the background area in the network pane.
+
 
 The Source Pane
 ---------------
