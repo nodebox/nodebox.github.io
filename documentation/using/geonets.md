@@ -4,7 +4,7 @@ title: Geonets
 ---
 A **geonet** is a network in a network. Other modular software programs sometimes refer to it as subnetworks or subpatches. Geonet derives from geometry network and is in fact **pretty much the same as a normal network** in NodeBox. 
 
-The idea is that you **create a new network,*and thus a new geometry*, inside a node**. You can start a geonet by creating a [Geonet](../nodes/geonet.html) node. The principle of geonets allows you to **have a cleaner network** and is in fact an **easy way to create new nodes** without any code juggling.
+The idea is that you **create a new network, *and thus a new geometry*, inside a node**. You can start a geonet by creating a [Geonet](../nodes/geonet.html) node. The principle of geonets allows you to **have a cleaner network** and is in fact an **easy way to create new nodes** without any code juggling.
 
 Creating Geonets
 ----------------
