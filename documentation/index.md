@@ -2,18 +2,21 @@
 layout: documentation
 title: Welcome
 ---
-Thanks for taking time to learn NodeBox.
+If you're brand new to NodeBox, start by reading the beginner tutorials:
 
-If you're brand new to NodeBox, watch these screencasts to get started:
+* [Getting Started](tutorial/getting-started.html)
+* [Exploring NodeBox](tutorial/exploring.html)
+* [Basic Animation](tutorial/animation.html)
 
-* Getting Started
-* Building a Spirograph
-* Basic Animation
+Reference
+---------
 
-* Choose the topics in the sidebar.
-* Questions or comments?
+* [Node Reference](nodes/)
+* [Expression Reference](expressions/)
 
-Content To organize:
+Questions or comments?
+----------------------
+We're currently setting up a new forum that will cover NodeBox 1, NodeBox 2 and NodeBox/OpenGL.
 
-* Using the delete node for clipping
-* Scatter vs resample
+For now, please email questions to <info@nodebox.net>.
+
