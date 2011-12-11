@@ -7,23 +7,23 @@ Spirograph Example
 
 Let's make a drawing based on the [Spirograph](http://en.wikipedia.org/wiki/Spirograph) principle. 
 
-In short we will **create a shape** and **copy it** a few times on top of each other with a difference in rotation.
+In short: we will **create a shape** and **copy it** a few times on top of each other with a difference in rotation.
 
 ![Exploring Spirograph](/media/img/tutorial/exploring_spirograph.png)
 
-Create a [Freehand](../nodes/freehand.html) node and draw a small line in order to have a reference for the rest of the procedure. You can **draw by dragging the mouse** in the viewer pane.
+Create a [Freehand](../nodes/freehand.html) node and draw a small line in order to have a reference for the rest of the procedure. You can **draw by clicking and dragging the mouse** in the viewer pane.
 
 Create a [Reflect](../nodes/reflect.html) node and send the output of freehand1 to it. 
 
-* Change the **Angle** parameter to **90.00**. You should see the change the location of the reflected shape.
+* Change the **Angle** parameter to **90.00**. You should see the change in location of the reflected shape.
 * Change the **X** parameter to **0.0**. Dito.
 
 Create a [Copy](../nodes/copy.html) node and send the output of reflect1 to it.
 
 * Change the **Copies** parameter to **20**.
-* Change the **Angle** parameter to **18.0**. The calculation of the angle is based on the equation 360.0 / number of copies.
+* Change the **Rotate** parameter to **18.0**. The calculation of the rotation angle is based on the equation 360.0 / number of copies.
 
-Render copy1 and click once on freehand1. Start drawing anything and see the spirograph appear. **Not pleased with the result?** You can **start over** and empty the path by selecting all numbers in the path parameter then press the return button.
+Render copy1 and click once on freehand1. Start drawing anything and see the spirograph appear. **Not pleased with the result?** You can **start over** and empty the path by selecting all numbers in the path parameter then press backspace and the return key.
 
 **Try out:**
 
@@ -54,7 +54,7 @@ Copy textpath1. You can **copy and paste nodes** by drawing a rectangle around t
 * Change the **Y** parameter to **-200**.
 * Set **Size** to **230**.
 
-Create a [Merge](../nodes/merge.html) node to bring both previous nodes to one.
+Create a [Merge](../nodes/merge.html) node to bring both previous nodes together.
 
 ![Exploring Resample Place Step1](/media/img/tutorial/exploring_resample_place_step1.png)
 
@@ -122,7 +122,7 @@ Create an [Align](../nodes/align.html) node. Connect copy1 to it.
 * Set **Horizontal Align** to **Right**.
 * Set **Vertical Align** to **Middle**.
 
-Create a [Copy](../nodes/copy.html) node to create a few copies. We will create a shell shape. Connect align2 to it.
+Create a [Copy](../nodes/copy.html) node to create a few copies. Connect align2 to it.
 
 * Set **Copies** to **4**.
 * Set **Rotate** to **90.00**.
@@ -155,7 +155,7 @@ A very import thing to keep your eyes on is the node order. The chronology of no
 
 ![Exploring Nodeorder](/media/img/tutorial/exploring_nodeorder.png)
 
-We are going to create two procedures for copying and transforming an shape. 
+We are going to create two procedures for copying and transforming a shape. 
 
 * The **first** one will **create a shape**, than **transform it** over a [Wiggle](../nodes/wiggle.html) node to finally **be copied** 6 times through a [Copy](../nodes/copy.html) node.
 * The **second** one will start from **the same shape** as in procedure one but will reverse the order of wiggle and copy so we will **copy** the node 6 times first and then **wiggle** the result.
@@ -188,7 +188,7 @@ Create **two** [Copy](../nodes/copy.html) nodes. One for each procedure.
 
 Create **two** [Wiggle](../nodes/wiggle.html) nodes. Again one for each procedure.
 
-* Set **Scope** to **contours**. This setting will only change location of each contour within the shape.
+* Set **Scope** to **contours**. This setting will only change the location of each contour within the shape.
 * Set **Wiggle X** to **10.00**.
 * Set **Wiggle Y** to **10.00**.
 * Select a seed.
@@ -210,7 +210,7 @@ Create a [Merge](../nodes/merge.html) node to bring the two procedures together.
 **Try out:**
 
 * Create a grid of 4 * 4 to have an other template.
-* Change the startshape.
+* Change the starting shape.
 
 ![Exploring Nodeorder Advanced](/media/img/tutorial/exploring_nodeorder_advanced.png)
 
