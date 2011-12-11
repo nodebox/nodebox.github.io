@@ -23,6 +23,15 @@ li {
   margin: 0 auto;
 }
 
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+p {
+  margin: 0 0 1em 0;
+}
+
 
 /* Header */
 
@@ -167,6 +176,16 @@ footer a {
 
 .software.box h2 {
   background: #cee0e8;
+}
+
+.screenshot img {
+  width: 900px;
+}
+
+.screenshot small {
+  display: block;
+  font-weight: bold;
+  padding: 10px 20px;
 }
 
 /* Documentation */
