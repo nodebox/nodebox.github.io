@@ -3,7 +3,7 @@ layout: documentation
 title: Expressions Reference
 ---
 
-* Basic arithemetic
+* Basic arithmetic
   * + 
   * - 
   * / 
