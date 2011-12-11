@@ -2,7 +2,7 @@
 layout: homepage
 title: Meet NodeBox.
 ---
-<a class="heroshot"><img src="media/img/home-nodebox.png" alt="NodeBox Screenshot"></a>
+<a class="heroshot" href="#"><img src="media/img/home-nodebox.png" alt="NodeBox Screenshot"></a>
 
 NodeBox is a new software application for creating generative art using procedural graphics. It's a new way to approach graphic design.
 
