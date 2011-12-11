@@ -67,7 +67,6 @@ The [expression reference](../expressions/) has a more detailed explanation of a
 
 Using Functions
 ---------------
-
 The NodeBox expression language uses functions for all but the simplest expressions, so it’s good to know what they are.
 
 A function calculates something for you. You call the function with a number of arguments, and it gives you a value back. You can use this value directly, or pass it to another function.
@@ -88,6 +87,7 @@ Here are some other examples of functions:
 <pre>hsb(0.5, 0.3, 0.1)</pre> // Create a new color with a hue of 50%, a saturation of 30% and a brightness of 10%. Color values go from 0 to 1.
 <pre>random(CNUM, 1, 100)</pre> // Generate a random number between 1 and 100, different for each copy.
 <pre>stamp(“mysize”, 100)</pre> // Copy stamp a value. Copy stamping will be explained later.
+
 
 Combining functions
 -------------------
