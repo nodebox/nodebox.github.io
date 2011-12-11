@@ -63,6 +63,14 @@ Here's an example:
 ![Expressions Arithmetic](/media/img/using/expressions-arithmetic.png)
 <small>The height of the rectangle is always double the width.</small>
 
+There are many built-in operators in the NodeBox expression language. Here is a quick reference:
+
+* Add two numbers together.	5 + 3 ==>	8
+* Subtract two numbers.	12 - 4 ==>	8
+* Divide two numbers.	16 / 2 ==>	8
+* Raise a number to a power.	2 ** 3 ==>	8
+* Calculates the remainder of a division.	18 % 10	==> 8
+
 The [expression reference](../expressions/) has a more detailed explanation of all mathematical operations.
 
 Using Functions
@@ -84,14 +92,16 @@ This structure is always the same:
 
 Here are some other examples of functions:
 
-<pre>hsb(0.5, 0.3, 0.1)</pre> // Create a new color with a hue of 50%, a saturation of 30% and a brightness of 10%. Color values go from 0 to 1.
-<pre>random(CNUM, 1, 100)</pre> // Generate a random number between 1 and 100, different for each copy.
-<pre>stamp(“mysize”, 100)</pre> // Copy stamp a value. Copy stamping will be explained later.
+* Create a new color with a hue of 50%, a saturation of 30% and a brightness of 10%. Color values go from 0 to 1:
+  <pre>hsb(0.5, 0.3, 0.1)</pre>
+* Generate a random number between 1 and 100, different for each copy:
+  <pre>random(CNUM, 1, 100)</pre>
+* [Copy stamp](copy-stamping.html) a value:
+  <pre>stamp(“mysize”, 100)</pre>
 
 
-Combining functions
+Combining Functions
 -------------------
-
 Soon, you will want to **combine multiple functions**. Let’s say that we want to have **a hsb color with a different hue for each copy**. For this, we need to combine functions.
 
 **Combining functions is not special**. You need to apply the same logic as before, but instead you **use a function as an argument**.
@@ -110,17 +120,6 @@ Here’s what NodeBox does to evaluate this:
 To summarize, **NodeBox calculates the inner functions first** and replace the results with the value.
 
 
-Arithmetic Operators.
---------------------
-There are many built-in operators in the NodeBox expression language. Here is a quick reference:
-
-* Add two numbers together.	5 + 3 ==>	8
-* Subtract two numbers.	12 - 4 ==>	8
-* Divide two numbers.	16 / 2 ==>	8
-* Raise a number to a power.	2 ** 3 ==>	8
-* Calculates the remainder of a division.	18 % 10	==> 8
-
-
 Other Math
 ----------
 A lot of extra math functions are under the “math” package. You can refer to them by prepending “math.”: Those are functions, so use brackets. You can find the complete list of other math functions at the [expression reference page](/documentation/expressions/).
@@ -128,6 +127,7 @@ A lot of extra math functions are under the “math” package. You can refer to
 Some examples:
 math.sin	The arc sine of an angle.	math.sin(0.5)
 math.cos	The arc cosine of an angle.	math.cos(0.3)
+
 
 Working with Text
 -----------------
@@ -149,25 +149,37 @@ You always need the quotes, also in functions:
 
 Working with Lists
 ------------------
-You can create a list by using [] brackets or quotes.
+You can create a list by using square brackets (<code>[]</code>).
 
-A list can be a word. In this case the n letter of the word hello is called by the number between the brackets.
-<pre>"hello"[0]</pre>
-returns "h"
+A list looks like this:
+
+<pre>[11, 22, 33, 44]</pre>
+
+A list is only useful if you *do* something with it. For example, you can take a specific element out of it:
+
+<pre>[11, 22, 33, 44][2]
+==> 33</pre>
+
+This returns the *third* element in the list. **NodeBox indices start from zero.**
+
+Strings can also be a list. In this case, each letter of the list is a separate element. You can fetch the nth  letter of the word using the following syntax:
+<pre>"hello"[0]
+==> "h"</pre>
 
 A list can be a group of words.
-<pre>["word", "sentence", "letter", "paragraph", "book"][3]</pre>
-returns "paragraph"
+<pre>["word", "sentence", "letter", "paragraph", "book"][3]
+==> "paragraph"</pre>
 
 A list can be a group of any type:
-<pre>["Verdana", "Zapfino", "Georgia"][1]</pre>
-returns  the Zapfino font
-<pre>[hsb(.5,.2,.1), hsb(.9,.6,.8)][1]</pre>
-returns a pink-like color
+<pre>["Verdana", "Zapfino", "Georgia"][1]
+==> "Zapfino"</pre>
+
+<pre>[hsb(.5,.2,.1), hsb(.9,.6,.8)][1]
+==> hsb(.9,.6,.8) // a pink-like color</pre>
 
 You can **call an item in the list** by using a number as shown above or over the stamp function.
 
-Example with copy stamping. 
+Here's an example that uses [copy stamping](copy-stamping.html): 
 <pre>["word", "sentence", "letter", "paragraph", "book"][stamp("num", 0)]</pre>
 
 Built-in Variables
