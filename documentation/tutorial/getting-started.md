@@ -2,6 +2,8 @@
 layout: documentation
 title: Getting Started
 ---
+Welcome to NodeBox! In this tutorial we're going to learn the essentials for working with the program.
+
 Downloading NodeBox
 -------------------
 If you haven't done this yet, you should [download](/download/) NodeBox first.
