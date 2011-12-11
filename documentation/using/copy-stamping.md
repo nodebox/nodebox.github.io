@@ -73,20 +73,20 @@ Color
 -----
 Copy stamping can be used anywhere, but colors require a special mention since they require nested expressions.
 
-* In **rect1**, set **Fill** to the expression <pre>hsb(stamp("CNUM", 0) / 480, 1, 1)</pre>
+* In **rect1**, set **Fill** to the expression <pre>hsb(stamp("CPOS", 0), 1, 1)</pre>
 * Instant rainbow!
 
 ![Copy Stamping Rainbow](/media/img/using/copy-stamping-rainbow.png)
 
 The **hsb** function provides using hue, saturation and brightness. The saturation and brightness are set to 1. For the hue, we've used a stamp expression:
 
-    stamp("CNUM", 0) / 480
+    stamp("CPOS", 0)
 
-We use the copy number and divide this value by 480. First off, 480 is the number of copies: one for each point in a grid of 12 x 40. Colors range from 0.0 to 1.0. If we would use the copy number, it would go from 0 to 480. By dividing by 480, we convert values in the range 0 - 480 to the 0.0 - 1.0 range, needed for colors.
+We use the copy *position*. This provides a *relative value* between 0.0 and 1.0 for every copy: The first copy will be 0.0, the last copy will be 1.0. If we have three copies, CPOS would be 0.0, 0.5, and 0.1. The 0.0 - 1.0 range is exactly what we need for colors.
 
 We can use the stamp expression in any part of the hsb expression:
 
-* In **rect1**, set **Fill** to the expression <pre>hsb(1, stamp("CNUM", 0) / 480, 1)</pre>
+* In **rect1**, set **Fill** to the expression <pre>hsb(1, stamp("CPOS", 1), 1)</pre>
 * Set the **Document Background** to Red = 50, Green = 0, Blue = 75
 
 ![Copy Stamping With Saturation](/media/img/using/copy-stamping-saturation.png)
