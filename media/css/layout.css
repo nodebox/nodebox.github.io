@@ -2,8 +2,17 @@
 
 article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}html{cursor:default;font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:transparent;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body,form,input,button,select,textarea{font-size:100%;margin:0}a,a:active,a:hover{outline:none}a:focus{outline:thin dotted}abbr{_border-bottom:expression(this.title ? '1px dotted':'none')}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}mark{background:#FF0;color:#000}pre,code,kbd,samp{font-family:monospace,monospace;_font-family:'courier new',monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:'';content:none}small,sub,sup{font-size:75%}sub,sup{line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}nav ul{list-style:none}audio[controls],canvas,video{display:inline-block;*display:inline}audio{display:none;_display:expression(this.controls ? 'inline':'none');*zoom:1}audio[controls]{display:inline-block}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}legend{*margin-left:-7px}button,input,select,textarea{-webkit-appearance:none;border-radius:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal;_overflow:expression(this.type == 'button|reset|submit' ? 'visible':'')}button,input[type="button"],input[type="reset"],input[type="submit"]{overflow:visible}input[type="checkbox"],input[type="radio"]{box-sizing:border-box}input[type="search"]{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
-body {
+
+html {
   background: #464045 url(../img/background.jpg);
+  margin: 0;
+  padding: 0;  
+}
+body {
+  background-image: url(../img/background-gradient.png);
+  background-repeat: repeat-x;
+  margin: 0;
+  padding: 20px 0 0 0;
   font: 16px/1.4em Helvetica, arial, sans-serif;
   color: #3f414b;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
@@ -12,7 +21,6 @@ body {
 
 .container {
   background: #f5e7f8;
-  margin-top: 10px;
   margin-bottom: 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border-radius: 3px;
@@ -289,6 +297,13 @@ img.node-icon {
     width: 96%;
     padding: 2px;
   } 
+  header h1 {
+    float: none;
+  }
+  
+  header nav {
+    padding-left: 0;
+  }
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
