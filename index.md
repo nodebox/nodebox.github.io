@@ -8,6 +8,8 @@ title: Meet NodeBox.
     <p>NodeBox creates generative art using procedural graphics. It's a new way to approach graphic design.</p>
   
     <a href="/download/" class="hero-button">Download</a>
+    <small>&nbsp;or&nbsp;</small>
+    <a href="/documentation/tutorial/getting-started.html" class="hero-button yellow">Get Started</a>
   </div>
 
   <div class="ten columns omega">
