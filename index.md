@@ -7,7 +7,7 @@ title: Meet NodeBox.
   <div class="six columns alpha">
     <p>NodeBox creates generative art using procedural graphics. It's a new way to approach graphic design.</p>
   
-    <a href="" class="hero-button">Download</a>
+    <a href="/download/" class="hero-button">Download</a>
   </div>
 
   <div class="ten columns omega">
