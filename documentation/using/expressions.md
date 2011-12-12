@@ -42,7 +42,7 @@ To relate one parameter to another, between nodes, use the syntax:
 For example: **rect1.width**
 
 * Create an **Ellipse** node. Set **Y** to **-75.00**.
-* Create a **Rect** node. Set **Y** to **-100.00** and **Height** to **150.00**.
+* Create a **Rect** node. Set **Y** to **100.00** and **Height** to **150.00**.
 * We want the rectangle to move together with the ellipse. In **rect1** set **X** to the expression <pre>ellipse1.x</pre>
 * In **elipse1**, drag the **X** parameter. Note that the rectangle follows along.
 
