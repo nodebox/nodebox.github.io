@@ -7,7 +7,7 @@ Let's create a [shape moire effect](http://en.wikipedia.org/wiki/Shape_moir%C3%A
 
 ![Basic Animation](/media/img/tutorial/basic-animation.png)
 
-The idea is to make a textpath, scale it on the vertical axis and copy it below each other.
+The idea is to make a text path, scale it on the vertical axis and copy it below each other.
 
 Create a [Textpath](../nodes/txtpath.html) node.
 
@@ -19,10 +19,10 @@ Create a [Transform](../nodes/transform.html) node and **connect textpath1 to it
 
 Create a [Copy](../nodes/copy.html) node. **Connect transform1 to this node**.
 
-* Set **Copies** to **10**
-* Set **Translate Y** to **12**
+* Set **Copies** to **10**.
+* Set **Translate Y** to **12.00**.
 
-You should see this as a result.
+You should see this as a result:
 
 ![Basic Animation Step1](/media/img/tutorial/basic-animation-step1.png)
 
@@ -33,7 +33,7 @@ Create a [Rect](../nodes/rect.html) node as a basic shape for the pattern.
 * Set **Width** to **400.00**.
 * Set **Height** to **12.00** (which is the same amount as the value for  translate Y parameter of copy1)
 
-Create a [Copy](../nodes/copy.html) node and make *30** copies with a **Translate Y** parameter set to **13.00**.
+Create a [Copy](../nodes/copy.html) node and make **30** copies with a **Translate Y** parameter set to **13.00**.
 **Connect rect1 to this node**.
 
 In order to make it moveable create a [Transform](../nodes/transform.html) node and **connect copy2 to it**. We will change the value for **Translate Y** later.
