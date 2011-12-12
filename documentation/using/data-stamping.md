@@ -117,7 +117,7 @@ The buildings are obviously not aligned to the bottom. Let's change that:
 
 Now the buildings are aligned to the origin:
 
-![Data Stamping Unaligned](/media/img/using/data-stamping-unaligned.png)
+![Data Stamping Unaligned](/media/img/using/data-stamping-aligned.png)
 
 Let's combine them with the text path. The text should be next to the top of the building so it needs to be translated up the same size as each building. Since we create *building height / 10* copies, and each copy is translated 5 points, the total height will be *building height / 2*.
 
