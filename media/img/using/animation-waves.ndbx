@@ -231,7 +231,7 @@ def cook(self):
     </node>
     <node name="point2" prototype="point" x="30" y="110">
         <param name="y">
-            <expression>wave(TRIANGLE, 0, 50, 100, stamp("CNUM", 0)-25)</expression>
+            <expression>wave(TRIANGLE, 0, 50, 100, stamp("CNUM", 0))</expression>
         </param>
     </node>
     <node name="point3" prototype="point" x="30" y="190">
@@ -241,7 +241,7 @@ def cook(self):
     </node>
     <node name="point4" prototype="point" x="30" y="270">
         <param name="y">
-            <expression>wave(SAWTOOTH, 0, 50, 100, stamp("CNUM", 0)-25)</expression>
+            <expression>wave(SAWTOOTH, 0, 50, 100, stamp("CNUM", 0))</expression>
         </param>
     </node>
     <node name="transform1" prototype="corevector.transform" x="300" y="30">
