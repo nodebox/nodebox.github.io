@@ -183,38 +183,73 @@ footer a {
 
 /* Homepage */
 
-.box h2 {
+.intro {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.features {
+  margin-bottom: 50px;
+}
+
+#home p {
+  color: #666;
   font-size: 14px;
-  margin: 0 0 10px 0;
-  padding: 5px;
+}
+
+#home h3 {
+  color: #444;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 10px;
+  margin-top: 0;
   
 }
 
-.news.box {
-  background: #d9edd9;
+#home .intro p {
+  padding-top: 10px;
+  font-size: 20px;
+  line-height: 180%;
 }
 
-.news.box h2 {
-  background: #c3e2c4;
+/* Download */
+
+.download-button {
+  display: none;
 }
 
-.software.box {
-  background: #e5eff3;
-}
-
-.software.box h2 {
-  background: #cee0e8;
-}
-
-.screenshot img {
-  width: 900px;
-}
-
-.screenshot small {
-  display: block;
-  font-weight: bold;
+.hero-button {
+  display: inline-block;
   padding: 10px 20px;
+  color: white;
+  text-shadow: -1px 0 1px rgba(0, 0, 0, 0.3);
+  background: #424483;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(100, 100, 120, 0.3);
+  margin: 10px 0 20px 0;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
 }
+
+.yellow {
+  background: #d8d552;
+  color: #333;
+  text-shadow: none;
+}
+
+.hero-button small {
+  display: block;
+  text-align: center;
+}
+
+.hero-button:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 20, 0.3);
+  background: #7579ae;
+}
+
+
 
 /* Documentation */
 

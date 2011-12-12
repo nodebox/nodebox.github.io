@@ -3,15 +3,33 @@ layout: default
 title: Download NodeBox
 section: download
 ---
-* Use JS to find the correct version Mac / Win.
-* Link to GitHub download.
+<div class="download-button" id="download-windows">
+  <a href="" class="hero-button">Download NodeBox<small>Windows – Version 2.2</small></a>
+</div>
+
+<div class="download-button" id="download-mac">
+  <a href="" class="hero-button">Download NodeBox<small>Mac OS X – Version 2.2</small></a>
+</div>
+
+<div class="download-button" id="download-linux">
+  We don't have a package ready, but executing the following commands in the terminal will get you going:
+  <pre>
+    sudo apt-get install git-core openjdk-6-jdk ant
+     git clone git://github.com/nodebox/nodebox.git
+     cd nodebox
+     ant run
+  </pre>
+</div>
+
+While the software is downloading, take a look at the [getting started page](/documentation/tutorial/getting-started.html).
+
+Problems downloading? Try the [GitHub Downloads Page](http://github.com/nodebox/nodebox/downloads).
 
 <script>
-  var OSName="Unknown OS";
-  if (navigator.appVersion.indexOf("Win")!=-1) OSName="Windows";
-  if (navigator.appVersion.indexOf("Mac")!=-1) OSName="MacOS";
-  if (navigator.appVersion.indexOf("X11")!=-1) OSName="UNIX";
-  if (navigator.appVersion.indexOf("Linux")!=-1) OSName="Linux";
+  var os = 'other';
+  if (navigator.appVersion.indexOf('Win')!=-1) os = 'windows';
+  if (navigator.appVersion.indexOf('Mac')!=-1) os = 'mac';
+  if (navigator.appVersion.indexOf('Linux')!=-1) os = 'linux';
 
-  document.write('Your OS: '+OSName);
+  $('#download-' + os).show();
 </script>
