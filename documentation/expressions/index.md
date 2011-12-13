@@ -40,7 +40,7 @@ Copy stamping
 
 Lists
 -----
-Use the [] syntax to create lists.
+Use the <code>[]</code> syntax to create lists.
   
 Math
 ----
