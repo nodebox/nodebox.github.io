@@ -4,14 +4,17 @@ title: Meet NodeBox.
 ---
 <div class="intro row">
   
-  <div class="sixteen columns alpha">
-    <h4>NodeBox creates generative art using procedural graphics. It's a new way to approach graphic design.</h4>
+  <div class="eight columns alpha">
+    <p>NodeBox creates generative art using procedural graphics. It's a new way to approach graphic design.</p>
   
     <a href="/download/" class="hero-button">Download</a>
     <small>&nbsp;or&nbsp;</small>
     <a href="/documentation/tutorial/getting-started.html" class="hero-button yellow">Get Started</a>
   </div>
-
+  
+  <div class="eight columns omega">
+    <a class="thumbnail" href="media/img/home/nodebox.png"><img src="media/img/home/nodebox.png" alt="NodeBox Screenshot"></a>
+  </div>
 </div>
 
 <div class="features row">
@@ -61,11 +64,6 @@ title: Meet NodeBox.
   </div>
 
 </div>
-
-<div class="sixteen columns alpha">
-  <a class="thumbnail" href="media/img/home/nodebox.png"><img src="media/img/home/nodebox.png" alt="NodeBox Screenshot"></a>
-</div>
-
 
 <script>
 $("a.thumbnail").fancybox();
