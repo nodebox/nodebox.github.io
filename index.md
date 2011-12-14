@@ -13,14 +13,14 @@ title: Meet NodeBox.
   </div>
   
   <div class="eight columns omega">
-    <a class="thumbnail" href="media/img/home/nodebox.png"><img src="media/img/home/nodebox.png" alt="NodeBox Screenshot"></a>
+    <a class="thumbnail" href="media/img/home/nodebox.png" rel="screenshot"><img src="media/img/home/nodebox.png" alt="NodeBox Screenshot"></a>
   </div>
 </div>
 
 <div class="features row">
 
   <div class="four columns alpha">
-    <a class="thumbnail" href="media/img/home/nodes.png"><img src="media/img/home/nodes_sq.png" alt="NodeBox Screenshot" title="Generative Design does not have to be hard."></a>
+    <a class="thumbnail" href="media/img/home/nodes.png" rel="screenshot"><img src="media/img/home/nodes_sq.png" alt="NodeBox Screenshot" title="Generative Design does not have to be hard."></a>
   </div>
 
   <div class="four columns">
@@ -30,7 +30,7 @@ title: Meet NodeBox.
   </div>
 
   <div class="four columns">
-    <a class="thumbnail" href="media/img/home/animation.png"><img src="media/img/home/animation_sq.png" alt="NodeBox Screenshot" title="NodeBox as an animation tool"></a>
+    <a class="thumbnail" href="media/img/home/animation.png" rel="screenshot"><img src="media/img/home/animation_sq.png" alt="NodeBox Screenshot" title="NodeBox as an animation tool"></a>
    </div>
 
   <div class="four columns omega">
@@ -43,7 +43,7 @@ title: Meet NodeBox.
 <div class="features row">
   
   <div class="four columns alpha">
-    <a class="thumbnail" href="media/img/home/dataviz.png"><img src="media/img/home/dataviz_sq.png" alt="NodeBox Screenshot" title="Useful for Data Visualization"></a>
+    <a class="thumbnail" href="media/img/home/dataviz.png" rel="screenshot"><img src="media/img/home/dataviz_sq.png" alt="NodeBox Screenshot" title="Useful for Data Visualization"></a>
   </div>
 
   <div class="four columns">
@@ -54,7 +54,7 @@ title: Meet NodeBox.
 
 
   <div class="four columns">
-    <a class="thumbnail" href="media/img/home/code.png"><img src="media/img/home/code_sq.png" alt="Code" title="Direct access to the Python code"></a>
+    <a class="thumbnail" href="media/img/home/code.png" rel="screenshot"><img src="media/img/home/code_sq.png" alt="Code" title="Direct access to the Python code"></a>
    </div>
 
   <div class="four columns omega">
