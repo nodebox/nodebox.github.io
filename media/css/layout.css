@@ -290,7 +290,8 @@ footer a {
 
 .sidebar li li {
   padding-left: 10px;
-  font-size: 90%;
+  font-size: 85%;
+  line-height: 150%;
 }
 
 .sidebar li ul {
