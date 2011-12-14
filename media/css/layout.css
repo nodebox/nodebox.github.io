@@ -14,7 +14,7 @@ body {
   background:fff;
   margin: 0;
   /*padding: 20px 0 0 0;*/
-  font: 14px/1.2em Helvetica, arial, sans-serif;
+  font: 14px/1.2em Verdana,Helvetica, arial, sans-serif;
   color: #3f414b;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
