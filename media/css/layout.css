@@ -185,9 +185,13 @@ footer a {
 /* Homepage */
 
 .intro {
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
-  margin-bottom: 50px;
+  margin-bottom: 0px;
+}
+
+.intro h4 {
+    text-transform:uppercase;
 }
 
 .features {

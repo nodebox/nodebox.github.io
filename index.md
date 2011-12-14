@@ -4,16 +4,12 @@ title: Meet NodeBox.
 ---
 <div class="intro row">
   
-  <div class="six columns alpha">
-    <p>NodeBox creates generative art using procedural graphics. It's a new way to approach graphic design.</p>
+  <div class="sixteen columns alpha">
+    <h4>NodeBox creates generative art using procedural graphics. It's a new way to approach graphic design.</h4>
   
     <a href="/download/" class="hero-button">Download</a>
     <small>&nbsp;or&nbsp;</small>
     <a href="/documentation/tutorial/getting-started.html" class="hero-button yellow">Get Started</a>
-  </div>
-
-  <div class="ten columns omega">
-    <a class="thumbnail" href="media/img/home/nodebox.png"><img src="media/img/home/nodebox.png" alt="NodeBox Screenshot"></a>
   </div>
 
 </div>
@@ -64,6 +60,10 @@ title: Meet NodeBox.
     <p>NodeBox makes it trivial to customize the functionality of existing nodes or to build your own from scratch.</p>
   </div>
 
+</div>
+
+<div class="sixteen columns alpha">
+  <a class="thumbnail" href="media/img/home/nodebox.png"><img src="media/img/home/nodebox.png" alt="NodeBox Screenshot"></a>
 </div>
 
 
