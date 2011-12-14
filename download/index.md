@@ -4,11 +4,11 @@ title: Download NodeBox
 section: download
 ---
 <div class="download-button" id="download-windows">
-  <a href="https://github.com/downloads/nodebox/nodebox/nodebox-2.2-setup.exe" class="hero-button">Download NodeBox<small>Windows – Version 2.2</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/nodebox-2.2.1-setup.exe" class="hero-button">Download NodeBox<small>Windows – Version 2.2.1</small></a>
 </div>
 
 <div class="download-button" id="download-mac">
-  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-2.2.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 2.2</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-2.2.1.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 2.2.1</small></a>
 </div>
 
 <div class="download-button" id="download-linux">
