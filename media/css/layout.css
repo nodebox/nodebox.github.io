@@ -4,26 +4,27 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 
 
 html {
-  background: #464045 url(../img/background.jpg);
+  background: #ff9;/* url(../img/background.jpg);*/
   margin: 0;
   padding: 0;  
 }
 body {
-  background-image: url(../img/background-gradient.png);
-  background-repeat: repeat-x;
+  /*background-image: url(../img/background-gradient.png);
+  background-repeat: repeat-x;*/
+  background:fff;
   margin: 0;
-  padding: 20px 0 0 0;
-  font: 16px/1.4em Helvetica, arial, sans-serif;
+  /*padding: 20px 0 0 0;*/
+  font: 14px/1.2em Helvetica, arial, sans-serif;
   color: #3f414b;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
 
 .container {
-  background: #f8f8f8;
-  margin-bottom: 30px;
+  background: #fff;
+  /*margin-bottom: 30px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  border-radius: 3px;
+  border-radius: 3px;*/
   
 }
 
@@ -54,39 +55,40 @@ p {
 
 header {
   border-bottom: 1px solid #5a5d6a;
-  margin-top: 10px;
-  margin-bottom: 15px;
+  height:180px;
+  position:inherit;
+  background:url(banners/back_1968.png) no-repeat 0px 0px;
+  /*-webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-right: solid 1px;*/
+  padding-top:10px;
 }
 
 header a {
   text-decoration: none;
+  color:#222;
+}
+
+header a:hover {
+  color: #ff3;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 25px;
-  line-height: 26px;
-  float: left;
+   margin: 0 0 10px 0;
+   padding: 5px;
 }
 
-header small {
+header2 small {
   display: block;
   margin: 0 0 10px 0;
 }
 
-header h1 a {
-    color: #555968;
-    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+header2 h1 a {
+    color: #3f414b;
+    /*text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);*/
 }
 
-header a:hover {
-  background: #5a5d6a;
-  color: white;
-  border-bottom: 6px solid #5a5d6a;
-  text-shadow: none;
-}
-
-header li {
+header2 li {
   display: inline-block;
   margin: 0 20px 0 0;
   font-size: 18px;
@@ -95,27 +97,26 @@ header li {
 
 /* Navigation */
 
-nav {
-  padding-left: 130px;
-}
-
 nav ul {
-  margin: 0 0 0 0;
-  padding: 0;
+margin-top:0px;
+  margin-bottom:15px;
+  padding:0;
+  padding-left:5px;
+  background-color:#FFFF33;
 }
 
 nav li a {
   display: block;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 5px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   color: #1a1b57;
 }
 
 nav li a:hover {
   /* This rule is important because the mobile version changes the background color. */
-  background: #5a5d6a !important;
-  color: white;
-  border-bottom: 2px solid #5a5d6a;
+  background: #fff !important;
+  color: #da1;
+  border-bottom: 2px solid #da1;
 }
 
 
