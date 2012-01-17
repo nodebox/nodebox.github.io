@@ -21,6 +21,8 @@ section: download
   </pre>
 </div>
 
+Click the button above to start the download.
+
 While the software is downloading, take a look at the [getting started page](/documentation/tutorial/getting-started.html).
 
 Problems downloading? Try the [GitHub Downloads Page](http://github.com/nodebox/nodebox/downloads).
