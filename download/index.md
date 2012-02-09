@@ -29,9 +29,9 @@ Problems downloading? Try the [GitHub Downloads Page](http://github.com/nodebox/
 
 <script>
   var os = 'other';
-  if (navigator.appVersion.indexOf('Win')!=-1) os = 'windows';
-  if (navigator.appVersion.indexOf('Mac')!=-1) os = 'mac';
-  if (navigator.appVersion.indexOf('Linux')!=-1) os = 'linux';
+  if (navigator.appVersion.indexOf('Win') != -1) os = 'windows';
+  if (navigator.appVersion.indexOf('Mac') != -1) os = 'mac';
+  if (navigator.appVersion.indexOf('Linux') != -1 || navigator.userAgent.indexOf('Linux') != -1 || navigator.userAgent.indexOf('Unix') != -1) os = 'linux';
 
   $('#download-' + os).show();
 </script>
