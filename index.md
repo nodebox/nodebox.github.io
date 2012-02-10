@@ -1,11 +1,11 @@
 ---
 layout: homepage
-title: Meet NodeBox.
+title: NodeBox List Edition (Alpha).
 ---
 <div class="intro row">
   
   <div class="eight columns alpha">
-    <h4>NodeBox creates generative art using procedural graphics. It's a new way to approach graphic design.</h4>
+    <h4>An experimental and fun program to explore data visualization.</h4>
   </div>
 <div class="eight columns omega">
     <a href="/download/" class="hero-button">Download</a>
