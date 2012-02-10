@@ -4,14 +4,11 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 
 
 html {
-  background: #333;/* url(../img/background.jpg);*/
+  background: #333 url(../img/background.png);
   margin: 0;
   padding: 0;  
 }
 body {
-  /*background-image: url(../img/background-gradient.png);
-  background-repeat: repeat-x;*/
-  background:fff;
   margin: 0;
   /*padding: 20px 0 0 0;*/
   font: 13px/1.2em Verdana,Helvetica, arial, sans-serif;
@@ -30,7 +27,7 @@ body {
 }
 
 a {
-  color: #2f309f;
+  color: #933;
   text-decoration: none;
 }
 
