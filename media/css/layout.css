@@ -4,7 +4,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display
 
 
 html {
-  background: #f3f5f8;/* url(../img/background.jpg);*/
+  background: #333;/* url(../img/background.jpg);*/
   margin: 0;
   padding: 0;  
 }
@@ -14,7 +14,7 @@ body {
   background:fff;
   margin: 0;
   /*padding: 20px 0 0 0;*/
-  font: 14px/1.2em Verdana,Helvetica, arial, sans-serif;
+  font: 13px/1.2em Verdana,Helvetica, arial, sans-serif;
   color: #3f414b;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
@@ -60,10 +60,10 @@ p {
 /* Header */
 
 header {
-  border-bottom: 1px solid #5a5d6a;
+  border-bottom: 2px solid #666;
   height:180px;
   position:inherit;
-  background:url(../img/banners/1968.png) no-repeat 0px 0px;
+  background:url(../img/banners/lists.png) no-repeat 0px 0px;
   /*-webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-right: solid 1px;*/
@@ -72,11 +72,12 @@ header {
 
 header a {
   text-decoration: none;
-  color:#666;
+  color:#eee;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
 }
 
 header a:hover {
-  color: #ff3;
+  color:#fff;
 }
 
 header h1 {
@@ -97,9 +98,8 @@ nav h1 a {
 nav li {
   display: inline-block;
   margin: 0 20px 0 0;
-  font-size: 18px;
+  font-size: 14px;
 }
-
 
 /* Navigation */
 
@@ -108,21 +108,21 @@ margin-top:0px;
   margin-bottom:15px;
   padding:0;
   padding-left:5px;
-  background-color:#FFFF33;
+  background-color: #444;
 }
 
 nav li a {
   display: block;
   padding: 5px 5px;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
-  color: #1a1b57;
+  color: #aaa;
 }
 
 nav li a:hover {
   /* This rule is important because the mobile version changes the background color. */
-  background: #fff !important;
-  color: #da1;
-  border-bottom: 2px solid #da1;
+  background: #555 !important;
+  color: #ccc;
+  border-bottom: 2px solid #eee;
 }
 
 
@@ -135,7 +135,7 @@ nav li a:hover {
 #publications .publications,
 #gallery .gallery,
 #contact .contact {
-  border-bottom: 2px solid #5a5d6a;
+  border-bottom: 2px solid #888;
 }
 
 
@@ -203,7 +203,6 @@ footer a {
 
 .intro h4 {
     margin-top:10px;
-    text-transform:uppercase;
 }
 
 .features {
