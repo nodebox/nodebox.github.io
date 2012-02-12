@@ -4,18 +4,22 @@ title: Download NodeBox
 section: download
 ---
 <div class="download-button" id="download-windows">
-  <a href="https://github.com/downloads/nodebox/nodebox/nodebox-2.2.1-setup.exe" class="hero-button">Download NodeBox<small>Windows – Version 2.2.1</small></a>
+  <h3>Windows</h3>
+  Currently we do not have a Windows release yet.
 </div>
 
 <div class="download-button" id="download-mac">
-  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-2.2.1.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 2.2.1</small></a>
+  <h3>Mac OS X</h3>
+  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a1.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a1</small></a>
 </div>
 
 <div class="download-button" id="download-linux">
+  <h3>Linux</h3>
   We don't have a package ready, but executing the following commands in the terminal will get you going:
   <pre>
     sudo apt-get install git-core openjdk-6-jdk ant
      git clone git://github.com/nodebox/nodebox.git
+     git checkout immutable-nodes
      cd nodebox
      ant run
   </pre>
@@ -28,6 +32,7 @@ While the software is downloading, take a look at the [getting started page](/do
 Problems downloading? Try the [GitHub Downloads Page](http://github.com/nodebox/nodebox/downloads).
 
 <script>
+  $('.download-button').hide();
   var os = 'other';
   if (navigator.appVersion.indexOf('Win') != -1) os = 'windows';
   if (navigator.appVersion.indexOf('Mac') != -1) os = 'mac';
