@@ -10,7 +10,7 @@ section: download
 
 <div class="download-button" id="download-mac">
   <h3>Mac OS X</h3>
-  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a1.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a1</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a2.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a2</small></a>
 </div>
 
 <div class="download-button" id="download-linux">
