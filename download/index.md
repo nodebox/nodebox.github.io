@@ -5,12 +5,12 @@ section: download
 ---
 <div class="download-button" id="download-windows">
   <h3>Windows</h3>
-  Currently we do not have a Windows release yet.
+  <a href="https://github.com/downloads/nodebox/nodebox/nodebox-3.0a11-setup.exe" class="hero-button">Download NodeBox<small>Windows - Version 3.0a11</small></a>
 </div>
 
 <div class="download-button" id="download-mac">
   <h3>Mac OS X</h3>
-  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a3.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a3</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a11.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a11</small></a>
 </div>
 
 <div class="download-button" id="download-linux">
