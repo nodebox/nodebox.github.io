@@ -5,12 +5,12 @@ section: download
 ---
 <div class="download-button" id="download-windows">
   <h3>Windows</h3>
-  <a href="https://github.com/downloads/nodebox/nodebox/nodebox-3.0a12-setup.exe" class="hero-button">Download NodeBox<small>Windows - Version 3.0a12</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/nodebox-3.0a13-setup.exe" class="hero-button">Download NodeBox<small>Windows - Version 3.0a13</small></a>
 </div>
 
 <div class="download-button" id="download-mac">
   <h3>Mac OS X</h3>
-  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a12.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a12</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a13.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a13</small></a>
 </div>
 
 <div class="download-button" id="download-linux">
