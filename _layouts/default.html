@@ -2,7 +2,11 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>{{ page.title }} | NodeBox Alpha</title>
+  {% if page.title -%}
+  <title>{{ page.title }} | NodeBox</title>
+  {% else -%}
+  <title>NodeBox</title>
+  {% endif -%}
   <meta name="author" content="Experimental Media Research Group">
   <meta name="generator" content="Jekyll">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -25,25 +29,30 @@
 
 </head>
 <body id="{{ page.section }}">
+
+<!-- Header -->
+<header>
+  <div class="container">
+    <h1><a target="_top" href="/">NodeBox</a></h1>
+    <nav><ul>
+      <li><a class="home" href="/">Home</a></li>
+      <li><a class="gallery" href="/gallery/">Gallery</a></li>
+      <li><a class="download" href="/download/">Download</a></li>
+      <li><a class="documentation" href="/documentation/">Documentation</a></li>
+      <li><a class="forum" href="http://forum.nodebox.net/">Forum</a></li>
+      <li><a class="blog" href="/blog/">Blog</a></li>
+    </ul></nav>
+  </div>
+</header>
+
 <div class="container">
 
- <!-- Header -->
-  <header>
-    <h1><a target="_top" href="/">NodeBox Alpha</a></h1>
-  </header>
-
-  <nav><ul>
-      <li><a class="home" href="/">Home</a></li>
-      <li><a class="documentation" href="/documentation/">Documentation</a></li>
-      <li><a class="download" href="/download/">Download</a></li>
-    </ul>
-  </nav>
-
-  
   <!-- Page Title -->
+  {% if page.title %}
   <div id="page-title" class="sixteen columns">
     <h2>{{ page.title }}</h2>
   </div>
+  {% endif %}
 
   <!-- Content -->
   <div id="content" class="sixteen columns">
