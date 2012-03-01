@@ -3,17 +3,19 @@ categories: blog
 layout: blog
 title: Results of the NodeBox 3 Masterclass
 ---
-The Antwerp NodeBox Masterclass held at [Sint Lucas Antwerpen][sla] was a success. This was the first workshop were we tested the new version of NodeBox which uses lists (more on this later).
+The Masterclass held at [Sint Lucas Antwerpen][sla] was the first workshop where we tested the new version of NodeBox 3. This was a big event, since NodeBox 3 introduces new models for working with variation. The masterclass was a test case to see if this approach would work.
 
-Students were quite happy.
+It did work. After the initial learning hump, students were able to complete their work effectively using a minimal of teacher intervention. 
 
-Our favorite remark: "I thought this was going to be more difficult!".
+One of our students even remarked: "I thought this was going to be more difficult!".
+
+This is what they made.
 
 Pirating the Oscars
 -------------------
 Using data from [Andy Baio's Blog][waxy], students visualized how long it took for movie pirates to leak the movies on the Internet. They used a vertical layout, displaying the date of the yearly Oscars as a stable point and showing the relative days of release until high-quality leak.
 
-From looking at the visualization, you can see that in recent years, more leaks have occurred after the Oscars have already passed. This might be due to a more restrictive policy on illegal downloads, or just pirates waiting for more high-quality releases like a Bluray or DVD-rip.
+Looking at the visualization, you can see that in recent years, more leaks have occurred after the Oscars have already passed. This might be due to a more restrictive policy on illegal downloads, or just pirates waiting for more high-quality releases like a Bluray or DVD-rip.
 
 What's in your Starbucks Coffee? – Lisa & Sanne
 --------------------------------
@@ -21,7 +23,7 @@ Apparently much more than just coffee. Lisa and Sanne used the publicly availabl
 
 The Happiness Index - Benjamin Aerts
 -------------------------------------
-If Coca-Cola really brings happiness, as they suggest, shouldn't the big Coke drinkers be the most happiest people on earth? Benjamin correlated the [Happy Planet Index][] with the consumption of Coca-Cola in different countries accross the globe. Of course, [correlation does not imply causation][correlation]. But in the absence of correlation, I think Coca-Cola has still more work to do to cause happiness for their big consumers.
+If Coca-Cola really brings happiness, as they suggest, shouldn't the biggest Coke drinkers be the happiest people on earth? Benjamin correlated the [Happy Planet Index][] with the consumption of Coca-Cola in different countries accross the globe. Of course, [correlation does not imply causation][correlation]. But in the absence of correlation, I think Coca-Cola has still more work to do to cause happiness for their big consumers.
 
 My Facebook Friends - Celine
 ----------------------------
