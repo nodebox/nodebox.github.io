@@ -2,20 +2,20 @@
 layout: homepage
 ---
 <div class="intro row">
-  <div class="eight columns alpha">
+  <div class="eight columns">
     <img src="/media/img/home/hero-shot-480.png" alt="NodeBox">
   </div>
-  <div class="eight columns omega">
+  <div class="eight columns">
     <p>NodeBox is an open-source, node-based program for creating 2D graphics and animation.<br> <a href="/documentation/">Read more</a>.</p>
     <p><a href="/download/" class="hero-button">Download<small>Free and cross-platform</small></a></p>
   </div>
 </div>
 
 <div class="gallery row">
-  <div class="eight columns alpha">
+  <div class="eight columns">
     <h2>Gallery</h2>
     {% for post in site.categories.gallery %}
-      <div class="gallery four columns alpha">
+      <div class="gallery four columns">
         <a href="{{ post.url }}">
           <img src="/images/gallery/{{ post.thumb }}" alt="{{ post.title }}">
           <span>{{ post.title }}</span>
@@ -24,7 +24,7 @@ layout: homepage
     {% endfor %}
   </div>
     
-  <div class="eight columns omega">
+  <div class="eight columns">
     <h2>Signup for the newsletter</h2>
     <p>Stay up to date on NodeBox tips, new releases and exciting projects.</p>
     <form method="post" class="signup-form">
@@ -37,7 +37,7 @@ layout: homepage
 </div>
 
 <div class="blog row">
-  <div class="eight columns alpha">
+  <div class="eight columns">
     <h2>Latest Blog Posts</h2>
     {% for post in site.categories.blog %}
       <div class="post">
