@@ -13,32 +13,46 @@ This is what they made.
 
 Pirating the Oscars
 -------------------
+<small>Christophe Clarijs &amp; Jan-Bart De Bock</small>
+
 Using data from [Andy Baio's Blog][waxy], students visualized how long it took for movie pirates to leak the movies on the Internet. They used a vertical layout, displaying the date of the yearly Oscars as a stable point and showing the relative days of release until high-quality leak.
 
 Looking at the visualization, you can see that in recent years, more leaks have occurred after the Oscars have already passed. This might be due to a more restrictive policy on illegal downloads, or just pirates waiting for more high-quality releases like a Bluray or DVD-rip.
 
-What's in your Starbucks Coffee? – Lisa & Sanne
+What's in your Starbucks Coffee?
 --------------------------------
+<small>Lisa Van de Vyver &amp; Sanne Schrijvers</small>
+
 Apparently much more than just coffee. Lisa and Sanne used the publicly available nutritional information from the Starbucks websites to turn boring data into an immediate, visual poster. Clear is that some Starbucks drinks are complete lunches in their own right, topping off at 500 calories (try the "Peppermint White Chocolate Mocha").
 
-The Happiness Index - Benjamin Aerts
--------------------------------------
+The Happiness Index
+-------------------
+<small>Benjamin Aerts</small>
+
 If Coca-Cola really brings happiness, as they suggest, shouldn't the biggest Coke drinkers be the happiest people on earth? Benjamin correlated the [Happy Planet Index][] with the consumption of Coca-Cola in different countries accross the globe. Of course, [correlation does not imply causation][correlation]. But in the absence of correlation, I think Coca-Cola has still more work to do to cause happiness for their big consumers.
 
-My Facebook Friends - Celine
-----------------------------
-Using data from [give me my data][], Celine visualized the "closeness" of her friends based on how many posts they made on her wall. She then convinced two of her friends to give her their data so that she could visualize mutual friends, all as tiny microbes.
+My Facebook Friends
+-------------------
+<small>Céline Jacobs</small>
 
-Human Migration - Elisha
-------------------------
+Using data from [give me my data][], Céline visualized the "closeness" of her friends based on how many posts they made on her wall. She then convinced two of her friends to give her their data so that she could visualize mutual friends, all as tiny microbes.
+
+Human Migration
+---------------
+<small>Elisha Nunez</small>
+
 Using data from the UN, Elisha mapped the movement of migrations accross the planet, from the continent where people leave from to the country of their destination. The US is head and shoulders above the rest, followed by Russia. 
 
-Plantijn Alumni - Mark van Varik
---------------------------------
+Plantijn Alumni
+---------------
+<small>Mark van Varik</small>
+
 Mark asked for, and received all data from people graduating from the Plantijn Hogeschool in Antwerp. The data includes the year they started, what grade they received, and what the would become later on. Using this data, Mark mapped a "life road" for each alumni, showing a curving path from their entrance in the school, their grades and finally their job sector.
 
-Super Bowl - Ralph Blomberg
----------------------------
+Super Bowl
+----------
+<small>Ralph Blomberg</small>
+
 Being a baseball fan, Ralph collected all data from the matches of the Super Bowl, showing how teams compete against each other (with a bigger logo for the winner) through the 17 weeks of play, and concluding with the final showdown. 
 
 Summary
