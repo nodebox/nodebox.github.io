@@ -6,7 +6,7 @@ layout: homepage
     <img src="/media/img/home/hero-shot-480.png" alt="NodeBox">
   </div>
   <div class="eight columns">
-    <p>NodeBox is an open-source, node-based program for creating 2D graphics and animation.<br> <a href="/documentation/">Read more</a>.</p>
+    <p><big>NodeBox is an open-source, node-based program for creating 2D graphics and animation.<br> <a href="/documentation/">Read more</a>.</big></p>
     <p><a href="/download/" class="hero-button">Download<small>Free and cross-platform</small></a></p>
   </div>
 </div>

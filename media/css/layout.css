@@ -1,4 +1,4 @@
-/* @override 
+</big>/* @override 
 	http://localhost:4000/media/css/layout.css */
 
 /* Normalize is the new CSS reset */
@@ -203,10 +203,6 @@ footer p {
   margin-top: 10px;
 }
 
-#home #content p {
-  font-size: 16px;
-}
-
 #home #content h3 {
   color: #444;
   font-size: 18px;
@@ -217,10 +213,10 @@ footer p {
   
 }
 
-#home .intro p {
-  padding-top: 10px;
-  font-size: 20px;
-  line-height: 180%;
+#home .intro big {
+  font-size: 18px;
+  line-height: 160%;
+  margin-bottom: 0;
 }
 
 .signup-form label {
@@ -236,6 +232,7 @@ footer p {
 /* Download */
 
 .hero-button {
+  font-size: 14px;
   display: inline-block;
   padding: 10px 20px;
   color: white;
