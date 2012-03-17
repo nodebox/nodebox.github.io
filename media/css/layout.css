@@ -204,6 +204,45 @@ footer p {
   margin-bottom: 50px;
 }
 
+#home .app {
+  float: left;
+  height: 200px;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+  margin: 20px 0;
+  text-align: center;
+  padding: 20px 0; 
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 120%;
+  background: #eee;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+ } 
+
+#home .app:first-child {
+    border-left: 1px solid gray;
+}
+
+#home .app:last-child {
+    border-right: 1px solid gray;
+}
+
+#home .app small {
+  margin-top: 15px;
+  font-size: 14px;
+  display: block;
+}
+
+#home .app.featured {
+  margin: 0;
+  border: 3px solid blue;
+  height: 250px;
+  background: #ffe;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  z-index: 5;
+}
+
 #home #content {
   margin-top: 10px;
 }
@@ -215,7 +254,6 @@ footer p {
   border-bottom: 1px solid #999;
   margin-bottom: 10px;
   margin-top: 0;
-  
 }
 
 #home .intro big {

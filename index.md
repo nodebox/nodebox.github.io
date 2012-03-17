@@ -1,6 +1,21 @@
 ---
 layout: homepage
 ---
+<div class="versions row">
+  <div class="five columns app">
+    NodeBox 1
+    <small>Pure Python. Mac OS X only.</small>
+  </div>
+  <div class="five columns featured app">
+    NodeBox 3
+    <small>Node-based GUI. Cross-platform.</small>
+  </div>
+  <div class="five columns app">
+    NodeBox OpenGL
+    <small>Pure Python. Cross-platform.</small>
+  </div>
+</div>
+
 <div class="intro row">
   <div class="eight columns">
     <img src="/media/img/home/hero-shot-480.png" alt="NodeBox">
