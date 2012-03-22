@@ -209,40 +209,44 @@ footer .copyright {
 
 /* Homepage */
 
-.intro {
-  padding-top: 10px;
-  margin-bottom: 30px;
+#home #page-wrap {
+  margin-top: 10px;
 }
 
-.intro h4 {
-    margin-top:10px;
-}
-
-.features {
-  margin-bottom: 50px;
+#home #page-wrap h3 {
+  color: #444;
+  font-size: 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #999;
+  margin-bottom: 10px;
+  margin-top: 0;
 }
 
 #home .app {
   float: left;
   height: 200px;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
-  margin: 20px 0;
-  text-align: center;
+  margin: 10px 0;
   padding: 20px 0; 
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  text-align: center;
   font-weight: bold;
   line-height: 120%;
   background: #eee;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   z-index: 1;
  } 
 
 #home .app:first-child {
-    border-left: 1px solid gray;
+    border-left: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 
 #home .app:last-child {
-    border-right: 1px solid gray;
+    border-right: 1px solid #999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #home .app small {
@@ -253,10 +257,11 @@ footer .copyright {
 
 #home .app.featured {
   margin: 0;
-  border: 3px solid blue;
-  height: 250px;
-  background: #ffe;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border: 1px solid #999;
+  border-radius: 5px;
+  height: 220px;
+  background: #fefefe;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   z-index: 5;
 }
 
@@ -272,24 +277,10 @@ footer .copyright {
   text-align: left;
 }
 
-#home #page-wrap {
+#home .projects {
   margin-top: 10px;
 }
 
-#home #page-wrap h3 {
-  color: #444;
-  font-size: 18px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #999;
-  margin-bottom: 10px;
-  margin-top: 0;
-}
-
-#home .intro big {
-  font-size: 18px;
-  line-height: 160%;
-  margin-bottom: 0;
-}
 
 .signup-form label {
   display: block;
