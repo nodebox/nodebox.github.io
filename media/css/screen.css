@@ -277,6 +277,13 @@ footer .copyright {
   text-align: left;
 }
 
+#home a.more {
+  display: block;
+  margin: 20px 0 0 10px;
+  text-align: left;
+  font-size: 120%;
+}
+
 #home .projects {
   margin-top: 10px;
 }

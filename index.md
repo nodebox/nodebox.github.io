@@ -10,6 +10,7 @@ layout: homepage
       <li>Python</li>
       <li>Mac OS X only</li>
     </ul>
+    <a href="/code/" class="more">Read More</a>
   </div>
   <div class="grid_4 featured app">
     <h2>NodeBox 3</h2>
@@ -19,6 +20,7 @@ layout: homepage
       <li>For Windows, Mac OS X and Linux</li>
       <li>Under active development</li>
     </ul>
+    <a href="/node/" class="more">Read More</a>
   </div>
   <div class="grid_4 app">
     <h2>NodeBox OpenGL</h2>
@@ -28,6 +30,7 @@ layout: homepage
       <li>Ideal for games</li>
       <li>No GUI, just the code</li>
     </ul>
+    <a href="/opengl/" class="more">Read More</a>
   </div>
 </div>
 
