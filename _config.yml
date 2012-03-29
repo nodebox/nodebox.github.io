@@ -1,7 +1,7 @@
 auto: false
 server: false
 pygments: true
-permalink: /:categories/:year/:title/
+permalink: /:categories/:year/:month/:title/
 multiviews: true
 exclude:
   - README.md
