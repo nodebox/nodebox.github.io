@@ -7,9 +7,7 @@ body {
   padding: 0;
   background: #fff;
   color: #333;
-  font-size: 14px;
-  line-height: 1.6em;
-  font-family: arial, sans-serif;
+  font: 13px/18px arial,sans-serif;
   -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
   -webkit-text-size-adjust: 100%;
 }
@@ -40,7 +38,6 @@ h2 {
 
 p {
   margin: 0 0 1em 0;
-  line-height: 150%;
 }
 
 h2 + small {

@@ -1,9 +1,15 @@
 ---
 layout: base
 ---
+  <!-- Page Title -->
+  {% if page.title %}
+  <div id="page-title" class="sixteen columns">
+    <h2>{{ page.title }}</h2>
+  </div>
+  {% endif %}
 
   <!-- Content -->
-  <div class="grid_8">
+    <div class="twelve columns">
     {{ content }}
   </div>
 
