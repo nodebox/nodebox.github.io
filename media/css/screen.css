@@ -51,65 +51,94 @@ h2 + small {
 /* Header */
 
 header {
-  border-top: 3px solid #aad0d9;
-  background-color: #f5f5f5;
+    height: 200px;
+    background: rgb(30,110,195) url(../img/header-gradient.jpg) repeat-x top left;
+    overflow: hidden;
 }
 
-header a {
-  text-decoration: none;
-  color:#444;
+header .container {
+    width: 1000px;
+    height: 200px;
+    padding-left: 50px;
+    background: url(../img/header-background.jpg) no-repeat top left;
+    padding-top: 40px;
 }
 
-header a:hover {
-  color:#333;
+
+header, header a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header .logo {
+    float: left;
+    clear: both;
+    margin: 0 10px 0 0;
 }
 
 header h1 {
-  display:  inline;
-  font-size: 20px;
-  margin: 0 0 10px 0;
-  padding: 10px;
+    margin: 12px 0 0 0;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: -4px;
+    line-height: 50px;
 }
 
-header nav {
-  display: inline;
+header h2 {
+    margin: 0 0 0 5px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1em;
+    letter-spacing: -1px;
 }
 
-nav small {
-  display: block;
-  margin: 0 0 10px 0;
-}
+/* Navigation */
 
-nav h1 a {
-    color: #3f414b;
-    /*text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);*/
-}
-
-nav li {
-  display: inline-block;
-  margin: 0 20px 0 0;
-  font-size: 14px;
+nav {
+    background: rgb(20,30,45) url(../img/nav-background.jpg) top left;
+    margin-bottom: 50px;
+    border-top: 1px solid rgb(20,30,45);
+    border-bottom: 1px solid rgb(10,20,35);
 }
 
 nav ul {
-  display: inline;
-  margin-top:0px;
-  margin-bottom:15px;
-  padding:0;
-  padding-left:5px;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    padding: 0;
 }
 
 nav li a {
-  display: block;
-  padding: 5px 5px;
-  border-top: 3px solid #f5f5f5;
-  color: #666;
+    min-width: 80px;
+    text-align: center;
+    height: 15px;
+    color: #fff;
+    float: left;
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1em;
+    padding: 15px;
+    border-right: 1px solid rgb(15,20,30);
+    border-left: 1px solid rgb(15,20,30);
+    margin-right: -1px;
+    text-transform: lowercase;
+}
+
+nav li:first-child a {
+
+}
+
+nav li:last-child a {
 }
 
 nav li a:hover {
-  color: #333;
+    background: rgba(0,0,0, 0.2);
+    text-decoration: none;
 }
-
 
 #home .home,
 #gallery .gallery,
@@ -117,7 +146,7 @@ nav li a:hover {
 #documentation .documentation,
 #forum .forum,
 #blog .blog {
-  border-top: 3px solid #aad0d9;
+  border-top: 3px solid #ffee00;
 }
 
 /* Content */
