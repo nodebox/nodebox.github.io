@@ -33,7 +33,8 @@ li {
 }
 
 h2 {
-  margin: 15px 0 15px;
+  margin-bottom:15px;
+  margin-left:10px;
 }
 
 p {
@@ -96,7 +97,7 @@ header h2 {
 
 nav {
     background: rgb(20,30,45) url(../img/nav-background.jpg) top left;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     border-top: 1px solid rgb(20,30,45);
     border-bottom: 1px solid rgb(10,20,35);
 }
@@ -249,7 +250,8 @@ footer .copyright {
 }
 
 #home .app {
-  float: left;
+position:relative;
+  float:left;
   height: 200px;
   margin: 10px 0;
   padding: 20px 0; 
@@ -448,6 +450,14 @@ img.node-icon {
   header nav {
     padding-left: 0;
   }
+}
+
+.versions {
+    width:960px;
+    margin-left: 20px;
+    }
+.community h2, .emrg h2{
+    margin-left:0px;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
