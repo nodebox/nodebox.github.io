@@ -52,7 +52,7 @@ h2 + small {
 
 header {
     height: 200px;
-    background: rgb(30,110,195) url(../img/header-gradient.jpg) repeat-x top left;
+    background: rgb(0,0,0) url(../img/header-gradient.jpg) repeat-x top left;
     overflow: hidden;
 }
 
