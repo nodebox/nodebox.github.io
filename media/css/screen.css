@@ -100,6 +100,8 @@ nav {
     margin-bottom: 30px;
     border-top: 1px solid rgb(20,30,45);
     border-bottom: 1px solid rgb(10,20,35);
+    position:relative;
+    /*margin-top:-60px;*/
 }
 
 nav ul {
@@ -115,7 +117,7 @@ nav li {
 nav li a {
     min-width: 100px;
     text-align: center;
-    height: 15px;
+    height: 10px;
     color: #fff;
     float: left;
     display: inline-block;
@@ -250,42 +252,44 @@ footer .copyright {
 }
 
 #home .app {
-position:relative;
+  position:relative;
   float:left;
   height: 200px;
-  margin: 10px 0;
+  margin: 10px 0px;
   padding: 10px 0px; 
+  margin-left:15px;
   border-top: 1px solid #999;
   border-bottom: 1px solid #999;
-  text-align: center;
+  text-align: left;
   font-weight: bold;
-  line-height: 120%;
+  line-height: 90%;
   background: #eee;
-  
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  
+  border-left: 1px solid #999;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  
+  border-right: 1px solid #999;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
  } 
-
-#home .app:first-child {
-    border-left: 1px solid #999;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-}
-
-#home .app:last-child {
-    border-right: 1px solid #999;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
 
 #home .app small {
   margin-top: 15px;
   font-size: 14px;
   display: block;
+  margin-left: 10px;
 }
+#home .app .screenshot{
+    margin-top:-10px;
+}
+
 
 #home .app.featured {
   margin: 0;
+  margin-left:15px;
   border: 1px solid #999;
   border-radius: 5px;
   height: 220px;
@@ -453,9 +457,6 @@ img.node-icon {
   }
 }
 
-.versions {
-    margin-left: 30px;
-    }
 .community h2, .emrg h2{
     margin-left:0px;
 }
