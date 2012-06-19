@@ -164,7 +164,7 @@ nav li a:hover {
 #documentation .documentation,
 #forum .forum,
 #blog .blog {
-  border-top: 2px solid #ffaa00;
+  border-top: 2px solid #27a5d1;
 }
 
 /* Content */
@@ -177,6 +177,13 @@ nav li a:hover {
     border-radius: 2px;
     box-shadow: 0 0 4px #aaa;
     display: block;
+    border-left: 1px solid #999;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    border-right: 1px solid #999;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 #content img + small {
@@ -190,6 +197,7 @@ nav li a:hover {
   display: block;
   height: 120px;
 }
+
 
 pre {
   box-shadow: 0 0 4px #aaa;
@@ -299,6 +307,13 @@ footer .copyright {
 }
 #home .app .screenshot{
     margin-top:-10px;
+    border-left: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    border-right: 1px solid #999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 #home .app.featured .screenshot2{
     margin-top:-10px;
@@ -476,8 +491,19 @@ img.node-icon {
   }
 }
 
+
+
 .community h2, .emrg h2{
     margin-left:0px;
+}
+.eight.columns.community{
+    margin-left:20px;
+}
+.gallery .gal{
+    margin-left:0px;
+}
+.gallery .blog{
+    margin-left:10px;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
