@@ -1,11 +1,11 @@
 ---
 categories: gallery
-layout: blog
+layout: gallery
 title: Results of the NodeBox 3 Masterclass
 thumb: masterclass-2012-thumb.jpg
 images:
-  - masterclass-2012-1.jpg
-  - masterclass-2012-2.jpg
+  - gallery/masterclass-2012-1.jpg
+  - gallery/masterclass-2012-2.jpg
 ---
 The Masterclass held at [Sint Lucas Antwerpen][sla] was the first workshop where we tested the new version of NodeBox 3. This was a big event, since NodeBox 3 introduces new models for working with variation. The masterclass was a test case to see if this approach would work.
 

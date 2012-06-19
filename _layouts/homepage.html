@@ -2,6 +2,8 @@
 layout: base
 section: home
 ---
+{{ content }}
+
 <div class="clear"></div>
 <div class="versions row">
   <div class="four columns app">
@@ -44,22 +46,22 @@ section: home
 <div class="screenshots row">
   <h2>Screenshots</h2>
   <div class="four columns">
-    <a target="_new" href="/media/screenshots/nodes.png"><img src="/media/screenshots/nodes_sq.png" alt="Nodes"></a>
+    <a class="thumb" href="/media/screenshots/nodes.png"><img src="/media/screenshots/nodes_sq.png" alt="Nodes"></a>
   </div>
   <div class="four columns">
-    <a target="_new" href="/media/screenshots/code.png"><img src="/media/screenshots/code_sq.png" alt="Nodes"></a>
+    <a class="thumb" href="/media/screenshots/code.png"><img src="/media/screenshots/code_sq.png" alt="Nodes"></a>
   </div>
   <div class="four columns">
-    <a target="_new" href="/media/screenshots/animation.png"><img src="/media/screenshots/animation_sq.png" alt="Nodes"></a>    
+    <a class="thumb" href="/media/screenshots/animation.png"><img src="/media/screenshots/animation_sq.png" alt="Nodes"></a>    
   </div>
   <div class="four columns">
-    <a target="_new" href="/media/screenshots/dataviz.png"><img src="/media/screenshots/dataviz_sq.png" alt="Data Visualization"></a>
+    <a class="thumb" href="/media/screenshots/dataviz.png"><img src="/media/screenshots/dataviz_sq.png" alt="Data Visualization"></a>
   </div>
 </div> <!-- .screenshots -->
 
 <div class="gallery row">
   <h2>Gallery</h2>
-  {% for post in site.categories.gallery %}
+  {% for post in site.categories.gallery limit: 2 %}
     {% include post.html %}
   {% endfor %}
 </div> <!-- .gallery -->

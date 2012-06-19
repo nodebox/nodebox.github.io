@@ -14,7 +14,7 @@ layout: base
   </div>
 
   {% if page.images %}
-  <aside class="grid_4">
+  <aside class="four columns">
     {% for image in page.images %}
       <a class="thumb" rel="images" href="/media/{{ image }}"><img src="/media/{{ image }}" alt="{{ page.title }}"></a>
     {% endfor %}

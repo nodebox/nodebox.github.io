@@ -169,8 +169,8 @@ nav li a:hover {
 
 /* Content */
 
-.content img {
-    width: 100%;
+#content img {
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid #fff;
@@ -179,7 +179,7 @@ nav li a:hover {
     display: block;
 }
 
-.content img + small {
+#content img + small {
   display: block;
   margin-top: -2px;
   text-align: center;
