@@ -53,7 +53,7 @@ h2 + small {
 
 header {
     height: 200px;
-    background: rgb(0,0,0) url(../img/header-gradient.jpg) repeat-x top left;
+    background: rgb(0,0,0) url(../img/header-gradientb.jpg) repeat-x top left;
     overflow: hidden;
 }
 
@@ -61,7 +61,7 @@ header .container {
     width: 1000px;
     height: 200px;
     padding-left: 50px;
-    background: url(../img/header-background.jpg) no-repeat top left;
+    background: url(../img/header-backgroundb.jpg) no-repeat top left;
     padding-top: 40px;
 }
 
@@ -91,6 +91,21 @@ header h2 {
     font-weight: normal;
     line-height: 1em;
     letter-spacing: -1px;
+}
+/* Header second part */
+.headerb {
+    height: 22px;
+    background: rgb(0,0,0) url(../img/content-top-gradientb.jpg) repeat-x top left;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.headerb .container {
+    width: 1000px;
+    height: 22px;
+    padding-left: 50px;
+    background: url(../img/content-topb.jpg) no-repeat top left;
+    padding-top: 40px;
 }
 
 /* Navigation */
@@ -149,7 +164,7 @@ nav li a:hover {
 #documentation .documentation,
 #forum .forum,
 #blog .blog {
-  border-top: 3px solid #ffee00;
+  border-top: 2px solid #ffaa00;
 }
 
 /* Content */
@@ -254,7 +269,7 @@ footer .copyright {
 #home .app {
   position:relative;
   float:left;
-  height: 200px;
+  height: 250px;
   margin: 10px 0px;
   padding: 10px 0px; 
   margin-left:15px;
@@ -285,6 +300,10 @@ footer .copyright {
 #home .app .screenshot{
     margin-top:-10px;
 }
+#home .app.featured .screenshot2{
+    margin-top:-10px;
+    width:100%;
+}
 
 
 #home .app.featured {
@@ -292,7 +311,7 @@ footer .copyright {
   margin-left:15px;
   border: 1px solid #999;
   border-radius: 5px;
-  height: 220px;
+  height: 270px;
   background: #fefefe;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
   z-index: 5;
