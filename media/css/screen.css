@@ -112,7 +112,7 @@ header h2 {
 
 nav {
     background: rgb(20,30,45) url(../img/nav-background.jpg) top left;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     border-top: 1px solid rgb(20,30,45);
     border-bottom: 1px solid rgb(10,20,35);
     position:relative;
@@ -164,7 +164,7 @@ nav li a:hover {
 #documentation .documentation,
 #forum .forum,
 #blog .blog {
-  border-top: 2px solid #27a5d1;
+  border-top: 2px solid #70afb4;
 }
 
 /* Content */
@@ -324,6 +324,7 @@ footer .copyright {
 #home .app.featured {
   margin: 0;
   margin-left:15px;
+  margin-top:0px;
   border: 1px solid #999;
   border-radius: 5px;
   height: 270px;
@@ -504,6 +505,21 @@ img.node-icon {
 }
 .gallery .blog{
     margin-left:10px;
+}
+
+.eight.columns.mission{
+    font-size: 20px;
+    margin-left: 15px;
+    height:50px;
+    background-color: #70afb4;
+    border-left: 1px solid #999;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top:10px;
+
+    border-right: 1px solid #999;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
