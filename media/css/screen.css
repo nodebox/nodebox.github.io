@@ -579,6 +579,32 @@ img.node-icon {
     margin-left:10px;
 }
 
+.ten.columns h2 {
+    margin-left:0px;
+    height:25px;
+    font-size:14px;
+    margin-top:5px;
+    padding-top:5px; 
+    margin-bottom:0px; 
+}
+
+.ten.columns small#by{
+    margin-left:0px;
+    height:20px;
+    font-size:11px;
+    margin-top:0px;
+    padding-left:10px;
+    padding-top:0px; 
+    width:35%;
+    border-left: 1px solid #999;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-right: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: rgba(112,175,180, .5); 
+}
 .eight.columns.mission{
     font-size: 14px;
     margin-left: 0px;
@@ -594,7 +620,7 @@ img.node-icon {
     padding-top:5px;
     padding-left:10px;
     margin-bottom:5px;
-    margin-top:-20px;
+    margin-top:0px;
     padding-right:15px;
     width:420px;
     text-align:right;
