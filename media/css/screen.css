@@ -249,7 +249,7 @@ hr {
 }
 .sign{
     float:left;
-    height:25px;
+    height:35px;
     width:50%;
     margin-top:0px;
     background-color:rgb(112,175,180);
@@ -261,7 +261,7 @@ hr {
     border-bottom-left-radius: 8px;
     padding-left:10px;
     padding-top:5px;
-    font-size: 12px;
+    font-size: 14px;
     text-align:left;
     text-transform: uppercase;
     color: #fff;
