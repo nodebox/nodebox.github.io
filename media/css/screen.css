@@ -299,6 +299,8 @@ footer {
   padding: 1em 0;
   font-size: 75%;
   border-top: 1px solid #5a5d6a;
+  background-color:#000;
+  color: #fff;
 }
 
 footer h2 {
@@ -308,7 +310,7 @@ footer h2 {
 }
 
 footer a {
-  color: #302f6a;
+  color: #eee;
   text-decoration: none;
 }
 
@@ -329,6 +331,26 @@ footer p {
 
 footer .copyright {
   margin-top: 10px;
+}
+
+.four.columns h2{
+    background-color:#000;
+    float:left;
+    height:25px;
+    width:100%;
+    margin-top: -10px;
+    background-color:rgb(112,175,180);
+    border-left: 1px solid #999;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-right: 1px solid #999;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding-left:10px;
+    padding-top:10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
 }
 
 /* Homepage */
@@ -649,7 +671,11 @@ img.node-icon {
 }
 
 .four.columns.omega h3,.four.columns.omega p{
-    margin-bottom:6px;
+    margin-bottom:6githpx;
+}
+
+.four.columns.alpha h3{
+    margin-left:15px;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
