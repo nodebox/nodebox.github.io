@@ -305,6 +305,10 @@ footer {
   color: #fff;
 }
 
+footer .container{
+background: url(../img/foot-background.jpg) no-repeat top left;
+}
+
 footer h2 {
   font-size: 120%;
   margin: 0 0 5px 0;
