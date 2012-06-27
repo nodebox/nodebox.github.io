@@ -273,7 +273,7 @@ hr {
     float:left;
     height:25px;
     width:50%;
-    margin-top:5px;
+    margin-top:15px;
     background-color:rgb(112,175,180);
     border-left: 1px solid #999;
     border-top-left-radius: 0px;
@@ -424,6 +424,11 @@ footer .copyright {
     border: 0px;
     box-shadow: 0 0 0px;
 }
+
+#home .app img{
+margin-top:-5px;
+}
+
 #home .app .screenshot{
     margin-top:-10px;
     border-left: 1px solid #999;
