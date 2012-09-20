@@ -1,7 +1,11 @@
 ---
 layout: documentation
-title: Animation
+title: Working with Animation
 ---
+TODO
+====
+* Adapt to different model of animation (frame node)
+* Wave expressions using nodes?
 
 You should already have read the [tutorial on basic animation](/documentation/tutorial/animation.html). This pages goes into more detail and shows tricks and techniques.
 

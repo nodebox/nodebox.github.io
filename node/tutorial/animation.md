@@ -2,6 +2,9 @@
 layout: documentation
 title: Basic Animation
 ---
+TODO
+====
+* Update screenshots into steps
 
 Let's create a [shape moire effect](http://en.wikipedia.org/wiki/Shape_moir%C3%A9) and automate it by using a first animation procedure.
 

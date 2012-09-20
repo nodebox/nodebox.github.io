@@ -2,6 +2,13 @@
 layout: documentation
 title: NodeBox Concepts
 ---
+TODO
+====
+* List Matching
+* Port types
+* Nodes are functions, visual functional programming
+* Type conversions
+
 
 NodeBox uses a different model from traditional applications such as Photoshop or Illustrator. It is easy to visualize: imagine an **assembly line** of workers. Each worker does one thing, and one thing only. After he or she has done their operation, the object is passed on to the next person who does his thing.
 

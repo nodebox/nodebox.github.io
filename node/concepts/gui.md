@@ -2,6 +2,10 @@
 layout: documentation
 title: The Graphical User Interface
 ---
+TODO
+====
+* Update screenshots
+
 ![GUI Panes](/media/img/using/gui-panes.png)
 
 A NodeBox document window consists of these main components:

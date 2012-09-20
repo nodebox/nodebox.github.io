@@ -2,6 +2,11 @@
 layout: documentation
 title: Controlling Randomness
 ---
+TODO
+====
+* Update screenshots
+* Remove part about code (not implemented yet)
+
 Randomness in NodeBox is not really random. It produces pseudo-random values controlled by an initialization value called the **seed**.
 
 Each seed produces a different range of random numbers. **The same seed will always give the same collection of random numbers.** That's why we talk about *controlled* randomness: within a certain collection, the ordering *appears* random:

@@ -2,6 +2,10 @@
 layout: documentation
 title: Creating Variations using Copy Stamping
 ---
+TODO
+====
+* Remove page
+
 When we use nodes such as [copy](/documentation/nodes/copy.html) and [place](/documentation/nodes/place.html) to generate many results, they repeat the exact same input shape. That's because NodeBox takes the output of the node and copies it as many times as needed:
 
 ![Copy Stamping Turned Off](/media/img/using/copy-stamping-off.png)

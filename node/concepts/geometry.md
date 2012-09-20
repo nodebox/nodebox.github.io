@@ -2,6 +2,11 @@
 layout: documentation
 title: Geometry
 ---
+TODO
+====
+* Geometry scope - still relevant?
+* Can we use the sort node, or use a different example?
+
 NodeBox works with vector data. Think points, lines and paths instead of pixels.
 
 - **Geometry** is the top level data. All NodeBox nodes take in and return data geometry objects. Even nodes that create a simple path, such as the rect node, still wrap this path in a geometry object.

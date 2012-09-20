@@ -2,6 +2,10 @@
 layout: documentation
 title: Data Visualization using Data Stamping
 ---
+TODO
+====
+* Remove page
+
 Data stamping functionality is powerful, but might take some time to understand. In this tutorial, we'll walk you through a simple data visualization example.
 
 First off, you need some data to visualize. We've provided you with a list of the 14 tallest buildings in the world. Download this file and put it in a new project folder which we'll call "buildings".

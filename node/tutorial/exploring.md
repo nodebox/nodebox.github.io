@@ -2,6 +2,11 @@
 layout: documentation
 title: Exploring Nodes
 ---
+TODO
+====
+* Update screenshots into steps
+* Less examples
+
 Spirograph Example
 -------------------
 

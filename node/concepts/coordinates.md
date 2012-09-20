@@ -2,6 +2,10 @@
 layout: documentation
 title: Coordinate System
 ---
+TODO
+====
+* Update screenshots
+
 NodeBox works in 2 dimensions. The x dimension goes from left to right. The y dimension goes from top to bottom. The y axis is thus pointed down.
 
 A point in NodeBox space is represented as x, y. For example, the point 30,40 would be located 30 points from the left and 40 points from the top of the origin.

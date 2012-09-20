@@ -2,6 +2,10 @@
 layout: documentation
 title: Getting Started
 ---
+TODO
+====
+* Update screenshots into steps
+
 Welcome to NodeBox! In this tutorial we're going to learn the essentials for working with the program.
 
 Downloading NodeBox
