@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="45d0d193-e6a7-449a-8a84-320386f96ab0">
+    <node name="root" outputRange="list" renderedChild="ellipse1">
+        <node name="ellipse1" position="1.00,3.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="20.0"/>
+            <port name="height" type="float" value="20.0"/>
+        </node>
+        <node name="grid1" position="1.00,1.00" prototype="corevector.grid">
+            <port name="rows" type="int" value="1"/>
+            <port name="width" type="float" value="500.0"/>
+        </node>
+        <node name="sample1" position="4.00,1.00" prototype="math.sample">
+            <port name="amount" type="int" value="2"/>
+            <port name="start" type="float" value="10.0"/>
+            <port name="end" type="float" value="50.0"/>
+        </node>
+        <conn input="ellipse1.position" output="grid1"/>
+        <conn input="ellipse1.width" output="sample1"/>
+        <conn input="ellipse1.height" output="sample1"/>
+    </node>
+</ndbx>

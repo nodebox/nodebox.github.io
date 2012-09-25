@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="13dd0395-f84c-42d9-8370-ef49890dfe20">
+    <node name="root" outputRange="list" renderedChild="rotate3">
+        <node name="colorize2" position="5.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3264c8ff"/>
+        </node>
+        <node name="colorize3" position="9.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3264c8ff"/>
+        </node>
+        <node name="rect1" position="1.00,1.00" prototype="corevector.rect"/>
+        <node name="rect2" position="5.00,1.00" prototype="corevector.rect"/>
+        <node name="rect3" position="9.00,1.00" prototype="corevector.rect"/>
+        <node name="rotate3" position="9.00,3.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="45.0"/>
+        </node>
+        <conn input="colorize2.shape" output="rect2"/>
+        <conn input="colorize3.shape" output="rect3"/>
+        <conn input="rotate3.shape" output="colorize3"/>
+    </node>
+</ndbx>

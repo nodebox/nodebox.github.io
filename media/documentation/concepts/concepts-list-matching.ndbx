@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="52cb31d5-791c-4a98-9bab-a2990fa2b3bb">
+    <node name="root" outputRange="list" renderedChild="colorize1">
+        <node name="colorize1" position="3.00,5.00" prototype="corevector.colorize"/>
+        <node name="grid2" position="2.00,2.00" prototype="corevector.grid">
+            <port name="rows" type="int" value="5"/>
+            <port name="columns" type="int" value="1"/>
+        </node>
+        <node name="hsb_color1" position="5.00,2.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="255.0"/>
+            <port name="brightness" type="float" value="255.0"/>
+        </node>
+        <node name="make_strings1" prototype="string.make_strings">
+            <port name="string" type="string" value="A;B;C;D;E"/>
+        </node>
+        <node name="sample1" position="5.00,1.00" prototype="math.sample">
+            <port name="amount" type="int" value="3"/>
+            <port name="end" type="float" value="191.0"/>
+        </node>
+        <node name="textpath1" position="1.00,3.00" prototype="corevector.textpath">
+            <port name="font_name" type="string" value="Helvetica-Bold"/>
+            <port name="font_size" type="float" value="48.0"/>
+        </node>
+        <conn input="hsb_color1.hue" output="sample1"/>
+        <conn input="textpath1.text" output="make_strings1"/>
+        <conn input="textpath1.position" output="grid2"/>
+        <conn input="colorize1.shape" output="textpath1"/>
+        <conn input="colorize1.fill" output="hsb_color1"/>
+    </node>
+</ndbx>
