@@ -2,8 +2,6 @@
 layout: documentation
 title: How NodeBox Works
 ---
-The Assembly Line
-=================
 NodeBox uses a different model from traditional applications such as Photoshop or Illustrator. Imagine an **assembly line** of workers. Each worker does one thing, and one thing only. After he or she has done their operation, the object is passed on to the next person who does his thing.
 
 ![The FSO Assembly Line](/media/documentation/concepts/concepts-assembly-line.jpg)
