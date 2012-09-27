@@ -17,16 +17,16 @@ Installing on Mac
 Install [Xcode][] first.
 
     sudo gem update --system
-    sudo gem install rake jekyll RedCloth
+    sudo gem install rake jekyll github-markdown
     sudo easy_install pygments
 
 
 Installing on Ubuntu
 --------------------
 
-    sudo apt-get install ruby rubygems
+    sudo apt-get install ruby rubygems python-setuptools
     sudo gem install rubygems-update
-    sudo gem install rake jekyll RedCloth
+    sudo gem install rake jekyll github-markdown
     sudo easy_install pygments
 
 
