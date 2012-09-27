@@ -2,6 +2,11 @@
 layout: homepage
 title: NodeBox
 ---
+
+<div class="hero row">
+  <h2 class="sixteen columns">Generative Software for Creatives</h2>  
+</div>
+
 <div class="versions row">
   <h2 class="sixteen columns">Generative Software for Creatives</h2>  
   <div class="eight columns featured app">

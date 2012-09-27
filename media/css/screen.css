@@ -213,6 +213,14 @@ footer .copyright, footer .copyright a {
   margin: 5px 0 0 10px;
 }
 
+#home .hero {
+  height: 400px;
+  background: #4f9df4;
+  color: white;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
 
 /*#home .app {
   box-sizing: border-box;
