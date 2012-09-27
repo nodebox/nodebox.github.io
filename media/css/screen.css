@@ -353,9 +353,6 @@ footer .copyright, footer .copyright a {
 /* Documentation */
 
 #documentation article {
-  padding-left: 10px;
-  padding-right: 10px;
-  box-sizing: border-box;
 }
 
 #documentation article h1 {
