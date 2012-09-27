@@ -16,9 +16,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <link type="text/css" rel="stylesheet" media="screen" href="/media/css/skeleton.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/media/css/normalize.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/media/css/syntax.css">
-  <link type="text/css" rel="stylesheet" media="screen" href="/media/css/screen.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/media/fancybox/jquery.fancybox-1.3.4.css">
+  <link type="text/css" rel="stylesheet" media="screen" href="/media/css/screen.css">
 
   <link href="/media/img/apple-touch-icon.png" rel="apple-touch-icon">
 
@@ -28,86 +29,67 @@
 </head>
 <body id="{{ page.section }}">
 
-<!-- Header -->
-<header>
+<header id="site-header">
   <div class="container">
     <div class="sixteen columns">
-    <!--   <a class="logo" target="_top" href="/"><img src="/media/img/emrg-icon.png" alt="EMRG Icon"></a> -->
-      <h1>NodeBox</h1>
-      <h3><a target="_parent" href="/">Generative software for creatives</a></h3>
+      <h1><a href="/">NodeBox</a></h1>
+
+      <nav id="primary-links">
+        <a class="home" href="/">Home</a>
+        <a class="gallery" href="/gallery/">Gallery</a>
+        <a class="download" href="/download/">Download</a>
+        <a class="documentation" href="/node/">Documentation</a>
+        <a class="forum" href="http://forum.nodebox.net/">Forum</a>
+        <a class="blog" href="/blog/">Blog</a>
+      </nav>
     </div>
   </div>
 </header>
 
-
-<nav>
-  <div class="container">
-    <ul class="sixteen columns">
-      <li><a class="home" href="/">Home</a></li>
-      <li><a class="gallery" href="/gallery/">Gallery</a></li>
-      <li><a class="download" href="/download/">Download</a></li>
-      <li><a class="documentation" href="/node/">Documentation</a></li>
-      <li><a class="forum" href="http://forum.nodebox.net/">Forum</a></li>
-      <li><a class="blog" href="/blog/">Blog</a></li>
-    </ul>
-  </div>
-</nav>
-<!--<div class="headerb">
-  <div class="container">
-	<div class="sixteen columns">
-	<h1>.</h1>
-	</div>
-  </div> 
-</div> -->
-
 <div id="content" class="container">
   {{ content }}
-</div> <!-- .content -->
+</div><!-- .content -->
 
-<footer>
-  <div class="container">
-    <div class="four columns footlink">
-      <h2><a href="/software/">Software</a></h2>
-      <ul>
-        <li><a href="/node/">NodeBox 3</a></li>
-        <li><a href="/code/">NodeBox 1</a></li>
-        <li><a href="/opengl/">NodeBox OpenGL</a></li>
-      </ul>
-    </div>
-    <div class="four columns footlink">
-      <h2><a href="/exhibition/">Exhibition</a></h2>
-      <ul>
-        <li><a href="/gallery/">Gallery</a></li>
-        <li><a href="/projects/">Projects</a></li>
-        <li><a href="/workshops/">Workshops</a></li>
-      </ul>
-    </div>
-    <div class="four columns footlink">
-      <h2><a href="/documentation/">Documentation</a></h2>
-      <ul>
-        <li><a href="/node/tutorial/">Tutorial</a></li>
-        <li><a href="/node/examples/">Examples</a></li>
-        <li><a href="/node/user-guide/">User Guide</a></li>
-        <li><a href="/node/reference/">Reference</a></li>
-      </ul>
-    </div>
-    <div class="four columns footlink">
-      <h2><a href="/community/">Community</a></h2>
-      <ul>
-        <li><a href="http://forum.nodebox.net/">Forum</a></li>
-        <li><a href="http://twitter.com/nodebox">Twitter</a></li>
-        <li><a href="http://facebook.com/nodebox">Facebook</a></li>
-        <li><a href="https://github.com/nodebox/nodebox">GitHub</a></li>
-      </ul>
-    </div>
-    <div class="sixteen columns copyright">
-      <p>NodeBox is built and maintained by the <a href="http://www.emrg.be/">Experimental Media Research Group</a>.</p>
-      <p>All content on this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
-    </div>
-    <div class="clear"></div>
-  </footer>
-
-</div> <!-- .container -->
+<footer class="container">
+  <div class="four columns">
+    <h2><a href="/software/">Software</a></h2>
+    <ul>
+      <li><a href="/node/">NodeBox 3</a></li>
+      <li><a href="/code/">NodeBox 1</a></li>
+      <li><a href="/opengl/">NodeBox OpenGL</a></li>
+    </ul>
+  </div>
+  <div class="four columns">
+    <h2><a href="/exhibition/">Exhibition</a></h2>
+    <ul>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/workshops/">Workshops</a></li>
+    </ul>
+  </div>
+  <div class="four columns">
+    <h2><a href="/documentation/">Documentation</a></h2>
+    <ul>
+      <li><a href="/node/tutorial/">Tutorial</a></li>
+      <li><a href="/node/examples/">Examples</a></li>
+      <li><a href="/node/user-guide/">User Guide</a></li>
+      <li><a href="/node/reference/">Reference</a></li>
+    </ul>
+  </div>
+  <div class="four columns">
+    <h2><a href="/community/">Community</a></h2>
+    <ul>
+      <li><a href="http://forum.nodebox.net/">Forum</a></li>
+      <li><a href="http://twitter.com/nodebox">Twitter</a></li>
+      <li><a href="http://facebook.com/nodebox">Facebook</a></li>
+      <li><a href="https://github.com/nodebox/nodebox">GitHub</a></li>
+    </ul>
+  </div>
+  <div class="sixteen columns copyright">
+    <p>NodeBox is built and maintained by the <a href="http://www.emrg.be/">Experimental Media Research Group</a>.</p>
+    <p>All content on this website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.</p>
+  </div>
+</footer>
 
 <script type="text/javascript">
 $(document).ready(function() {

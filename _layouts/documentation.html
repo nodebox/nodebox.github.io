@@ -2,60 +2,54 @@
 layout: base
 section: documentation
 ---
-<div id="page-title" class="row">
-  <h2 class="sixteen columns">{{ page.title }}</h2>
-</div>
+<article class="ten columns">
+  <h1 id="page-title">{{ page.title }}</h1>
+  {{ content }}
+</article>
 
-<div class="documentation-content row">
-  <div class="ten columns content">
-    {{ content }}
-  </div>
-
-  <div class="five columns offset-by-one">
-    <ul class="sidebar">
-      <li>
-        <h3>For Beginners</h3>
-        <ul>
-          <li><a href="/node/tutorial/getting-started.html">Getting Started</a></li>
-          <li><a href="/node/tutorial/exploring.html">Exploring NodeBox</a></li>
-          <li><a href="/node/tutorial/animation.html">Basic Animation</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Using NodeBox</h3>
-        <ul>
-          <li><a href="/node/using/generative-design.html">Creating Generative Design</a></li>
-          <li><a href="/node/using/data-visualization.html">Creating Data Visualizations</a></li>
-          <li><a href="/node/using/animation.html">Working with Animation</a></li>
-          <li><a href="/node/using/math.html">Working with Math</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Concepts</h3>
-        <ul>
-          <li><a href="/node/concepts/gui.html">The Graphical User Interface</a></li>
-          <li><a href="/node/concepts/concepts.html">How NodeBox Works</a></li>
-          <li><a href="/node/concepts/coordinates.html">The Coordinate System</a></li>
-          <li><a href="/node/concepts/geometry.html">Geometry</a></li>
-          <li><a href="/node/concepts/subnetworks.html">Subnetworks</a></li>
-          <li><a href="/node/concepts/randomness.html">Randomness</a></li>
-        </ul>
-      </li>
-      <li>
-        <h3>Expert</h3>
-        <ul>
-          <li><a href="/node/advanced/contributing.html">Contributing To NodeBox</a></li>          
-          <li><a href="/node/advanced/hacking-nodebox-on-windows.html">Hacking NodeBox on Windows</a></li>          
-        </ul>
-      </li>
-      <li>
-        <h3>Reference</h3>
-        <ul>
-          <li><a href="/node/nodes/">All Nodes By Category</a></li>
-          <li><a href="/node/api/">NodeBox Graphics API</a></li>          
-        </ul>
-      </li>
-    </ul>
-  </div>
-
-</div> <!-- .documentation -->
+<aside class="five columns offset-by-one">
+  <ul class="sidebar">
+    <li>
+      <h3>For Beginners</h3>
+      <ul>
+        <li><a href="/node/tutorial/getting-started.html">Getting Started</a></li>
+        <li><a href="/node/tutorial/exploring.html">Exploring NodeBox</a></li>
+        <li><a href="/node/tutorial/animation.html">Basic Animation</a></li>
+      </ul>
+    </li>
+    <li>
+      <h3>Using NodeBox</h3>
+      <ul>
+        <li><a href="/node/using/generative-design.html">Creating Generative Design</a></li>
+        <li><a href="/node/using/data-visualization.html">Creating Data Visualizations</a></li>
+        <li><a href="/node/using/animation.html">Working with Animation</a></li>
+        <li><a href="/node/using/math.html">Working with Math</a></li>
+      </ul>
+    </li>
+    <li>
+      <h3>Concepts</h3>
+      <ul>
+        <li><a href="/node/concepts/gui.html">The Graphical User Interface</a></li>
+        <li><a href="/node/concepts/concepts.html">How NodeBox Works</a></li>
+        <li><a href="/node/concepts/coordinates.html">The Coordinate System</a></li>
+        <li><a href="/node/concepts/geometry.html">Geometry</a></li>
+        <li><a href="/node/concepts/subnetworks.html">Subnetworks</a></li>
+        <li><a href="/node/concepts/randomness.html">Randomness</a></li>
+      </ul>
+    </li>
+    <li>
+      <h3>Expert</h3>
+      <ul>
+        <li><a href="/node/advanced/contributing.html">Contributing To NodeBox</a></li>          
+        <li><a href="/node/advanced/hacking-nodebox-on-windows.html">Hacking NodeBox on Windows</a></li>          
+      </ul>
+    </li>
+    <li>
+      <h3>Reference</h3>
+      <ul>
+        <li><a href="/node/nodes/">All Nodes By Category</a></li>
+        <li><a href="/node/api/">NodeBox Graphics API</a></li>          
+      </ul>
+    </li>
+  </ul>
+</aside>

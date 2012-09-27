@@ -5,12 +5,12 @@ section: download
 ---
 <div class="download-button" id="download-windows">
   <h3>Windows</h3>
-  <a href="https://github.com/downloads/nodebox/nodebox/nodebox-3.0a14-setup.exe" class="hero-button">Download NodeBox<small>Windows - Version 3.0a14</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/NodeBoxSetup.exe" class="hero-button">Download NodeBox<small>for Windows</small></a>
 </div>
 
 <div class="download-button" id="download-mac">
   <h3>Mac OS X</h3>
-  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox-3.0a14.zip" class="hero-button">Download NodeBox<small>Mac OS X – Version 3.0a14</small></a>
+  <a href="https://github.com/downloads/nodebox/nodebox/NodeBox.zip" class="hero-button">Download NodeBox<small>for Mac OS X</small></a>
 </div>
 
 <div class="download-button" id="download-linux">
@@ -24,8 +24,6 @@ section: download
      ant run
   </pre>
 </div>
-
-Click the button above to start the download.
 
 While the software is downloading, take a look at the [getting started page](/documentation/tutorial/getting-started.html).
 
