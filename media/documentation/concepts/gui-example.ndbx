@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="38e5a098-a0be-4bff-bb61-eb5b80c9eca5">
+    <node name="root" outputRange="list" renderedChild="translate1">
+        <node name="amount" position="7.00,1.00" prototype="math.integer">
+            <port name="value" type="int" value="80"/>
+        </node>
+        <node name="colorize1" position="1.00,6.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3264c8ff"/>
+        </node>
+        <node name="colors" position="8.00,3.00" prototype="math.sample">
+            <port name="amount" type="int" value="13"/>
+            <port name="start" type="float" value="43.0"/>
+            <port name="end" type="float" value="165.0"/>
+        </node>
+        <node name="combine1" position="4.00,8.00" prototype="list.combine"/>
+        <node name="hsb_color1" position="8.00,4.00" prototype="color.hsb_color"/>
+        <node name="jellyfish" outputRange="list" position="6.00,6.00" renderedChild="colorize1">
+            <node name="colorize1" position="5.00,5.00" prototype="corevector.colorize"/>
+            <node name="offset" position="2.00,3.00" prototype="math.add">
+                <port name="value1" type="float" value="4.0"/>
+            </node>
+            <node name="polygon1" position="5.00,2.00" prototype="corevector.polygon">
+                <port name="position" type="point" value="59.00,0.00"/>
+                <port name="radius" type="float" value="5.0"/>
+            </node>
+            <node name="rotate1" position="5.00,4.00" prototype="corevector.rotate"/>
+            <node name="sample1" position="8.00,2.00" prototype="math.sample">
+                <port name="amount" type="int" value="30"/>
+                <port name="end" type="float" value="360.0"/>
+            </node>
+            <port childReference="polygon1.position" name="position" range="value" type="point" value="59.00,0.00" widget="point"/>
+            <port childReference="sample1.amount" min="0.0" name="amount" range="value" type="int" value="30" widget="int"/>
+            <port childReference="offset.value1" name="offset" range="value" type="float" value="4.0" widget="float"/>
+            <port childReference="colorize1.fill" name="fill" range="value" type="color" value="#000000ff" widget="color"/>
+            <port childReference="polygon1.radius" min="0.0" name="radius" range="value" type="float" value="5.0" widget="float"/>
+            <conn input="rotate1.shape" output="polygon1"/>
+            <conn input="offset.value2" output="sample1"/>
+            <conn input="rotate1.angle" output="offset"/>
+            <conn input="colorize1.shape" output="rotate1"/>
+        </node>
+        <node name="offsets" position="5.00,3.00" prototype="math.sample">
+            <port name="amount" type="int" value="13"/>
+            <port name="end" type="float" value="235.0"/>
+        </node>
+        <node name="positions" position="2.00,3.00" prototype="math.sample">
+            <port name="amount" type="int" value="13"/>
+            <port name="start" type="float" value="6.0"/>
+            <port name="end" type="float" value="401.0"/>
+        </node>
+        <node name="radii" position="11.00,3.00" prototype="math.sample">
+            <port name="amount" type="int" value="13"/>
+            <port name="start" type="float" value="-6.390008449554443"/>
+            <port name="end" type="float" value="15.0"/>
+        </node>
+        <node name="rect1" position="1.00,5.00" prototype="corevector.rect">
+            <port name="width" type="float" value="2000.0"/>
+            <port name="height" type="float" value="2000.0"/>
+        </node>
+        <node name="translate1" position="4.00,9.00" prototype="corevector.translate">
+            <port name="translate" type="point" value="-154.00,-191.00"/>
+        </node>
+        <conn input="colorize1.shape" output="rect1"/>
+        <conn input="combine1.list1" output="colorize1"/>
+        <conn input="translate1.shape" output="combine1"/>
+        <conn input="offsets.amount" output="amount"/>
+        <conn input="positions.amount" output="amount"/>
+        <conn input="hsb_color1.brightness" output="colors"/>
+        <conn input="colors.amount" output="amount"/>
+        <conn input="radii.amount" output="amount"/>
+        <conn input="jellyfish.fill" output="hsb_color1"/>
+        <conn input="combine1.list2" output="jellyfish"/>
+        <conn input="jellyfish.offset" output="offsets"/>
+        <conn input="jellyfish.position" output="positions"/>
+        <conn input="jellyfish.radius" output="radii"/>
+    </node>
+</ndbx>
