@@ -215,7 +215,7 @@ footer .copyright, footer .copyright a {
 
 #home .hero {
   height: 400px;
-  background: #4f9df4;
+  background:  url(/media/homepage/random-shapes.png) no-repeat 99% 50% #041c36;
   color: white;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
