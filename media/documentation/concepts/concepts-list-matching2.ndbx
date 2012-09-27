@@ -10,7 +10,6 @@
             <port name="width" type="float" value="500.0"/>
         </node>
         <node name="sample1" position="4.00,1.00" prototype="math.sample">
-            <port name="amount" type="int" value="2"/>
             <port name="start" type="float" value="10.0"/>
             <port name="end" type="float" value="50.0"/>
         </node>
