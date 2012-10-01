@@ -9,10 +9,10 @@ TODO
 
 NodeBox works with vector data. Unlike pixels, vector data can be scaled up indefinitely, always resulting in sharp lines.
 
-![Zoomed Out](/media/documentation/concepts/geometry-scale1.png)
+![Zoomed Out](geometry-scale1.png)
 <small>The viewer at 100%.</small>
 
-![Zoomed In](/media/documentation/concepts/geometry-scale2.png)
+![Zoomed In](geometry-scale2.png)
 <small>The viewer, zoomed in.</small>
 
 

@@ -2,14 +2,14 @@
 layout: documentation
 title: The Graphical User Interface
 ---
-![GUI Panes](/media/documentation/concepts/gui-panes.png)
+![GUI Panes](gui-panes.png)
 
 A NodeBox document window consists of these main components:
 
 
 The Viewer Pane
 ---------------
-![The Viewer Pane](/media/documentation/concepts/gui-viewer-pane.png)
+![The Viewer Pane](gui-viewer-pane.png)
 
 The Viewer Pane shows the actual drawing. It also shows handles for the currently selected node. In addition, it can show geometric detail such as the location of the points, their index numbers and the [origin](coordinates.html).
 
@@ -21,13 +21,13 @@ With your mouse in the viewer pane:
 
 Most nodes have **handles**. They allow direct manipulation of the shape, which is generally easier than dragging numbers in the parameter pane. 
 
-![GUI Handles](/media/documentation/concepts/gui-handles.png)
+![GUI Handles](gui-handles.png)
 <small>Handles for the Star node</small>
 
 
 The Port Pane
 -------------
-![The Port Pane](/media/documentation/concepts/gui-port-pane.png)
+![The Port Pane](gui-port-pane.png)
 
 The port pane allows you to change the port values of the currently selected node. Each node has different ports depending on its function. Ports can have different **types**: numbers, text, colors, menus, etc.
 
@@ -40,7 +40,7 @@ Port values are **draggable**. This means that for each number you can:
 - **Click the arrow keys** to nudge it up or down by 1. Holding ALT and SHIFT nudge by 0.01 and 10, respectively.
 
 Each individual port has a contextual menu:
-![The Parameter Menu](/media/documentation/concepts/gui-port-menu.png)
+![The Parameter Menu](gui-port-menu.png)
 
 * **Revert to Default** changes the port value back to its original value.
 
@@ -49,7 +49,7 @@ The Metadata button allows you to [add your own ports to a node](metadata.html).
 
 The Network Pane
 ----------------
-![The Network Pane](/media/documentation/concepts/gui-network-pane.png)
+![The Network Pane](gui-network-pane.png)
 
 The network pane is where you connect nodes together to make networks.
 
@@ -67,19 +67,19 @@ You can zoom and pan the network in the same you manipulate the viewer:
 
 You can copy-paste nodes in one document and between documents. Because names in the network are unique, NodeBox will rename nodes as needed.
 
-The difference between the selected and rendered node is explained in the [getting started tutorial](../tutorial/getting-started.html).
+The difference between the selected and rendered node is explained in the [getting started tutorial](/node/documentation/tutorial/getting-started.html).
 
 
 The Address Bar
 ---------------
-![The Address Bar](/media/documentation/concepts/gui-address-bar.png)
+![The Address Bar](gui-address-bar.png)
 
 The address bar is useful when using sub-networks (also called geonets). It allows you to jump back up a level. [Read more about using geonets](geonets.html).
 
 
 The Animation Bar
 -----------------
-![Gui Animation Bar](/media/documentation/concepts/gui-animation-bar.png)
+![Gui Animation Bar](gui-animation-bar.png)
 
 The animation bar controls the animation features of NodeBox. You can:
 
@@ -98,7 +98,7 @@ NodeBox documents use the .ndbx extension. These documents can be opened and sav
 
 Importing Graphics
 ------------------
-To import vector data use the [import node](/documentation/reference/corevector/import.html).
+To import vector data use the [import node](/node/reference/corevector/import.html).
 
 
 Exporting Graphics
