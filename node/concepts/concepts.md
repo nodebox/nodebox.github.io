@@ -13,11 +13,11 @@ By connecting nodes together, you create your own assembly line where a new shap
 
 Here's an example:
 
-1. We create a **rect node**. This node is a generator: it *generates* a new shape.
+1. We create a [rect node](/node/reference/corevector/import.html). This node is a generator: it *generates* a new shape.
   ![Step 1](/media/documentation/concepts/concepts-step1.png)
-2. We connect a **color node** to the rect node. This color node takes the output of the rect node and changes its color. We call it a filter node, since it *filters* an existing shape.
+2. We connect a [colorize node](/node/reference/corevector/colorize.html) to the rect node. This node takes the output of the rect node and changes its color. We call it a filter node, since it *filters* an existing shape.
   ![Step 2](/media/documentation/concepts/concepts-step2.png)
-3. Finally we create a **rotate node** and connect it to the color node. It takes the output of the color node and changes its rotation. This is also a filter node, it filters the colored rectangle node.
+3. Finally we create a [rotate node](/node/reference/corevector/rotate.html) and connect it to the color node. It takes the output of the color node and changes its rotation. This is also a filter node, it filters the colored rectangle node.
   ![Step 3](/media/documentation/concepts/concepts-step3.png)
 
 We can *examine* what each worker node is doing by changing the **rendered node**. The rendered node is the one that's displayed in the viewer. You can render a node by double-clicking it.
@@ -149,6 +149,13 @@ In essence, NodeBox is a list processing machine. Although initially invisible, 
 
 If you wonder why NodeBox does not have a "for loop" like in programming, that's because looping is implicit: generally, if a node receives a list of data, NodeBox will execute that node for each element in the list, and give back a list with the same size.
 
+Here's an example:
+
+* Create a [grid node](/node/reference/corevector/grid.html). Change the **Columns** and **Rows** ports to **3**.
+* Create a [ellipse node](/node/reference/corevector/ellipse.html). Change the **Width** and **Height** to **20.00**.
+* Connect the output of the grid node to the **position** port of the ellipse node.
+* Render the ellipse node.
+
 ![A grid node connected to an ellipse node](/media/documentation/concepts/concepts-grid-network.png)
 <small>The grid node provides a list of positions for the ellipse node.</small>
 
@@ -160,7 +167,7 @@ A grid with ten by ten columns executes the ellipse node 100 (10 x 10) times:
 
 ![A grid of 10 by 10 ellipses](/media/documentation/concepts/concepts-grid-10x10.png)
 
-The grid node doesn't do the looping: it just gives back a list of points. The NodeBox engine takes care that the ellipse node gets executed for as many elements as there are in the list:
+The grid node doesn't do the looping: it just gives back a list of points. The *NodeBox engine* takes care that the ellipse node gets executed for as many elements as there are in the list:
 
 A short list of 9 points for a 3 x 3 grid:
 
@@ -222,4 +229,4 @@ In functional programming, the *functions* take a central role, **transforming d
 
 Note that in NodeBox, we haven't really talked about classical object-oriented programming constructs such as classes and objects. Instead, the objects of NodeBox are really holding places for data. The functions take in the data and generate new data.
 
-Internally, nodes have a reference to a function: a piece of code written in Java, Python or Clojure.
+Internally, nodes have a reference to a function: a piece of code written in [Java](http://docs.oracle.com/javase/tutorial/), [Python](http://learnpythonthehardway.org/book/) or [Clojure](http://java.ociweb.com/mark/clojure/article.html).
