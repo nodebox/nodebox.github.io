@@ -364,6 +364,7 @@ footer .copyright, footer .copyright a {
 /* Documentation */
 
 #documentation article {
+  padding-bottom: 20px;
 }
 
 #documentation article h1 {
