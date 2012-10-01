@@ -8,7 +8,7 @@ body {
 }
 
 a {
-  color: #3f7381;
+  color: #4e9df4;
   text-decoration: none;
 }
 
@@ -69,12 +69,15 @@ header h1 small {
 
 header nav {
   float: right;
-  margin: 15px 0 15px 0;
+  margin: 0 0 15px 0;
+  padding: 0 0 0 0;
 }
 
 header nav a {
   display: inline-block;
   margin-left: 10px;
+  padding-top: 10px;
+  color: #041a32;
 }
 
 #home .home,
@@ -83,7 +86,7 @@ header nav a {
 #documentation .documentation,
 #forum .forum,
 #blog .blog {
-  border-bottom: 2px solid #70afb4;
+  border-top: 4px solid #4e9df4;
 }
 
 
@@ -375,6 +378,10 @@ footer .copyright, footer .copyright a {
   margin: 0;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+#documentation .sidebar a {
+  color: #041a32
 }
 
 #documentation .sidebar h3 {
