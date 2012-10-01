@@ -2,12 +2,7 @@
 layout: documentation
 title: Geometry
 ---
-TODO
-====
-* Geometry scope - still relevant?
-* Can we use the sort node, or use a different example?
-
-NodeBox works with vector data. Unlike pixels, vector data can be scaled up indefinitely, always resulting in sharp lines.
+NodeBox works with vector data. Unlike pixels, vector data can be scaled up indefinitely, always resulting in sharp lines:
 
 ![Zoomed Out](geometry-scale1.png)
 <small>The viewer at 100%.</small>
@@ -15,6 +10,7 @@ NodeBox works with vector data. Unlike pixels, vector data can be scaled up inde
 ![Zoomed In](geometry-scale2.png)
 <small>The viewer, zoomed in.</small>
 
+Vector data in NodeBox contains the following types of objects:
 
 - **Geometry** is the top level data. All NodeBox nodes take in and return data geometry objects. Even nodes that create a simple path, such as the rect node, still wrap this path in a geometry object.
 - Geometry is composed of **paths**. Paths have a **fill and stroke color** and **stroke width**.
@@ -25,39 +21,40 @@ Scope: Paths, contours and points
 ---------------------------------
 A lot of nodes can operate on paths, contours or points. Here's an example with the wiggle node:
 
-* Create a **textpath** and set its **size** to **150.00**.
-* Create a **wiggle** node.
+* Create a [textpath node](/node/reference/corevector/textpath.html) and set its **size** to **150.00**.
+* Create a [wiggle node](/node/reference/corevector/wiggle.html).
 * Connect **textpath1** to **wiggle1**.
 
-Note the scope in the wiggle node:
-* When the scope is set to **points** all the points of the textpath are moved randomly.
-* When the scope is set to **contours** the different contours, or subpaths, of the textpath are moved. This includes the insides of the letters "e" and "o".
-* When the scope is set to **paths**, the whole path moves as a whole.
+Change the **scope** in the wiggle node:
 
-![Geometry Scope](/media/img/using/geometry-wiggle.png)
+* **Points**: all the points of the textpath move individually.
+  ![Point Scope](geometry-wiggle-points.png)
+* **Contours**: all contours, or subpaths, move. This includes the *insides* of the letters "e" and "o".
+  ![Contour Scope](geometry-wiggle-contours.png)
+* **Paths**: the path moves as a whole.
+  ![Contour Scope](geometry-wiggle-paths.png)
 
 Point numbers
 -------------
-Each point in a path has an index number. You can see these numbers by turning "Point Numbers" on in the viewer.
+Points in a path have an ordering defined by their **index**. You can see these indices by turning "Point Numbers" on in the viewer.
 
 Here's a simple example:
 
 * Turn "Point Numbers" on in the Viewer pane.
-* Create an **ellipse** node.
-* Create a **resample** node. Set the **method** to **By Amount** and the **points** to **20**.
-* Create a **sort** node.
-* Create a **connect** node. Set the **fill** to transparent (alpha value = 0).
+* Create an [ellipse node](/node/reference/corevector/ellipse.html).
+* Create a [resample node](/node/reference/corevector/resample.html). Set the **method** to **By Amount** and the **points** to **20**.
+* Create a [sort node](/node/reference/corevector/sort.html).
+* Create a [connect node](/node/reference/corevector/connect.html). Set the **fill** to transparent (alpha value = 0).
+* Connect them all together: ellipse1 &rarr; resample1 &rarr; sort1 &rarr; connect1.
 
-Connect them all together: ellipse1 &rarr; resample1 &rarr; sort1 &rarr; connect1.
-
-![Connect Example](/media/img/using/geometry-connect-network.png)
+![Connect Example](geometry-connect-network.png)
 
 * Set the connect1 node as rendered. Note that the point numbers go clockwise around the circle, from 0 to 20. 
 * In sort1, change the **scope** to **Points within geometry** and the **order** to **By X**. 
 
 The viewer now shows this:
 
-![Connect Example Viewer](/media/img/using/geometry-connect-viewer.png)
+![Connect Example Viewer](geometry-connect-viewer.png)
 
 *What happened?* The connect node connects points of the incoming geometry, in order. By changing the *order* of the points (using the sort node), the shape changes. The points no longer follow the circle in a clockwise direction but are sorted by their X coordinates, in other words, points are sorted from left to right.
 

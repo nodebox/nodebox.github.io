@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="112106cf-43ac-40dd-b65d-43f42d007f2c">
+    <node name="root" outputRange="list" renderedChild="wiggle1">
+        <node name="textpath1" position="1.00,1.00" prototype="corevector.textpath">
+            <port name="font_size" type="float" value="200.0"/>
+        </node>
+        <node name="wiggle1" position="1.00,2.00" prototype="corevector.wiggle"/>
+        <conn input="wiggle1.shape" output="textpath1"/>
+    </node>
+</ndbx>
