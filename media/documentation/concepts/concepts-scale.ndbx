@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="d8fec957-791c-4548-b528-41e1c73688ca">
+    <node name="root" outputRange="list" renderedChild="combine1">
+        <node name="colorize1" position="9.00,8.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00000000"/>
+            <port name="stroke" type="color" value="#ffffffff"/>
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="colorize2" position="1.00,2.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3264faff"/>
+        </node>
+        <node name="colorize3" position="5.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#3278faff"/>
+        </node>
+        <node name="combine1" position="1.00,11.00" prototype="list.combine"/>
+        <node name="grid1" position="5.00,1.00" prototype="corevector.grid">
+            <port name="rows" type="int" value="60"/>
+            <port name="columns" type="int" value="60"/>
+            <port name="width" type="float" value="2000.0"/>
+            <port name="height" type="float" value="2000.0"/>
+        </node>
+        <node name="quad_curve1" position="9.00,7.00" prototype="corevector.quad_curve">
+            <port name="distance" type="float" value="10.0"/>
+        </node>
+        <node name="rect1" position="1.00,1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1000.0"/>
+            <port name="height" type="float" value="1000.0"/>
+        </node>
+        <node name="rect2" position="5.00,2.00" prototype="corevector.rect">
+            <port name="width" type="float" value="30.0"/>
+            <port name="height" type="float" value="30.0"/>
+            <port name="roundness" type="point" value="-10.00,-10.00"/>
+        </node>
+        <node name="resample1" position="9.00,2.00" prototype="corevector.resample">
+            <port name="length" type="float" value="4.0"/>
+        </node>
+        <node name="rotate1" position="5.00,3.00" prototype="corevector.rotate">
+            <port name="angle" type="float" value="45.0"/>
+        </node>
+        <node name="shift1" position="10.00,5.00" prototype="list.shift"/>
+        <node name="textpath1" position="9.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="Hi!"/>
+            <port name="font_name" type="string" value="HelveticaNeue-Bold"/>
+            <port name="font_size" type="float" value="129.0"/>
+        </node>
+        <node name="to_points1" position="9.00,3.00" prototype="corevector.to_points"/>
+        <conn input="resample1.shape" output="textpath1"/>
+        <conn input="to_points1.shape" output="resample1"/>
+        <conn input="shift1.list" output="to_points1"/>
+        <conn input="quad_curve1.point2" output="shift1"/>
+        <conn input="quad_curve1.point1" output="to_points1"/>
+        <conn input="colorize1.shape" output="quad_curve1"/>
+        <conn input="colorize2.shape" output="rect1"/>
+        <conn input="combine1.list1" output="colorize2"/>
+        <conn input="rotate1.shape" output="rect2"/>
+        <conn input="rect2.position" output="grid1"/>
+        <conn input="colorize3.shape" output="rotate1"/>
+        <conn input="combine1.list3" output="colorize1"/>
+        <conn input="combine1.list2" output="colorize3"/>
+    </node>
+</ndbx>

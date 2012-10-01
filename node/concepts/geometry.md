@@ -7,7 +7,14 @@ TODO
 * Geometry scope - still relevant?
 * Can we use the sort node, or use a different example?
 
-NodeBox works with vector data. Think points, lines and paths instead of pixels.
+NodeBox works with vector data. Unlike pixels, vector data can be scaled up indefinitely, always resulting in sharp lines.
+
+![Zoomed Out](/media/documentation/concepts/geometry-scale1.png)
+<small>The viewer at 100%.</small>
+
+![Zoomed In](/media/documentation/concepts/geometry-scale2.png)
+<small>The viewer, zoomed in.</small>
+
 
 - **Geometry** is the top level data. All NodeBox nodes take in and return data geometry objects. Even nodes that create a simple path, such as the rect node, still wrap this path in a geometry object.
 - Geometry is composed of **paths**. Paths have a **fill and stroke color** and **stroke width**.
