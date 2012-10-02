@@ -1,36 +1,36 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ndbx formatVersion="2" type="file" uuid="86312a28-ec3b-4eac-a1df-d4e0a098a3b7">
     <node name="root" outputRange="list" renderedChild="subnet1">
-        <node name="random_numbers1" position="5.00,2.00" prototype="math.random_numbers">
+        <node name="random_numbers1" position="1.00,1.00" prototype="math.random_numbers">
             <port name="amount" type="int" value="28"/>
             <port name="start" type="float" value="47.0"/>
         </node>
-        <node name="subnet1" outputRange="list" position="5.00,5.00" renderedChild="colorize1">
-            <node name="color1" position="4.00,1.00" prototype="color.color">
+        <node name="subnet1" outputRange="list" position="1.00,2.00" renderedChild="colorize1">
+            <node name="color1" position="7.00,0.00" prototype="color.color">
                 <port name="color" type="color" value="#ffffffff"/>
             </node>
-            <node name="color2" position="7.00,1.00" prototype="color.color">
+            <node name="color2" position="8.00,1.00" prototype="color.color">
                 <port name="color" type="color" value="#041a32ff"/>
             </node>
-            <node name="color3" position="10.00,1.00" prototype="color.color">
+            <node name="color3" position="9.00,2.00" prototype="color.color">
                 <port name="color" type="color" value="#4e9df4ff"/>
             </node>
-            <node name="colorize1" position="5.00,9.00" prototype="corevector.colorize"/>
-            <node name="combine1" position="5.00,3.00" prototype="list.combine"/>
-            <node name="connect1" position="5.00,8.00" prototype="corevector.connect"/>
-            <node name="grid1" position="3.00,6.00" prototype="corevector.grid">
+            <node name="colorize1" position="3.00,7.00" prototype="corevector.colorize"/>
+            <node name="combine1" position="7.00,3.00" prototype="list.combine"/>
+            <node name="connect1" position="3.00,5.00" prototype="corevector.connect"/>
+            <node name="grid1" position="1.00,2.00" prototype="corevector.grid">
                 <port name="rows" type="int" value="5"/>
                 <port name="columns" type="int" value="5"/>
                 <port name="width" type="float" value="500.0"/>
                 <port name="height" type="float" value="500.0"/>
             </node>
-            <node name="pick1" position="5.00,7.00" prototype="list.pick">
+            <node name="pick1" position="3.00,4.00" prototype="list.pick">
                 <port name="amount" type="int" value="3"/>
             </node>
-            <node name="pick2" position="8.00,8.00" prototype="list.pick">
+            <node name="pick2" position="6.00,5.00" prototype="list.pick">
                 <port name="amount" type="int" value="1"/>
             </node>
-            <node name="seed" position="8.00,4.00" prototype="math.integer">
+            <node name="seed" position="4.00,2.00" prototype="math.integer">
                 <port name="value" type="int" value="38"/>
             </node>
             <port childReference="seed.value" name="seed" range="value" type="int" value="0" widget="int"/>

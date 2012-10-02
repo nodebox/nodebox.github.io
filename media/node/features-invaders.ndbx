@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="1f3d09f4-d144-4b9b-a0d7-334bb21e7a5f">
+    <node name="root" outputRange="list" renderedChild="invader">
+        <node name="count1" position="2.00,3.00" prototype="list.count"/>
+        <node name="grid1" position="1.00,1.00" prototype="corevector.grid">
+            <port name="rows" type="int" value="6"/>
+            <port name="columns" type="int" value="6"/>
+            <port name="width" type="float" value="900.0"/>
+            <port name="height" type="float" value="700.0"/>
+            <port name="position" type="point" value="-16.27,2.32"/>
+        </node>
+        <node name="invader" outputRange="list" position="1.00,7.00" renderedChild="colorize1">
+            <node name="colorize1" position="2.00,6.00" prototype="corevector.colorize"/>
+            <node name="grid1" position="2.00,1.00" prototype="corevector.grid">
+                <port name="rows" type="int" value="8"/>
+                <port name="columns" type="int" value="6"/>
+                <port name="width" type="float" value="57.0"/>
+                <port name="height" type="float" value="80.0"/>
+                <port name="position" type="point" value="34.50,0.00"/>
+            </node>
+            <node name="hsb_color1" position="6.00,4.00" prototype="color.hsb_color">
+                <port name="hue" type="float" value="144.0"/>
+                <port name="saturation" type="float" value="255.0"/>
+                <port name="brightness" type="float" value="255.0"/>
+            </node>
+            <node name="pick1" position="2.00,2.00" prototype="list.pick">
+                <port name="amount" type="int" value="30"/>
+                <port name="seed" type="int" value="20"/>
+            </node>
+            <node name="rect1" position="2.00,3.00" prototype="corevector.rect">
+                <port name="width" type="float" value="10.0"/>
+                <port name="height" type="float" value="10.0"/>
+            </node>
+            <node name="reflect1" position="2.00,4.00" prototype="corevector.reflect">
+                <port name="angle" type="float" value="90.0"/>
+            </node>
+            <node name="translate1" position="2.00,5.00" prototype="corevector.translate"/>
+            <port childReference="translate1.translate" name="position" range="value" type="point" value="0.00,0.00" widget="point"/>
+            <port childReference="pick1.seed" name="seed" range="value" type="int" value="20" widget="int"/>
+            <port childReference="hsb_color1.brightness" name="brightness" range="value" type="float" value="0.0" widget="float"/>
+            <conn input="pick1.list" output="grid1"/>
+            <conn input="rect1.position" output="pick1"/>
+            <conn input="reflect1.shape" output="rect1"/>
+            <conn input="translate1.shape" output="reflect1"/>
+            <conn input="colorize1.shape" output="translate1"/>
+            <conn input="colorize1.fill" output="hsb_color1"/>
+        </node>
+        <node name="random_numbers1" position="2.00,4.00" prototype="math.random_numbers"/>
+        <node name="random_numbers2" position="5.00,4.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="50.0"/>
+            <port name="end" type="float" value="255.0"/>
+        </node>
+        <conn input="invader.position" output="grid1"/>
+        <conn input="invader.seed" output="random_numbers1"/>
+        <conn input="count1.list" output="grid1"/>
+        <conn input="random_numbers1.amount" output="count1"/>
+        <conn input="random_numbers2.amount" output="count1"/>
+        <conn input="invader.brightness" output="random_numbers2"/>
+    </node>
+</ndbx>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="98e77c9a-a6ca-4651-a249-1f44115909b9">
+    <node name="root" renderedChild="combine1">
+        <node name="align1" position="39.00,5.00" prototype="corevector.align"/>
+        <node name="colorize1" position="39.00,9.00" prototype="corevector.colorize">
+            <port name="strokeWidth" type="float" value="0.5"/>
+        </node>
+        <node name="colorize2" position="15.00,9.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#ff0000ff"/>
+            <port name="stroke" type="color" value="#4e9df4ff"/>
+            <port name="strokeWidth" type="float" value="4.0"/>
+        </node>
+        <node name="colorize3" position="21.00,9.00" prototype="corevector.colorize">
+            <port name="strokeWidth" type="float" value="4.04"/>
+        </node>
+        <node name="colorize4" position="45.00,18.00" prototype="corevector.colorize">
+            <port name="strokeWidth" type="float" value="7.0"/>
+        </node>
+        <node name="combine1" position="15.00,20.00" prototype="list.combine"/>
+        <node name="combine2" position="39.00,20.00" prototype="list.combine"/>
+        <node name="combine3" position="30.00,24.00" prototype="list.combine"/>
+        <node name="combine4" position="54.00,16.00" prototype="list.combine"/>
+        <node name="connect1" position="45.00,5.00" prototype="corevector.connect"/>
+        <node name="connect2" position="54.00,5.00" prototype="corevector.connect"/>
+        <node name="connect3" position="54.00,20.00" prototype="corevector.connect"/>
+        <node name="connect4" position="54.00,15.00" prototype="corevector.connect"/>
+        <node name="connect5" position="60.00,16.00" prototype="corevector.connect"/>
+        <node name="convert_range1" position="12.00,4.00" prototype="math.convert_range">
+            <port name="source_start" type="float" value="2003.0"/>
+            <port name="source_end" type="float" value="2012.0"/>
+            <port name="target_end" type="float" value="0.0"/>
+        </node>
+        <node name="convert_range2" position="27.00,4.00" prototype="math.convert_range">
+            <port name="source_start" type="float" value="-1.0"/>
+            <port name="source_end" type="float" value="1.0"/>
+            <port name="target_start" type="float" value="255.0"/>
+            <port name="target_end" type="float" value="0.0"/>
+        </node>
+        <node name="convert_range3" position="39.00,15.00" prototype="math.convert_range">
+            <port name="source_start" type="float" value="2003.0"/>
+            <port name="source_end" type="float" value="2012.0"/>
+            <port name="target_start" type="float" value="1.0"/>
+            <port name="target_end" type="float" value="255.0"/>
+        </node>
+        <node name="count1" position="6.00,2.00" prototype="list.count"/>
+        <node name="group1" position="54.00,18.00" prototype="corevector.group"/>
+        <node name="hsb_color1" position="12.00,7.00" prototype="color.hsb_color">
+            <port name="hue" type="float" value="203.0"/>
+            <port name="saturation" type="float" value="432.0"/>
+            <port name="brightness" type="float" value="100.0"/>
+        </node>
+        <node name="hsb_color2" position="27.00,7.00" prototype="color.hsb_color"/>
+        <node name="hsb_color3" position="39.00,16.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="231.0"/>
+        </node>
+        <node name="import_csv1" position="6.00,-1.00" prototype="data.import_csv">
+            <port name="file" type="string" value="OscarPiracyDatafinal.csv"/>
+        </node>
+        <node name="line1" position="0.00,4.00" prototype="corevector.line">
+            <port name="point1" type="point" value="0.00,-1000.00"/>
+            <port name="point2" type="point" value="0.00,1000.00"/>
+        </node>
+        <node name="line2" position="21.00,7.00" prototype="corevector.line"/>
+        <node name="line3" position="15.00,7.00" prototype="corevector.line"/>
+        <node name="line4" position="39.00,2.00" prototype="corevector.line">
+            <port name="point1" type="point" value="0.00,-1000.00"/>
+            <port name="point2" type="point" value="0.00,1000.00"/>
+        </node>
+        <node name="line5" position="45.00,15.00" prototype="corevector.line"/>
+        <node name="lookup1" position="30.00,2.00" prototype="data.lookup">
+            <port name="key" type="string" value="Title"/>
+        </node>
+        <node name="lookup2" position="12.00,2.00" prototype="data.lookup">
+            <port name="key" type="string" value="Oscar Year"/>
+        </node>
+        <node name="lookup3" position="15.00,2.00" prototype="data.lookup">
+            <port name="key" type="string" value="US Release To Oscars"/>
+        </node>
+        <node name="lookup4" position="21.00,2.00" prototype="data.lookup">
+            <port name="key" type="string" value="Oscars To Leak"/>
+        </node>
+        <node name="make_point1" position="15.00,5.00" prototype="corevector.make_point"/>
+        <node name="make_point2" position="21.00,5.00" prototype="corevector.make_point"/>
+        <node name="negate1" position="15.00,4.00" prototype="math.negate"/>
+        <node name="resample1" position="6.00,5.00" prototype="corevector.resample">
+            <port name="method" type="string" value="amount"/>
+            <port name="length" type="float" value="303.0"/>
+        </node>
+        <node name="reverse1" position="60.00,15.00" prototype="list.reverse"/>
+        <node name="textpath1" position="30.00,5.00" prototype="corevector.textpath">
+            <port name="font_name" type="string" value="Monospaced"/>
+            <port name="font_size" type="float" value="4.0"/>
+            <port name="align" type="string" value="RIGHT"/>
+            <port name="position" type="point" value="-5.00,1.25"/>
+        </node>
+        <node name="to_points1" position="6.00,7.00" prototype="corevector.to_points"/>
+        <node name="to_points2" position="45.00,7.00" prototype="corevector.to_points"/>
+        <node name="to_points3" position="54.00,7.00" prototype="corevector.to_points"/>
+        <node name="translate1" position="30.00,11.00" prototype="corevector.translate"/>
+        <node name="translate2" position="30.00,13.00" prototype="corevector.translate"/>
+        <node name="translate3" position="15.00,11.00" prototype="corevector.translate"/>
+        <node name="translate4" position="21.00,11.00" prototype="corevector.translate"/>
+        <node name="translate5" position="45.00,11.00" prototype="corevector.translate"/>
+        <node name="translate6" position="54.00,11.00" prototype="corevector.translate"/>
+        <conn input="resample1.shape" output="line1"/>
+        <conn input="resample1.points" output="count1"/>
+        <conn input="lookup2.list" output="import_csv1"/>
+        <conn input="lookup3.list" output="import_csv1"/>
+        <conn input="lookup4.list" output="import_csv1"/>
+        <conn input="translate4.translate" output="to_points1"/>
+        <conn input="make_point2.x" output="lookup4"/>
+        <conn input="line2.point2" output="make_point2"/>
+        <conn input="line3.point2" output="make_point1"/>
+        <conn input="negate1.value" output="lookup3"/>
+        <conn input="make_point1.x" output="negate1"/>
+        <conn input="translate3.translate" output="to_points1"/>
+        <conn input="colorize3.shape" output="line2"/>
+        <conn input="colorize2.shape" output="line3"/>
+        <conn input="convert_range1.value" output="lookup2"/>
+        <conn input="translate3.shape" output="colorize2"/>
+        <conn input="translate4.shape" output="colorize3"/>
+        <conn input="convert_range2.value" output="lookup4"/>
+        <conn input="hsb_color2.brightness" output="convert_range2"/>
+        <conn input="colorize3.stroke" output="hsb_color2"/>
+        <conn input="count1.list" output="import_csv1"/>
+        <conn input="textpath1.text" output="lookup1"/>
+        <conn input="lookup1.list" output="import_csv1"/>
+        <conn input="to_points1.shape" output="resample1"/>
+        <conn input="translate1.translate" output="to_points1"/>
+        <conn input="translate1.shape" output="textpath1"/>
+        <conn input="translate2.shape" output="translate1"/>
+        <conn input="translate2.translate" output="make_point1"/>
+        <conn input="combine1.list2" output="translate4"/>
+        <conn input="combine1.list3" output="translate2"/>
+        <conn input="combine1.list1" output="translate3"/>
+        <conn input="align1.shape" output="line4"/>
+        <conn input="colorize1.shape" output="align1"/>
+        <conn input="combine2.list1" output="colorize1"/>
+        <conn input="combine3.list1" output="combine1"/>
+        <conn input="combine3.list2" output="combine2"/>
+        <conn input="connect1.points" output="make_point1"/>
+        <conn input="to_points2.shape" output="connect1"/>
+        <conn input="translate5.shape" output="to_points2"/>
+        <conn input="translate5.translate" output="to_points1"/>
+        <conn input="to_points3.shape" output="connect2"/>
+        <conn input="translate6.shape" output="to_points3"/>
+        <conn input="translate6.translate" output="to_points1"/>
+        <conn input="connect2.points" output="make_point2"/>
+        <conn input="line5.point1" output="translate5"/>
+        <conn input="line5.point2" output="translate6"/>
+        <conn input="group1.shapes" output="combine4"/>
+        <conn input="combine4.list1" output="connect4"/>
+        <conn input="combine4.list2" output="connect5"/>
+        <conn input="connect3.points" output="group1"/>
+        <conn input="connect5.points" output="reverse1"/>
+        <conn input="connect4.points" output="translate5"/>
+        <conn input="reverse1.list" output="translate6"/>
+        <conn input="colorize4.shape" output="line5"/>
+        <conn input="convert_range3.value" output="lookup2"/>
+        <conn input="hsb_color3.brightness" output="convert_range3"/>
+        <conn input="colorize4.stroke" output="hsb_color3"/>
+        <conn input="hsb_color3.hue" output="convert_range3"/>
+    </node>
+</ndbx>
