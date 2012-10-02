@@ -39,6 +39,14 @@ hr {
   margin-bottom: 30px;
 }
 
+.button {
+  background: #4e9df4;
+  border-radius: 4px;
+  border: 0;
+  padding: 4px 7px;
+  color: #fff;
+}
+
 
 /* Header */
 
@@ -96,7 +104,8 @@ header nav a {
   border-radius: 6px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
   background: white;
-  margin-bottom: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 #content img {
@@ -190,34 +199,10 @@ footer .copyright, footer .copyright a {
   color: #aaa;
 }
 
-/* Homepage */
 
-#home h2 + small {
-  display: block;
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 15px;
-}
+/* Product */
 
-#home .app ul {
-  margin: 0;
-  padding: 0;
-  margin-bottom:-3px;
-}
-
-#home .app li {
-  margin: 0 0 10px 10px;
-  padding: 0;
-  list-style: none;
-  text-align: left;
-}
-
-#home .more {
-  font-weight: bold;
-  margin: 5px 0 0 10px;
-}
-
-#home .hero {
+.hero {
   height: 400px;
   background:  url(/media/homepage/random-shapes.png) no-repeat 99% 50% #031832;
   color: white;
@@ -225,23 +210,23 @@ footer .copyright, footer .copyright a {
   border-top-right-radius: 6px;
 }
 
-#home #hero-text {
+.hero-text {
   padding: 40px 80px 0 30px;
   padding-top: 40px;
 }
 
-#home #hero-text h1 {
+.hero-text h1 {
   font-size: 48px;
   margin: 0 0 10px 0;
   padding: 0;
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-#home #hero-text p {
+.hero-text p {
   font-size: 18px;
 }
 
-#home #hero-shot {
+.hero-shot {
   position: relative;
   top: 25px;
   right: 15px;
@@ -252,107 +237,109 @@ footer .copyright, footer .copyright a {
 }
 
 
-/*#home .app {
-  box-sizing: border-box;
-  height: 250px;
-  border-top: 1px solid #999;
-  border-bottom: 1px solid #999;
-  text-align: left;
-  font-weight: bold;
-  line-height: 90%;
-  background: #eee;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
-  z-index: 1;
-  
-  border-left: 1px solid #999;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  
-  border-right: 1px solid #999;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
- } */
+/* Homepage */
 
-/*#home .app small {
-  margin-top: 15px;
-  font-size: 14px;
-  display: block;
-  margin-left: 10px;
+#home h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-#home .app h2 {
-    padding:0px;
-    background-color:#eee;
-    font-size: 1.25em;
-    height:15px;
-    border: 0px;
-    box-shadow: 0 0 0px;
+#home p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+#home .hero {
+  background:  url(/media/homepage/hero-background.png) no-repeat 50% 50% #041a32;
+  color: #fff;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  height: 200px;
+  border-bottom: 1px solid #ddd;
+}
+
+#home .hero-text {
+  padding-left: 10px;
 }
 
 #home .app img {
-  margin-top: 0;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
+  border: 0;
+  box-shadow: none;
+  margin: 0 0 10px 0;
 }
 
-#home .app .screenshot {
-    border-left: 1px solid #999;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
-
-    border-right: 1px solid #999;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+#home .app a {
+  color: #333;
 }
 
-#home .app.featured .screenshot2{
-    margin-top: -10px;
-    width:100%;
-}
-
-
-#home .app.featured {
+#home .app h2 {
+  font-size: 18px;
   margin: 0;
-  margin-left:0px;
-  margin-top:10px;
-  border: 1px solid #999;
-  border-radius: 5px;
-  background: #eee;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
-  z-index: 5;
 }
 
-
-
-#home a.more {
+#home .app small {
   display: block;
-  margin: 20px 0 0 10px;
-  text-align: left;
-  font-size: 120%;
+  margin: 0 0 5px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666;
 }
 
-#home .projects {
-  margin-top: 0px;
+#home .app p {
+  margin: 0;
 }
 
-#home .versions{
-    margin-top:-40px;
+#home .versions {
+  margin-bottom: 50px;
 }
 
-
-#home .screenshots{
-    margin-top:40px;
-}*/
-
-.signup-form label {
+#home .signup-form label {
   display: block;
   font-weight: bold;
 }
 
-.signup-form input {
+#home .signup-form input {
   display: block;
   margin-bottom: 5px;
 }
+
+#home .post {
+  width: 220px;
+  float: left;
+  margin-right: 10px;
+}
+
+#home .post img {
+  border: 1px solid #ddd;
+  box-shadow: none;
+  margin: 0 0 5px 0;
+}
+
+#home .post p {
+  margin: 0;
+}
+
+#home .post a {
+  color: #333;
+}
+
+#home .signup {
+  display: inline;
+}
+
+#home .emrg img {
+  border: 0;
+  box-shadow: none;
+  margin: 0 0 10px 0;
+}
+
+
+/* NodeBox 3 */
+
+#nodebox3 .hero {
+  background:  url(/media/homepage/random-shapes.png) no-repeat 99% 50% #031832;  
+}
+
 
 /* Download */
 
