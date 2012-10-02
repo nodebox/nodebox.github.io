@@ -71,14 +71,14 @@ section: home
 </div>  <!-- .connect -->
 
 <div class="emrg row">
-  <h2 class="sixteen columns">EMRG</h2>
-  <div class="eight columns">
+  <h2 class="fourteen columns offset-by-two">EMRG</h2>
+  <div class="two columns">
+    <a href="http://www.emrg.be/"><img src="/media/homepage/emrg-logo.png" alt="Logo of EMRG"></a>
+  </div>
+  <div class="six columns">
     <p>NodeBox is developed by the <strong>Experimental Media Research Group</strong>, a cross-domain research group associated with the <a href="http://www.sintlucasantwerpen.be/">Sint Lucas School of arts</a> of the <a href="http://www.kdg.be/">Karel de Grote-Hogeschool</a> (Antwerp, Belgium). </p>
     <p><strong>EMRG</strong> has been active since 2004 developing NodeBox and doing cutting-edge research in the domain of computer graphics, user experience, creativity, but also in artificial intelligence and natural language processing.</p>
     <p><a href="http://www.emrg.be/">www.emrg.be</a></p>
-  </div>
-  <div class="eight columns">
-    <a href="http://www.emrg.be/"><img src="/media/homepage/emrg-shot.png"></a>
   </div>
 </div>  <!-- .emrg -->
 
