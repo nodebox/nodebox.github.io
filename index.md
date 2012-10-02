@@ -66,7 +66,7 @@ section: home
   <div class="eight columns">
     <h2>Workshops</h2>
     <p>The creators of NodeBox have organized workshops internationally since 2004. These one-week sessions focus on learning the software combined with insights into the principles of generative art, data visualization and cognitive science.</p>
-    <a class="button" href="http://workshops.nodebox.net/">Read more</a>
+    <a class="button" href="http://www.emrg.be/teaching/">Read more</a>
   </div>
 </div>  <!-- .connect -->
 
