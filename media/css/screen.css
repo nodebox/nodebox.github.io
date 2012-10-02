@@ -7,13 +7,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-a {
-  color: #4e9df4;
-  text-decoration: none;
-}
-
-li {
-  margin-bottom: 5px;
+h2 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 h3 + small {
@@ -22,6 +19,20 @@ h3 + small {
   color: #666;
   margin-top: -15px;
   margin-bottom: 15px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #4e9df4;
+  text-decoration: none;
+}
+
+li {
+  margin-bottom: 5px;
 }
 
 pre {
@@ -45,6 +56,17 @@ hr {
   border: 0;
   padding: 4px 7px;
   color: #fff;
+}
+
+.thumb {
+  display: block;
+  height: 120px;
+}
+
+
+.date {
+  font-size: 11px;
+  color: #999;
 }
 
 
@@ -109,11 +131,10 @@ header nav a {
 }
 
 #content img {
-    margin: 5px auto;
-    max-width: 100%;
-    border: 1px solid #aaa;
-    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
-    display: block;
+  margin: 5px auto;
+  max-width: 100%;
+  border: 1px solid #aaa;
+  display: block;
 }
 
 #content img + small {
@@ -123,35 +144,6 @@ header nav a {
   text-shadow: 0 0 4px #fff;
 }
 
-.thumb {
-  display: block;
-  height: 120px;
-}
-
-
-.date {
-  font-size: 11px;
-  color: #999;
-}
-.sign{
-    float:left;
-    height:35px;
-    width:50%;
-    margin-top:0px;
-    background-color:rgb(112,175,180);
-    border-left: 1px solid #999;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-right: 1px solid #999;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    padding-left:10px;
-    padding-top:5px;
-    font-size: 14px;
-    text-align:left;
-    text-transform: uppercase;
-    color: #fff;
-}
 
 /* Footer */
 
@@ -239,17 +231,6 @@ footer .copyright a {
 
 /* Homepage */
 
-#home h2 {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
-#home p {
-  margin-top: 0;
-  margin-bottom: 10px;
-}
-
 #home .hero {
   background:  url(/media/homepage/hero-background.png) no-repeat 50% 50% #041a32;
   color: #fff;
@@ -260,12 +241,6 @@ footer .copyright a {
 
 #home .hero-text {
   padding-left: 10px;
-}
-
-#home .app img {
-  border: 1px solid #ddd;
-  box-shadow: none;
-  margin: 0 0 10px 0;
 }
 
 #home .app a {
@@ -309,12 +284,6 @@ footer .copyright a {
   margin-right: 10px;
 }
 
-#home .post img {
-  border: 1px solid #ddd;
-  box-shadow: none;
-  margin: 0 0 5px 0;
-}
-
 #home .post p {
   margin: 0;
 }
@@ -329,8 +298,6 @@ footer .copyright a {
 
 #home .emrg img {
   border: 0;
-  box-shadow: none;
-  margin: 0 0 10px 0;
 }
 
 
@@ -382,6 +349,10 @@ footer .copyright a {
 
 #documentation article h1 {
   border-bottom: 1px solid #ddd;
+}
+
+#documentation img {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
 }
 
 #documentation aside {
