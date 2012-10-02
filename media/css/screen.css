@@ -225,6 +225,32 @@ footer .copyright, footer .copyright a {
   border-top-right-radius: 6px;
 }
 
+#home #hero-text {
+  padding: 40px 80px 0 30px;
+  padding-top: 40px;
+}
+
+#home #hero-text h1 {
+  font-size: 48px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#home #hero-text p {
+  font-size: 18px;
+}
+
+#home #hero-shot {
+  position: relative;
+  top: 25px;
+  right: 15px;
+  margin: 0;
+  max-width: inherit;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
 
 /*#home .app {
   box-sizing: border-box;
