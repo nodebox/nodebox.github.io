@@ -263,7 +263,7 @@ footer .copyright, footer .copyright a {
 }
 
 #home .app img {
-  border: 0;
+  border: 1px solid #ddd;
   box-shadow: none;
   margin: 0 0 10px 0;
 }
