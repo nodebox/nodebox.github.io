@@ -9,6 +9,7 @@ section: nodebox3
     <div class="hero-text">
       <h1>Meet NodeBox 3.</h1>
       <p>NodeBox makes it easy to do data visualisations, generative design and complex production challenges.</p>
+      <a class="hero-button" href="/download/">Download</a>
     </div>
   </div>
   <div class="eight columns">
@@ -17,18 +18,25 @@ section: nodebox3
 </div>
 
 <div class="features row">
-  <h2 class="sixteen columns">Screenshots</h2>
   <div class="four columns">
     <a class="thumb" href="/media/homepage/nodes.png"><img src="/media/homepage/nodes_sq.png" alt="Nodes"></a>
+    <h2>A Friendly Face</h2>
+    <p>You want to explore generative design without learning the ins and outs of programming? Using its node-based interface, NodeBox makes generative design easy and fast.</p>
   </div>
   <div class="four columns">
     <a class="thumb" href="/media/homepage/code.png"><img src="/media/homepage/code_sq.png" alt="Nodes"></a>
+    <h2>An Animated Partner</h2>
+    <p>Every parameter in NodeBox can be animated. Animations can be exported as common movie formats or as a sequence of images.</p>
   </div>
   <div class="four columns">
     <a class="thumb" href="/media/homepage/animation.png"><img src="/media/homepage/animation_sq.png" alt="Nodes"></a>    
+    <h2>Visualize Your Data</h2>
+    <p>Because of its unique approach, NodeBox is ideal for rapid data visualization. NodeBox can import many data formats such as Excel spreadsheets and you can write your own data importers and exporters.</p>
   </div>
   <div class="four columns">
     <a class="thumb" href="/media/homepage/dataviz.png"><img src="/media/homepage/dataviz_sq.png" alt="Data Visualization"></a>
+    <h2>Peek Under The Hood</h2>
+    <p>Using nodes doesn't have to mean giving up expressive power. NodeBox makes it easy to customize the functionality of existing nodes or to build your own from scratch.</p>
   </div>
 </div> <!-- .screenshots -->
 

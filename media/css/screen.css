@@ -311,21 +311,28 @@ footer .copyright a {
 /* Download */
 
 .hero-button {
-  font-size: 14px;
+  font-size: 24px;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 20px;
+  font-weight: bold;
   color: white;
-  text-shadow: -1px 0 1px rgba(0, 0, 0, 0.3);
-  background: #424483;
+  text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
+  background: #4E9DF4;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(100, 100, 120, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
   margin: 10px 0 20px 0;
   -webkit-transition: 300ms;
+  font-family: 'PT Sans Narrow', sans-serif;
   -moz-transition: 300ms;
 }
 
+.hero-button:hover {
+  background: #d26b27;
+}
+
 .yellow {
-  background: #d8d552;
+  background: #041a32;
   color: #333;
   text-shadow: none;
 }
@@ -335,10 +342,6 @@ footer .copyright a {
   text-align: center;
 }
 
-.hero-button:hover {
-  box-shadow: 0 0 8px rgba(0, 0, 20, 0.3);
-  background: #7579ae;
-}
 
 
 /* Documentation */
