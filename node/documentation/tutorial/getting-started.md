@@ -5,6 +5,7 @@ title: Getting Started
 TODO
 ====
 * Update screenshots into steps
+* Still working on this one..
 
 Welcome to NodeBox! In this tutorial we're going to learn the essentials for working with the program.
 
@@ -18,38 +19,40 @@ Creating your first node
 ------------------------
 Open the application. After a short loading time, NodeBox opens a new document window that looks like this:
 
-![A new NodeBox window](/media/img/tutorial/start-new-window.png)
+![A new NodeBox window](tutorial-getting-started-new-window.png)
 
 NodeBox documents are composed of **networks of connected nodes**.
 
-Click the highlighted **New Node** button. This pops up the node selection window:
+Remove the default [rect node](/node/reference/rect.html) by selecting it and by entering the backspace button.
 
-![Node Selection Dialog](/media/img/tutorial/start-node-selection-dialog.png)
+Click the **New Node** button or double click anywhere in the network pane. This pops up the node selection window:
 
-From this window, create the Star node. You can do this in two ways:
+![Node Selection Dialog](tutorial-getting-started-new-node.png)
 
-* Scroll through the (sorted) list until you find the Star node, then double-click it.
-* Enter the first letters ("st") and press enter when the Star node is selected. If there is more than one node use the arrow keys to select the node you want.
+From this window, create an [ellipse node](/node/reference/ellipse.html). You can do this in three ways:
 
-![NodeBox window with one star node](/media/img/tutorial/start-star-node.png)
+* Scroll through the (sorted) list until you find the Ellipse node, then double-click it.
+* Click on the Geometry Tab and scroll through the list until you find the Ellipse node, then double-click it.
+* Enter the first letters ("el") and press enter when the Ellipse node is selected. If there is more than one node use the arrow keys to select the node you want.
 
-The NodeBox document window consists of four panes. These are (clockwise, from the top):
+![NodeBox window with one ellipse node](tutorial-getting-started-one-ellipse.png)
+
+The NodeBox document window consists of three panes. These are (clockwise, from the top):
 
 * **The Viewer Pane**, showing the composition you're working on.
 * **The Parameters Pane**, allowing you to adjust the parameter values of a node.
 * **The Network Pane**, showing all nodes and their connections.
-* **The Source Pane**, containing the source code of the currently selected node. (We won't use it in this tutorial.)
 
-NodeBox called the new star node "star1". That's because each node in NodeBox needs to have a unique name.
+NodeBox called the new ellipse node "ellipse1". That's because each node in NodeBox needs to have a unique name.
 
 Let's change some parameters:
 
-* Double-click the **Points** field (where it says "20"), type **40**, and press enter. The star should now have forty points.
-* Drag the **Inner Diameter** field (where it says "100.00"), and drag it to the left until it says **50.00**.
+* Double-click the **Width** field (where it says "100"), type **50**, and press enter. The ellipse should now have a width of 50.
+* Do the same thing for the **Height** field.
 
 Your screen should look like this:
 
-![A pointier Star](/media/img/tutorial/start-pointy-star.png)
+![A smaller ellipse](tutorial-getting-started-small-ellipse.png)
 
 Everywhere you see a number, you can drag it to see what it does. If you make a mistake, you can undo.
 
