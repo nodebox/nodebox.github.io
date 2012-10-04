@@ -322,8 +322,27 @@ footer .copyright a {
 
 /* NodeBox 3 */
 
-#nodebox3 .hero {
-  background:  url(/media/homepage/random-shapes.png) no-repeat 99% 50% #041a32;  
+#node .hero {
+  background: #041a32;
+  background: -moz-linear-gradient(top, #000000 0%, #041a32 100%);
+  background: -webkit-linear-gradient(top, #000000 0%,#041a32 100%);
+  background: -ms-linear-gradient(top, #000000 0%,#041a32 100%);
+  background: linear-gradient(to bottom, #000000 0%,#041a32 100%);
+}
+
+#node .summary {
+  font-style: oblique;
+  color: #666;
+}
+
+#node .action ul {
+  margin: 0;
+  padding: 0;
+}
+
+#node .action li {
+  list-style: none;
+  font-weight: bold;
 }
 
 

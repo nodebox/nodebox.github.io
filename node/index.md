@@ -1,7 +1,7 @@
 ---
 layout: base
 title: Welcome
-section: nodebox3
+section: node
 ---
 
 <div class="hero row" id="hero">
@@ -17,6 +17,10 @@ section: nodebox3
   </div>
 </div>
 
+<div class="summary row">
+  <p class="sixteen columns">NodeBox is a node-based software application for generative design. It's built from the ground up by designers to be easy-to-use, efficient, and fast.</p>
+</div>
+    
 <div class="features row">
   <div class="four columns">
     <a class="thumb" href="/media/node/features-dataviz.png"><img src="/media/node/features-dataviz-thumb.png" alt="Screenshot of NodeBox used for data visualization"></a>
@@ -40,4 +44,13 @@ section: nodebox3
   </div>
 </div> <!-- .screenshots -->
 
-[Documentation](/node/documentation/index.html)
+<div class="action row">
+  <div class="eight columns">
+    <h2>Get Started</h2>
+    <ul>
+      <li><a href="/node/download/">Download the application</a></li>
+      <li><a href="/node/screencasts/">Watch screencasts</a></li>
+      <li><a href="/node/documentation/">Read the tutorial</a></li>
+    </ul>
+  </div>
+</div>
