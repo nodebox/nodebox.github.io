@@ -1,7 +1,7 @@
 ---
 layout: reference
-title: Textonpath Node
-image: txtonpath
+title: Text On Path Node
+image: textonpath
 ---
 Create text that follows a path.
 

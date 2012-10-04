@@ -1,7 +1,7 @@
 ---
 layout: reference
-title: Color Node
-image: color
+title: Colorize Node
+image: colorize
 ---
 Change the color of a shape. Colors the entire input geometry using the given color. 
 
