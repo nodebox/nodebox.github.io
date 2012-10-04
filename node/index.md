@@ -24,7 +24,7 @@ section: nodebox3
     <p>Because of its unique approach, NodeBox is ideal for rapid data visualization. NodeBox can import many data formats such as Excel spreadsheets and you can write your own data importers and exporters.</p>
   </div>
   <div class="four columns">
-    <a class="thumb" href="/media/homepage/code.png"><img src="/media/node/code_sq.png" alt="Animation"></a>
+    <a class="thumb" href="/media/node/features-animation.png"><img src="/media/node/features-animation-thumb.png" alt="Animation"></a>
     <h2>An Animated Partner</h2>
     <p>Every parameter in NodeBox can be animated. Animations can be exported as common movie formats or as a sequence of images.</p>
   </div>
