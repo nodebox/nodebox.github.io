@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="1bd670de-2f9b-40ed-a1b6-c7ad06a2910a">
+    <node name="root" outputRange="list" renderedChild="combine1">
+        <node name="combine1" position="4.00,5.00" prototype="list.combine"/>
+        <node name="star1" position="1.00,1.00" prototype="corevector.star">
+            <port name="position" type="point" value="-120.00,0.00"/>
+        </node>
+        <node name="star2" position="6.00,1.00" prototype="corevector.star">
+            <port name="position" type="point" value="120.00,0.00"/>
+        </node>
+        <node name="wiggle1" position="2.00,3.00" prototype="corevector.wiggle">
+            <port name="seed" type="int" value="1"/>
+        </node>
+        <node name="wiggle2" position="7.00,3.00" prototype="corevector.wiggle">
+            <port name="seed" type="int" value="1"/>
+        </node>
+        <conn input="wiggle1.shape" output="star1"/>
+        <conn input="wiggle2.shape" output="star2"/>
+        <conn input="combine1.list1" output="wiggle1"/>
+        <conn input="combine1.list2" output="wiggle2"/>
+    </node>
+</ndbx>
