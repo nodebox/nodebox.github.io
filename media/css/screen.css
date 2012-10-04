@@ -97,25 +97,44 @@ header h1 small {
   color: #999;
 }
 
-header nav {
+header #primary-links {
   float: right;
   margin: 0 0 15px 0;
   padding: 0 0 0 0;
 }
 
+header #software-links {
+  font-size: 12px;
+  padding: 0 0 0 120px;
+  color: #999;
+}
+
+header #software-links a {
+  padding-top: 18px;
+  padding-right: 5px;
+  margin-left: 5px;
+  color: #88b;
+}
+
 header nav a {
   display: inline-block;
   margin-left: 10px;
-  padding-top: 10px;
+  padding-top: 16px;
   color: #041a32;
 }
+
+header nav a {
+  border-top: 4px solid transparent;
+} 
 
 #home .home,
 #gallery .gallery,
 #download .download,
 #documentation .documentation,
 #forum .forum,
-#blog .blog {
+#blog .blog,
+#node .node,
+#documentation .node {
   border-top: 4px solid #4e9df4;
 }
 
