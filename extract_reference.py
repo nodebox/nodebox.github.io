@@ -34,6 +34,6 @@ for library in all_libraries:
   print library_name
   print '-' * len(library_name)
   for node in library.nodes:
-    print "[%s](%s/%s.html): %s""" % (humanize(node.name), library.name, node.name, node.description)
+    print "* [%s](%s/%s.html): %s""" % (humanize(node.name), library.name, node.name, node.description)
   print
 
