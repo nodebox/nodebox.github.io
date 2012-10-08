@@ -80,6 +80,7 @@ class Port(object):
         p = Port(node, e.attrib['name'])
         p.type = e.attrib.get('type')
         p.value = e.attrib.get('value')
+        p.description = e.attrib.get('description', '')
         return p
         
     def __init__(self, node, name):
