@@ -1,6 +1,7 @@
 ---
 layout: documentation
 title: Node Reference
+notes: AUTO-GENERATED - DO NOT EDIT. Use the extract_reference.py script to re-generate this file.
 ---
 Color
 -----
@@ -11,11 +12,8 @@ Color
 
 Core
 ----
-* [Frame](core/frame.html): Output the current frame.
-* [Network](core/network.html): Create a sub-network.
-
-Image
------
+* [Frame](core/frame.html): Output the value of the current frame. Used for animating ports.
+* [Network](core/network.html): Create an empty subnetwork.
 
 Geometry
 --------
@@ -42,7 +40,7 @@ Geometry
 * [Line](corevector/line.html): Create a line between two points.
 * [Line Angle](corevector/line_angle.html): Create a line between one point and an angle + distance.
 * [Link](corevector/link.html): Generate a visual link between two shapes.
-* [Make Point](corevector/make_point.html): Create a point based on two numbers.
+* [Make Point](corevector/make_point.html): Create a point from X/Y coordinates.
 * [Null](corevector/null.html): Do nothing.
 * [Point](corevector/point.html): Create a point value that can be used as a variable.
 * [Point On Path](corevector/point_on_path.html): Calculate a point on a path.
@@ -57,8 +55,9 @@ Geometry
 * [Scale](corevector/scale.html): Resize the shape by scaling it.
 * [Scatter](corevector/scatter.html): Generate points within the boundaries of a shape.
 * [Shape On Path](corevector/shape_on_path.html): Copies shapes on a path.
+* [Skew](corevector/skew.html): Skew the shape.
 * [Snap](corevector/snap.html): Snap geometry to a grid.
-* [Sort](corevector/sort.html): Sort points or shapes using different sorting methods
+* [Sort](corevector/sort.html): Sort points or shapes using different sorting methods.
 * [Star](corevector/star.html): Create a star shape.
 * [Text On Path](corevector/text_on_path.html): Create a text path that follows a shape.
 * [Textpath](corevector/textpath.html): Create a path out of text.
@@ -72,33 +71,29 @@ Geometry
 
 Data
 ----
-* [Import Csv](data/import_csv.html): Import a CSV file.
+* [Import Csv](data/import_csv.html): Import a comma-separated value file containing tabular data.
 * [Lookup](data/lookup.html): Look up a value.
-
-L System
---------
-* [L System](l_system/l_system.html): Create a growing tree simulation.
 
 List
 ----
 * [Combine](list/combine.html): Combine multiple lists into one.
 * [Count](list/count.html): Count the number of items in the list.
 * [Cull](list/cull.html): Cull the list.
-* [Distinct](list/distinct.html): Make every element appear only once in the list.
+* [Distinct](list/distinct.html): Remove all duplicate items from the list.
 * [Filter](list/filter.html): Filter the list.
 * [First](list/first.html): Take the first item of the list.
 * [Last](list/last.html): Take the last item of the list.
-* [Pick](list/pick.html): Pick a specified number of items from the list in random order.
+* [Pick](list/pick.html): Pick items from the list in random order.
 * [Repeat](list/repeat.html): Repeat the list a number of times.
-* [Rest](list/rest.html): Take all but the first items of the list.
+* [Rest](list/rest.html): Take all but the first item of the list.
 * [Reverse](list/reverse.html): Reverse the list.
 * [Second](list/second.html): Take the second item of the list.
-* [Shift](list/shift.html): Shift the elements of a list a number of times.
-* [Shuffle](list/shuffle.html): Shuffle items in the list in random order.
-* [Slice](list/slice.html): Take a portion of the original list.
+* [Shift](list/shift.html): Move items at the beginning of the list to the end.
+* [Shuffle](list/shuffle.html): Randomize the ordering of items in the list.
+* [Slice](list/slice.html): Take a portion of the list.
 * [Sort](list/sort.html): Sort items in the list.
 * [Switch](list/switch.html): Switch between multiple inputs.
-* [Take Every](list/take_every.html): Take every nth element of the original list.
+* [Take Every](list/take_every.html): Take every nth element of the list.
 
 Math
 ----
@@ -124,7 +119,7 @@ Math
 * [Min](math/min.html): Select the smallest value from a list of numbers.
 * [Mod](math/mod.html): Calculate the modulo by dividing two numbers and keeping the remainder.
 * [Multiply](math/multiply.html): Multiply two numbers.
-* [Negate](math/negate.html): Negate the number. Changes the sign of a number.
+* [Negate](math/negate.html): Change the sign of a number by negating it.
 * [Number](math/number.html): Create a floating-point value that can be used as a variable.
 * [Pi](math/pi.html): The value of the mathematical constant pi.
 * [Pow](math/pow.html): Calculate the power of a number.
@@ -132,19 +127,13 @@ Math
 * [Random Numbers](math/random_numbers.html): Create a list of random numbers.
 * [Range](math/range.html): Generate a range of numbers.
 * [Reflect](math/reflect.html): Calculate a new point based on the angle and distance from an original point.
-* [Sample](math/sample.html): Generate a certain amount of numbers.
-* [Sin](math/sin.html): Calculate the trigonometric sine of an angle
-* [Slow Number](math/slow_number.html): Test node that takes 1 second to calculate a number.
+* [Sample](math/sample.html): Generate numbers within the given bounds.
+* [Sin](math/sin.html): Calculate the trigonometric sine of an angle.
 * [Sqrt](math/sqrt.html): Calculate the square root of a number.
 * [Subtract](math/subtract.html): Subtract two numbers.
 * [Sum](math/sum.html): Sum a list of numbers.
-* [To Integer](math/to_integer.html): Calculate a value as an integer
-* [Wave](math/wave.html): Calculate a value based from wave inputs.
-
-Packing
--------
-* [Angle Pack](packing/angle_pack.html): Pack objects by angling on the object.
-* [Pack](packing/pack.html): Pack objects.
+* [To Integer](math/to_integer.html): Convert a floating-point number to an integer.
+* [Wave](math/wave.html): Calculate a value based on wave equations.
 
 String
 ------
@@ -153,5 +142,4 @@ String
 * [Length](string/length.html): Count the number of characters in a string.
 * [Make Strings](string/make_strings.html): Create a list of strings.
 * [Word Count](string/word_count.html): Count the number of words in a string.
-* [String](string/string.html): Generate a string.
 
