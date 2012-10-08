@@ -7,7 +7,7 @@ Color
 -----
 * [Color](color/color.html): Create a color value that can be used as a variable.
 * [Gray Color](color/gray_color.html): Create a gray color.
-* [Hsb Color](color/hsb_color.html): Create an HSB color.
+* [Hsb Color](color/hsb_color.html): Create a HSB color.
 * [Rgb Color](color/rgb_color.html): Create a RGB color.
 
 Core
@@ -72,7 +72,7 @@ Geometry
 Data
 ----
 * [Import Csv](data/import_csv.html): Import a comma-separated value file containing tabular data.
-* [Lookup](data/lookup.html): Look up a value.
+* [Lookup](data/lookup.html): Look up a value in a table or object.
 
 List
 ----
@@ -131,7 +131,7 @@ Math
 * [Sin](math/sin.html): Calculate the trigonometric sine of an angle.
 * [Sqrt](math/sqrt.html): Calculate the square root of a number.
 * [Subtract](math/subtract.html): Subtract two numbers.
-* [Sum](math/sum.html): Sum a list of numbers.
+* [Sum](math/sum.html): Add up all numbers in the list.
 * [To Integer](math/to_integer.html): Convert a floating-point number to an integer.
 * [Wave](math/wave.html): Calculate a value based on wave equations.
 
