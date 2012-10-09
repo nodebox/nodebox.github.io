@@ -20,7 +20,7 @@ LIBRARY_NAME_MAP = {
     'corevector': 'geometry',
 }
 
-def human_library_name(name):
+def humanize_library_name(name):
     """Make a human-readable name out of a library name."""
     return humanize(LIBRARY_NAME_MAP.get(name, name))
 
@@ -33,45 +33,80 @@ def page_name(fname):
     fname = os.path.basename(fname)
     return os.path.splitext(fname)[0]
 
-def reference_index_page():
-    """Return the contents of the reference index page."""
+def find_library_by_name(library_name):
+    for l in all_libraries:
+        if l.name == library_name:
+            return l
+    return None
+
+def library_index(library, show_header=True):
+    library_name = humanize_library_name(library.name)
+    s = ''
+    if show_header:
+        s += library_name + '\n'
+        s += '-' * len(library_name) + '\n'
+    for node in library.nodes:
+        s += '* [%s](/node/reference/%s/%s.html): %s\n' % (humanize(node.name), library.name, node.name, node.description)
+    s += '\n'
+    return s
+
+def global_index_page():
+    """Return the contents of the global reference index page."""
     s = '''---
 layout: documentation
 title: Node Reference
-notes: AUTO-GENERATED - DO NOT EDIT. Use the extract_reference.py script to re-generate this file.
+notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate this file.
 ---
 '''
 
     for library in all_libraries:
-        library_name = human_library_name(library.name)
-        s += library_name + '\n'
-        s += '-' * len(library_name) + '\n'
-        for node in library.nodes:
-            s += '* [%s](%s/%s.html): %s\n' % (humanize(node.name), library.name, node.name, node.description)
-        s += '\n'
+        s += library_index(library)
     return s
 
-def generate_index_page(dry_run=False):
-    """Generate the reference index page."""
-    print "Generating %s" % NODE_REFERENCE_INDEX
-    if dry_run:
-        print reference_index_page()
-    else:
-        with open(NODE_REFERENCE_INDEX, 'w') as f:
-            f.write(reference_index_page())
+def library_index_page(library):
+    """Return the contents of the library reference index page."""
+    s = '''---
+layout: documentation
+library: %s
+title: %s
+notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate this file.
+---
+''' % (library.name, humanize_library_name(library.name))
+    s += library_index(library, show_header=False)
+    return s
 
+def _write_page(fname, contents, dry_run=False):
+    """Write a page to the filesystem."""
+    print "Generating %s" % fname
+    if dry_run:
+        print contents
+    else:
+        ensure_directory(os.path.dirname(fname))
+        with open(fname, 'w') as f:
+            f.write(contents)
+
+def write_global_index_page(dry_run=False):
+    """Generate the global reference index page."""
+    _write_page(NODE_REFERENCE_INDEX, global_index_page(), dry_run)
+
+def write_library_index_page(library_name=None, dry_run=False):
+    """Generate the library reference index page."""
+    library = find_library_by_name(library_name)
+    fname = os.path.join(NODE_REFERENCE_DIRECTORY, library.name, 'index.md')
+    _write_page(fname, library_index_page(library), dry_run)
 
 def stub_page(library, node):
     """Return the contents of a stub documentation page."""
     s = '''---
 layout: reference
 library: %s
+node: %s
 title: %s
 image: %s
 ---
 %s
 
-''' % (node.library.name, humanize(node.name), node.image, node.description)
+''' % (node.library.name, node.name, humanize(node.name), node.image, node.description)
     for port in node.ports:
         s += '* **%s**: %s\n' % (humanize(port.name), port.description)
     return s
@@ -174,7 +209,10 @@ if __name__=='__main__':
     args = parser.parse_args()
 
     if args.command == 'index':
-        generate_index_page(args.dry_run)
+        if args.library is None:
+            write_global_index_page(args.dry_run)
+        else:
+            write_library_index_page(args.library, args.dry_run)
     elif args.command == 'stub':
         generate_stub_pages(args.library, args.dry_run)
     elif args.command == 'icons':

@@ -4,12 +4,19 @@ section: documentation
 ---
 <article class="ten columns">
   <h1 id="page-title">{{ page.title }}</h1>
-  {% if page.library %}
+  {% if page.node %}
     <div class="breadcrumbs">
       <a href="/node/reference/">Reference</a> &rarr;
       <a href="/node/reference/{{ page.library }}">{{ page.library|capitalize }}</a> &rarr;
       {{ page.title }}
     </div>
+  {% else %}
+    {% if page.library %}
+    <div class="breadcrumbs">
+      <a href="/node/reference/">Reference</a> &rarr;
+      {{ page.library|capitalize }}
+    </div>
+    {% endif %}
   {% endif %}
   {{ content }}
 </article>
