@@ -13,7 +13,7 @@ By connecting nodes together, you create your own assembly line where a new shap
 
 Here's an example:
 
-1. We create a [rect node](/node/reference/corevector/import.html). This node is a generator: it *generates* a new shape.
+1. We create a [rect node](/node/reference/corevector/rect.html). This node is a generator: it *generates* a new shape.
   ![Step 1](concepts-step1.png)
 2. We connect a [colorize node](/node/reference/corevector/colorize.html) to the rect node. This node takes the output of the rect node and changes its color. We call it a filter node, since it *filters* an existing shape.
   ![Step 2](concepts-step2.png)
