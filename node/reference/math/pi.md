@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: pi
 title: Pi
 image: generic.png
 ---

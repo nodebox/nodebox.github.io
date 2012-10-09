@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: number
 title: Number
 image: generic.png
 ---

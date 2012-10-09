@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: sum
 title: Sum
 image: sum.png
 ---

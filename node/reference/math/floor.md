@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: floor
 title: Floor
 image: generic.png
 ---

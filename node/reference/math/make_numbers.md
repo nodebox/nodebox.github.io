@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: make_numbers
 title: Make Numbers
 image: generic.png
 ---

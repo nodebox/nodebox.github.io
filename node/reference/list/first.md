@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: first
 title: First
 image: first.png
 ---

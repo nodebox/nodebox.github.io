@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: sin
 title: Sin
 image: generic.png
 ---

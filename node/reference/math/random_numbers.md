@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: random_numbers
 title: Random Numbers
 image: generic.png
 ---

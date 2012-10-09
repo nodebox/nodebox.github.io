@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: cos
 title: Cos
 image: generic.png
 ---

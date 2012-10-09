@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: log
 title: Log
 image: log.png
 ---

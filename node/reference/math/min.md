@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: min
 title: Min
 image: min.png
 ---

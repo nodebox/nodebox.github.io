@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: coordinates
 title: Coordinates
 image: coordinates.png
 ---

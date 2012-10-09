@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: switch
 title: Switch
 image: switch.png
 ---

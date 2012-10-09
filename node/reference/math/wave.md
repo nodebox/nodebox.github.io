@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: wave
 title: Wave
 image: generic.png
 ---

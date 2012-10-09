@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: last
 title: Last
 image: last.png
 ---

@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: subtract
 title: Subtract
 image: subtract.png
 ---

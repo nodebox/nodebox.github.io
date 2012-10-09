@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: cull
 title: Cull
 image: generic.png
 ---

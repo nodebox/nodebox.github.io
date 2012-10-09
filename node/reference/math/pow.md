@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: pow
 title: Pow
 image: generic.png
 ---

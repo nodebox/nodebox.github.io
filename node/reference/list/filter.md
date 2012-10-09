@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: filter
 title: Filter
 image: generic.png
 ---

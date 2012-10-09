@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: range
 title: Range
 image: generic.png
 ---

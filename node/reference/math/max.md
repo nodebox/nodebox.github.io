@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: max
 title: Max
 image: max.png
 ---

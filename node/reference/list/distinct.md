@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: distinct
 title: Distinct
 image: generic.png
 ---

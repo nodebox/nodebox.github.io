@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: multiply
 title: Multiply
 image: multiply.png
 ---

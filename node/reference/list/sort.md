@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: sort
 title: Sort
 image: sort.png
 ---

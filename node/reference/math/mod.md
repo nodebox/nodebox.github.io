@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: mod
 title: Mod
 image: mod.png
 ---

@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: angle
 title: Angle
 image: angle.png
 ---

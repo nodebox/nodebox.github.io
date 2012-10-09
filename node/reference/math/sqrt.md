@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: sqrt
 title: Sqrt
 image: sqrt.png
 ---

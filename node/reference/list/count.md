@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: count
 title: Count
 image: count.png
 ---

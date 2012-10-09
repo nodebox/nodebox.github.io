@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: divide
 title: Divide
 image: divide.png
 ---

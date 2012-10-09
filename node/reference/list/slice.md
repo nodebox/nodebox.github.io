@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: slice
 title: Slice
 image: slice.png
 ---

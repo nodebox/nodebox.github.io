@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: negate
 title: Negate
 image: generic.png
 ---

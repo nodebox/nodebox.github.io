@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: pick
 title: Pick
 image: generic.png
 ---

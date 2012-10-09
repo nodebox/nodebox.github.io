@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: abs
 title: Abs
 image: generic.png
 ---

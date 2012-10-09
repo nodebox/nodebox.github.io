@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: combine
 title: Combine
 image: generic.png
 ---

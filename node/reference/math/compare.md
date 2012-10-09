@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: compare
 title: Compare
 image: compare.png
 ---

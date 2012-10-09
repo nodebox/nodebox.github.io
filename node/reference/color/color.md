@@ -1,7 +1,9 @@
 ---
 layout: reference
-title: Color Node
-image: color
+library: color
+node: color
+title: Color
+image: None
 ---
 Create a color value that can be used as a variable.
 

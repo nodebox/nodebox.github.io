@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: ceil
 title: Ceil
 image: generic.png
 ---

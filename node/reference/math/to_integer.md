@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: to_integer
 title: To Integer
 image: generic.png
 ---

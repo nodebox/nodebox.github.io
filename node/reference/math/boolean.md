@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: boolean
 title: Boolean
 image: boolean.png
 ---

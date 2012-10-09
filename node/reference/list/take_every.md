@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: take_every
 title: Take Every
 image: generic.png
 ---

@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: distance
 title: Distance
 image: distance.png
 ---

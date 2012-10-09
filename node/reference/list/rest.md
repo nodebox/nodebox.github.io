@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: rest
 title: Rest
 image: rest.png
 ---

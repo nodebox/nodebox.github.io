@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: shuffle
 title: Shuffle
 image: shuffle.png
 ---

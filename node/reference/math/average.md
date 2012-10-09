@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: average
 title: Average
 image: average.png
 ---

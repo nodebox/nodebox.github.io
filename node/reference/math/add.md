@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: math
+node: add
 title: Add
 image: add.png
 ---

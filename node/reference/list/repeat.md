@@ -1,6 +1,7 @@
 ---
 layout: reference
 library: list
+node: repeat
 title: Repeat
 image: repeat.png
 ---
