@@ -2,6 +2,7 @@
 # Extract as much as we can from the NDBX files for the reference documentation.
 
 from glob import glob
+from shutil import copyfile
 import os
 
 from ndbx import Library
@@ -69,7 +70,7 @@ image: %s
 ---
 %s
 
-''' % (humanize(node.name), node.name, node.description)
+''' % (humanize(node.name), node.image, node.description)
     for port in node.ports:
         s += '* **%s**: %s\n' % (humanize(port.name), port.description)
     return s
@@ -81,10 +82,7 @@ def generate_stub_page(library, node, dry_run=False):
     if dry_run:
         print stub_page(library, node)
     else:
-        try:
-            os.makedirs(os.path.join(NODE_REFERENCE_DIRECTORY, library.name))
-        except OSError:
-            pass
+        ensure_directory(os.path.join(NODE_REFERENCE_DIRECTORY, library.name))
         with open(fname, 'w') as f:
             f.write(stub_page(library, node))
 
@@ -103,6 +101,35 @@ def generate_stub_pages(library_name=None, dry_run=False):
                 generate_stub_page(library, node, dry_run)
 
     print "%s stub page(s) generated." % amount
+
+def ensure_directory(dir):
+    """Ensure the given directory exists."""
+    try:
+        os.makedirs(dir)
+    except OSError, e:
+        if e.errno == 17:
+            pass
+        else:
+            raise e
+
+def copy_icons(library_name=None, dry_run=False):
+    """Copy node icons from the source to the documentation."""
+    for library in all_libraries:
+        if library_name is not None and library.name != library_name: continue
+        src_dir = os.path.join(NODE_LIBRARIES_DIRECTORY, library.name)
+        for node in library.nodes:
+            src_icon = os.path.join(src_dir, node.image)
+            dst_icon = os.path.join(NODE_REFERENCE_DIRECTORY, library.name, node.image)
+            if not os.path.exists(src_icon):
+                print "WARNING source icon %s for node %s/%s does not exist!" % (node.image, library.name, node.name)
+                continue
+            if os.path.exists(dst_icon):
+                continue
+            if dry_run:
+                print "Copy %s to %s" % (src_icon, dst_icon)
+            else:
+                ensure_directory(os.path.join(NODE_REFERENCE_DIRECTORY, library.name))
+                copyfile(src_icon, dst_icon)
 
 def is_empty(s):
     """Check if the string has only whitespace in it."""
@@ -123,6 +150,12 @@ def check_reference(library_name=None):
                     print '%s/%s.%s: Port has no description.' % (library.name, node.name, port.name)
                 elif not port.description.endswith('.'):
                     print '%s/%s.%s: Port description does not end with period. ("%s")' % (library.name, node.name, port.name, port.description)
+            if node.image is None:
+                print "%s/%s: No icon specified." % (library.name, node.name)
+            else:
+                icon_fname = os.path.join(NODE_LIBRARIES_DIRECTORY, library.name, node.image)
+                if not os.path.exists(icon_fname):
+                    print "%s/%s: Icon %s does not exist." % (library.name, node.name, node.image)
  
 command_docs='''Commands:
     index: Generate the reference index page.
@@ -144,6 +177,8 @@ if __name__=='__main__':
         generate_index_page(args.dry_run)
     elif args.command == 'stub':
         generate_stub_pages(args.library, args.dry_run)
+    elif args.command == 'icons':
+        copy_icons(args.library, args.dry_run)
     elif args.command == 'check':
         check_reference(args.library)
     else:
