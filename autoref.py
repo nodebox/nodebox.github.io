@@ -65,12 +65,13 @@ def stub_page(library, node):
     """Return the contents of a stub documentation page."""
     s = '''---
 layout: reference
-title: %s Node
+library: %s
+title: %s
 image: %s
 ---
 %s
 
-''' % (humanize(node.name), node.image, node.description)
+''' % (node.library.name, humanize(node.name), node.image, node.description)
     for port in node.ports:
         s += '* **%s**: %s\n' % (humanize(port.name), port.description)
     return s
@@ -125,9 +126,8 @@ def copy_icons(library_name=None, dry_run=False):
                 continue
             if os.path.exists(dst_icon):
                 continue
-            if dry_run:
-                print "Copy %s to %s" % (src_icon, dst_icon)
-            else:
+            print "Copy %s to %s" % (src_icon, dst_icon)
+            if not dry_run:
                 ensure_directory(os.path.join(NODE_REFERENCE_DIRECTORY, library.name))
                 copyfile(src_icon, dst_icon)
 

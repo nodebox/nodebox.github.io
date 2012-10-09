@@ -400,6 +400,11 @@ footer .copyright a {
   margin-top: 30px;
 }
 
+#documentation .breadcrumbs {
+  margin-top: -20px;
+  margin-bottom: 15px;
+}
+
 #documentation .sidebar {
   margin: 0;
   padding-left: 10px;
