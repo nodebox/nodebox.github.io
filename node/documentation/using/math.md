@@ -10,8 +10,10 @@ TODO
 
 Nodebox allows you to create a range of different paths and functions based on sine and cosine. The next example shows how to create a Lissajous path which is based on the parametric equations
 
-    A*sin(t)
-    B*sin(t/n)
+    x = A*sin(at+δ)
+    y = B*sin(bt+γ)
+
+Lissajous curves can be seen on oscilloscopes and are the result of combining 2 trigonometric curves at right angles.
 
 Create a [sample node](/node/reference/math/sample.html) to start with a set of numbers.
 
