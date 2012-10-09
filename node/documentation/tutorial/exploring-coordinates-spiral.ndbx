@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="23a4646f-0141-4428-a6b7-bf4eff114c09">
+    <node name="root" outputRange="list" renderedChild="connect1">
+        <node name="connect1" position="3.00,5.00" prototype="corevector.connect">
+            <port name="closed" type="boolean" value="false"/>
+        </node>
+        <node name="coordinates1" position="3.00,4.00" prototype="math.coordinates"/>
+        <node name="sample1" position="1.00,1.00" prototype="math.sample">
+            <port name="amount" type="int" value="40"/>
+            <port name="end" type="float" value="360.0"/>
+        </node>
+        <node name="sample2" position="4.00,1.00" prototype="math.sample">
+            <port name="amount" type="int" value="200"/>
+            <port name="end" type="float" value="200.0"/>
+        </node>
+        <conn input="coordinates1.angle" output="sample1"/>
+        <conn input="connect1.points" output="coordinates1"/>
+        <conn input="coordinates1.distance" output="sample2"/>
+    </node>
+</ndbx>
