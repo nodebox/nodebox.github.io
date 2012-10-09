@@ -1,8 +1,12 @@
 ---
 layout: reference
-title: Switch Node
-image: switch
+library: list
+title: Switch
+image: switch.png
 ---
-Switch between different input geometries. The input port can take multiple nodes and you can change the order of the nodes.
+Switch between multiple inputs.
 
-* **Select**: The index of the input geometry. The index wraps around so a value bigger than the number of inputs always returns a valid shape.
+* **Input1**: The first list.
+* **Input2**: The second list.
+* **Input3**: The third list.
+* **Index**: The index of the input list to select. If the index is greater than the number of inputs, it wraps around.
