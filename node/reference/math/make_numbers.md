@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Make Numbers Node
+library: math
+title: Make Numbers
 image: generic.png
 ---
 Transform a string to a list of numbers.

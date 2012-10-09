@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Negate Node
+library: math
+title: Negate
 image: generic.png
 ---
 Change the sign of a number by negating it.

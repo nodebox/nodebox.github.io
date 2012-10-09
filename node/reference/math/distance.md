@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Distance Node
+library: math
+title: Distance
 image: distance.png
 ---
 Calculate the distance between two points.

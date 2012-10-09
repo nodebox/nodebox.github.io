@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Sqrt Node
+library: math
+title: Sqrt
 image: sqrt.png
 ---
 Calculate the square root of a number.

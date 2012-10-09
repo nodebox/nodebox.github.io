@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Divide Node
+library: math
+title: Divide
 image: divide.png
 ---
 Divide two numbers.

@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Radians Node
+library: math
+title: Radians
 image: generic.png
 ---
 Convert degrees to radians.

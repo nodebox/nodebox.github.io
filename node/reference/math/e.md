@@ -1,8 +1,9 @@
 ---
 layout: reference
-title: E Node
+library: math
+title: E
 image: generic.png
 ---
 The value of the mathematical constant e, the base of the natural logarithm.
 
-Read more on [Wikipedia](http://en.wikipedia.org/wiki/E_(mathematical_constant)).
+Read more on <a href="http://en.wikipedia.org/wiki/E_(mathematical_constant)">Wikipedia</a>.

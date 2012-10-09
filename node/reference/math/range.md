@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Range Node
+library: math
+title: Range
 image: generic.png
 ---
 Generate a range of numbers.

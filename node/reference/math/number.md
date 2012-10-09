@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Number Node
+library: math
+title: Number
 image: generic.png
 ---
 Create a floating-point value that can be used as a variable.

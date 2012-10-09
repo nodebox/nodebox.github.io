@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Add Node
+library: math
+title: Add
 image: add.png
 ---
 Add two numbers.

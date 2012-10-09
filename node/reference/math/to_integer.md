@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: To Integer Node
+library: math
+title: To Integer
 image: generic.png
 ---
 Convert a floating-point number to an integer.

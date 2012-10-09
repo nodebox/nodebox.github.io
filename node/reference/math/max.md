@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Max Node
+library: math
+title: Max
 image: max.png
 ---
 Select the largest value from a list of numbers.

@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Angle Node
+library: math
+title: Angle
 image: angle.png
 ---
 Calculate the angle between two points.

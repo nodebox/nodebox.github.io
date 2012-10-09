@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Min Node
+library: math
+title: Min
 image: min.png
 ---
 Select the smallest value from a list of numbers.

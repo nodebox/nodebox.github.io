@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Sin Node
+library: math
+title: Sin
 image: generic.png
 ---
 Calculate the trigonometric sine of an angle.

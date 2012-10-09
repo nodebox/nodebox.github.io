@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Ceil Node
+library: math
+title: Ceil
 image: generic.png
 ---
 Round up the value of a number.

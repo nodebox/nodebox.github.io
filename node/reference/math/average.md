@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Average Node
+library: math
+title: Average
 image: average.png
 ---
 Calculate the average of a list of numbers.

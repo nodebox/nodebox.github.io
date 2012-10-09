@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Log Node
+library: math
+title: Log
 image: log.png
 ---
 Calculate the natural logarithm of a value.

@@ -1,7 +1,8 @@
 ---
 layout: reference
-title: Boolean Node
-image: generic.png
+library: math
+title: Boolean
+image: boolean.png
 ---
 Create a boolean value that can be used as a variable.
 

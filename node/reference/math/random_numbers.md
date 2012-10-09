@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Random Numbers Node
+library: math
+title: Random Numbers
 image: generic.png
 ---
 Create a list of random numbers.

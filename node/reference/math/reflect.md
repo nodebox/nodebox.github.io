@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Reflect Node
+library: math
+title: Reflect
 image: generic.png
 ---
 Calculate a new point based on the angle and distance from an original point.

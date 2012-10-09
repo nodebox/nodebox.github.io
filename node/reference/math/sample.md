@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Sample Node
+library: math
+title: Sample
 image: generic.png
 ---
 Generate numbers within the given bounds.

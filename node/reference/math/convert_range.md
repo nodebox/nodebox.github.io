@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Convert Range Node
+library: math
+title: Convert Range
 image: generic.png
 ---
 Convert a value from one range to another.

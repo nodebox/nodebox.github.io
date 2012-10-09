@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Sum Node
+library: math
+title: Sum
 image: sum.png
 ---
 Add up all numbers in the list.

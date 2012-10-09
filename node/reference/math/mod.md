@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Mod Node
+library: math
+title: Mod
 image: mod.png
 ---
 Calculate the modulo by dividing two numbers and keeping the remainder.

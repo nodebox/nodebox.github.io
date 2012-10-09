@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Coordinates Node
+library: math
+title: Coordinates
 image: coordinates.png
 ---
 Calculate a new point based on the angle and distance from an original point.

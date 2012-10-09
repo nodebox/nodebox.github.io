@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Wave Node
+library: math
+title: Wave
 image: generic.png
 ---
 Calculate a value based on wave equations.

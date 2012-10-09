@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Subtract Node
+library: math
+title: Subtract
 image: subtract.png
 ---
 Subtract two numbers.

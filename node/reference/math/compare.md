@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Compare Node
+library: math
+title: Compare
 image: compare.png
 ---
 Select between two values by comparing them.

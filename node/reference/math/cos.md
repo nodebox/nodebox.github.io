@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Cos Node
+library: math
+title: Cos
 image: generic.png
 ---
 Calculate the trigonometric cosine of an angle.

@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Pow Node
+library: math
+title: Pow
 image: generic.png
 ---
 Calculate the power of a number.

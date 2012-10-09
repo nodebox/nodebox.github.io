@@ -1,6 +1,7 @@
 ---
 layout: reference
-title: Multiply Node
+library: math
+title: Multiply
 image: multiply.png
 ---
 Multiply two numbers.
