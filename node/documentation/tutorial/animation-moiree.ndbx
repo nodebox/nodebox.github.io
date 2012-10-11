@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="91e683bc-3f00-4551-a2b5-533c45d68b8d">
+    <node name="root" outputRange="list" renderedChild="delete1">
+        <node name="colorize1" position="1.00,4.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#d26b27ff"/>
+        </node>
+        <node name="copy1" position="1.00,5.00" prototype="corevector.copy">
+            <port name="copies" type="int" value="2"/>
+            <port name="rotate" type="float" value="45.0"/>
+        </node>
+        <node name="delete1" position="1.00,7.00" prototype="corevector.delete">
+            <port name="scope" type="string" value="paths"/>
+            <port name="delete_selected" type="boolean" value="false"/>
+        </node>
+        <node name="ellipse1" position="1.00,1.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="5.0"/>
+            <port name="height" type="float" value="5.0"/>
+        </node>
+        <node name="ellipse2" position="5.00,5.00" prototype="corevector.ellipse">
+            <port name="width" type="float" value="300.0"/>
+            <port name="height" type="float" value="300.0"/>
+        </node>
+        <node name="frame1" position="5.00,3.00" prototype="core.frame"/>
+        <node name="grid1" position="5.00,1.00" prototype="corevector.grid">
+            <port name="rows" type="int" value="30"/>
+            <port name="columns" type="int" value="30"/>
+        </node>
+        <node name="translate1" position="1.00,3.00" prototype="corevector.translate"/>
+        <conn input="translate1.shape" output="ellipse1"/>
+        <conn input="translate1.translate" output="grid1"/>
+        <conn input="colorize1.shape" output="translate1"/>
+        <conn input="copy1.shape" output="colorize1"/>
+        <conn input="delete1.shape" output="copy1"/>
+        <conn input="delete1.bounding" output="ellipse2"/>
+        <conn input="copy1.rotate" output="frame1"/>
+    </node>
+</ndbx>
