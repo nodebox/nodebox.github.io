@@ -16,7 +16,7 @@ Nodebox allows a range of arithmetic operations suchs as multiply, divide, add, 
 * Create an ellipse node and leave all parameters as default.
 * Create a [scatter node](/node/reference/corevector/scatter.html) and set **Amount** to **1500**
 
-The idea is to create a network which grows hair on all these points. In order to give it a location from which the hairs should grow away from we will implement a [make point node](/node/reference/math/make_point.html) with **X** set to **0.0** and **Y** also set to **0**. This node will allows us to change the direction of each hair later in the process.
+The idea is to create a network which grows hair on all these points. In order to give it a location from which the hairs should grow away from we will implement a [make point node](/node/reference/corevector/make_point.html) with **X** set to **0.0** and **Y** also set to **0**. This node will allows us to change the direction of each hair later in the process.
 
 ![Hair step 1](math-hair-stepa.png)
 
