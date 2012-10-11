@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="d6eea701-4391-483b-9d03-daaa23ec3fbd">
+    <node name="root" outputRange="list" renderedChild="line1">
+        <node name="add1" position="2.00,9.00" prototype="math.add"/>
+        <node name="add2" position="7.00,9.00" prototype="math.add"/>
+        <node name="divide1" position="1.00,7.00" prototype="math.divide">
+            <port name="value2" type="float" value="2.0"/>
+        </node>
+        <node name="divide2" position="6.00,7.00" prototype="math.divide">
+            <port name="value2" type="float" value="2.0"/>
+        </node>
+        <node name="ellipse1" position="1.00,1.00" prototype="corevector.ellipse"/>
+        <node name="line1" position="7.00,12.00" prototype="corevector.line"/>
+        <node name="lookup1" position="1.00,4.00" prototype="data.lookup"/>
+        <node name="lookup2" position="4.00,4.00" prototype="data.lookup">
+            <port name="key" type="string" value="y"/>
+        </node>
+        <node name="lookup3" position="6.00,3.00" prototype="data.lookup"/>
+        <node name="lookup4" position="9.00,3.00" prototype="data.lookup">
+            <port name="key" type="string" value="y"/>
+        </node>
+        <node name="make_point1" position="6.00,1.00" prototype="corevector.make_point"/>
+        <node name="make_point2" position="4.00,11.00" prototype="corevector.make_point"/>
+        <node name="scatter1" position="1.00,2.00" prototype="corevector.scatter">
+            <port name="amount" type="int" value="1500"/>
+        </node>
+        <node name="subtract1" position="1.00,6.00" prototype="math.subtract"/>
+        <node name="subtract2" position="6.00,6.00" prototype="math.subtract"/>
+        <conn input="scatter1.shape" output="ellipse1"/>
+        <conn input="lookup1.list" output="scatter1"/>
+        <conn input="lookup2.list" output="scatter1"/>
+        <conn input="lookup3.list" output="make_point1"/>
+        <conn input="lookup4.list" output="make_point1"/>
+        <conn input="subtract1.value1" output="lookup1"/>
+        <conn input="subtract1.value2" output="lookup3"/>
+        <conn input="subtract2.value1" output="lookup2"/>
+        <conn input="subtract2.value2" output="lookup4"/>
+        <conn input="divide1.value1" output="subtract1"/>
+        <conn input="divide2.value1" output="subtract2"/>
+        <conn input="add1.value1" output="lookup1"/>
+        <conn input="add1.value2" output="divide1"/>
+        <conn input="add2.value1" output="lookup2"/>
+        <conn input="add2.value2" output="divide2"/>
+        <conn input="make_point2.x" output="add1"/>
+        <conn input="make_point2.y" output="add2"/>
+        <conn input="line1.point1" output="scatter1"/>
+        <conn input="line1.point2" output="make_point2"/>
+    </node>
+</ndbx>
