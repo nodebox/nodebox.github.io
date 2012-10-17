@@ -4,13 +4,14 @@
 }
 
 .nbar > ol {
-  height: 30px;
+  height: 29px;
   z-index: 999;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  background: #333;
+  background: #041a32;
+  border-bottom: 1px solid #112;
   list-style: none;
   display: inline-block;
   margin: 0;
@@ -26,7 +27,7 @@
 
 .nbar li a {
   display: inline-block;
-  padding: 7px 15px 8px 0;
+  padding: 8px 15px 7px 0;
 }
 
 .nbar li:hover .nbar-dropdown {
@@ -95,7 +96,11 @@
   margin: 0;
   padding: 0;
   display: block;
-  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.nbar .nbar-dropdown li:last-child {
+  border-bottom: none;
 }
 
 .nbar .nbar-dropdown li a {
@@ -104,7 +109,7 @@
 }
 
 .nbar .nbar-dropdown li a:hover {
-  background: #333;
+  background: #041a32;
   color: #fff;
 }
 
