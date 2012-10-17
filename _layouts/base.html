@@ -15,6 +15,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link type="text/css" rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow">
+  <link type="text/css" rel="stylesheet" media="screen" href="/media/css/nbar.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/media/css/skeleton.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/media/css/normalize.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/media/css/syntax.css">
@@ -28,6 +29,21 @@
   <script src="/media/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 </head>
 <body id="{{ page.section }}">
+
+<div class="nbar">
+  <ol>
+    <li><a href="http://nodebox.net/node/">NodeBox 3<span class="nbar-arrow"></span></a>
+      <ol class="nbar-dropdown">
+        <li><a class="node" href="http://nodebox.net/node/">NodeBox 3<small>Node-based.</small></a></li>
+        <li><a class="code" href="http://nodebox.net/code/">NodeBox 1<small>Classic.</small></a></li>
+        <li><a class="opengl" href="http://www.cityinabottle.org/nodebox/">NodeBox OpenGL<small>Hardware-accelerated.</small></a></li>
+      </ol>
+    </li>
+    <li><a href="http://nodebox.net/gallery/">Gallery</a></li>
+    <li><a href="http://nodebox.net/forum/">Forum</a></li>
+    <li><a href="http://nodebox.net/blog/">Blog</a></li>
+  </ol>
+</div>
 
 <header id="site-header">
   <div class="container">
