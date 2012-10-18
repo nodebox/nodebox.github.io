@@ -139,6 +139,10 @@ header nav a {
   margin-top: 45px;
 }
 
+#content h1 {
+  border-bottom: 1px solid #ddd;
+}
+
 #content img {
   margin: 5px auto;
   max-width: 100%;
@@ -376,10 +380,6 @@ footer .copyright a {
 
 #documentation article {
   padding-bottom: 20px;
-}
-
-#documentation article h1 {
-  border-bottom: 1px solid #ddd;
 }
 
 #documentation img {
