@@ -77,7 +77,7 @@
   left: 0;
   width: 200px;
   background: #eee;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
   margin: 0;
   padding: 0;
 }
