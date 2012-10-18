@@ -89,6 +89,7 @@
 .nbar .nbar-dropdown small {
   display: block;
   color: #aaa;
+  margin-top: 2px;
   font-size: 11px;
 }
 
