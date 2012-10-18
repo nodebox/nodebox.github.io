@@ -125,17 +125,6 @@ header nav a {
 
 header nav a {
   border-top: 4px solid transparent;
-} 
-
-#home .home,
-#gallery .gallery,
-#download .download,
-#documentation .documentation,
-#forum .forum,
-#blog .blog,
-#node .node,
-#documentation .node {
-  border-top: 4px solid #4e9df4;
 }
 
 
@@ -147,6 +136,7 @@ header nav a {
   background: white;
   padding-bottom: 10px;
   margin-bottom: 10px;
+  margin-top: 45px;
 }
 
 #content img {
