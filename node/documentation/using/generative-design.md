@@ -3,7 +3,7 @@ layout: documentation
 title: Creating Generative Design
 ---
 
-Nodebox is ideal for creating generative designs. We've covered a few of them before (f.e the arab tilling principle). 
+Nodebox is ideal for creating generative design. We've covered a few of them before (f.e the arab tilling principle). 
 
 Suppose i want to recreate something like the invader example as decribed on the [subnetworks page](../concepts/subnetworks.html). In stead of using simple rectangles i will create a few shapes to work with.
 
@@ -47,7 +47,7 @@ Our network is getting a bit big so let's create a subnetwork.
 * Right-click one of them and choose “group into network”.
 * This will leave you with one node, subnet1. Right-click it again a rename "unit".
 
-Let's get back in the childnodes to implement a few modifications. I want to be able to send a number to the **Start_index** of slice1 so i need to publish this specific parameter. I also want to be able to give a unit a location so i will have to implement and publish a translate node:
+Let's get back to the childnodes to implement a few modifications. I want to be able to send a number to the **Start_index** of slice1 so i need to **publish** this specific parameter. I also want to be able to give a unit a location so i will have to implement and publish a translate node:
 
 * Right-click on **Start_index** port (in the networkview) of slice1 and choose "Publish" and give it an appropriate name.
 * Create a translate node. Connect slice1 to it's **shape** port.
@@ -65,7 +65,7 @@ This new unit node will be placed on certain locations of a grid.
 
 ![generative step 5](generative-e.png)
 
-Let's introdude a procedure to not always pick the same unit but pick a random one. First we need to know how many times a unit has to be created. We can count the amount of pick1.
+Let's introduce a procedure that does not always pick the same unit but picks a random one instead. First we need to know how many times a unit has to be created. We can count the amount of pick1.
 
 * Create a count node and connect pick1 to it.
 
@@ -81,7 +81,7 @@ Change the **Seed** of pick1 to create another result.
 
 This is half of the result. Next step is to align it to the right side of the origin. In order to do this **an important step** has to be made: render the unit node and have a look at the **Data** tab in the viewer pane. Notice that there are 8 paths in the list: 1 for each unit. If we would align this as is it would result in a similar aligment for all units. To avoid the translate information we will have to group these 8 paths into a single geometry path. 
 
-After the alignment we will relfect it to obtain an invader. Last step is an implementation of a snap node which will change the shapes over a snapping procedure.
+After the alignment we will reflect it to obtain an invader. Last step is an implementation of a snap node which will change the shapes over a snapping procedure.
 
 * Create a group node and connect the unit node to it.
 * Create an align node and set **Halign** to **Left**. Connect group1 to it: the shape should shift to the right side of the origin.
@@ -106,7 +106,7 @@ Let's create a few of them.
 
 ![generative step 8](generative-h.png)
 
-Below is the same procedure with a few modifications. A shadow was added and the 'invadergrid' wa altered by rows, columns and dimension.
+Below is the same procedure with a few modifications. A shadow was added and the 'invadergrid' was altered by rows, columns and dimension.
 
 ![generative final step](12_invaders.png)
 
