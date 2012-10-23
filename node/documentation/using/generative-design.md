@@ -58,4 +58,59 @@ Back in the root you should be able to see a modification in the unit node. It h
 
 ![generative step 4](generative-d.png)
 
+This new unit node will be placed on certain locations of a grid. 
+
+* Create a grid node and set **Rows** to **3**, **Columns** to **4**, **Width** to **200.0** and **Height** to **300.0**.
+* Creat a pick node. Connect grid1 to it and set **Amount** to **8**.
+
+![generative step 5](generative-e.png)
+
+Let's introdude a procedure to not always pick the same unit but pick a random one. First we need to know how many times a unit has to be created. We can count the amount of pick1.
+
+* Create a count node and connect pick1 to it.
+
+Based on this count we can create an amount of random numbers varying between 0 and 4 (remember that on 0 till 3 were the triangle shapes and on 4 was the eye)
+
+* Create a random numbers node and connect count1 to **Amount** port. This will result in a number of random floating numbers.
+* To convert it to integers (we can not select piece 3.41) create a to integer node. Connect random numbers1 to it. This should result in a list of absolute numbers between 0 and 4.
+* Connect to integer1 to **start_index** port.
+
+![generative step 6](generative-f.png)
+
+Change the **Seed** of pick1 to create another result.
+
+This is half of the result. Next step is to align it to the right side of the origin. In order to do this **an important step** has to be made: render the unit node and have a look at the **Data** tab in the viewer pane. Notice that there are 8 paths in the list: 1 for each unit. If we would align this as is it would result in a similar aligment for all units. To avoid the translate information we will have to group these 8 paths into a single geometry path. 
+
+After the alignment we will relfect it to obtain an invader. Last step is an implementation of a snap node which will change the shapes over a snapping procedure.
+
+* Create a group node and connect the unit node to it.
+* Create an align node and set **Halign** to **Left**. Connect group1 to it: the shape should shift to the right side of the origin.
+* Create a (black) reflect node and set **Angle** to **90.0**. Connect shape1 to it.
+* Create a snap node and set **Distance** to **150.0** and **Strength** to **50**.
+* Render snap1 node and change **Seed** of **pick1**.
+
+![generative step 7](generative-g.png)
+
+Let's create a few of them. 
+
+* Select all the nodes and right-click to 'Group into network'. Rename it to invader.
+* Right click it again and 'Edit Children'.
+* Publish **Seed** of pick1 and name it seeda. 
+* Publish **Seed** of random numbers1 and name it seedb.
+* Go back to the root network: the invader has two ports now.
+* Create a grid node and set **Rows** to **5**, **Columns** to **1**, **Width** to **700.0** and **Height** to **1700.0**.
+* Create a count node and connect grid1 to it.
+* Create a range node. Connect count1 to its **End** port.
+* Connect range1 to **Seeda** and **Seedb**.
+* Create a translate node. Connect invader to **Shape** and grid1 to **Translate**. Render it.
+
+![generative step 8](generative-h.png)
+
+Below is the same procedure with a few modifications. A shadow was added and the 'invadergrid' wa altered by rows, columns and dimension.
+
+![generative final step](12_invaders.png)
+
+
+
+
 

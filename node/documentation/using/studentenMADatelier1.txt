@@ -1,0 +1,92 @@
+Niels Kerkhofs - cmdgad - groep 1
+hairy shapes
+
+Jason Pinoy - cmdgad - groep 1
+hairy monstertjes  - nog denkwerk
+
+Hannah Cortens - cmdgad - groep 1
+vlekkenmannetjes
+
+Yannick Willems - cmdgad - groep 1
+cluster van wezentjes. spikes etc. random ogen, tentakels, spikes
+	! circle packing algoritme !
+
+Jo Paulussen - cmdgad - groep 1
+zonnetjes; variatie in ogen, positie en pupil, mond, vorm / tanden, spikes
+
+Michael Iezzi - cmdgad - groep 1
+spookjes, pupil mond. testspook.ndbx
+
+Glenn Rutten - cmdgad - groep 1
+octopus like figure, variatie in ogen, mond, aantal benen
+
+Johan Kuipers - cmdgad - groep 1
+inktvissen
+
+Nele Custers - cmdgad - groep 2:
+mannetjes in halloween-omgeving. Start ellipse + scatter (2) + subnet oog + illustrator lijf + booth 1
+
+Hannelore Vandereyt - cmdgad - groep 2
+planeten - ruimte - ufo 
+
+Kenneth Thijs - cmdgad - groep 2
+aliens - spel met oog en lichaam. verschillende ogen, verschillende lijven
+
+Roland Thuys - cmdgad - groep 2
+Ants.
+
+Anouchka Strauven - cmdgad - groep 2
+bacterie - virus - random paths 
+
+Esther Smisdom - cdmgad - groep 2
+kwallen - lines.ndbx gehad
+
+Jeff Vandeweyer - cmdgad - groep 2
+geweren - huizen - patapons (spel) testguns.ndbx
+
+Johanna Heylen - cmdgad - groep 2
+rupsen testrups.ndbx
+
+Mats Wouters - cmdgad - groep 2
+vissen
+
+
+Lennert Smets - cmdi
+Lego steentjes verschillende vormen en verschillende templates.
+
+Nina Wevers - cmdi
+Afrikaanse maskertjes. verschillende delen bovenop mekaar. 
+
+Mattijs Peeters - cmdi
+insecten. verschil in poten, aantal, kleur, hoofd, staart,lijf
+
+Furkan Donmez - cmdi
+Ballonmannetjes. tentakels die varieren
+
+Jelle Van de Velde - cmdi
+vissen  + onderwater wereld
+
+Matthijs Spruyt - cmdi
+muzieknoten en boxen. flauw idee. te weinig generatieve mogelijkheden
+
+Joris Bocken - cmdi
+asteroiden - eventueel met staart
+
+Laurens Leyssens - cmdi
+afrikaans masker
+
+Aldo Polo - cmdi
+random faces
+
+
+
+
+
+
+
+
+
+
+
+
+
