@@ -3,7 +3,117 @@ layout: documentation
 title: Creating Generative Design
 ---
 
-Nodebox is ideal for creating generative design. We've covered a few of them before (f.e the arab tilling principle). 
+Generative Tower.
+------------------
+
+Nodebox is ideal for creating generative design. We've covered a few of them before (f.e the arab tilling principle).
+
+Suppose we want to make a network that stacks building blocks (represented as simple rectangles with a difference in widht and height) on top of each other. I want to be able to tell each tower how many segments it contains and i want to be able to reset the widht and height of each segment.
+
+Let start with building the segment.
+
+* Create a rect node. Leave at its default setting.
+
+Since i want the ability to change width and height parameters of this rectangle i will create a random number and use it's seeding principle to change it's value.
+
+* Create two random number nodes. Set **Seed** of the first one to **0** and to **1** for the second one. Pointing to the same seed would result in a square but i want rectangles with a difference in width and height.
+* Set **Start** to **1** and **End** to **50** of random numbers1.
+* Set **Start** to **20** and **End** to **50** of random numbers2.
+* Connect random numbers1 to **Width** port of rect1.
+* Connect random numbers1 to **Height** port of rect1.
+
+![generative tower step 1](generative-tower-a.png)
+
+Now for the stack:
+
+* Create a number node and set **Value** to **10.0**.
+* Connect it to **Amount** of **random numbers1** and of **random numbers2**.
+* Create a colorize node and connect rect1 to it. Change the strokecolor to white and enter **1.0** to **Strokewidth**.
+
+The result is ten rectangles all on top of each other. We will have to create a procedure to stack them on each other with reference to its height value.
+
+![generative tower step 2](generative-tower-b.png)
+
+* Create a slice node and set **Start-index** to **0.0** and **Size** to **1.0**.
+* Connect random number2 to it.
+* Create a sum node and connect slice1 to it.
+
+![generative tower step 3](generative-tower-c.png)
+
+The idea is to make a sommation netwerk that returns the sum value for 0, 0-1, 0-2, 0-3, 0-4 and so on. We can do this by changing the **Size** value of slice1. Try it out and notice that the sum is higher with a higher size. We will do this as many times as there are numbers in random number2. Let's create a subnetwork to store this function in and to be able to send it a range of numbers.
+
+* Select **slice1** and **sum1** by dragging over them.
+* Right-click one of them and choose “group into network”.
+* This will leave you with one node, subnet1. Right-click it again a rename it "accumulation" (by using right-click again).
+
+Let's get back to the childnodes to implement a few modifications. I want to be able to send a number to the **Size** of slice1 so i need to **publish** this specific parameter. In addition i want to create a point based on this number. The idea is that the value can be used to push the y coordinate of each rectangle up based on the combined height of his predecessors. This means we have to negate the number and send it to a make point node.
+
+* Right-click the accumulation node and select 'Edit Children'.
+* Right-click on **Size** port of slice1, choose "Publish" and call it 'size'.
+* Click on the root tab in the adress bar or right-click somewhere on the network view to choose "Go Up".
+* Create a negate node and send sum1 to it.
+* Create a make point node and send negate to **Y** port. Leave **X** at **0.0**.
+* Render the make point node and go back to the root network.
+
+Back in the root you should be able to see a modification in the accumulation node. It has an extra port that refers to the **Size**  of the internal slice node( the port is a gray one meaning it expects a value).
+
+Now lets address a value to it.
+
+* Create a range node and connent count1 to it's **End** port.
+* This will result in a list of numbers starting from 0 and ending at the amount of count1.
+* Connect range1 to **Size** port of the accumulation node.
+
+![generative tower step 4](generative-tower-d.png)
+
+The next step is to use the points for the location of the rect.
+
+* First create an align node and set **Valign** to **Bottom**. I want all rectangles to start on top of the origin point and then translate them. Connect colorize1 to it.
+* Create a translate node. Connect align1 to it's **Shape** port and the accumulation node to it's **Translate** port.
+* Create a group node to merge all paths into one geometry object. Send translate1 to it.
+* Render group1.
+
+![generative tower step 5](generative-tower-e.png)
+
+You can change the tower by:
+
+* Changing **Value** of number1 which will add segments to the tower.
+* Changing **Seed** of random numbers1 which will change the width of each segment.
+* Changing **Seed** of random numbers2 which will change the height of each segment and calculate a new set of points based on these new values.
+* Try it out first.
+
+We will create a subnetwork from this procedure and publish some variables that will enable us to change the look of the tower.
+
+* Select all by dragging over them.
+* Right-click one of them and choose “group into network”.
+* This will leave you with one node, subnet1. Right-click it again a rename it "tower" (by using right-click again).
+* Right-click tower node and select 'Edit Children'.
+* Right-click on **Value** port of number1, choose "Publish" and call it 'number-of-segments'.
+* Right-click on **Seed** port of random numbers1, choose "Publish" and call it 'change-widths'.
+* Right-click on **Seed** port of random numbers2, choose "Publish" and call it 'change-heights'.
+* Click on the root tab in the adress bar or right-click somewhere on the network view to choose "Go Up".
+
+The tower node has three ports:
+
+* Change **Number Of Segments** to **13.0**.
+* Change **Change Widths** to **6**.
+* Change **Change Height** to **7**.
+
+The new tower looks like this:
+
+![generative tower step 5](generative-tower-f.png)
+
+Read the [subnetworks page](../concepts/subnetworks.html) and try creating a serie of towers:
+
+![generative city](generative-tower-cities.png)
+
+Changing the basic segment will change the complete building / city:
+
+![generative city](generative-tower-cityb.png)
+
+</br>
+
+Styled Invader.
+------------------
 
 Suppose i want to recreate something like the invader example as decribed on the [subnetworks page](../concepts/subnetworks.html). In stead of using simple rectangles i will create a few shapes to work with.
 
