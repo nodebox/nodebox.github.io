@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="2a53da7d-996a-4606-b3aa-0cff86df91df">
+    <node name="root" outputRange="list" renderedChild="tower">
+        <node name="tower" outputRange="list" position="2.00,1.00" renderedChild="group1">
+            <node name="accumulation" outputRange="list" position="6.00,6.00" renderedChild="make_point1">
+                <node name="make_point1" position="6.00,5.00" prototype="corevector.make_point"/>
+                <node name="negate1" position="6.00,4.00" prototype="math.negate"/>
+                <node name="slice1" position="6.00,2.00" prototype="list.slice">
+                    <port name="size" type="int" value="1"/>
+                </node>
+                <node name="sum1" position="6.00,3.00" prototype="math.sum"/>
+                <port childReference="slice1.list" name="list" range="list" type="list" widget="none"/>
+                <port childReference="slice1.size" min="0.0" name="size" range="value" type="int" value="1" widget="int"/>
+                <conn input="sum1.values" output="slice1"/>
+                <conn input="negate1.value" output="sum1"/>
+                <conn input="make_point1.y" output="negate1"/>
+            </node>
+            <node name="align1" position="2.00,7.00" prototype="corevector.align">
+                <port name="valign" type="string" value="bottom"/>
+            </node>
+            <node name="colorize1" position="2.00,6.00" prototype="corevector.colorize">
+                <port name="stroke" type="color" value="#ffffffff"/>
+                <port name="strokeWidth" type="float" value="1.0"/>
+            </node>
+            <node name="group1" position="2.00,10.00" prototype="corevector.group"/>
+            <node name="number1" position="3.00,1.00" prototype="math.number">
+                <port name="value" type="float" value="13.0"/>
+            </node>
+            <node name="random_numbers1" position="2.00,3.00" prototype="math.random_numbers">
+                <port name="amount" type="int" value="1"/>
+                <port name="start" type="float" value="1.0"/>
+                <port name="end" type="float" value="50.0"/>
+                <port name="seed" type="int" value="6"/>
+            </node>
+            <node name="random_numbers2" position="6.00,3.00" prototype="math.random_numbers">
+                <port name="amount" type="int" value="1"/>
+                <port name="start" type="float" value="20.0"/>
+                <port name="end" type="float" value="50.0"/>
+                <port name="seed" type="int" value="7"/>
+            </node>
+            <node name="range1" position="7.00,5.00" prototype="math.range"/>
+            <node name="rect1" position="2.00,5.00" prototype="corevector.rect"/>
+            <node name="translate1" position="2.00,9.00" prototype="corevector.translate"/>
+            <port childReference="number1.value" name="number_of_segments" range="value" type="float" value="13.0" widget="float"/>
+            <port childReference="random_numbers1.seed" name="change_widths" range="value" type="int" value="6" widget="int"/>
+            <port childReference="random_numbers2.seed" name="change_heights" range="value" type="int" value="7" widget="int"/>
+            <conn input="rect1.width" output="random_numbers1"/>
+            <conn input="rect1.height" output="random_numbers2"/>
+            <conn input="random_numbers1.amount" output="number1"/>
+            <conn input="random_numbers2.amount" output="number1"/>
+            <conn input="colorize1.shape" output="rect1"/>
+            <conn input="accumulation.list" output="random_numbers2"/>
+            <conn input="range1.end" output="number1"/>
+            <conn input="accumulation.size" output="range1"/>
+            <conn input="align1.shape" output="colorize1"/>
+            <conn input="translate1.shape" output="align1"/>
+            <conn input="translate1.translate" output="accumulation"/>
+            <conn input="group1.shapes" output="translate1"/>
+        </node>
+    </node>
+</ndbx>
