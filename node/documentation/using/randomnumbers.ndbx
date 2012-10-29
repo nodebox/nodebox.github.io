@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="e30b01d8-853d-479c-b9f6-378ebc54a145">
+    <node name="root" outputRange="list" renderedChild="translate1">
+        <node name="align1" position="1.00,6.00" prototype="corevector.align">
+            <port name="halign" type="string" value="left"/>
+        </node>
+        <node name="colorize1" position="1.00,5.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#4e9df4ff"/>
+        </node>
+        <node name="count1" position="4.00,2.00" prototype="list.count"/>
+        <node name="hsb_color1" position="4.00,4.00" prototype="color.hsb_color">
+            <port name="hue" type="float" value="150.0"/>
+            <port name="saturation" type="float" value="173.0"/>
+            <port name="brightness" type="float" value="244.0"/>
+        </node>
+        <node name="line1" position="7.00,3.00" prototype="corevector.line">
+            <port name="point2" type="point" value="0.00,300.00"/>
+        </node>
+        <node name="random_numbers1" position="4.00,1.00" prototype="math.random_numbers">
+            <port name="amount" type="int" value="15"/>
+            <port name="end" type="float" value="200.0"/>
+        </node>
+        <node name="rect1" position="1.00,4.00" prototype="corevector.rect">
+            <port name="width" type="float" value="21.0"/>
+            <port name="height" type="float" value="14.0"/>
+        </node>
+        <node name="resample1" position="7.00,4.00" prototype="corevector.resample">
+            <port name="method" type="string" value="amount"/>
+        </node>
+        <node name="translate1" position="4.00,8.00" prototype="corevector.translate"/>
+        <conn input="count1.list" output="random_numbers1"/>
+        <conn input="resample1.shape" output="line1"/>
+        <conn input="resample1.points" output="count1"/>
+        <conn input="rect1.width" output="random_numbers1"/>
+        <conn input="translate1.shape" output="align1"/>
+        <conn input="translate1.translate" output="resample1"/>
+        <conn input="colorize1.shape" output="rect1"/>
+        <conn input="align1.shape" output="colorize1"/>
+        <conn input="hsb_color1.brightness" output="random_numbers1"/>
+        <conn input="colorize1.fill" output="hsb_color1"/>
+    </node>
+</ndbx>
