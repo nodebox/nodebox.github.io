@@ -6,7 +6,7 @@ title: Creating Data Visualizations
 Random numbers.
 ------------------
 
-Nodebox can be used to create data visuals. We will go over a few prinicples but let's first visualize a set of random numbers.
+Nodebox can be used to create data visuals. We will go over a few principles but let's first visualize a set of random numbers.
 
 * Create a random numbers node. Set **Amount** to **15** and **End** to **200.0**.
 * Create a rect node. Set **Height** to **20** and connect random numbers1 to **Width**.
@@ -31,9 +31,9 @@ Let's clean this up a bit with some extra nodes.
 The cost.
 ------------------
 
-Following data was found online (needs website) and stores a few marcro economic numbers and their exaplanation. We will do a similar example as above. You can have a look at the data or download it [here](Debtris.csv).
+Following data was found online (needs website) and stores a few macro economic figures and their exaplanation. We will do a similar example as above. You can have a look at the data or download it [here](Debtris.csv).
 
-* Create an [import node](/node/reference/data/import_csv.html). Point to Debtris.csv in **File**.
+* Create an [import csv node](/node/reference/data/import_csv.html). Point to Debtris.csv in **File**. This reads in the complete csv file. Nodebox shows the file in the network pane.
 * Create two lookup nodes. Set **Key** of lookup1 to **description** and of lookup2 to **££**. These values refer to the index value of each column of the csv file. Connect import csv1 to both of them.
 * Create a textpath node and connect lookup1 to it. Set **Align** to **Right**. Select a font and type.
 * Create a rect node and connect lookup2 to **Width**. Set **Height** to **20.0**. The values of lookup2 are rather big so you might also want to add a divide node in between lookup2 and rect1.
@@ -46,6 +46,8 @@ So far for the data itself. Now let's create a similar shape as before to map th
 * Create a line node. Set **Point2** to **0.0** and **600.0**.
 * Create a resample node to make a list of points from it. Set **Method** to **amount**. Connect count1 to **Points** and connect line1 to **Shape**.
 * Create a translate node and connect combine1 to *Shape** and resample1 to **Points**. Double click it to see the result.
+
+Try implementing color to the network.
 
 ![the cost](data-visualization-cost.png)
 
