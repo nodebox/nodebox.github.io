@@ -24,5 +24,6 @@ Let's clean this up a bit with some extra nodes.
 * Create a hsb colour node. Set **Hue** to **150.0** and **Saturation** to **173.0**. Connect randomnumbers1 to **Brightness**.
 * Connect hsb coulour1 to **Fill** of colorize1.
 * Render translate1.
+* Change **Seed** of random numbers1 to change the set of random numbers and thus the visualization.
 
 ![data random numbers step 2](data-visualization-random-numbersb.png)
