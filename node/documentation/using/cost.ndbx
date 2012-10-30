@@ -8,10 +8,10 @@
         <node name="combine1" position="1.00,9.00" prototype="list.combine"/>
         <node name="count1" position="7.00,5.00" prototype="list.count"/>
         <node name="divide1" position="4.00,5.00" prototype="math.divide">
-            <port name="value2" type="float" value="3.2099997997283936"/>
+            <port name="value2" type="float" value="2.2100000381469727"/>
         </node>
         <node name="import_csv1" position="1.00,2.00" prototype="data.import_csv">
-            <port name="file" type="string" value="/Users/lieven/Projects/nodebox.net/node/documentation/using/Debtris.csv"/>
+            <port name="file" type="string" value="Debtris.csv"/>
         </node>
         <node name="line1" position="5.00,8.00" prototype="corevector.line">
             <port name="point2" type="point" value="0.00,600.00"/>
