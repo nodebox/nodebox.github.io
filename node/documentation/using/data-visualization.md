@@ -29,7 +29,7 @@ Let's clean this up a bit with some extra nodes.
 ![data random numbers step 2](data-visualization-random-numbersb.png)
 
 The cost.
-------------------
+----------
 
 Following data was found online (needs website) and stores a few macro economic figures and their exaplanation. We will do a similar example as above. You can have a look at the data or download it [here](Debtris.csv).
 
@@ -50,6 +50,43 @@ So far for the data itself. Now let's create a similar shape as before to map th
 Try implementing color to the network.
 
 ![the cost](data-visualization-cost.png)
+
+Earthquakes.
+------------------
+
+They way data is represented can differ. In stead of using a line we will go over a procedure for an ellipse. Download this [earthquakes data file](data-visualization-earthquakes.csv).
+
+* Create an import csv node and point to the csv file.
+* Create a lookup node and set **Key** to **Region**. Connect import_csv1 to it.
+* Create a textpath node. Set **Align to **Left**. Connect lookup1 to **Text**.
+
+The result so far is all information as text on top of each other. Next procedure will build the template to be used as points to translate all these different textpaths on to.
+
+* Create an ellipse node. Set **Width** and **Height** to **500.0**.
+* Create a resample node. Set **Method** to **Amount**. Connect ellipse1 to **Shape**.
+* Create a count node and connect import_csv1 to it. We will use this number to figure out what degree each segment needs and to create a range to multiply it to this segmentsize.
+* Create a divide node. Set **Value1** to **360.0**. Connect count1 to **Value2**. Out comes the segment.
+* Create a range node and send count1 to **End**.
+* Create a multiply node. Connect range1 to **Value1** and divide1 to **Value2**.
+
+Now we need a few transformation nodes to connect this data to the actual data. 
+
+* Create a rotate node. Connect multiply1 to **Angle**. Connect textpath1 to **Shape**.
+* Create a translate node. Connect rotate1 to **Shape** and resample1 to **Points**.
+* Render translate1.
+
+![earthquakes step 1](data-visualization-earthquakesa.png)
+
+Have a look at the csv file and notice that it has a lot of columns. Let's add the depth and magnitude to it. 
+
+* Create a lookup node and set **Key** to Depth.
+* Create a divide node to enable scaling of the number. Connect lookup2 to **Value1**. 
+* Create a rect node. Connect divide2 to **Width**.
+
+
+![earthquakes step 2](data-visualization-earthquakesb.png)
+
+![earthquakes step 3](data-visualization-earthquakesc.png)
 
 
 
