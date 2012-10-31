@@ -81,12 +81,29 @@ Have a look at the csv file and notice that it has a lot of columns. Let's add t
 
 * Create a lookup node and set **Key** to Depth.
 * Create a divide node to enable scaling of the number. Connect lookup2 to **Value1**. 
-* Create a rect node. Connect divide2 to **Width**.
+* Create a rect node. Connect divide2 to **Width**. Set **Height** to **5.0**.
+* Create an align node and connect rect1 to it. Set **HAlign** to **Right**.
+* Finally create a combin node to store all shapes in them before the transformation nodes (rotate and translate). Then send this combined shape to rotate1.
 
+You can change the second value of the divide node to make the rectangles longer.
 
 ![earthquakes step 2](data-visualization-earthquakesb.png)
 
+* Create a lookup node and set **Key** to **Magnitude**. Connect import_csv1 to it.
+* These are all rather small numbers so let's create a multiply node. Connect lookup3 to **Value1** and set **Value2** to **5.0**.
+* Create an ellipse node and connect multiply2 to **Width** and **Height**.
+
+Now we need the location of the rect we've been using to visualize the depth parameter. It can be retrieved from divide2 which we used to give rect1 a height.
+
+* Create a [negate node](/node/reference/math/negate.html) and connect divide2 to it.
+* Create a make point node and send negate1 to **X**.
+* Create a translate node. Connect make_point1 to **Points** and ellipse2 to **Shape**.
+
 ![earthquakes step 3](data-visualization-earthquakesc.png)
+
+Give it color by adding some color nodes and colorize nodes.
+
+![earthquakes final](data-visualization-earthquakescolor.png)
 
 
 

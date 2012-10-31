@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ndbx formatVersion="2" type="file" uuid="a97b9b95-5efc-4280-9723-4bf81212ba5a">
     <node name="root" outputRange="list" renderedChild="translate1">
-        <node name="align1" position="2.00,6.00" prototype="corevector.align">
+        <node name="align1" position="2.00,7.00" prototype="corevector.align">
             <port name="halign" type="string" value="right"/>
             <port name="valign" type="string" value="none"/>
+        </node>
+        <node name="color1" position="-2.00,0.00" prototype="color.color">
+            <port name="color" type="color" value="#041a32ff"/>
+        </node>
+        <node name="color2" position="-4.00,1.00" prototype="color.color">
+            <port name="color" type="color" value="#4e9df48c"/>
+        </node>
+        <node name="color3" position="-4.00,2.00" prototype="color.color">
+            <port name="color" type="color" value="#d26b27ff"/>
+        </node>
+        <node name="colorize1" position="-1.00,6.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#00000000"/>
+            <port name="strokeWidth" type="float" value="2.0"/>
+        </node>
+        <node name="colorize2" position="2.00,6.00" prototype="corevector.colorize"/>
+        <node name="colorize3" position="5.00,5.00" prototype="corevector.colorize">
+            <port name="stroke" type="color" value="#00000083"/>
+            <port name="strokeWidth" type="float" value="0.05"/>
         </node>
         <node name="combine1" position="5.00,8.00" prototype="list.combine"/>
         <node name="count1" position="9.00,3.00" prototype="list.count"/>
@@ -66,19 +84,25 @@
         <conn input="textpath1.text" output="lookup1"/>
         <conn input="lookup2.list" output="import_csv1"/>
         <conn input="divide2.value1" output="lookup2"/>
-        <conn input="align1.shape" output="rect1"/>
         <conn input="combine1.list2" output="align1"/>
-        <conn input="combine1.list1" output="textpath1"/>
         <conn input="rotate1.shape" output="combine1"/>
         <conn input="rect1.width" output="divide2"/>
         <conn input="lookup3.list" output="import_csv1"/>
         <conn input="multiply2.value1" output="lookup3"/>
         <conn input="ellipse2.width" output="multiply2"/>
         <conn input="ellipse2.height" output="multiply2"/>
-        <conn input="translate2.shape" output="ellipse2"/>
         <conn input="translate2.translate" output="make_point1"/>
         <conn input="combine1.list3" output="translate2"/>
         <conn input="negate1.value" output="divide2"/>
         <conn input="make_point1.x" output="negate1"/>
+        <conn input="colorize1.shape" output="ellipse2"/>
+        <conn input="translate2.shape" output="colorize1"/>
+        <conn input="colorize2.shape" output="rect1"/>
+        <conn input="align1.shape" output="colorize2"/>
+        <conn input="colorize3.shape" output="textpath1"/>
+        <conn input="combine1.list1" output="colorize3"/>
+        <conn input="colorize3.fill" output="color1"/>
+        <conn input="colorize2.fill" output="color3"/>
+        <conn input="colorize1.stroke" output="color2"/>
     </node>
 </ndbx>
