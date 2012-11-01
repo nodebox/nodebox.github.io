@@ -100,4 +100,55 @@ Create a [connect node](/node/reference/corevector/connect.html) and send the ma
 
 ![Lissajous](math-lissajous.png)
 
+Writing Filters.
+------------------
+
+Nodebox can be used to write more complex functions. We described a hair filter as the first example on this section. Below we will describe another two of them. 
+
+A first one we will call the web filter. The idea is to create a subnetwork that draws lines between points based on their distance and on a secondary selection.
+
+We need a shape and the resampled points of it first.
+
+* Create a textpath node. Set **Text** to **Spider**, **Fontsize** to **120.0** and select a font.
+* Create a resample node and connect textpath1 to it. Set **Length** to **8.0**.
+* Create a point node and connect resample1 to it.
+
+The idea is to build a network for each point of the list that calculates the distance to each other points. We will select a few of them later to draw a line between the point and each one of those selected points.
+
+* Create a slice node. Set **Size** to **1**. This will be our control point. We can scroll throught them by changing the **Start Index**.
+* Create a sort node. Mind that you select the right one: the description says 'Sort points or shapes using different sorting methods.' 
+* Connect point1 to **Shapes** and slice1 to **Position**. 
+* Create a second slice node. Set **Size** to **8**. Connect sort1 to it.
+* Create a pick node. Set **Amount** to **5** and connect slice2 to it.
+
+Previous procedure sorts all points by distance from the control point. The second slice node selects the first 8 and pick1 select 5 out of these. Now we will draw a line between the control point and the selected points
+
+* Create a line node. Connect pick1 to **Point1** and slice1 to **Point2**.
+
+Now the function get evaluated for 1 point. Change **Start_index** of slice1 to see the result for an other point. We will create a subnetwork to do it over all points.
+
+* Select slice1, sort1, slice2, pick1 and line1. Right-click and **Group into network**.
+* Right-click it again and rename it webby.
+* Right-click it a last time and **Edit Children**.
+* Publish **Start_index** of slice1 and of slice2. Call them **Start index** and **Size**. The network should look like below.
+* Go back to the root.
+
+![web subnet](math-web-subnet.png)
+
+The creation of the subnetwork now allows us to evaluate it for each point. We will increase the number of **Start_index** of webby to do that. Let's build a range.
+
+* Create a count node. Connect point1 to it.
+* Create a range node. Connect count1 to **End**.
+* Connect range1 to **Start_index** of webby.
+* Render webby.
+
+You can increase the number of the secondary selection on webby itself. You can change the number of points by changing **Length** of resample1.
+
+Try implementing color to it.
+
+![web](math-web.png)
+
+
+
+
 
