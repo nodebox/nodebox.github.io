@@ -110,7 +110,44 @@ Random pie.
 
 Nodebox allows you to create subnetworks. You should read the [subnetworks page](../concepts/subnetworks.html) if it doesn't ring a bell.
 
-Below we will have a look at a piechart and the construction of it by using a subnetwork.
+Below we will have a look at a similar principle as in the first example except that we will visualize it as a piechart. The construction of it will be using a subnetwork.
 
+Let's start by creating a set of numbers. I want to be able to increase the amount of numbers in a seperate node.
+
+* Create a number node and set **Value** to **11.0**.
+* Create a random numbers node. Connect number1 to **Amount**.
+* I want to turn this into a percentage so create a sum node. Connect random numbers1 to it.
+* Create a divide node. Connect random numbers1 to **Value1** and sum1 to **Value2**.
+* Create a multiply node and connect divide1 to it. Set **Value2** to **100.0**. You can rename it percentage by right-clicking the mouse and point to **Rename**.
+* We want to construct a pie chart so a conversion to an other range might be handy. Create a [convert range node](/node/reference/math/convert_range.html). Set **Target End** to **360.0**.
+
+Now for the pie. We will make a pie by using a [arc node](/node/reference/corevector/arc.html) which has a few interesting parameters. The idea is to create a network that takes an increasing slice of the random numbers list to make a sum of them. This will go to the *Start Angle** parameter of the arc node. The degrees of the arc will be retrieved from our convert_range node.
+
+* Create a slice node. Connect convert_range1 to it.
+* Create a sum node. Connect slice1 to it.
+* Create an arc node. Connect sum2 to **Start_angle** and convert range1 to **Degrees**.
+* Create a colorize node and send arc1 to **Shape**.
+* Select slice1, sum2, arc1 and colorize1. Right-click and **Group into Network**. 
+* Right click it again and rename it 'pie'.
+* Right click it once more and **Edit Children**.
+* Publish **Size** of slice1, name it 'Slicesize'. Publish **Fill** of colorize1, name it 'Fill'.
+
+This is how the subnetwork and all its published port looks:
+
+![pie subnet](data-visualization-pie-subnet.png)
+
+Go back to the root network and 
+
+* Create a range node. Connect numbers1 to **End**.
+* Connect range1 to *Slicesize** of pie.
+* Create some colors and connect them to **Fill** of pie.
+
+![pie subnet](data-visualization-piechart.png)
+
+You can change the number of slices by changing numbers1.
+
+Below is a pie in pie chart. This involves creating another subnet of the previous pie so i can be repeated for multiple sets of random numbers.
+
+![pie in pie](data-visualization-pie-in-pie.png)
 
 
