@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="2" type="file" uuid="6774ebc6-0d92-4c98-a6a0-0b050ddba2b5">
+    <node name="root" outputRange="list" renderedChild="pie">
+        <node name="color1" position="10.00,4.00" prototype="color.color">
+            <port name="color" type="color" value="#041a32ff"/>
+        </node>
+        <node name="color2" position="10.00,5.00" prototype="color.color">
+            <port name="color" type="color" value="#4e9df4ff"/>
+        </node>
+        <node name="color3" position="10.00,6.00" prototype="color.color">
+            <port name="color" type="color" value="#d26b27ff"/>
+        </node>
+        <node name="combine1" position="10.00,7.00" prototype="list.combine"/>
+        <node name="convert_range1" position="3.00,6.00" prototype="math.convert_range">
+            <port name="target_end" type="float" value="360.0"/>
+        </node>
+        <node name="divide1" position="4.00,4.00" prototype="math.divide"/>
+        <node name="number1" position="3.00,1.00" prototype="math.number">
+            <port name="value" type="float" value="11.0"/>
+        </node>
+        <node name="percentage" position="3.00,5.00" prototype="math.multiply">
+            <port name="value2" type="float" value="100.0"/>
+        </node>
+        <node name="pie" outputRange="list" position="6.00,8.00" renderedChild="colorize1">
+            <node name="arc1" position="9.00,5.00" prototype="corevector.arc">
+                <port name="width" type="float" value="200.0"/>
+                <port name="height" type="float" value="200.0"/>
+            </node>
+            <node name="colorize1" position="9.00,7.00" prototype="corevector.colorize">
+                <port name="fill" type="color" value="#d26b27ff"/>
+            </node>
+            <node name="slice1" position="9.00,2.00" prototype="list.slice">
+                <port name="size" type="int" value="1"/>
+            </node>
+            <node name="sum2" position="9.00,3.00" prototype="math.sum"/>
+            <port childReference="slice1.list" name="list" range="list" type="list" widget="none"/>
+            <port childReference="arc1.degrees" name="degrees" range="value" type="float" value="45.0" widget="float"/>
+            <port childReference="slice1.size" min="0.0" name="Slicesize" range="value" type="int" value="1" widget="int"/>
+            <port childReference="colorize1.fill" name="fill" range="value" type="color" value="#000000ff" widget="color"/>
+            <conn input="sum2.values" output="slice1"/>
+            <conn input="arc1.start_angle" output="sum2"/>
+            <conn input="colorize1.shape" output="arc1"/>
+        </node>
+        <node name="random_numbers1" position="3.00,2.00" prototype="math.random_numbers"/>
+        <node name="range1" position="7.00,3.00" prototype="math.range"/>
+        <node name="sum1" position="3.00,3.00" prototype="math.sum"/>
+        <conn input="sum1.values" output="random_numbers1"/>
+        <conn input="divide1.value1" output="random_numbers1"/>
+        <conn input="divide1.value2" output="sum1"/>
+        <conn input="random_numbers1.amount" output="number1"/>
+        <conn input="range1.end" output="number1"/>
+        <conn input="pie.list" output="convert_range1"/>
+        <conn input="pie.degrees" output="convert_range1"/>
+        <conn input="combine1.list1" output="color1"/>
+        <conn input="combine1.list2" output="color2"/>
+        <conn input="pie.fill" output="combine1"/>
+        <conn input="combine1.list3" output="color3"/>
+        <conn input="percentage.value1" output="divide1"/>
+        <conn input="convert_range1.value" output="percentage"/>
+        <conn input="pie.Slicesize" output="range1"/>
+    </node>
+</ndbx>
