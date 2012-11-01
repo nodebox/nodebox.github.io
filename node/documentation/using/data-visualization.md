@@ -30,8 +30,8 @@ Let's clean this up a bit with some extra nodes.
 
 The cost.
 ----------
-
-Following data was found online (needs website) and stores a few macro economic figures and their exaplanation. We will do a similar example as above. You can have a look at the data or download it [here](data-visualization-debtris.csv).
+bit.ly/debtris
+Following data was found [online](http://bit.ly/debtris) and stores a few macro economic figures and their exaplanation. We will do a similar example as above. You can have a look at the data or download it [here](data-visualization-debtris.csv).
 
 * Create an [import csv node](/node/reference/data/import_csv.html). Point to Debtris.csv in **File**. This reads in the complete csv file. Nodebox shows the file in the network pane.
 * Create two lookup nodes. Set **Key** of lookup1 to **description** and of lookup2 to **££**. These values refer to the index value of each column of the csv file. Connect import csv1 to both of them.
