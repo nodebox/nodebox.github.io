@@ -109,7 +109,7 @@ A first one we will call the web filter. The idea is to create a subnetwork that
 
 We need a shape and the resampled points of it first.
 
-* Create a textpath node. Set **Text** to **Spider**, **Fontsize** to **120.0** and select a font.
+* Create a textpath node. Set **Text** to **Web**, **Fontsize** to **120.0** and select a font.
 * Create a resample node and connect textpath1 to it. Set **Length** to **8.0**.
 * Create a point node and connect resample1 to it.
 
@@ -147,6 +147,10 @@ You can increase the number of the secondary selection on webby itself. You can 
 Try implementing color to it.
 
 ![web](math-web.png)
+
+The webfilter applied on [this svg](http://en.wikipedia.org/wiki/File:Obama.svg) of Obama.
+
+![web](math-web-obama.png)
 
 
 
