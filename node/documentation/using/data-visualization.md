@@ -146,7 +146,7 @@ Go back to the root network and
 
 You can change the number of slices by changing numbers1.
 
-Below is a pie in pie chart. This involves creating another subnet of the previous pie so i can be repeated for multiple sets of random numbers.
+Below is a pie in pie chart. This involves creating another subnet of the previous pie so it can be repeated for multiple sets of random numbers.
 
 ![pie in pie](data-visualization-pie-in-pie.png)
 
