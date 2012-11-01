@@ -37,7 +37,7 @@ section: home
       <p>Fast cross platform graphics library.</p>
     </a>
   </div>
-</div> <!-- .versions -->
+</div>
 
 <div class="gallery row">
   <div class="eight columns">
@@ -52,7 +52,7 @@ section: home
     {% include post.html %}
   {% endfor %}
   </div>
-</div> <!-- .gallery -->
+</div>
   
 <div class="connect row">
   <div class="eight columns">
@@ -68,7 +68,7 @@ section: home
     <p>The creators of NodeBox have organized workshops internationally since 2004. These one-week sessions focus on learning the software combined with insights into the principles of generative art, data visualization and cognitive science.</p>
     <a class="button" href="http://www.emrg.be/teaching/">Read more</a>
   </div>
-</div>  <!-- .connect -->
+</div>
 
 <div class="emrg row">
   <h2 class="fourteen columns offset-by-two">EMRG</h2>
@@ -80,5 +80,5 @@ section: home
     <p><strong>EMRG</strong> has been active since 2004 developing NodeBox and doing cutting-edge research in the domain of computer graphics, user experience, creativity, but also in artificial intelligence and natural language processing.</p>
     <p><a href="http://www.emrg.be/">www.emrg.be</a></p>
   </div>
-</div>  <!-- .emrg -->
+</div>
 

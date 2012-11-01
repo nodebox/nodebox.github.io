@@ -42,7 +42,7 @@ section: node
     <h2>Peek Under The Hood</h2>
     <p>Using nodes doesn't have to mean giving up expressive power. NodeBox makes it easy to customize the functionality of existing nodes or to build your own from scratch.</p>
   </div>
-</div> <!-- .screenshots -->
+</div>
 
 <div class="action row">
   <div class="eight columns">
