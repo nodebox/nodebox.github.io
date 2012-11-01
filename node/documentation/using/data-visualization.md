@@ -58,7 +58,7 @@ They way data is represented can differ. In stead of using a line we will go ove
 
 * Create an import csv node and point to the csv file.
 * Create a lookup node and set **Key** to **Region**. Connect import_csv1 to it.
-* Create a textpath node. Set **Align to **Left**. Connect lookup1 to **Text**.
+* Create a textpath node. Set **Align** to **Left**. Connect lookup1 to **Text**.
 
 The result so far is all information as text on top of each other. Next procedure will build the template to be used as points to translate all these different textpaths on to.
 
