@@ -1,18 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ndbx formatVersion="12" type="file" uuid="c77da098-b516-47b8-8c9f-439de77c6559">
-    <node name="root" outputRange="list" renderedChild="webby">
-        <node name="count1" position="7.00,3.00" prototype="list.count"/>
-        <node name="point1" position="2.00,3.00" prototype="corevector.point"/>
-        <node name="range1" position="7.00,4.00" prototype="math.range"/>
-        <node name="resample1" position="2.00,2.00" prototype="corevector.resample">
-            <port name="length" type="float" value="5.0"/>
+    <node name="root" outputRange="list" renderedChild="combine1">
+        <node name="color1" position="2.00,1.00" prototype="color.color">
+            <port name="color" type="color" value="#041a32ff"/>
         </node>
-        <node name="textpath1" position="2.00,1.00" prototype="corevector.textpath">
-            <port name="text" type="string" value="SPIDER"/>
+        <node name="color2" position="2.00,2.00" prototype="color.color">
+            <port name="color" type="color" value="#4e9df4ff"/>
+        </node>
+        <node name="colorize1" position="-2.00,3.00" prototype="corevector.colorize"/>
+        <node name="combine1" position="-2.00,10.00" prototype="list.combine"/>
+        <node name="count1" position="2.00,8.00" prototype="list.count"/>
+        <node name="point1" position="-2.00,5.00" prototype="corevector.point"/>
+        <node name="range1" position="2.00,9.00" prototype="math.range"/>
+        <node name="resample1" position="-2.00,2.00" prototype="corevector.resample">
+            <port name="length" type="float" value="6.0"/>
+        </node>
+        <node name="textpath1" position="-2.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="WEB"/>
             <port name="font_name" type="string" value="Verdana-Bold"/>
             <port name="font_size" type="float" value="120.0"/>
         </node>
-        <node name="webby" outputRange="list" position="3.00,6.00" renderedChild="line1">
+        <node name="webby" outputRange="list" position="-2.00,8.00" renderedChild="colorize1">
+            <node name="colorize1" position="4.00,9.00" prototype="corevector.colorize">
+                <port name="strokeWidth" type="float" value="0.5"/>
+            </node>
             <node name="line1" position="4.00,8.00" prototype="corevector.line"/>
             <node name="pick1" position="2.00,6.00" prototype="list.pick">
                 <port name="seed" type="int" value="11"/>
@@ -22,7 +33,7 @@
                 <port name="size" type="int" value="1"/>
             </node>
             <node name="slice2" position="2.00,5.00" prototype="list.slice">
-                <port name="size" type="int" value="5"/>
+                <port name="size" type="int" value="8"/>
             </node>
             <node name="sort1" position="2.00,4.00" prototype="corevector.sort">
                 <port name="order_by" type="string" value="distance"/>
@@ -30,12 +41,14 @@
             <port childReference="sort1.shapes" name="shapes" range="list" type="geometry" widget="none"/>
             <port childReference="slice1.list" name="list" range="list" type="list" widget="none"/>
             <port childReference="slice1.start_index" min="0.0" name="start_index" range="value" type="int" value="8" widget="int"/>
-            <port childReference="slice2.size" min="0.0" name="size" range="value" type="int" value="5" widget="int"/>
+            <port childReference="slice2.size" min="0.0" name="size" range="value" type="int" value="8" widget="int"/>
+            <port childReference="colorize1.stroke" name="stroke" range="value" type="color" value="#000000ff" widget="color"/>
             <conn input="sort1.position" output="slice1"/>
             <conn input="slice2.list" output="sort1"/>
             <conn input="line1.point2" output="slice1"/>
             <conn input="pick1.list" output="slice2"/>
             <conn input="line1.point1" output="pick1"/>
+            <conn input="colorize1.shape" output="line1"/>
         </node>
         <conn input="point1.value" output="resample1"/>
         <conn input="webby.shapes" output="point1"/>
@@ -44,5 +57,10 @@
         <conn input="range1.end" output="count1"/>
         <conn input="webby.start_index" output="range1"/>
         <conn input="resample1.shape" output="textpath1"/>
+        <conn input="webby.stroke" output="color2"/>
+        <conn input="colorize1.shape" output="resample1"/>
+        <conn input="colorize1.fill" output="color1"/>
+        <conn input="combine1.list1" output="colorize1"/>
+        <conn input="combine1.list2" output="webby"/>
     </node>
 </ndbx>
