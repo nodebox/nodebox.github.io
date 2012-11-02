@@ -211,6 +211,8 @@ if __name__=='__main__':
     if args.command == 'index':
         if args.library is None:
             write_global_index_page(args.dry_run)
+            for library in all_libraries:
+                write_library_index_page(library.name, args.dry_run)
         else:
             write_library_index_page(args.library, args.dry_run)
     elif args.command == 'stub':
