@@ -19,6 +19,7 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Divide](/node/reference/math/divide.html): Divide two numbers.
 * [E](/node/reference/math/e.html): The value of the mathematical constant e, the base of the natural logarithm.
 * [Floor](/node/reference/math/floor.html): Round down the value of a number.
+* [Even](/node/reference/math/even.html): Determine if a number is even.
 * [Integer](/node/reference/math/integer.html): Create an integer value that can be used as a variable.
 * [Log](/node/reference/math/log.html): Calculate the natural logarithm of a value.
 * [Make Numbers](/node/reference/math/make_numbers.html): Transform a string to a list of numbers.
@@ -28,6 +29,7 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Multiply](/node/reference/math/multiply.html): Multiply two numbers.
 * [Negate](/node/reference/math/negate.html): Change the sign of a number by negating it.
 * [Number](/node/reference/math/number.html): Create a floating-point value that can be used as a variable.
+* [Odd](/node/reference/math/odd.html): Determine if a number is odd.
 * [Pi](/node/reference/math/pi.html): The value of the mathematical constant pi.
 * [Pow](/node/reference/math/pow.html): Calculate the power of a number.
 * [Radians](/node/reference/math/radians.html): Convert degrees to radians.
@@ -39,6 +41,6 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Sqrt](/node/reference/math/sqrt.html): Calculate the square root of a number.
 * [Subtract](/node/reference/math/subtract.html): Subtract two numbers.
 * [Sum](/node/reference/math/sum.html): Add up all numbers in the list.
-* [To Integer](/node/reference/math/to_integer.html): Convert a floating-point number to an integer.
+* [Round](/node/reference/math/round.html): Convert a floating-point number to an integer.
 * [Wave](/node/reference/math/wave.html): Calculate a value based on wave equations.
 

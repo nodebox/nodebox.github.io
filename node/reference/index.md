@@ -3,18 +3,6 @@ layout: documentation
 title: Node Reference
 notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate this file.
 ---
-Color
------
-* [Color](/node/reference/color/color.html): Create a color value that can be used as a variable.
-* [Gray Color](/node/reference/color/gray_color.html): Create a gray color.
-* [Hsb Color](/node/reference/color/hsb_color.html): Create a HSB color.
-* [Rgb Color](/node/reference/color/rgb_color.html): Create a RGB color.
-
-Core
-----
-* [Frame](/node/reference/core/frame.html): Output the value of the current frame. Used for animating ports.
-* [Network](/node/reference/core/network.html): Create an empty subnetwork.
-
 Geometry
 --------
 * [Generator](/node/reference/corevector/generator.html): Template for creating nodes that generator vector data.
@@ -28,7 +16,6 @@ Geometry
 * [Copy](/node/reference/corevector/copy.html): Create multiple copies of a shape.
 * [Delete](/node/reference/corevector/delete.html): Delete points or paths that lie within the given bounding shape.
 * [Distribute](/node/reference/corevector/distribute.html): Distribute shapes on a horizontal or vertical axis.
-* [Draw Path](/node/reference/corevector/draw_path.html): Draw Bezier Paths.
 * [Ellipse](/node/reference/corevector/ellipse.html): Create an ellipse or circle.
 * [Fit](/node/reference/corevector/fit.html): Fit a shape within bounds.
 * [Fit To](/node/reference/corevector/fit_to.html): Fit a shape to another shape.
@@ -49,8 +36,6 @@ Geometry
 * [Rect](/node/reference/corevector/rect.html): Create a rectangle, square or rounded rectangle.
 * [Reflect](/node/reference/corevector/reflect.html): Mirror the geometry around an invisible axis.
 * [Resample](/node/reference/corevector/resample.html): Distribute points along a shape.
-* [Resample By Amount](/node/reference/corevector/resample_by_amount.html): Distribute a number of points along a shape.
-* [Resample By Length](/node/reference/corevector/resample_by_length.html): Distribute points evenly along a shape.
 * [Rotate](/node/reference/corevector/rotate.html): Rotate the shape according to the given angle.
 * [Scale](/node/reference/corevector/scale.html): Resize the shape by scaling it.
 * [Scatter](/node/reference/corevector/scatter.html): Generate points within the boundaries of a shape.
@@ -61,26 +46,29 @@ Geometry
 * [Star](/node/reference/corevector/star.html): Create a star shape.
 * [Text On Path](/node/reference/corevector/text_on_path.html): Create a text path that follows a shape.
 * [Textpath](/node/reference/corevector/textpath.html): Create a path out of text.
-* [To Points](/node/reference/corevector/to_points.html): Extract the points from a given shape.
 * [Translate](/node/reference/corevector/translate.html): Move the shape, changing its position.
 * [Ungroup](/node/reference/corevector/ungroup.html): Decompose the input geometry into its paths.
 * [Wiggle](/node/reference/corevector/wiggle.html): Shift points by a random amount.
-* [Wiggle Points](/node/reference/corevector/wiggle_points.html): Shift points by a random amount.
-* [Wiggle Contours](/node/reference/corevector/wiggle_contours.html): Shift paths by a random amount.
-* [Wiggle Paths](/node/reference/corevector/wiggle_paths.html): Shift paths by a random amount.
 
-Data
+String
+------
+* [String](/node/reference/string/string.html): Create a string value that can be used as a variable.
+* [Concatenate](/node/reference/string/concatenate.html): Add strings together.
+* [Length](/node/reference/string/length.html): Count the number of characters in a string.
+* [Make Strings](/node/reference/string/make_strings.html): Create a list of strings.
+* [Word Count](/node/reference/string/word_count.html): Count the number of words in a string.
+
+Core
 ----
-* [Import Csv](/node/reference/data/import_csv.html): Import a comma-separated value file containing tabular data.
-* [Lookup](/node/reference/data/lookup.html): Look up a value in a table or object.
+* [Frame](/node/reference/core/frame.html): Output the value of the current frame. Used for animating ports.
+* [Network](/node/reference/core/network.html): Create an empty subnetwork.
 
 List
 ----
 * [Combine](/node/reference/list/combine.html): Combine multiple lists into one.
 * [Count](/node/reference/list/count.html): Count the number of items in the list.
-* [Cull](/node/reference/list/cull.html): Cull the list.
+* [Cull](/node/reference/list/cull.html): Remove all items from the list where the corresponding boolean is false.
 * [Distinct](/node/reference/list/distinct.html): Remove all duplicate items from the list.
-* [Filter](/node/reference/list/filter.html): Filter the list.
 * [First](/node/reference/list/first.html): Take the first item of the list.
 * [Last](/node/reference/list/last.html): Take the last item of the list.
 * [Pick](/node/reference/list/pick.html): Pick items from the list in random order.
@@ -94,6 +82,7 @@ List
 * [Sort](/node/reference/list/sort.html): Sort items in the list.
 * [Switch](/node/reference/list/switch.html): Switch between multiple inputs.
 * [Take Every](/node/reference/list/take_every.html): Take every nth element of the list.
+* [Zip Map](/node/reference/list/zip_map.html): Combine a list of keys and values together into a map.
 
 Math
 ----
@@ -112,6 +101,7 @@ Math
 * [Divide](/node/reference/math/divide.html): Divide two numbers.
 * [E](/node/reference/math/e.html): The value of the mathematical constant e, the base of the natural logarithm.
 * [Floor](/node/reference/math/floor.html): Round down the value of a number.
+* [Even](/node/reference/math/even.html): Determine if a number is even.
 * [Integer](/node/reference/math/integer.html): Create an integer value that can be used as a variable.
 * [Log](/node/reference/math/log.html): Calculate the natural logarithm of a value.
 * [Make Numbers](/node/reference/math/make_numbers.html): Transform a string to a list of numbers.
@@ -121,6 +111,7 @@ Math
 * [Multiply](/node/reference/math/multiply.html): Multiply two numbers.
 * [Negate](/node/reference/math/negate.html): Change the sign of a number by negating it.
 * [Number](/node/reference/math/number.html): Create a floating-point value that can be used as a variable.
+* [Odd](/node/reference/math/odd.html): Determine if a number is odd.
 * [Pi](/node/reference/math/pi.html): The value of the mathematical constant pi.
 * [Pow](/node/reference/math/pow.html): Calculate the power of a number.
 * [Radians](/node/reference/math/radians.html): Convert degrees to radians.
@@ -132,14 +123,18 @@ Math
 * [Sqrt](/node/reference/math/sqrt.html): Calculate the square root of a number.
 * [Subtract](/node/reference/math/subtract.html): Subtract two numbers.
 * [Sum](/node/reference/math/sum.html): Add up all numbers in the list.
-* [To Integer](/node/reference/math/to_integer.html): Convert a floating-point number to an integer.
+* [Round](/node/reference/math/round.html): Convert a floating-point number to an integer.
 * [Wave](/node/reference/math/wave.html): Calculate a value based on wave equations.
 
-String
-------
-* [String](/node/reference/string/string.html): Create a string value that can be used as a variable.
-* [Concatenate](/node/reference/string/concatenate.html): Add strings together.
-* [Length](/node/reference/string/length.html): Count the number of characters in a string.
-* [Make Strings](/node/reference/string/make_strings.html): Create a list of strings.
-* [Word Count](/node/reference/string/word_count.html): Count the number of words in a string.
+Data
+----
+* [Import Csv](/node/reference/data/import_csv.html): Import a comma-separated value file containing tabular data.
+* [Lookup](/node/reference/data/lookup.html): Look up a value in a table or object.
+
+Color
+-----
+* [Color](/node/reference/color/color.html): Create a color value that can be used as a variable.
+* [Gray Color](/node/reference/color/gray_color.html): Create a gray color.
+* [Hsb Color](/node/reference/color/hsb_color.html): Create a HSB color.
+* [Rgb Color](/node/reference/color/rgb_color.html): Create a RGB color.
 

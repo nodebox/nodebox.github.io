@@ -6,9 +6,8 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 ---
 * [Combine](/node/reference/list/combine.html): Combine multiple lists into one.
 * [Count](/node/reference/list/count.html): Count the number of items in the list.
-* [Cull](/node/reference/list/cull.html): Cull the list.
+* [Cull](/node/reference/list/cull.html): Remove all items from the list where the corresponding boolean is false.
 * [Distinct](/node/reference/list/distinct.html): Remove all duplicate items from the list.
-* [Filter](/node/reference/list/filter.html): Filter the list.
 * [First](/node/reference/list/first.html): Take the first item of the list.
 * [Last](/node/reference/list/last.html): Take the last item of the list.
 * [Pick](/node/reference/list/pick.html): Pick items from the list in random order.
@@ -22,4 +21,5 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Sort](/node/reference/list/sort.html): Sort items in the list.
 * [Switch](/node/reference/list/switch.html): Switch between multiple inputs.
 * [Take Every](/node/reference/list/take_every.html): Take every nth element of the list.
+* [Zip Map](/node/reference/list/zip_map.html): Combine a list of keys and values together into a map.
 
