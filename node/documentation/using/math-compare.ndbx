@@ -16,7 +16,12 @@
             <port name="value2" type="float" value="25.0"/>
         </node>
         <node name="count1" position="5.00,3.00" prototype="list.count"/>
-        <node name="grid1" position="1.00,1.00" prototype="corevector.grid"/>
+        <node name="grid1" position="1.00,1.00" prototype="corevector.grid">
+            <port name="columns" type="int" value="30"/>
+            <port name="rows" type="int" value="30"/>
+            <port name="width" type="float" value="900.0"/>
+            <port name="height" type="float" value="900.0"/>
+        </node>
         <node name="multiply1" position="5.00,7.00" prototype="math.multiply"/>
         <node name="random_numbers1" position="5.00,4.00" prototype="math.random_numbers">
             <port name="start" type="float" value="15.0"/>
