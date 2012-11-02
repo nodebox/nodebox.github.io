@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<ndbx formatVersion="2" type="file" uuid="cc4413b0-14b8-4e4a-8ac0-ec9d88d5326c">
+<?xml version="1.0" encoding="UTF-8"?>
+<ndbx formatVersion="12" type="file" uuid="cc4413b0-14b8-4e4a-8ac0-ec9d88d5326c">
     <node name="root" outputRange="list" renderedChild="quad_curve1">
         <node name="add1" position="6.00,5.00" prototype="math.add"/>
         <node name="count1" position="6.00,1.00" prototype="list.count"/>
@@ -8,6 +8,7 @@
             <port name="height" type="float" value="200.0"/>
         </node>
         <node name="frame1" position="8.00,3.00" prototype="core.frame"/>
+        <node name="point1" position="2.00,3.00" prototype="corevector.point"/>
         <node name="quad_curve1" position="2.00,7.00" prototype="corevector.quad_curve">
             <port name="t" type="float" value="70.0"/>
             <port name="distance" type="float" value="-100.0"/>
@@ -18,19 +19,18 @@
         </node>
         <node name="shift1" position="3.00,5.00" prototype="list.shift"/>
         <node name="shuffle1" position="7.00,8.00" prototype="list.shuffle"/>
-        <node name="to_points1" position="2.00,3.00" prototype="corevector.to_points"/>
         <node name="wave1" position="7.00,7.00" prototype="math.wave"/>
         <conn input="resample1.shape" output="ellipse1"/>
-        <conn input="to_points1.shape" output="resample1"/>
-        <conn input="quad_curve1.point1" output="to_points1"/>
         <conn input="quad_curve1.point2" output="shift1"/>
-        <conn input="shift1.list" output="to_points1"/>
-        <conn input="count1.list" output="to_points1"/>
         <conn input="range1.end" output="count1"/>
         <conn input="add1.value2" output="frame1"/>
         <conn input="add1.value1" output="range1"/>
         <conn input="wave1.frame" output="add1"/>
         <conn input="shuffle1.list" output="wave1"/>
         <conn input="quad_curve1.t" output="shuffle1"/>
+        <conn input="point1.value" output="resample1"/>
+        <conn input="shift1.list" output="point1"/>
+        <conn input="count1.list" output="point1"/>
+        <conn input="quad_curve1.point1" output="point1"/>
     </node>
 </ndbx>
