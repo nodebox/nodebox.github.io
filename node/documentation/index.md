@@ -11,7 +11,7 @@ If you're brand new to NodeBox, start by reading the beginner tutorials:
 Reference
 ---------
 
-* [Node Reference](nodes/)
+* [All Nodes by Category](/node/reference)
 
 Questions or comments?
 ----------------------
