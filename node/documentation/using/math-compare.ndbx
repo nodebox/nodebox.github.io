@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ndbx formatVersion="12" type="file" uuid="1501b38c-798f-4535-8e45-c58bb9eafead">
+    <node name="root" outputRange="list" renderedChild="colorize1">
+        <node name="average1" position="6.00,5.00" prototype="math.average"/>
+        <node name="color1" position="8.00,7.00" prototype="color.color">
+            <port name="color" type="color" value="#041a32ff"/>
+        </node>
+        <node name="color2" position="8.00,8.00" prototype="color.color">
+            <port name="color" type="color" value="#4e9df4ff"/>
+        </node>
+        <node name="colorize1" position="1.00,8.00" prototype="corevector.colorize">
+            <port name="strokeWidth" type="float" value="1.0"/>
+        </node>
+        <node name="combine1" position="6.00,9.00" prototype="list.combine"/>
+        <node name="compare1" position="5.00,6.00" prototype="math.compare">
+            <port name="value2" type="float" value="25.0"/>
+        </node>
+        <node name="count1" position="5.00,3.00" prototype="list.count"/>
+        <node name="grid1" position="1.00,1.00" prototype="corevector.grid"/>
+        <node name="multiply1" position="5.00,7.00" prototype="math.multiply"/>
+        <node name="random_numbers1" position="5.00,4.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="15.0"/>
+            <port name="end" type="float" value="35.0"/>
+            <port name="seed" type="int" value="2"/>
+        </node>
+        <node name="shap" outputRange="list" position="1.00,6.00" renderedChild="slice1">
+            <node name="combine1" position="0.00,6.00" prototype="list.combine"/>
+            <node name="ellipse1" position="-2.00,4.00" prototype="corevector.ellipse"/>
+            <node name="rect1" position="1.00,4.00" prototype="corevector.rect"/>
+            <node name="slice1" position="0.00,8.00" prototype="list.slice">
+                <port name="size" type="int" value="1"/>
+            </node>
+            <port childReference="rect1.position" name="position_1" range="value" type="point" value="0.00,0.00" widget="point"/>
+            <port childReference="rect1.width" name="width_1" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="rect1.height" name="height_1" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="ellipse1.width" name="width_2" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="ellipse1.height" name="height_2" range="value" type="float" value="100.0" widget="float"/>
+            <port childReference="ellipse1.position" name="position_2" range="value" type="point" value="0.00,0.00" widget="point"/>
+            <port childReference="slice1.start_index" min="0.0" name="start_index" range="value" type="int" value="0" widget="int"/>
+            <conn input="combine1.list1" output="ellipse1"/>
+            <conn input="combine1.list2" output="rect1"/>
+            <conn input="slice1.list" output="combine1"/>
+        </node>
+        <node name="slice1" position="6.00,10.00" prototype="list.slice">
+            <port name="size" type="int" value="1"/>
+        </node>
+        <conn input="count1.list" output="grid1"/>
+        <conn input="random_numbers1.amount" output="count1"/>
+        <conn input="slice1.list" output="combine1"/>
+        <conn input="average1.values" output="random_numbers1"/>
+        <conn input="compare1.value1" output="random_numbers1"/>
+        <conn input="compare1.value2" output="average1"/>
+        <conn input="multiply1.value1" output="compare1"/>
+        <conn input="slice1.start_index" output="multiply1"/>
+        <conn input="combine1.list1" output="color1"/>
+        <conn input="combine1.list2" output="color2"/>
+        <conn input="colorize1.fill" output="slice1"/>
+        <conn input="shap.position_1" output="grid1"/>
+        <conn input="shap.width_1" output="random_numbers1"/>
+        <conn input="shap.height_1" output="random_numbers1"/>
+        <conn input="shap.width_2" output="random_numbers1"/>
+        <conn input="shap.height_2" output="random_numbers1"/>
+        <conn input="shap.position_2" output="grid1"/>
+        <conn input="colorize1.shape" output="shap"/>
+        <conn input="shap.start_index" output="multiply1"/>
+    </node>
+</ndbx>

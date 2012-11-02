@@ -2,11 +2,6 @@
 layout: documentation
 title: Working with Math
 ---
-TODO
-====
-* Trigonometry: sine, cosine
-* Absolute values
-* Min/max
 
 Math operations.
 ------------------
@@ -66,6 +61,42 @@ Try out:
 
 * Changing the original ellipse with an other shape like a rectangle or a textpath to obtain a hairy rect / text.
 * Changing the x and y values of the make point1 node to have a difference in hair implant.
+
+Comparisons.
+----------
+
+Suppose you want to create a set rectangles that vary in dimensions but get a color based on the average of all the dimensions. Nodebox allows you to do comparisons by using the [compare node](/node/reference/math/compare.html).
+
+First let's create a set of random numbers and calculate the average of them. We will use the amount of numbers of a grid to specify the amount of the random numbers.
+
+* Create a grid node. Leave it at it's default settings.
+* Create a count node. Connect grid1 to it.
+* Create a random numbers node. Set **Start** to **15.0** and **End** to **35.0**. Connect count to **Amount**.
+* Create an [average node](/node/reference/math/average.html). Connect random_numbers1 to it.
+
+![Compare step 1](math-compare-a.png)
+
+We will use the random numbers as dimensions for a rectangle placed on each point of the grid. We will also compare the random numbers with the average number so we can use this information (boolean true-false) to pick a color from a set of colors.
+
+* Create a rect node. Connect grid1 to **Position**, connect random_numbers1 to **Width** and **Height**.
+* Create a colorize node. Connect rect1 to **Shape**. It will be used later to change the fill color.
+* Create a compare node. Connect random_numbers1 to **Value1** and average1 to **Value2**. Set **Comparator** to **smaller than**. The values smaller than the average value get return true, all other return false.
+
+![Compare step 2](math-compare-b.png)
+
+Now for the color part. All rectangles smaller than the average should get one color, the others an other color. 
+
+* Create a multiply node. Connect compare1 to **Value1**. Set **Value2** to **1.0**. True / False will come out as 1 / 0.
+* Create two color nodes and create two different colors.
+* Create a combine node and connect the two color nodes to **List1** and **List2**.
+* Create a slice node. Set **Size** to **1** and connect combine1 to **List**. Connect multiply1 to **Start_index**. 
+* Connect slice1 to **Fill** of colorize1.
+
+![Compare step 3](math-compare-c.png)
+
+Try to change it so the bigger rectangles change into an ellipse of the same dimensions and color.
+
+![Compare step shape](math-compare-shape.png)
 
 Math and paths.
 ------------------
