@@ -184,6 +184,34 @@ The webfilter applied on [this svg](http://en.wikipedia.org/wiki/File:Obama.svg)
 ![web](math-web-obama.png)
 
 
+As a second filter we will create a subnetwork that will calculate the closest point for a set of random points. We will visualise it by connecting both points to each other with a line.
 
+* Create an ellipse node. Set it's dimensions at **300.0** by **300.0**.
+* Create a scatter node. Connect ellipse1 to **Shape**. Set **Amount** to **40**.
+* Create a sort node. Send scatter1 to **Shapes**.
+* Create a slice node. Send scatter1 to **List** and set **Size** to **1**. Connect its output to **Position** of sort1.
+* Create a shift node. Set **Amount** to **1** and connect sort1 to **List**. We want the point with the shortest distance but not itself.
+* Now we will select the first point over a [first node](/node/reference/list/first.html). Create one and send shift1 to it.
+* Create a line node. Connect first1 to **Point1** and slice to **Point2**.
+* Render it.
 
+![closest point step 1](math-closest-point-a.png)
+
+Now we will turn this procedure into a subnetwork so we can evaluate every point instead of just one.
+
+* Select all nodes except ellipse1 and scatter1. Right-click them and **Group into network**.
+* Right-click it again and rename it closest_point.
+* Right-click it a last time and **Edit Children**.
+* Publish **Start_index** of slice1. Call it **Start index**.
+* Go back to the root.
+* Create a count node and connect scatter1 to it.
+* Create a range node. Connect count1 to **End**.
+* Connect range1 to **Start_index** of closest point node.
+* Render closest point node.
+
+![closest point step 2](math-closest-point-b.png)
+
+Same obama, different filter. Some modifications on color and strokewidth.
+
+![closest point obama](math-closest-obama.png)
 
