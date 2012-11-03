@@ -2,8 +2,6 @@
 layout: documentation
 title: Working with Animation
 ---
-TODO
-====
 
 You should already have read the [tutorial on basic animation](/node/documentation/tutorial/animation.html). This pages goes into more detail and shows tricks and techniques.
 
@@ -101,6 +99,9 @@ Let's turn this into a new network.
 * Right-click it again and rename it **positioned**.
 * Right-click it a last time and **Edit Children**.
 
+![animation wave step 5](animation-wave-e.png)
+
+animated:
 
 <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
         height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
