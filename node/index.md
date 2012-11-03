@@ -13,7 +13,7 @@ section: node
     </div>
   </div>
   <div class="eight columns">
-    <img class="hero-shot" src="/media/homepage/nodebox-screencast-teaser.png">
+    <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/s01wX9t6NcE?autoplay=1"><img class="hero-shot" src="/media/homepage/nodebox-screencast-teaser.png"></a>
   </div>
 </div>
 
@@ -54,3 +54,9 @@ section: node
     </ul>
   </div>
 </div>
+
+<script>
+  $(document).ready(function() {
+    $(".fancybox").fancybox({maxWidth: 800, maxHeight: 600});
+  });
+</script>
