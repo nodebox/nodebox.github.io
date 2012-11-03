@@ -4,18 +4,34 @@ title: Welcome
 ---
 If you're brand new to NodeBox, start by reading the beginner tutorials:
 
-* [Getting Started](tutorial/getting-started.html)
-* [Exploring NodeBox](tutorial/exploring.html)
-* [Basic Animation](tutorial/animation.html)
+<ul id="bootcamp">
+  <li class="three columns">
+    <a href="tutorial/getting-started.html">
+      <img src="/media/node/documentation/index-getting-started.png">
+      <span>Getting Started</span>
+    </a>
+  </li>
+  <li class="three columns">
+    <a href="tutorial/exploring.html">
+      <img src="/media/node/documentation/index-exploring.png">
+      <span>Exploring</span>
+    </a>
+  </li>
+  <li class="three columns">
+    <a href="tutorial/basic-animation.html">
+      <img src="/media/node/documentation/index-animation.png">
+      <span>Basic Animation</span>
+    </a>
+  </li>
+</ul>
 
 Reference
 ---------
 
 * [All Nodes by Category](/node/reference)
 
-Questions or comments?
-----------------------
-We're currently setting up a new forum that will cover NodeBox 1, NodeBox 2 and NodeBox/OpenGL.
-
-For now, please email questions to <info@nodebox.net>.
-
+Getting Involved
+----------------
+* Questions or Comments? Visit the [NodeBox forums](http://support.nodebox.net/discussions).
+* Found a bug? Create an issue on our [GitHub page](http://github.com/nodebox/nodebox).
+* Something else? E-mail questions at <support@nodebox.net>.
