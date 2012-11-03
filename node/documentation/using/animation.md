@@ -130,8 +130,3 @@ animated:
         controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
         </embed>
 </object>
-
-More Information
-----------------
-* Read the [using expressions](expressions.html) page for general information on expressions. This is also useful when creating animations.
-* Read the [expression reference](/documentation/expressions/) for detailed information on every animation function.
