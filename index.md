@@ -58,10 +58,13 @@ section: home
   <div class="eight columns">
     <h2>Newsletter</h2>
     <p>Sign up for the monthly newsletter.</p>
-    <form method="post" class="signup">
-      <input type="email" placeholder="Email address" />
-      <input class="button" type="submit" value="Signup" />
-    </form>
+      <form action="http://emrg.createsend.com/t/t/s/yhz/" method="post" class="signup">
+        <div> 
+          <input type="email" placeholder="E-mail" name="cm-yhz-yhz" id="yhz-yhz" />
+          <input type="submit" value="Subscribe" />
+        </div>
+      </form>
+
   </div>
   <div class="eight columns">
     <h2>Workshops</h2>
