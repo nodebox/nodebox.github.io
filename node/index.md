@@ -49,7 +49,6 @@ section: node
     <h2>Get Started</h2>
     <ul>
       <li><a href="/node/download/">Download the application</a></li>
-      <li><a href="/node/screencasts/">Watch screencasts</a></li>
       <li><a href="/node/documentation/">Read the tutorial</a></li>
     </ul>
   </div>
