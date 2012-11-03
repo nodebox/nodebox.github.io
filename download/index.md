@@ -3,18 +3,6 @@ layout: page
 title: Download NodeBox
 section: download
 ---
-NodeBox 1
----------
-Download
-
-NodeBox OpenGL
----------
-Download
-
-NodeBox 3
----------
-Download
-
 <div class="download-button" id="download-windows">
   <h3>Windows</h3>
   <a href="https://github.com/downloads/nodebox/nodebox/NodeBoxSetup.exe" class="hero-button">Download NodeBox<small>for Windows</small></a>
