@@ -98,6 +98,23 @@ Let's turn this into a new network.
 * Select all nodes. Right-click them and **Group into network**.
 * Right-click it again and rename it **positioned**.
 * Right-click it a last time and **Edit Children**.
+* Publish **X** of make_point1. Call it **X**.
+* Publish **Value2** of add1. Call it **Y**.
+* Publish **Seed** of random_numbers1 and call it **Seedcolor**.
+* Publish **Seed** of random_numbers2 and call it **Seedwave**.
+* Publish **Value2** of multiply1 and call it **Speed**.
+* Go back to the rootnetwork.
+
+Now we will create a few of them based on a number node.
+
+* Create a number node and set **Value** to **12**.
+* Create a random numbers node. Connect number1 to **Amount**. Set **Start** to **50.0**, **End** to **500.0** and select a seed.
+* Connect random_numbers1 to **X** and **Seedwave** of positioned.
+* Create an other random numbers node. Connect number1 to **Amount**. Set **Start** to **0.0**, **End** to **400.0** and select a seed.
+* Connect random_numbers2 to **Y** of positioned.
+* Create yet an other random numbers node. Connect number1 to **Amount**. Set **Start** to **0.75**, **End** to **4.0** and select a seed.
+* Connect random_numbers3 to **Speed** of positioned.
+* Create a range node. Connect number1 to **End**. Connect range1 to **Seedcolor** of positioned.
 
 ![animation wave step 5](animation-wave-e.png)
 
