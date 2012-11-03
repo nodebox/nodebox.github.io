@@ -70,6 +70,48 @@ Notice that the alignment of the shape is at the right of the centerpoint. We wi
         </embed>
 </object>
 
+We will create a subnetwork of this as a next step. 
+Go to the [subnetworks page](../concepts/subnetworks.html) and read this it it doesnt' ring a bell..
+
+* Select all nodes. Right-click them and **Group into network**.
+* Right-click it again and rename it **thing**.
+* Right-click it a last time and **Edit Children**.
+* Create a scale node and connect copy1 to **Shape**.
+* Create a translate node and connect scale1 to **Shape**.
+* Publish **Position** of translate1 call it translate.
+* Publish **Amount** of repeat1 and call it coloramount.
+* Publish **Speed** of wave1 and call it wavespeed.
+* Render translate1 and go back to the root.
+
+Now we have an object which we can translate and alter by sending different values to speed and coloramount. Suppose we want this thing to go downwards.
+
+* Create a frame node.
+* Create an add node. Connect frame1 to **Value1**. We will publish **Value2** to have an initial y startposition.
+* Create a mod node and connect add1 to **Value1**.
+* Create a make point node. Connect mod1 to **Y**. Connect this make_point1 to **Translate** of thing.
+* Create two random numbers node. Set **Amount** for both to **1**. 
+* Set **Start** to **1.0** and **End** to **15.0** of random_numbers1. Connect it with **Amountcolor** of thing.
+* Set **Start** to **40.0** and **End** to **150.0** of random_numbers2. Connect it with **Wavespeed** of thing.
+
+![animation wave step 4](animation-wave-d.png)
+
+Let's turn this into a new network.
+
+* Select all nodes. Right-click them and **Group into network**.
+* Right-click it again and rename it **positioned**.
+* Right-click it a last time and **Edit Children**.
+
+
+<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
+        height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
+        <param name="src" value="animation-wave-set.m4v" />
+        <param name="autoplay" value="true" />
+        <param name="controller" value="true" />
+        <param name="loop" value="true" />
+        <embed src="animation-wave-set.m4v" width="580" height="480" autoplay="true" 
+        controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
+        </embed>
+</object>
 
 More Information
 ----------------
