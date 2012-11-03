@@ -18,7 +18,7 @@ If you're brand new to NodeBox, start by reading the beginner tutorials:
     </a>
   </li>
   <li class="three columns">
-    <a href="tutorial/basic-animation.html">
+    <a href="tutorial/animation.html">
       <img src="/media/node/documentation/index-animation.png">
       <span>Basic Animation</span>
     </a>
