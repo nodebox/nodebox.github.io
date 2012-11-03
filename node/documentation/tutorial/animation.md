@@ -115,6 +115,8 @@ Try giving it color. Play around with the shapes and add additional animation to
 
 Go to the [subnetworks page](../concepts/subnetworks.html) and see how to create a group of these.
 
+Go to the [advanced animation page](../using/animation.html) to learn how to animate a group of them.
+
 <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
         height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
         <param name="src" value="seastars.m4v" />
