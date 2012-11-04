@@ -21,12 +21,12 @@ A [Loxone module](http://www.loxone.com/) was used to control the lights over ud
 
 <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="570"
         height="340" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-        <param name="src" value="../../../../media/gallery/valence.m4v" />
-        <param name="autoplay" value="true" />
+        <param name="src" value="/media/gallery/valence.m4v" />
+        <param name="autoplay" value="false" />
         <param name="controller" value="true" />
         <param name="loop" value="true" />
-        <embed src="../../../../media/gallery/valence.m4v" width="570" height="340" autoplay="true" 
+        <embed src="/media/gallery/valence.m4v" width="570" height="340" autoplay="false" 
         controller="true" loop="false" pluginspage="http://www.apple.com/quicktime/download/">
         </embed>
 </object>
-controlling the animation and lightning with the EEG-headset
+<small>Controlling the animation and lightning with the EEG-headset</small>
