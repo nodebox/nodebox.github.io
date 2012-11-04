@@ -162,7 +162,11 @@ range node:
 
 ![Coordinates gear](exploring-coordinates-gear.png)
 
+Next Steps
+----------
+Now that you've seen a few examples, you can:
 
-
+* [Animate](animation.html): See the basics of animation.
+* [Learn the GUI](../using/gui.html): Discover all functionality of the NodeBox GUI.
 
 
