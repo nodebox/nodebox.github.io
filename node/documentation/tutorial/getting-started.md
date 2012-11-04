@@ -171,5 +171,5 @@ Now that you've seen the basics, you can:
 
 * [Explore Further](exploring.html): Build and explore interesting examples:  of basic nodes and how to use them together.
 * [Animate](animation.html): See the basics of animation.
-* [Learn the GUI](../using/gui.html): Discover all functionality of the NodeBox GUI.
+* [Learn the GUI](../concepts/gui.html): Discover all functionality of the NodeBox GUI.
 

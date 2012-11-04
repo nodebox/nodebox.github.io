@@ -167,6 +167,6 @@ Next Steps
 Now that you've seen a few examples, you can:
 
 * [Animate](animation.html): See the basics of animation.
-* [Learn the GUI](../using/gui.html): Discover all functionality of the NodeBox GUI.
+* [Learn the GUI](../concepts/gui.html): Discover all functionality of the NodeBox GUI.
 
 
