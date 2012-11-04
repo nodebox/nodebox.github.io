@@ -313,6 +313,16 @@ footer .copyright a {
   border: 0;
 }
 
+/* Blog */
+#blog .post {
+  margin-right: 10px;
+}
+
+#gallery .post {
+  margin-right: 10px;
+}
+
+
 
 /* NodeBox 3 */
 
