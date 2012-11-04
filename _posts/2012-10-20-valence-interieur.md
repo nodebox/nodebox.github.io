@@ -29,4 +29,4 @@ A [Loxone module](http://www.loxone.com/) was used to control the lights over ud
         controller="true" loop="false" pluginspage="http://www.apple.com/quicktime/download/">
         </embed>
 </object>
-person controlling the animation and lightning with the EEG-headset
+controlling the animation and lightning with the EEG-headset
