@@ -118,9 +118,9 @@ Next Steps
 ----------
 Now that you've seen a first animation, you can:
 
-* [Learn the GUI](../using/gui.html): Discover all functionality of the NodeBox GUI.
-* [Learn about subnetworks](../using/gui.html): And see how to make a group of these.
-* [Learn more on animation](../using/gui.html): to learn how to animate a group of them
+* [Learn the GUI](../concepts/gui.html): Discover all functionality of the NodeBox GUI.
+* [Learn about subnetworks](../concepts/subnetworks.html): And see how to make a group of these.
+* [Learn more on animation](../using/animation.html): to learn how to animate a group of them
 
 <object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
         height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
