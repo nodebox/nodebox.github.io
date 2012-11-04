@@ -30,9 +30,15 @@
 </head>
 <body id="{{ page.section }}">
 
+
 <div class="nbar">
   <ol>
-    <li><a class="node" href="/node/">NodeBox 3<span class="nbar-arrow"></span></a>
+    <li>
+      {% if page.section == "home" or page.section == "gallery" or page.section == "blog" %}
+        <a class="home" href="/">Home<span class="nbar-arrow"></span></a>
+      {% else %}
+        <a class="node" href="/node/">NodeBox 3<span class="nbar-arrow"></span></a>
+      {% endif %}
       <ol class="nbar-dropdown">
         <li><a href="/">Homepage</a></li>
         <li><a href="/node/">NodeBox 3<small>Node-based app for generative design and data visualization</small></a></li>
