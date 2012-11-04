@@ -3,6 +3,14 @@ layout: documentation
 title: Working with Math
 ---
 
+First things first.
+-------------------
+Before starting this section you should:
+
+* [Learn about NodeBox concepts](../concepts/concepts.html).
+* [Learn about random](../concepts/randomness.html): to learn how randomness works in NodeBox.
+* [Learn about subnetworks](../concepts/subnetworks.html).
+
 Math operations.
 ------------------
 

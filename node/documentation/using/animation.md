@@ -3,7 +3,17 @@ layout: documentation
 title: Working with Animation
 ---
 
-You should already have read the [tutorial on basic animation](/node/documentation/tutorial/animation.html) befor continuing. This pages goes more into detail and shows tricks and techniques.
+First things first.
+-------------------
+Before starting this section you should:
+
+* [already have read the tutorial on basic animation](/node/documentation/tutorial/animation.html).
+* [Learn about NodeBox concepts](../concepts/concepts.html).
+* [Learn about random](../concepts/randomness.html): to learn how randomness works in NodeBox.
+* [Learn about subnetworks](../concepts/subnetworks.html).
+
+A wave animation.
+------------------
 
 Conceptually, NodeBox animation is very easy to understand. Every frame, NodeBox sets the value of FRAME to the current frame number. By referring to it over a frame node, you can create animations.
 
@@ -67,6 +77,9 @@ Notice that the alignment of the shape is at the right of the centerpoint. We wi
         controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
         </embed>
 </object>
+
+Subnetwork.
+-------------
 
 We will create a subnetwork as a next step. 
 Go to the [subnetworks page](../concepts/subnetworks.html) and read this it it doesn't ring a bell..
