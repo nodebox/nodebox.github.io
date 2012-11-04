@@ -30,8 +30,7 @@ Let's clean this up a bit with some extra nodes.
 
 The cost.
 ----------
-bit.ly/debtris
-Following data was found [online](http://bit.ly/debtris) and stores a few macro economic figures and their exaplanation. We will do a similar example as above. You can have a look at the data or download it [here](data-visualization-debtris.csv).
+Following data was found [online](http://bit.ly/debtris) and stores a few macro economic figures and their explanation. We will do a similar example as above. You can have a look at the data or download it [here](data-visualization-debtris.csv).
 
 * Create an [import csv node](/node/reference/data/import_csv.html). Point to Debtris.csv in **File**. This reads in the complete csv file. Nodebox shows the file in the network pane.
 * Create two lookup nodes. Set **Key** of lookup1 to **description** and of lookup2 to **££**. These values refer to the index value of each column of the csv file. Connect import csv1 to both of them.
@@ -40,7 +39,7 @@ Following data was found [online](http://bit.ly/debtris) and stores a few macro 
 * Create an align node and connect rect1 to it. Set position to **10.0** and **6.0**. This create a small shift upwards and to the right. Set **Halign** to **Left** and **Valign** to **Middle**.
 * Create a combine node. Connect textpath1 to **List1** and align1 to **List2**
 
-So far for the data itself. Now let's create a similar shape as before to map the data onto.
+So far for the data itself. Now let's create a similar shape as before to map the data on.
 
 * Create a count node and connect import_csv11 to it.
 * Create a line node. Set **Point2** to **0.0** and **600.0**.
@@ -60,7 +59,7 @@ They way data is represented can differ. In stead of using a line we will go ove
 * Create a lookup node and set **Key** to **Region**. Connect import_csv1 to it.
 * Create a textpath node. Set **Align** to **Left**. Connect lookup1 to **Text**.
 
-The result so far is all information as text on top of each other. Next procedure will build the template to be used as points to translate all these different textpaths on to.
+The result so far is all information as text on top of each other. Next procedure will build the template to be used as points to translate all these different textpaths on.
 
 * Create an ellipse node. Set **Width** and **Height** to **500.0**.
 * Create a resample node. Set **Method** to **Amount**. Connect ellipse1 to **Shape**.
@@ -110,7 +109,7 @@ Random pie.
 
 Nodebox allows you to create subnetworks. You should read the [subnetworks page](../concepts/subnetworks.html) if it doesn't ring a bell.
 
-Below we will have a look at a similar principle as in the first example except that we will visualize it as a piechart. The construction of it will be using a subnetwork.
+Below we will have a look at a similar principle as in the first example except that we will visualize the numbers in a piechart. The construction of it will use a subnetwork.
 
 Let's start by creating a set of numbers. I want to be able to increase the amount of numbers in a seperate node.
 
