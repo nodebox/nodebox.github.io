@@ -3,7 +3,7 @@ layout: documentation
 title: Working with Animation
 ---
 
-You should already have read the [tutorial on basic animation](/node/documentation/tutorial/animation.html). This pages goes into more detail and shows tricks and techniques.
+You should already have read the [tutorial on basic animation](/node/documentation/tutorial/animation.html) befor continuing. This pages goes more into detail and shows tricks and techniques.
 
 Conceptually, NodeBox animation is very easy to understand. Every frame, NodeBox sets the value of FRAME to the current frame number. By referring to it over a frame node, you can create animations.
 
@@ -28,7 +28,7 @@ Now we will add some coloured shape to each of these points.
 * Create an ellipse node. Connect make_point1 to **Position** and divide1 to **Width** and **Height**.
 * Create three color nodes and pick colors.
 * Create a combine node and send each of the color nodes to it.
-* Create a repeat node and connect combine1 it. Set **Amount** to **10**. The idea is to have a possibility to change the number of times each color appears.
+* Create a repeat node and connect combine1 to it. Set **Amount** to **10**. The idea is to have the possibility to change the number of times each color appears.
 * Create a sort node and connect repeat1 to it. Set **Key** to **Hue**.
 * Create a colorize node. Connect ellipse1 to **Shape** and sort1 to **Fill**.
 * Render colorize1.
@@ -68,8 +68,8 @@ Notice that the alignment of the shape is at the right of the centerpoint. We wi
         </embed>
 </object>
 
-We will create a subnetwork of this as a next step. 
-Go to the [subnetworks page](../concepts/subnetworks.html) and read this it it doesnt' ring a bell..
+We will create a subnetwork as a next step. 
+Go to the [subnetworks page](../concepts/subnetworks.html) and read this it it doesn't ring a bell..
 
 * Select all nodes. Right-click them and **Group into network**.
 * Right-click it again and rename it **thing**.
@@ -81,7 +81,7 @@ Go to the [subnetworks page](../concepts/subnetworks.html) and read this it it d
 * Publish **Speed** of wave1 and call it wavespeed.
 * Render translate1 and go back to the root.
 
-Now we have an object which we can translate and alter by sending different values to speed and coloramount. Suppose we want this thing to go downwards.
+Now we have an object which we can translate and alter by sending different values to speed and coloramount. Suppose we want this thing to go in a downwards direction.
 
 * Create a frame node.
 * Create an add node. Connect frame1 to **Value1**. We will publish **Value2** to have an initial y startposition.
