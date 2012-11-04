@@ -6,9 +6,15 @@ section: home
 <div class="hero row">
   <div class="sixteen columns">
     <div class="hero-text">
-      <h1>Tools to help designers.</h1>
+      <h1>Clever tools for curious creatives.</h1>
       <p>The NodeBox family of tools gives you the leverage to create generative design the way you want.</p>
     </div>
+  </div>
+</div>
+
+<div class="summary row">
+  <div class="sixteen columns">
+    <p style="font-size: 120%; color: #666">Using our open-source tools we enable designers to automate boring production challenges, visualize large sets of data and access the raw power of the computer without thinking in ones and zeroes. Our tools integrate with traditional design applications and run on many platforms.</p>
   </div>
 </div>
 
@@ -26,7 +32,7 @@ section: home
       <img src="/media/homepage/nodebox-1.jpg" alt="NodeBox 1 screenshot">
       <h2>NodeBox 1</h2>
       <small>Code, Iterate, Print</small>
-      <p>Create 2D visuals (static, animated or interactive) using Python programming code.</p>
+      <p>Mac app for creating 2D visuals using Python programming code.</p>
     </a>
   </div>
   <div class="four columns app">
