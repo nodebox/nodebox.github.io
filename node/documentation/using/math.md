@@ -11,11 +11,11 @@ Nodebox allows a range of arithmetic operations suchs as multiply, divide, add, 
 * Create an ellipse node and leave all parameters as default.
 * Create a [scatter node](/node/reference/corevector/scatter.html) and set **Amount** to **1500**
 
-The idea is to create a network which grows hair on all these points. In order to give it a location from which the hairs should grow away from we will implement a [make point node](/node/reference/corevector/make_point.html) with **X** set to **0.0** and **Y** also set to **0**. This node will allows us to change the direction of each hair later in the process.
+The idea is to create a network which grows hair on all these points. In order to give it a location from which the hairs should grow away from, we will implement a [make point node](/node/reference/corevector/make_point.html) with **X** set to **0.0** and **Y** also set to **0**. This node will allow us to change the direction of each hair later in the process.
 
 ![Hair step 1](math-hair-stepa.png)
 
-Since the scatter node and the make point node contains point elements we will need a node to define the x and y values as seperate list. Therefore:
+Since the scatter node and the make point node contain point elements we will need a node to define the x and y values as a seperate list. Therefore:
 
 * Create 4 [lookup nodes](/node/reference/data/lookup.html). Set the key parameter for the first one to **x**, for the second one to **y**, the third one again **x** and finally the forth one again to **y**.
 * Connect scatter1 to lookup1 and lookup2.
@@ -30,7 +30,7 @@ Now we will subtract the x value of the make point1 node to each of the x values
 * Connect lookup1 with **Value1** and lookup3 with **value2** for the first subtract node.
 * Connect lookup2 with **Value1** and lookup4 with **value2** for the second one.
 
-These new values will be used as the length of each hair. In order to be able to change that length 
+These new values will be used as the length of each hair. In order to be able to change that length:
 
 * Add two [divide nodes](/node/reference/math/divide.html)
 * Send subtract1 to the first one
@@ -76,7 +76,7 @@ First let's create a set of random numbers and calculate the average of them. We
 
 ![Compare step 1](math-compare-a.png)
 
-We will use the random numbers as dimensions for a rectangle placed on each point of the grid. We will also compare the random numbers with the average number so we can use this information (boolean true-false) to pick a color from a set of colors.
+We will use the random numbers as dimensions for a rectangle placed on each point of the grid. We will also compare the random numbers with the average number so we can use this information (boolean True-False) to pick a color from a set of colors.
 
 * Create a rect node. Connect grid1 to **Position**, connect random_numbers1 to **Width** and **Height**.
 * Create a colorize node. Connect rect1 to **Shape**. It will be used later to change the fill color.
@@ -184,7 +184,7 @@ The webfilter applied on [this svg](http://en.wikipedia.org/wiki/File:Obama.svg)
 ![web](math-web-obama.png)
 
 
-As a second filter we will create a subnetwork that will calculate the closest point for a set of random points. We will visualise it by connecting both points to each other with a line.
+As a second filter we will create a subnetwork that will calculate the closest point for a set of random points. We will visualize it by connecting both points to each other with a line.
 
 * Create an ellipse node. Set it's dimensions at **300.0** by **300.0**.
 * Create a scatter node. Connect ellipse1 to **Shape**. Set **Amount** to **40**.
@@ -211,7 +211,7 @@ Now we will turn this procedure into a subnetwork so we can evaluate every point
 
 ![closest point step 2](math-closest-point-b.png)
 
-Same obama, different filter. Some modifications on color and strokewidth.
+Same Obama, different filter. Some modifications on color and strokewidth.
 
 ![closest point obama](math-closest-obama.png)
 
