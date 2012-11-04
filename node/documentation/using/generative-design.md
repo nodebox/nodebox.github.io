@@ -30,7 +30,7 @@ Now for the stack:
 * Connect it to **Amount** of **random numbers1** and of **random numbers2**.
 * Create a colorize node and connect rect1 to it. Change the strokecolor to white and enter **1.0** to **Strokewidth**.
 
-The result is ten rectangles all on top of each other. We will have to create a procedure to stack them on each other with reference to its height value.
+The result is ten rectangles all on top of each other. We will have to create a procedure to stack them on each other with reference to it's height value.
 
 ![generative tower step 2](generative-tower-b.png)
 
@@ -40,13 +40,15 @@ The result is ten rectangles all on top of each other. We will have to create a 
 
 ![generative tower step 3](generative-tower-c.png)
 
-The idea is to make a sommation netwerk that returns the sum value for 0, 0-1, 0-2, 0-3, 0-4 and so on. We can do this by changing the **Size** value of slice1. Try it out and notice that the sum is higher with a higher size. We will do this as many times as there are numbers in random number2. Let's create a subnetwork to store this function in and to be able to send it a range of numbers.
+The idea is to make a sommation netwerk that returns the sum value for 0, 0-1, 0-2, 0-3, 0-4 and so on. We can do this by changing the **Size** value of slice1. Try it out and notice that the sum is higher with a higher size. We will do this as many times as there are numbers in random number2. Let's create a subnetwork to store this function and enables to send a range of numbers to it.
 
 * Select **slice1** and **sum1** by dragging over them.
 * Right-click one of them and choose “group into network”.
 * This will leave you with one node, subnet1. Right-click it again a rename it "accumulation" (by using right-click again).
 
-Let's get back to the childnodes to implement a few modifications. I want to be able to send a number to the **Size** of slice1 so i need to **publish** this specific parameter. In addition i want to create a point based on this number. The idea is that the value can be used to push the y coordinate of each rectangle up based on the combined height of his predecessors. This means we have to negate the number and send it to a make point node.
+Let's get back to the childnodes to implement a few modifications. I want to be able to send a number to the **Size** of slice1 so i need to **publish** this specific parameter. In addition i want to create a point based on this number. 
+
+The idea is that the value can be used to push the y coordinate of each rectangle up based on the combined height of his predecessors. This means we have to negate the number and send it to a make point node.
 
 * Right-click the accumulation node and select 'Edit Children'.
 * Right-click on **Size** port of slice1, choose "Publish" and call it 'size'.
@@ -102,7 +104,7 @@ The new tower looks like this:
 
 ![generative tower step 5](generative-tower-f.png)
 
-Read the [subnetworks page](../concepts/subnetworks.html) and try creating a serie of towers:
+Read the [subnetworks page](../concepts/subnetworks.html) and try creating a number of towers or a skyline:
 
 ![generative city](generative-tower-cities.png)
 
@@ -160,8 +162,8 @@ Our network is getting a bit big so let's create a subnetwork.
 Let's get back to the childnodes to implement a few modifications. I want to be able to send a number to the **Start_index** of slice1 so i need to **publish** this specific parameter. I also want to be able to give a unit a location so i will have to implement and publish a translate node:
 
 * Right-click on **Start_index** port (in the networkview) of slice1 and choose "Publish" and give it an appropriate name.
-* Create a translate node. Connect slice1 to it's **shape** port.
-* Right-click on **translate** port of this new translate node and select "Publish". Select it as rendered node.
+* Create a translate node. Connect slice1 to it's **Shape** port.
+* Right-click on **Translate** port of this new translate node and select "Publish". Select it as rendered node.
 * Click on the root tab in the adress bar or right-click somewhere on the network view to choose "Go Up".
 
 Back in the root you should be able to see a modification in the unit node. It has two port: a first one referring to the **Start_index** (a gray one meaning it expects a value) and a second one to **Translate** (a blue one meaning it expects a point).
@@ -183,7 +185,7 @@ Based on this count we can create an amount of random numbers varying between 0 
 
 * Create a random numbers node and connect count1 to **Amount** port. This will result in a number of random floating numbers.
 * To convert it to integers (we can not select piece 3.41) create a to integer node. Connect random numbers1 to it. This should result in a list of absolute numbers between 0 and 4.
-* Connect to integer1 to **start_index** port.
+* Connect to integer1 to **Start_index** port.
 
 ![generative step 6](generative-f.png)
 
@@ -197,7 +199,7 @@ After the alignment we will reflect it to obtain an invader. Last step is an imp
 * Create an align node and set **Halign** to **Left**. Connect group1 to it: the shape should shift to the right side of the origin.
 * Create a (black) reflect node and set **Angle** to **90.0**. Connect shape1 to it.
 * Create a snap node and set **Distance** to **150.0** and **Strength** to **50**.
-* Render snap1 node and change **Seed** of **pick1**.
+* Render snap1 node and change **Seed** of pick1.
 
 ![generative step 7](generative-g.png)
 
