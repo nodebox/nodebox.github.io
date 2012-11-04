@@ -1,6 +1,7 @@
 .nbar {
   font: 13px/15px arial,sans-serif;
   margin-bottom: 30px;
+  text-align: left;
 }
 
 .nbar > ol {
@@ -28,6 +29,7 @@
 .nbar li a {
   display: inline-block;
   padding: 8px 15px 7px 0;
+  background: none;
 }
 
 .nbar li:hover .nbar-dropdown {
