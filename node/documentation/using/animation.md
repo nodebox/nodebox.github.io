@@ -47,16 +47,7 @@ Now we will add some coloured shape to each of these points.
 
 Test the animation by pressing the **Play** button in the animation bar.
 
-<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
-        height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-        <param name="src" value="animation-snake.m4v" />
-        <param name="autoplay" value="true" />
-        <param name="controller" value="true" />
-        <param name="loop" value="true" />
-        <embed src="animation-snake.m4v" width="580" height="480" autoplay="true" 
-        controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
-        </embed>
-</object>
+<object width="580" height="435"><param name="movie" value="http://www.youtube.com/v/rQCjruUVjhQ?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/rQCjruUVjhQ?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="580" height="435" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 Notice that the alignment of the shape is at the right of the centerpoint. We will add a few nodes to changes this.
 
@@ -67,16 +58,7 @@ Notice that the alignment of the shape is at the right of the centerpoint. We wi
 
 ![animation wave step 3](animation-wave-c.png)
 
-<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
-        height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-        <param name="src" value="animation-wave.m4v" />
-        <param name="autoplay" value="true" />
-        <param name="controller" value="true" />
-        <param name="loop" value="true" />
-        <embed src="animation-wave.m4v" width="580" height="480" autoplay="true" 
-        controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
-        </embed>
-</object>
+<object width="580" height="435"><param name="movie" value="http://www.youtube.com/v/ssJJVuxLDis?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/ssJJVuxLDis?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="580" height="435" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 Subnetwork.
 -------------
@@ -133,13 +115,4 @@ Now we will create a few of them based on a number node.
 
 animated:
 
-<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
-        height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-        <param name="src" value="animation-wave-set.m4v" />
-        <param name="autoplay" value="true" />
-        <param name="controller" value="true" />
-        <param name="loop" value="true" />
-        <embed src="animation-wave-set.m4v" width="580" height="480" autoplay="true" 
-        controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
-        </embed>
-</object>
+<object width="580" height="435"><param name="movie" value="http://www.youtube.com/v/qfBzpPTpDPc?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/qfBzpPTpDPc?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="580" height="435" allowscriptaccess="always" allowfullscreen="true"></embed></object>
