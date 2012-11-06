@@ -8,7 +8,7 @@ end
 
 desc 'Deploy to the live server'
 task :deploy => [:rebuild] do
-  sh 'rsync -rtz --omit-dir-times --delete _site/ nodebox.net:/www/nodebox.net/public_html/'
+  sh 'rsync -rtz --omit-dir-times --delete _site/ emrg@nodebox.net:/www/nodebox.net/public_html/'
 end
 
 desc 'Run Jekyll in server mode'
