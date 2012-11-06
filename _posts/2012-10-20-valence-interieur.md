@@ -6,7 +6,7 @@ thumb: valence-interieur.png
 
 ---
 
-[Valence](http://www.emrg.be/projects/valence.html) was presented at the 2012 edition of Interieur — the [European Design Biennale](http://www.interieur.be/) taking place in Kortrijk.
+[Valence](http://organisms.be/index.php/valence) was presented at the 2012 edition of Interieur — the [European Design Biennale](http://www.interieur.be/) taking place in Kortrijk.
 
 Valence was located at the [Future Form Lab](http://www.interieur.be/programme/future-form-lab) at Buda Factory. 
 
