@@ -18,15 +18,6 @@ A [Loxone module](http://www.loxone.com/) was used to control the lights over ud
 
 [Tim Augustynen](http://www.rockstarrecordings.be/) gave us a big help to configure that one and with building the electronic circuit for the lights.
 
+<object width="560" height="315"><param name="movie" value="http://www.youtube.com/v/d6Brl0ysRKo?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/d6Brl0ysRKo?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
-<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="570"
-        height="340" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-        <param name="src" value="/media/gallery/valence.m4v" />
-        <param name="autoplay" value="false" />
-        <param name="controller" value="true" />
-        <param name="loop" value="true" />
-        <embed src="/media/gallery/valence.m4v" width="570" height="340" autoplay="false" 
-        controller="true" loop="false" pluginspage="http://www.apple.com/quicktime/download/">
-        </embed>
-</object>
-<small>Controlling the animation and lightning with the EEG-headset</small>
+controlling the animation and lightning with the EEG-headset
