@@ -101,18 +101,7 @@ To avoid this linear mouvement we can add a shuffle node so all numbers can be s
 
 Try giving it color. Play around with the shapes and add additional animation to it.
 
-<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
-        height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-        <param name="src" value="one_seastar.m4v" />
-        <param name="autoplay" value="true" />
-        <param name="controller" value="true" />
-        <param name="loop" value="true" />
-        <embed src="one_seastar.m4v" width="580" height="480" autoplay="true" 
-        controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
-        </embed>
-</object>
-
-
+<object width="580" height="435"><param name="movie" value="http://www.youtube.com/v/BxGedr6R6-0?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/BxGedr6R6-0?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="580" height="435" allowscriptaccess="always" allowfullscreen="true"></embed></object>
 
 Next Steps
 ----------
@@ -120,17 +109,7 @@ Now that you've seen a first animation, you can:
 
 * [Learn the GUI](../concepts/gui.html): Discover all functionality of the NodeBox GUI.
 * [Learn about subnetworks](../concepts/subnetworks.html): And see how to make a group of these.
-* [Learn more on animation](../using/animation.html): to learn how to animate a group of them
+* [Learn more on animation](../using/animation.html): to learn how to animate a group of them:
 
-<object classid="clsid:02BF25D5-8C17-4B23-BC80-D3488ABDDC6B" width="580"
-        height="480" codebase="http://www.apple.com/qtactivex/qtplugin.cab">
-        <param name="src" value="seastars.m4v" />
-        <param name="autoplay" value="true" />
-        <param name="controller" value="true" />
-        <param name="loop" value="true" />
-        <embed src="seastars.m4v" width="580" height="480" autoplay="true" 
-        controller="true" loop="true" pluginspage="http://www.apple.com/quicktime/download/">
-        </embed>
-</object>
-
-
+<object width="580" height="435"><param name="movie" value="http://www.youtube.com/v/EtbC69Xogh4?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/EtbC69Xogh4?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="580" height="435" allowscriptaccess="always" allowfullscreen="true"></embed></object>
+<object width="580" height="435"><param name="movie" value="http://www.youtube.com/v/EtbC69Xogh4?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/EtbC69Xogh4?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="580" height="435" allowscriptaccess="always" allowfullscreen="true"></embed></object>
