@@ -25,7 +25,7 @@ section: download
   </pre>
 </div>
 
-While the software is downloading, take a look at the [getting started page](/documentation/tutorial/getting-started.html).
+While the software is downloading, take a look at the [getting started page](/node/documentation/tutorial/getting-started.html).
 
 Problems downloading? Try the [GitHub Downloads Page](http://github.com/nodebox/nodebox/downloads).
 
