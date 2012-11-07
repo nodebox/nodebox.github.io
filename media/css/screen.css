@@ -7,6 +7,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 h2 {
   font-size: 18px;
   margin-top: 0;
@@ -231,13 +236,9 @@ footer .copyright a {
 }
 
 .hero-shot {
-  position: relative;
-  top: 25px;
-  right: 15px;
-  margin: 0;
-  max-width: inherit;
-  border: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border: none !important;
 }
 
 
@@ -312,6 +313,11 @@ footer .copyright a {
 #blog .post, 
 #gallery .post {
   margin-right: 10px;
+}
+
+#blog .meta {
+  color: #999;
+  font-size: 12px;
 }
 
 /* NodeBox 3 */
