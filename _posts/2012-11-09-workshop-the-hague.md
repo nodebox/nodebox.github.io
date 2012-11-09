@@ -11,14 +11,14 @@ images:
 ---
 We regularly teach NodeBox workshops to students and professional designers. This allows us to evaluate our software and discover issues and areas of improvement. This week we held a data visualisation workshop at the [Royal Academy of Art, The Hague](http://www.kabk.nl/) for a small but enthusiastic group of 3rd- and 4th year students.
 
-Below are the final results. To see the process you can visit the <a href="http://workshops.nodebox.net/2012-the-hague/">workshop blog</a>.
+Below are the final results. To see the process you can visit the [workshop blog](http://workshops.nodebox.net/2012-the-hague/).
+
 
 Goldberg Variations
 -------------------
 <small id="by">Anton Sovetov</small>
 
-
-Anton wanted to visualize the musical structure of J.S. Bach's Goldberg variations. Using MIDI music files from <a href="http://jsbach.net/midi/midi_goldbergvariations.html">Dave's J.S. Bach Page</a>, and a custom "midimport" node we created, he designed a visualisation of the classical music pieces.
+Anton wanted to visualize the musical structure of J.S. Bach's Goldberg variations. Using MIDI music files from [Dave's J.S. Bach Page](http://jsbach.net/midi/midi_goldbergvariations.html), and a custom "midimport" node we created, he designed a visualisation of the classical music pieces.
 
 Based on the structure of the music he produced a "hyphenated" layout, cutting up the music piece where it made sense to make it work better with the vertical format of the poster. The backgrounds of each piece represent the tonality of the piece, and the design also contains information on timing and structure.
 
@@ -27,18 +27,18 @@ Studio Dumbar Internship Report
 -------------------------------
 <small id="by">Roey Tsemah</small>
 
-During his internship at <a href="http://studiodumbar.com/">Studio Dumbar</a>, Roey Tsemah meticulously registered his days: which clients he worked for and for how long, how creative the task was, and how much coffee he needed to get through the day.
+During his internship at [Studio Dumbar](http://studiodumbar.com/), Roey Tsemah meticulously registered his days: which clients he worked for and for how long, how creative the task was, and how much coffee he needed to get through the day.
 
-With his personal <a href="http://en.wikipedia.org/wiki/Lifelog">lifelog</a> data in hand, he proceeded to visualise it in NodeBox. Each day is represented by a pie chart shape showing the clients he worked for and in which proportion, and how creative he was doing it.
+With his personal [lifelog](http://en.wikipedia.org/wiki/Lifelog) data in hand, he proceeded to visualise it in NodeBox. Each day is represented by a pie chart shape showing the clients he worked for and in which proportion, and how creative he was doing it.
 
 
 Shipwrecks of California
 -------------------------
 <small id="by">Jan Aulbach</small>
 
-Jan already had a dataset: for a different course he had acquired data of all shipwrecks on the coast of California from 1836 until 1988. The data was analyzed first in <a href="http://tables.googlelabs.com">Google Fusion Tables</a>, then imported into NodeBox.
+Jan already had a dataset: for a different course he had acquired data of all shipwrecks on the coast of California from 1836 until 1988. The data was analyzed first in [Google Fusion Tables](http://tables.googlelabs.com), then imported into NodeBox.
 
- Using this table he created a timeline with a strip for each year showing the amount of devastation caused: a combination of the *amount* of ships crashed, and the *size*, or *tonage* of the ship.
+Using this table he created a timeline with a strip for each year showing the amount of devastation caused: a combination of the *amount* of ships crashed, and the *size*, or *tonage* of the ship.
 
 Jan had easily the most complex network, with multiple levels of nesting, custom nodes for calculate running totals, and lookup tables for colors.
 
@@ -58,5 +58,5 @@ NodeBox drives on feedback of students. We use their experiences and frustration
 
 In February of this year we did the very first [NodeBox 3 masterclass in Antwerp](http://nodebox.net/gallery/2012/02/masterclass-results/). This laid bare a number of fundamental issues with more complex assignments that were hard to solve. We figured out a way to solve them and this workshop was a test to see if our solution worked. We were very happy to discover that our system provided a comprehensive, easy-to-use system to build complex networks.
 
-Starting in January, we'll be working on integrating hardware interfaces and image processing to the software during the <a href="http://www.emrg.be/projects/conduit.html">Conduit research project</a>. We look forward to testing these new capabilities in future workshops.
+Starting in January, we'll be working on integrating hardware interfaces and image processing to the software during the [Conduit research project](http://www.emrg.be/projects/conduit.html). We look forward to testing these new capabilities in future workshops.
 
