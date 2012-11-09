@@ -1,13 +1,18 @@
 ---
 categories: gallery
 layout: gallery
-title: Results of the NodeBox 3 Masterclass
-thumb: masterclass-2012-thumb.jpg
+title: NodeBox 3 Antwerp Masterclass
+thumb: masterclass-2012-antwerp-thumb.png
 images:
-  - gallery/masterclass-2012-1.jpg
-  - gallery/masterclass-2012-2.jpg
+  - gallery/masterclass-2012-antwerp-1.png
+  - gallery/masterclass-2012-antwerp-2.png
+  - gallery/masterclass-2012-antwerp-3.png
+  - gallery/masterclass-2012-antwerp-4.png
+  - gallery/masterclass-2012-antwerp-5.png
+  - gallery/masterclass-2012-antwerp-6.png
+  - gallery/masterclass-2012-antwerp-7.png
 ---
-The Masterclass held at [Sint Lucas Antwerpen][sla] was the first workshop where we tested the new version of NodeBox 3. This was a big event, since NodeBox 3 introduces new models for working with variation. The masterclass was a test case to see if this approach would work.
+The Masterclass held at [Sint Lucas Antwerpen](http://www.sintlucasantwerpen.be/) was the first workshop where we tested the new version of NodeBox 3. This was a big event, since NodeBox 3 introduces new models for working with variation. The masterclass was a test case to see if this approach would work.
 
 It did work. After the initial learning hump, students were able to complete their work effectively using a minimal of teacher intervention. 
 
@@ -19,7 +24,7 @@ Pirating the Oscars
 -------------------
 <small id="by">Christophe Clarijs &amp; Jan-Bart De Bock</small>
 
-Using data from [Andy Baio's Blog][waxy], students visualized how long it took for movie pirates to leak the movies on the Internet. They used a vertical layout, displaying the date of the yearly Oscars as a stable point and showing the relative days of release until high-quality leak.
+Using data from [Andy Baio's Blog](http://waxy.org/2012/01/mpaa_wins_the_oscar_screener_battle_but_loses_the_war/), students visualized how long it took for movie pirates to leak the movies on the Internet. They used a vertical layout, displaying the date of the yearly Oscars as a stable point and showing the relative days of release until high-quality leak.
 
 Looking at the visualization, you can see that in recent years, more leaks have occurred after the Oscars have already passed. This might be due to a more restrictive policy on illegal downloads, or just pirates waiting for more high-quality releases like a Bluray or DVD-rip.
 
@@ -33,13 +38,13 @@ The Happiness Index
 -------------------
 <small id="by">Benjamin Aerts</small>
 
-If Coca-Cola really brings happiness, as they suggest, shouldn't the biggest Coke drinkers be the happiest people on earth? Benjamin correlated the [Happy Planet Index][] with the consumption of Coca-Cola in different countries accross the globe. Of course, [correlation does not imply causation][correlation]. But in the absence of correlation, I think Coca-Cola has still more work to do to cause happiness for their big consumers.
+If Coca-Cola really brings happiness, as they suggest, shouldn't the biggest Coke drinkers be the happiest people on earth? Benjamin correlated the [Happy Planet Index][] with the consumption of Coca-Cola in different countries accross the globe. Of course, [correlation does not imply causation](http://www.businessweek.com/magazine/correlation-or-causation-12012011-gfx.html). But in the absence of correlation, I think Coca-Cola has still more work to do to cause happiness for their big consumers.
 
 My Facebook Friends
 -------------------
 <small id="by">Céline Jacobs</small>
 
-Using data from [give me my data][], Céline visualized the "closeness" of her friends based on how many posts they made on her wall. She then convinced two of her friends to give her their data so that she could visualize mutual friends, all as tiny microbes.
+Using data from [give me my data](http://givememydata.com/), Céline visualized the "closeness" of her friends based on how many posts they made on her wall. She then convinced two of her friends to give her their data so that she could visualize mutual friends, all as tiny microbes.
 
 Human Migration
 ---------------
@@ -63,8 +68,3 @@ Summary
 -------
 As always, we drive on feedback to evaluate our software. Through questionnaires, screen recordings and depth interviews we discover if people new with generative software can tackle learning curve.
 
-[sla]: http://www.sintlucasantwerpen.be/
-[waxy]: http://waxy.org/2012/01/mpaa_wins_the_oscar_screener_battle_but_loses_the_war/
-[happy planet index]: http://www.happyplanetindex.org/
-[correlation]: www.businessweek.com/magazine/correlation-or-causation-12012011-gfx.html
-[give me my data]: http://givememydata.com/
