@@ -348,6 +348,93 @@ footer .copyright a {
 
 /* Download */
 
+#download-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#download-table td, #download-table th {
+  width: 25%;
+  padding: 10px 40px;
+  text-align: center;
+}
+
+#download-table th {
+    border-bottom: 2px solid #ccc;
+}
+
+#download-table td {
+    border-top: 1px solid #ddd;
+}
+
+#download-table td.version {
+  text-align: left;
+  font-weight: bold;
+  padding-left: 0;
+  padding-right: 30px;
+  white-space: nowrap;
+}
+
+#download-table td.version small {
+  font-weight: normal;
+  font-style: oblique;
+  color: #999;
+}
+
+#download-table em {
+  color: #999;
+}
+
+#download-table .highlight {
+    background: #eee;
+}
+
+#download-table .button {
+    display: inline-block;
+    padding: 5px 15px;
+    font-weight: bold;
+    background: #4E9DF4;
+    box-shadow: 0 2px 5px rgba(100, 100, 120, 0.2);
+    text-shadow: 0 -1px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+}
+
+#download-table .button:hover {
+    background: #d26b27;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 600px;
+  height: 250px;
+  margin-left: -300px;
+  margin-top: -125px;
+  background: white;
+  padding: 10px 30px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.popup .close-button {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  color: #666;
+  background: #ddd;
+}
+
 .hero-button {
   font-size: 24px;
   display: inline-block;
@@ -367,12 +454,6 @@ footer .copyright a {
 
 .hero-button:hover {
   background: #d26b27;
-}
-
-.yellow {
-  background: #041a32;
-  color: #333;
-  text-shadow: none;
 }
 
 .hero-button small {
@@ -481,21 +562,21 @@ footer .copyright a {
   text-align: left;
 }
 
-#documentation #bootcamp {
+#bootcamp {
   display: block;
   text-align: center;
   margin: 0;
   padding: 0;
 }
 
-#documentation #bootcamp::after {
+#bootcamp::after {
     display: block;
     content: "";
     padding-bottom: 20px;
     clear: both;
 }
 
-#documentation #bootcamp li {
+#bootcamp li {
     max-width: 200px;
     border-radius: 3px;
     border: 1px solid #ddd;
@@ -504,14 +585,14 @@ footer .copyright a {
     padding: 0;
 }
 
-#documentation #bootcamp img {
+#bootcamp img {
   border: none;
   display: block;
   text-align: center;
   box-shadow: none;
 }
 
-#documentation #bootcamp span {
+#bootcamp span {
     display: block;
     width: 100%;
     padding: 5px 0;
