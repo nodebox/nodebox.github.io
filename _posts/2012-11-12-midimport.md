@@ -1,7 +1,7 @@
 ---
 categories: blog
 layout: blog
-title: Import MIDI files into NodeBox 3.
+title: Import MIDI files into NodeBox 3
 thumb: midimport-thumb.png
 images:
   - gallery/midimport-psy-gangnam-style.png
