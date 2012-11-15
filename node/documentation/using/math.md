@@ -70,6 +70,29 @@ Try out:
 * Changing the original ellipse with an other shape like a rectangle or a textpath to obtain a hairy rect / text.
 * Changing the x and y values of the make point1 node to have a difference in hair implant.
 
+Using angle and distance.
+-------------------------
+
+We can do the same function in a complete different way. In order to do that we will use the [angle](/node/reference/math/angle.html) and [distance node](/node/reference/math/distance.html).
+
+
+* Create a textpath node. Select a font and a larger fontsize. Type in some text.
+* Create a scatter node and set **Amount** to **2000**. Connect textpath1 to **Shape**.
+
+Now we will calculate the angle and the distance of each of these points to a center point.
+
+* Create a point node. Call it center.
+* Create an angle node. Send center to **Point1** and scatter1 to **Point2**.
+* Create a distance node.Send center to **Point1** and scatter1 to **Point2**.
+
+In order to create the hairs, we will add a certain number to this distance and then convert it back to a point by using [coordinates node](/node/reference/math/coordinates.html).
+
+* Create an add node. Connect distance1 to **Value1** and set **Value2** to **20.0**.
+* Create a coordinates node. Connect angle1 to **Angle**, add1 to **Distance** and center to **Position**.
+* Create a line node. Connect scatter1 to **Point1** and coordinates1 to **Point2**. Hairs should appear.
+
+![Hair too](math-hair-too.png)
+
 Comparisons.
 ----------
 

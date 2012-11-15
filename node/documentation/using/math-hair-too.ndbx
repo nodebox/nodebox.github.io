@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="12" type="file" uuid="b0a1b446-a1dd-4c9f-b9ac-dfa43a059eab">
+    <node name="root" outputRange="list" renderedChild="colorize1">
+        <node name="add1" position="5.00,6.00" prototype="math.add">
+            <port name="value2" type="float" value="84.0"/>
+        </node>
+        <node name="angle1" position="2.00,5.00" prototype="math.angle"/>
+        <node name="center" position="6.00,2.00" prototype="corevector.point"/>
+        <node name="color1" position="4.00,11.00" prototype="color.color">
+            <port name="color" type="color" value="#041a32ff"/>
+        </node>
+        <node name="color2" position="4.00,12.00" prototype="color.color">
+            <port name="color" type="color" value="#4e9df48c"/>
+        </node>
+        <node name="color3" position="4.00,13.00" prototype="color.color">
+            <port name="color" type="color" value="#d26b27ff"/>
+        </node>
+        <node name="colorize1" position="1.00,11.00" prototype="corevector.colorize">
+            <port name="strokeWidth" type="float" value="0.25"/>
+        </node>
+        <node name="combine1" position="4.00,14.00" prototype="list.combine"/>
+        <node name="coordinates1" position="2.00,7.00" prototype="math.coordinates"/>
+        <node name="distance1" position="6.00,5.00" prototype="math.distance"/>
+        <node name="line1" position="1.00,9.00" prototype="corevector.line"/>
+        <node name="scatter1" position="1.00,3.00" prototype="corevector.scatter">
+            <port name="amount" type="int" value="4000"/>
+        </node>
+        <node name="textpath1" position="1.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="ABC"/>
+            <port name="font_name" type="string" value="Verdana-Bold"/>
+            <port name="font_size" type="float" value="227.0"/>
+            <port name="position" type="point" value="0.00,58.00"/>
+        </node>
+        <conn input="angle1.point2" output="scatter1"/>
+        <conn input="distance1.point2" output="scatter1"/>
+        <conn input="add1.value1" output="distance1"/>
+        <conn input="coordinates1.angle" output="angle1"/>
+        <conn input="coordinates1.distance" output="add1"/>
+        <conn input="line1.point1" output="scatter1"/>
+        <conn input="line1.point2" output="coordinates1"/>
+        <conn input="angle1.point1" output="center"/>
+        <conn input="distance1.point1" output="center"/>
+        <conn input="scatter1.shape" output="textpath1"/>
+        <conn input="colorize1.shape" output="line1"/>
+        <conn input="combine1.list1" output="color3"/>
+        <conn input="combine1.list2" output="color2"/>
+        <conn input="combine1.list3" output="color1"/>
+        <conn input="colorize1.stroke" output="combine1"/>
+        <conn input="coordinates1.position" output="center"/>
+    </node>
+</ndbx>
