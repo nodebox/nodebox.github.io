@@ -16,7 +16,7 @@ section: download
       <th class="linux">Linux</th>
     </tr>
     <tr>
-      <td class="version"><a href="/node/">NodeBox 3</a><br><small>Version 3.0a27</small></td>
+      <td class="version"><a href="/node/">NodeBox 3</a><br><small>Version 3.0a28</small></td>
       <td class="mac"><a href="https://github.com/downloads/nodebox/nodebox/NodeBox.zip" class="button">Download</a></td>
       <td class="windows"><a href="https://github.com/downloads/nodebox/nodebox/NodeBoxSetup.exe" class="button">Download</a></td>
       <td class="linux"><a href="javascript:showLinuxDownloadInstructions()" class="button">Instructions</a></td>
