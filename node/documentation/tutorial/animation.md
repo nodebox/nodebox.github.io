@@ -67,8 +67,8 @@ Let's create a network that produces a seastar-like figure. We will implement a 
 
 * Create an ellipse node and set **Width** and **Height** to **200.0**.
 * Create a resample node and set **Length** to **25.0**. Connect ellipse1 to it's **Shape** port.
-* Create a to point node to get the path of resample translated into points. Connect resample1 to it.
-* Create a quad curve node. Connect to points1 to it's first point port. Set **T** to **70.0** and **Distance** to **-100**. This node needs a second port input. We will provide it by shifting the list of points that we have by 1 so each quad curve will make a connection from itself (point) to it's direct neighbour(point).
+* Create a [point node](/node/reference/corevector/point.html) to get the path of resample translated into points. Connect resample1 to it.
+* Create a quad curve node. Connect points1 to it's first point port. Set **T** to **70.0** and **Distance** to **-100**. This node needs a second port input. We will provide it by shifting the list of points that we have by 1 so each quad curve will make a connection from itself (point) to it's direct neighbour(point).
 * Create a shift node and connect to points1 to it. Leave **Amount** to **1**.
 
 ![Seastar step 1](animation-seastara.png)
@@ -85,7 +85,7 @@ What occurs is an wave shaped animation of moving 'tentacles'. Change **Type** i
 
 For the moment all arms have the same animation. Let's create some variation.
 
-* Create a [count node](/node/reference/math/count.html) to count the number of points in to point1. Connect to point1 to it.
+* Create a [count node](/node/reference/math/count.html) to count the number of points in point1. Connect point1 to it.
 * Create a range node and send count1 to the **End** port. This will make a list of numbers from 0 untill amount of count with a step by 1. In our case: 0,1,2,3,4 up to 25.
 * We will use these numbers instead of just the frame number to send it to the wave. In this case it means that all wave shapes are shifted over 1 frame.
 * Create an add node. Connect range1 to its first port **Value1**. Connect frame 1 to **Value2**. We add the number with the frame so it keeps on counter when we press the play button.
