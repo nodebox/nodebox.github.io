@@ -19,13 +19,13 @@ Open the application. After a short loading time, NodeBox opens a new document w
 
 NodeBox documents are composed of **networks of connected nodes**.
 
-Remove the default [rect node](/node/reference/rect.html) by selecting it and by entering the backspace button.
+Remove the default [rect node](/node/reference/corevector/rect.html) by selecting it and by entering the backspace button.
 
 Click the **New Node** button or double click anywhere in the network pane. This pops up the node selection window:
 
 ![Node Selection Dialog](getting-started-new-node.png)
 
-From this window, create an [ellipse node](/node/reference/ellipse.html). You can do this in three ways:
+From this window, create an [ellipse node](/node/reference/corevector/ellipse.html). You can do this in three ways:
 
 * Scroll through the (sorted) list until you find the Ellipse node, then double-click it.
 * Click on the Geometry Tab and scroll through the list until you find the Ellipse node, then double-click it.
