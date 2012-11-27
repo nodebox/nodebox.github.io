@@ -98,7 +98,7 @@ NodeBox documents use the .ndbx extension. These documents can be opened and sav
 
 Importing Graphics
 ------------------
-To import vector data use the [import node](/node/reference/corevector/import.html).
+To import vector data use the [import SVG node](/node/reference/corevector/import_svg.html).
 
 
 Exporting Graphics
