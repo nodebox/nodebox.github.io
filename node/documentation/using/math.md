@@ -153,7 +153,7 @@ Create two [sin nodes](/node/reference/math/sin.html) and send the multiply node
 
 Create two more multiply nodes and send the sin nodes to them. These two multiply nodes will handle the width and height of the Lissajous path. You can rename them by using right click and select the rename option.
 
-Create a [make point node](/node/reference/math/make_point.html).
+Create a [make point node](/node/reference/corevector/make_point.html).
 
 * Send the first multiply node to the x port.
 * Send the second one to the y port.
