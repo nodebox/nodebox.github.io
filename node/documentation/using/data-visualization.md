@@ -38,10 +38,10 @@ Let's clean this up a bit with some extra nodes.
 
 The cost.
 ----------
-Following data was found [online](http://bit.ly/debtris) and stores a few macro economic figures and their explanation. We will do a similar example as above. You can have a look at the data or download it [here](data-visualization-debtris.csv).
+Following data was found [online](http://www.informationisbeautiful.net/2010/debtris/) and stores a few macro economic figures and their explanation. We will do a similar example as above. You can have a look at the data or download a clean version of it [here](data-visualization-debtris.csv).
 
 * Create an [import csv node](/node/reference/data/import_csv.html). Point to Debtris.csv in **File**. This reads in the complete csv file. Nodebox shows the file in the network pane.
-* Create two lookup nodes. Set **Key** of lookup1 to **description** and of lookup2 to **££**. These values refer to the index value of each column of the csv file. Connect import csv1 to both of them.
+* Create two lookup nodes. Set **Key** of lookup1 to **description** and of lookup2 to **pound**. These values refer to the index value of each column of the csv file. Connect import csv1 to both of them.
 * Create a textpath node and connect lookup1 to it. Set **Align** to **Right**. Select a font and type.
 * Create a rect node and connect lookup2 to **Width**. Set **Height** to **20.0**. The values of lookup2 are rather big so you might also want to add a divide node in between lookup2 and rect1.
 * Create an align node and connect rect1 to it. Set position to **10.0** and **6.0**. This create a small shift upwards and to the right. Set **Halign** to **Left** and **Valign** to **Middle**.
