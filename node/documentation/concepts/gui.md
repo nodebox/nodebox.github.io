@@ -74,7 +74,7 @@ The Address Bar
 ---------------
 ![The Address Bar](gui-address-bar.png)
 
-The address bar is useful when using sub-networks (also called geonets). It allows you to jump back up a level. [Read more about using geonets](geonets.html).
+The address bar is useful when using subnetworks. It allows you to jump back up a level. [Read more about subnetworks](subnetworks.html).
 
 
 The Animation Bar
