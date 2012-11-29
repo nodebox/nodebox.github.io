@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="12" type="file" uuid="5511599b-af36-4c22-a89b-fc75ae1fb598">
+    <node name="root" outputRange="list" renderedChild="line1">
+        <node name="compare1" position="3.00,7.00" prototype="math.compare">
+            <port name="value2" type="float" value="40.0"/>
+        </node>
+        <node name="cull1" position="2.00,9.00" prototype="list.cull"/>
+        <node name="cull2" position="6.00,9.00" prototype="list.cull"/>
+        <node name="distance1" position="2.00,6.00" prototype="math.distance"/>
+        <node name="line1" position="3.00,10.00" prototype="corevector.line"/>
+        <node name="point1" position="2.00,3.00" prototype="corevector.point"/>
+        <node name="repeat1" position="2.00,4.00" prototype="list.repeat">
+            <port name="amount" type="int" value="50"/>
+        </node>
+        <node name="resample1" position="2.00,2.00" prototype="corevector.resample"/>
+        <node name="shuffle1" position="5.00,5.00" prototype="list.shuffle">
+            <port name="seed" type="int" value="2"/>
+        </node>
+        <node name="textpath1" position="2.00,1.00" prototype="corevector.textpath">
+            <port name="text" type="string" value="web"/>
+            <port name="font_name" type="string" value="Verdana-Bold"/>
+            <port name="font_size" type="float" value="187.0"/>
+        </node>
+        <conn input="resample1.shape" output="textpath1"/>
+        <conn input="point1.value" output="resample1"/>
+        <conn input="distance1.point2" output="shuffle1"/>
+        <conn input="compare1.value1" output="distance1"/>
+        <conn input="cull1.booleans" output="compare1"/>
+        <conn input="cull2.booleans" output="compare1"/>
+        <conn input="cull2.list" output="shuffle1"/>
+        <conn input="line1.point1" output="cull1"/>
+        <conn input="line1.point2" output="cull2"/>
+        <conn input="repeat1.list" output="point1"/>
+        <conn input="shuffle1.list" output="repeat1"/>
+        <conn input="distance1.point1" output="repeat1"/>
+        <conn input="cull1.list" output="repeat1"/>
+    </node>
+</ndbx>
