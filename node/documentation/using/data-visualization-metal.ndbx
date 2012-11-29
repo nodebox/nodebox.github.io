@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ndbx formatVersion="12" type="file" uuid="a77f02fe-5a40-4d2d-97c9-7334ba2275a4">
+    <node name="root" outputRange="list" renderedChild="combine1">
+        <node name="combine1" position="6.00,13.00" prototype="list.combine"/>
+        <node name="count1" position="3.00,3.00" prototype="list.count"/>
+        <node name="count2" position="10.00,1.00" prototype="list.count"/>
+        <node name="distinct1" position="7.00,3.00" prototype="list.distinct"/>
+        <node name="import_csv1" position="2.00,1.00" prototype="data.import_csv">
+            <port name="file" type="string" value="/Users/lieven/Desktop/Metallica_Dataset.csv"/>
+        </node>
+        <node name="integer1" position="11.00,8.00" prototype="math.integer"/>
+        <node name="lookup1" position="2.00,2.00" prototype="data.lookup">
+            <port name="key" type="string" value="Word"/>
+        </node>
+        <node name="lookup2" position="7.00,2.00" prototype="data.lookup">
+            <port name="key" type="string" value="Year"/>
+        </node>
+        <node name="lookup3" position="7.00,9.00" prototype="data.lookup"/>
+        <node name="multiply1" position="4.00,6.00" prototype="math.multiply">
+            <port name="value2" type="float" value="6.0"/>
+        </node>
+        <node name="range1" position="4.00,5.00" prototype="math.range"/>
+        <node name="rect1" position="10.00,3.00" prototype="corevector.rect">
+            <port name="width" type="float" value="1000.0"/>
+            <port name="height" type="float" value="1000.0"/>
+        </node>
+        <node name="rotate1" position="2.00,9.00" prototype="corevector.rotate"/>
+        <node name="scatter1" position="10.00,4.00" prototype="corevector.scatter"/>
+        <node name="string1" position="7.00,5.00" prototype="string.string"/>
+        <node name="textpath1" position="2.00,7.00" prototype="corevector.textpath">
+            <port name="font_size" type="float" value="14.0"/>
+            <port name="align" type="string" value="LEFT"/>
+            <port name="position" type="point" value="100.00,0.00"/>
+        </node>
+        <node name="textpath2" position="11.00,9.00" prototype="corevector.textpath"/>
+        <node name="translate1" position="4.00,11.00" prototype="corevector.translate"/>
+        <node name="translate2" position="10.00,11.00" prototype="corevector.translate"/>
+        <node name="zip_map1" position="8.00,7.00" prototype="list.zip_map"/>
+        <conn input="lookup1.list" output="import_csv1"/>
+        <conn input="count1.list" output="lookup1"/>
+        <conn input="textpath1.text" output="lookup1"/>
+        <conn input="range1.end" output="count1"/>
+        <conn input="multiply1.value1" output="range1"/>
+        <conn input="rotate1.shape" output="textpath1"/>
+        <conn input="rotate1.angle" output="multiply1"/>
+        <conn input="lookup2.list" output="import_csv1"/>
+        <conn input="distinct1.list" output="lookup2"/>
+        <conn input="string1.value" output="distinct1"/>
+        <conn input="count2.list" output="distinct1"/>
+        <conn input="scatter1.amount" output="count2"/>
+        <conn input="scatter1.shape" output="rect1"/>
+        <conn input="zip_map1.keys" output="string1"/>
+        <conn input="zip_map1.values" output="scatter1"/>
+        <conn input="lookup3.key" output="lookup2"/>
+        <conn input="lookup3.list" output="zip_map1"/>
+        <conn input="translate1.shape" output="rotate1"/>
+        <conn input="translate1.translate" output="lookup3"/>
+        <conn input="integer1.value" output="distinct1"/>
+        <conn input="textpath2.text" output="integer1"/>
+        <conn input="translate2.shape" output="textpath2"/>
+        <conn input="translate2.translate" output="scatter1"/>
+        <conn input="combine1.list1" output="translate1"/>
+        <conn input="combine1.list2" output="translate2"/>
+    </node>
+</ndbx>
