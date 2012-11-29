@@ -205,6 +205,10 @@ We will glue these two together.
 
 ![zipmap step3](data-visualization-metallicc.png)
 
+More zipmaps allow you to do more complex things:
+
+![zipmap step4](data-visualization-metallicd.png)
+
 
 
 
