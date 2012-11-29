@@ -104,8 +104,8 @@ nav li {
 /* Navigation */
 
 nav ul {
-margin-top:0px;
-  margin-bottom:15px;
+  margin-top:0px;
+  margin-bottom:0;
   padding:0;
   padding-left:5px;
   background-color:#FFFF33;
@@ -136,6 +136,31 @@ nav li a:hover {
 #gallery .gallery,
 #contact .contact {
   border-bottom: 2px solid #5a5d6a;
+}
+
+
+/* Deprecation notice */
+
+#deprecated {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 0;
+  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
+  color: #888;
+  background: #ffe;
+}
+
+#deprecated p {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#deprecated a {
+  color: #333;
 }
 
 
