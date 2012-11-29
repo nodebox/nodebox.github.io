@@ -157,4 +157,55 @@ Below is a pie in pie chart. This involves creating another subnet of the previo
 
 ![pie in pie](data-visualization-pie-in-pie.png)
 
+A zipmap example.
+-----------------
+
+The [zipmap node](/node/reference/list/zip_map.html) is an interesting node to have a separate example for it. Following datafile shows a selection of most used words on each Metallica-album. It was made using [Textalyzer](http://textalyser.net/). [Download it.](data-visualization-metalwords.csv)
+
+* Create an import csv node and look for the csv file.
+* Create a lookup node. Set **Key** to **Word** and connect import_csv1 to it.
+* Create a textpath node and connect lookup1 to **text**. Select a font and set font size to **14**. Set **Align** to **Left** and the x value of **Position** to **100.0**.
+
+Now we will place them on a circle.
+
+* Create a count node and connect lookup1 to it.
+* Create a range node and connect count1 to **End**.
+* Create a multiply node. Connect range1 to it and set Value2 to **6**.
+* Create a rotate node. Connect textpath1 to **Shape** and multiply1 to **Angle**.
+* Render rotate1.
+
+![zipmap step1](data-visualization-metallica.png)
+
+In the second section we will create a set of points based on the number of albums. Note that the datafile points to the year in which the album was released. We will than decide that word from one album all go to the same point and that for each word.
+
+* Create a lookup node. Set **Key** to **Year**.
+* Create a [distinct node](/node/reference/list/distinct.html). Connect lookup2 to it. Distinct removes all duplicates, what remains are 9 years each standing for one album.
+* Create a count node. Connect distinct1 to it.
+
+The idea is to generate a number of points. We will do this be using a rect node connected to a scatter node.
+
+* Create a rect node. Set its dimensions to 500 * 500. 
+* Create a scatter node. Connect rect1 to **Shape**. Connect count2 to **Amount**. We now have 9 points.
+* Create a string node. Connect distinct1 to it.
+* Create a zipmap node. Connect string1 to **Keys** and scatter1 to **Values**.
+* Create a lookup node. Connect zip_map1 to **List** and lookup2 to **Key**.
+
+The viewer pane will reveal only the same set of points but if you switch to data view you will see that each point has multiple points behind it (at the same location).
+
+![zipmap step2](data-visualization-metallicb.png)
+
+We will glue these two together.
+
+* Create a translate node. Connect rotate1 to **Shape** and lookup3 to **Translate**.
+* Create an integer node. Connect distinct1 to it.
+* Create a textpath node. Connect integer1 to it. Select a type and a fontsize of **24.0**.
+* Create a translate node. Connect textpath2 to **Shape** and scatter1 to **Translate**.
+* Create a combine node. Connect translate1 to **list1** and translate2 to **List2**.
+* Render combine1.
+
+![zipmap step3](data-visualization-metallicc.png)
+
+
+
+
 
