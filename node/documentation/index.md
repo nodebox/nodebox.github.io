@@ -25,6 +25,23 @@ If you're brand new to NodeBox, start by reading the beginner tutorials:
   </li>
 </ul>
 
+Screencasts
+-----------
+
+<div class="row">
+  <div class="three columns alpha">
+    <a class="fancybox fancybox.iframe" href="http://player.vimeo.com/video/54519434?badge=0"><img class="screencast-thumb" src="nodebox-101-intro.png">101: Introduction</a>
+  </div>
+
+  <div class="three columns">
+    <a class="fancybox fancybox.iframe" href="http://player.vimeo.com/video/54523012?badge=0"><img class="screencast-thumb" src="nodebox-102-lists.png">102: Lists</a>
+  </div>
+
+  <div class="three columns">
+    <a class="fancybox fancybox.iframe" href="http://player.vimeo.com/video/54523585?badge=0"><img class="screencast-thumb" src="nodebox-103-types.png">103: Types</a>
+  </div>
+</div>
+
 Reference
 ---------
 
@@ -35,3 +52,10 @@ Getting Involved
 * Questions or Comments? Visit the [NodeBox forums](http://support.nodebox.net/discussions).
 * Found a bug? Add it to our [GitHub issues page](https://github.com/nodebox/nodebox/issues?state=open).
 * Something else? E-mail questions at <support@nodebox.net>.
+
+
+<script>
+  $(document).ready(function() {
+    $(".fancybox").fancybox({maxWidth: 800, maxHeight: 600});
+  });
+</script>
