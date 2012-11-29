@@ -167,6 +167,9 @@ Writing Filters.
 
 Nodebox can be used to write more complex functions. We described a hair filter as the first example on this section. Below we will describe another two of them. 
 
+Webby.
+------
+
 A first one we will call the web filter. The idea is to create a subnetwork that draws lines between points based on their distance and on a secondary selection.
 
 We need a shape and the resampled points of it first.
@@ -214,6 +217,36 @@ The webfilter applied on [this svg](http://en.wikipedia.org/wiki/File:Obama.svg)
 
 ![web](math-web-obama.png)
 
+Alternative web.
+------------------
+
+The procedure ask described above is a pretty heavy one. Sometimes it works to rethink the outcome. What do i want to achieve?
+
+A web filter could also achieved through a less cpu intensive procedure:
+
+* Create a textpath node. Set web as **Text** and give it a font and corpsize above 180.
+* Create a resample node. Conect textpath1 to **Shape**.
+* Create a point node and send resample1 to it.
+
+The idea is that we will use comparison to find out if two arbitrary points are within a certain distance to each other. Therefore we will shuffle the original list so we have to list to pick points from. We will do this a few times to increase the possibility of having to point near each other. We will use a repeat node for that.
+
+* Create a [repeat node](/node/reference/list/repeat.html). Set **Amount** to **50** and connect point1 to **List**.
+* Create a [shuffle node](/node/reference/list/shuffle.html) Connect repeat1 to **List**.
+* Create a distance node. Connect repeat1 to **Point1** and shuffle1 to **point2**.
+
+Now that we know the distance we can select a few of them based on a comparison procedure.
+
+* Create a compare node. Connect distance1 to **Value1**. Set **Value2** to **40** and select **smaller than** as **Comparator**.
+* Create two cull nodes. 
+* Connect repeat1 to **List** and compare1 to **Booleans** for the first one.
+* Connect shuffle1 to **List** and compare1 to **Booleans** for the second one.
+* Create a line node. Connect cull1 to **Point1** and cull2 to **Point2**.
+* Render line1:
+
+![alternative web](math-alternative-web.png)
+
+Closest point.
+---------------
 
 As a second filter we will create a subnetwork that will calculate the closest point for a set of random points. We will visualize it by connecting both points to each other with a line.
 
