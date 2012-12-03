@@ -47,8 +47,8 @@ Reference
 
 * [All Nodes by Category](/node/reference)
 
-Getting Involved
-----------------
+Support
+-------
 * Questions or Comments? Visit the [NodeBox forums](http://support.nodebox.net/discussions).
 * Found a bug? Add it to our [GitHub issues page](https://github.com/nodebox/nodebox/issues?state=open).
 * Something else? E-mail questions at <support@nodebox.net>.
