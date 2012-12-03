@@ -10,7 +10,7 @@ section: node
       <h1>Meet NodeBox 3.</h1>
       <p>NodeBox makes it easy to do data visualisations, generative design and complex production challenges.</p>
       <a class="hero-button" href="/download/">Download</a><br>
-      <a class="hero-button" href="/node/documentation/">Read the Documentation</a>
+      <a class="hero-button" href="/node/documentation/">Documentation &amp; Screencasts</a>
     </div>
   </div>
   <div class="eight columns">
