@@ -257,10 +257,6 @@ footer .copyright a {
   padding-left: 10px;
 }
 
-#home .app a {
-  color: #333;
-}
-
 #home .app h2 {
   font-size: 18px;
   margin: 0;
@@ -306,6 +302,12 @@ footer .copyright a {
 
 #home .emrg img {
   border: 0;
+}
+
+#home .read-more {
+  display: inline-block;
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 /* Blog */
