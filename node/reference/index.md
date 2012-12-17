@@ -57,32 +57,14 @@ String
 * [Length](/node/reference/string/length.html): Count the number of characters in a string.
 * [Make Strings](/node/reference/string/make_strings.html): Create a list of strings.
 * [Word Count](/node/reference/string/word_count.html): Count the number of words in a string.
+* [Format Number](/node/reference/string/format_number.html): Represent a numeric value as a string in a specific way.
 
-Core
-----
-* [Frame](/node/reference/core/frame.html): Output the value of the current frame. Used for animating ports.
-* [Network](/node/reference/core/network.html): Create an empty subnetwork.
-
-List
-----
-* [Combine](/node/reference/list/combine.html): Combine multiple lists into one.
-* [Count](/node/reference/list/count.html): Count the number of items in the list.
-* [Cull](/node/reference/list/cull.html): Remove all items from the list where the corresponding boolean is false.
-* [Distinct](/node/reference/list/distinct.html): Remove all duplicate items from the list.
-* [First](/node/reference/list/first.html): Take the first item of the list.
-* [Last](/node/reference/list/last.html): Take the last item of the list.
-* [Pick](/node/reference/list/pick.html): Pick items from the list in random order.
-* [Repeat](/node/reference/list/repeat.html): Repeat the list a number of times.
-* [Rest](/node/reference/list/rest.html): Take all but the first item of the list.
-* [Reverse](/node/reference/list/reverse.html): Reverse the list.
-* [Second](/node/reference/list/second.html): Take the second item of the list.
-* [Shift](/node/reference/list/shift.html): Move items at the beginning of the list to the end.
-* [Shuffle](/node/reference/list/shuffle.html): Randomize the ordering of items in the list.
-* [Slice](/node/reference/list/slice.html): Take a portion of the list.
-* [Sort](/node/reference/list/sort.html): Sort items in the list.
-* [Switch](/node/reference/list/switch.html): Switch between multiple inputs.
-* [Take Every](/node/reference/list/take_every.html): Take every nth element of the list.
-* [Zip Map](/node/reference/list/zip_map.html): Combine a list of keys and values together into a map.
+Color
+-----
+* [Color](/node/reference/color/color.html): Create a color value that can be used as a variable.
+* [Gray Color](/node/reference/color/gray_color.html): Create a gray color.
+* [Hsb Color](/node/reference/color/hsb_color.html): Create a HSB color.
+* [Rgb Color](/node/reference/color/rgb_color.html): Create a RGB color.
 
 Math
 ----
@@ -118,6 +100,7 @@ Math
 * [Random Numbers](/node/reference/math/random_numbers.html): Create a list of random numbers.
 * [Range](/node/reference/math/range.html): Generate a range of numbers.
 * [Reflect](/node/reference/math/reflect.html): Calculate a new point based on the angle and distance from an original point.
+* [Running Total](/node/reference/math/running_total.html): Generate in between totals of a list of numbers.
 * [Sample](/node/reference/math/sample.html): Generate numbers within the given bounds.
 * [Sin](/node/reference/math/sin.html): Calculate the trigonometric sine of an angle.
 * [Sqrt](/node/reference/math/sqrt.html): Calculate the square root of a number.
@@ -126,15 +109,34 @@ Math
 * [Round](/node/reference/math/round.html): Convert a floating-point number to an integer.
 * [Wave](/node/reference/math/wave.html): Calculate a value based on wave equations.
 
+List
+----
+* [Combine](/node/reference/list/combine.html): Combine multiple lists into one.
+* [Count](/node/reference/list/count.html): Count the number of items in the list.
+* [Cull](/node/reference/list/cull.html): Remove all items from the list where the corresponding boolean is false.
+* [Distinct](/node/reference/list/distinct.html): Remove all duplicate items from the list.
+* [First](/node/reference/list/first.html): Take the first item of the list.
+* [Last](/node/reference/list/last.html): Take the last item of the list.
+* [Pick](/node/reference/list/pick.html): Pick items from the list in random order.
+* [Repeat](/node/reference/list/repeat.html): Repeat the list a number of times.
+* [Rest](/node/reference/list/rest.html): Take all but the first item of the list.
+* [Reverse](/node/reference/list/reverse.html): Reverse the list.
+* [Second](/node/reference/list/second.html): Take the second item of the list.
+* [Shift](/node/reference/list/shift.html): Move items at the beginning of the list to the end.
+* [Shuffle](/node/reference/list/shuffle.html): Randomize the ordering of items in the list.
+* [Slice](/node/reference/list/slice.html): Take a portion of the list.
+* [Sort](/node/reference/list/sort.html): Sort items in the list.
+* [Switch](/node/reference/list/switch.html): Switch between multiple inputs.
+* [Take Every](/node/reference/list/take_every.html): Take every nth element of the list.
+* [Zip Map](/node/reference/list/zip_map.html): Combine a list of keys and values together into a map.
+
 Data
 ----
 * [Import Csv](/node/reference/data/import_csv.html): Import a comma-separated value file containing tabular data.
 * [Lookup](/node/reference/data/lookup.html): Look up a value in a table or object.
 
-Color
------
-* [Color](/node/reference/color/color.html): Create a color value that can be used as a variable.
-* [Gray Color](/node/reference/color/gray_color.html): Create a gray color.
-* [Hsb Color](/node/reference/color/hsb_color.html): Create a HSB color.
-* [Rgb Color](/node/reference/color/rgb_color.html): Create a RGB color.
+Core
+----
+* [Frame](/node/reference/core/frame.html): Output the value of the current frame. Used for animating ports.
+* [Network](/node/reference/core/network.html): Create an empty subnetwork.
 

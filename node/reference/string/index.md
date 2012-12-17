@@ -9,4 +9,5 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Length](/node/reference/string/length.html): Count the number of characters in a string.
 * [Make Strings](/node/reference/string/make_strings.html): Create a list of strings.
 * [Word Count](/node/reference/string/word_count.html): Count the number of words in a string.
+* [Format Number](/node/reference/string/format_number.html): Represent a numeric value as a string in a specific way.
 

@@ -36,6 +36,7 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Random Numbers](/node/reference/math/random_numbers.html): Create a list of random numbers.
 * [Range](/node/reference/math/range.html): Generate a range of numbers.
 * [Reflect](/node/reference/math/reflect.html): Calculate a new point based on the angle and distance from an original point.
+* [Running Total](/node/reference/math/running_total.html): Generate in between totals of a list of numbers.
 * [Sample](/node/reference/math/sample.html): Generate numbers within the given bounds.
 * [Sin](/node/reference/math/sin.html): Calculate the trigonometric sine of an angle.
 * [Sqrt](/node/reference/math/sqrt.html): Calculate the square root of a number.

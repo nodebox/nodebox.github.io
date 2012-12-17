@@ -14,7 +14,9 @@ NODE_REFERENCE_DIRECTORY = os.path.join(SITE_ROOT, 'node', 'reference')
 NODE_REFERENCE_INDEX = os.path.join(NODE_REFERENCE_DIRECTORY, 'index.md')
 
 library_directories = glob(os.path.join(NODE_LIBRARIES_DIRECTORY, '*'))
-all_libraries = [Library.from_directory(dirname) for dirname in library_directories]
+all_library_names = ['corevector', 'string', 'color', 'math', 'list', 'data', 'core']
+all_libraries = [Library.from_directory(os.path.join(NODE_LIBRARIES_DIRECTORY, library_name)) \
+    for library_name in all_library_names]
 
 LIBRARY_NAME_MAP = {
     'corevector': 'geometry',
