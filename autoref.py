@@ -198,6 +198,7 @@ command_docs='''Commands:
     index: Generate the reference index page.
     stub:  Generate stub API pages for all nodes that do not have a page yet.
     check: Check the NDBX files for missing or faulty descriptions.
+    icons: Copy icons from the nodebox project to the website.
 '''
 
 if __name__=='__main__':
