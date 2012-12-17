@@ -156,6 +156,9 @@ def copy_icons(library_name=None, dry_run=False):
         if library_name is not None and library.name != library_name: continue
         src_dir = os.path.join(NODE_LIBRARIES_DIRECTORY, library.name)
         for node in library.nodes:
+            if node.image is None or len(str(node.image).strip()) == 0:
+                print "WARNING no icon for node %s/%s!" % (library.name, node.name)
+                continue
             src_icon = os.path.join(src_dir, node.image)
             dst_icon = os.path.join(NODE_REFERENCE_DIRECTORY, library.name, node.image)
             if not os.path.exists(src_icon):
