@@ -17,17 +17,17 @@ section: download
     </tr>
     <tr>
       <td class="version"><a href="/node/">NodeBox 3</a><br><small>Version 3.0a28</small></td>
-      <td class="mac"><a href="https://github.com/downloads/nodebox/nodebox/NodeBox.zip" class="button">Download</a></td>
-      <td class="windows"><a href="https://github.com/downloads/nodebox/nodebox/NodeBoxSetup.exe" class="button">Download</a></td>
+      <td class="mac"><a href="https://secure.nodebox.net/downloads/NodeBox-3.0a28.zip" class="button">Download</a></td>
+      <td class="windows"><a href="https://secure.nodebox.net/downloads/nodebox-3.0a28-setup.exe" class="button">Download</a></td>
       <td class="linux"><a href="javascript:showLinuxDownloadInstructions()" class="button">Instructions</a></td>
     </tr>
     <tr>
       <td class="version"><a href="/opengl/">NodeBox OpenGL</a><br><small>Version 1.7</small></td>
-      <td colspan="3" class="mac windows linux"><a href="https://github.com/downloads/nodebox/nodebox-opengl/nodebox-gl-1.7.zip" class="button">Download</a></td>
+      <td colspan="3" class="mac windows linux"><a href="https://secure.nodebox.net/downloads/nodebox-gl-1.7.zip" class="button">Download</a></td>
     </tr>
     <tr>
       <td class="version"><a href="/code/">NodeBox 1</a><br><small>Version 1.9.7rc1</small></td>
-      <td class="mac"><a href="https://github.com/downloads/nodebox/nodebox-pyobjc/NodeBox-1.9.7rc1.zip" class="button">Download</a></td>
+      <td class="mac"><a href="https://secure.nodebox.net/downloads/NodeBox-1.9.7rc1.zip" class="button">Download</a></td>
       <td><em>N/A</em></td>
       <td><em>N/A</em></td>
     </tr>
