@@ -24,7 +24,7 @@ Create a [copy node](/node/reference/corevector/copy.html) and send the output o
 * Change the **Copies** parameter to **10**.
 * Change the **Rotate** parameter to **36.0**. The calculation of the rotation angle is based on the equation 360.0 / number of copies.
 
-Render copy1 and click once on freehand1. Start drawing anything and see the spirograph appear. **Not pleased with the result?** You can **start over** and empty the path by selecting all numbers in the path parameter then press backspace and the return key.
+Render copy1 and click once on freehand1. Start drawing anything and see the spirograph appear. **Not pleased with the result?** You can **start over** and clear the path by pressing the **clear button** of the **path** parameter.
 
 **Try out:**
 
