@@ -3,7 +3,7 @@ layout: reference
 library: core
 node: network
 title: Network
-image: None
+image: network.png
 ---
 Create an empty subnetwork.
 

@@ -6,4 +6,4 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 ---
 * [Frame](/node/reference/core/frame.html): Output the value of the current frame. Used for animating ports.
 * [Network](/node/reference/core/network.html): Create an empty subnetwork.
-
+* [Node](/node/reference/core/node.html): Base node to be extended for custom nodes.
