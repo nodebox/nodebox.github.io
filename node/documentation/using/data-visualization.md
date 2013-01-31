@@ -49,7 +49,7 @@ Following data was found [online](http://www.informationisbeautiful.net/2010/deb
 
 So far for the data itself. Now let's create a similar shape as before to map the data on.
 
-* Create a count node and connect import_csv11 to it.
+* Create a count node and connect import_csv1 to it.
 * Create a line node. Set **Point2** to **0.0** and **600.0**.
 * Create a resample node to make a list of points from it. Set **Method** to **amount**. Connect count1 to **Points** and connect line1 to **Shape**.
 * Create a translate node and connect combine1 to *Shape** and resample1 to **Points**. Double click it to see the result.

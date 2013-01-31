@@ -3,6 +3,16 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.30 (29 Jan 2013)
+----------------------------
+* Subnetworks always render the root node, making working with subnetworks more logical.
+* Performance improvements in node processing + rendering.
+* New list icons.
+* New viewer implementation, removing dependency on the (obsolete) Piccolo library.
+* Optimize point memory usage.
+* Nodes for string manipulation (thanks to [Dave Addison](https://github.com/djaddison)).
+* Clean up confusion between nodes and networks.
+
 Version 3.0.29 (17 Dec 2012)
 ----------------------------
 * We've dropped the "a" in the version number: we think NodeBox 3 is stable enough to drop the "alpha" tag.

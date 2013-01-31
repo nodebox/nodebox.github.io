@@ -44,8 +44,8 @@ We follow a typical process:
 * First, design one character in the root network.
 * Group all nodes related to the character in a network and give it a name.
 * Publish relevant ports in the network.
-* Test the sub-network.
-* Connect the inputs of the sub-network.
+* Test the subnetwork.
+* Connect the inputs of the subnetwork.
 
 Design the character
 --------------------
@@ -54,7 +54,7 @@ The space invader character is a symmetrical grid of 11 x 8 points.
 We're going to create one half of the space invader, then [reflect](/node/reference/corevector/reflect.html) it across the X axis.
 
 * Create a [grid node](/node/reference/corevector/grid.html).
-* Set **rows** to **8**, **columns** to **6**, **width** to **50.00** and **height** to **70.00**. Set the **position** to **25.00,0.00**. This will be the *template* for our grid.
+* Set **columns** to **6**, **rows** to **8**, **width** to **50.00** and **height** to **70.00**. Set the **position** to **25.00,0.00**. This will be the *template* for our grid.
 * If we would put rectangles on all these points we'd just get a full block. Instead we're going to **pick** some random points to work with.
 * Create a [pick node](/node/reference/list/pick.html) and set **amount** to **25**.
 * Connect the output of **grid1** to the **list** port of **pick1**.
@@ -69,22 +69,21 @@ You can create different variations of the invader by changing the **seed** valu
 
 Group into network
 -------------------
-We've just created one space invader character. To be able make more of them, we will group the invader nodes into their own network, much like the built-in nodes of NodeBox.
+We've just created one space invader character. To make more of them, we will group the invader nodes into their own network, much like the built-in nodes of NodeBox.
 
 * Select all nodes (grid1, pick1, rect1, reflect1) by dragging over them.
 * Right-click one of them and choose "group into network":
 
 ![Group into network](subnetworks-invaders-group-into-network.png)
 
-This will leave you with one node, subnet1. Don't worry, all your nodes are contained in this network as *child nodes*.
-Right-click subnet1, choose **Rename**, and type **invader**.
+You can now choose a name for your subnetwork, type **invader**.
 
 Publish relevant ports
 ----------------------
 Note that the invader node doesn't take any inputs. We can't change the seed like we did before, for example. Also, we can't change its position. To make ports available to the upper level, we *publish* them.
 
 * Right click the **invader** node and choose "Edit Children".
-* We see all our nodes back. Note that in the top part of the window, it says "root > invader". This means we're in the invader sub-network.
+* We see all our nodes back. Note that in the top part of the window, it says "root > invader". This means we're in the invader subnetwork.
 * Hover over the **seed** port of the **pick1** node. Right-click and choose "Publish". Accept the default name.
 * To be able to move the invader, we need to add an extra node at the end. Create a [translate node](/node/reference/corevector/translate.html) below the reflect1 node.
 * Connect the output of **reflect1** to the **shape** port of **translate1**. 
@@ -98,16 +97,16 @@ Before we connect any grids or values to the invader, it's a good idea to check 
 
 * Go back to the root level by clicking "root" in the address bar at the top of the document window. You should see our one "invader" node again.
 * Change the **seed** value of the invader node. Each seed should give us a different character.
-* Change the **position** of the invader node. The invader moves accross the canvas.
+* Change the **position** of the invader node. The invader moves across the canvas.
 
-Why do I ask you to test sub-networks first? When creating this example, I published the position port of the grid, thinking that this would work. However, since the invader is mirrored, this gave all kinds of weird effects, which were very hard to debug when looking at a whole grid of them. By testing one invader, in isolation, first we can make sure that the correct input gives us the correct output.
+Why do I ask you to test subnetworks first? When creating this example, I published the position port of the grid, thinking that this would work. However, since the invader is mirrored, this gave all kinds of weird effects, which were very hard to debug when looking at a whole grid of them. By testing one invader, in isolation, first we can make sure that the correct input gives us the correct output.
 
 Connect the inputs of the subnetwork
 ------------------------------------
 Everything seems fine, so it's time to create a horde of space invaders. 
 
 * Create a **grid** node and place it above **invader**.
-* Set the **rows** to **6** and **columns** to **5**. Set the **width** and **height** to **600.0**.
+* Set the **columns** to **5** and **rows** to **6**. Set the **width** and **height** to **600.0**.
 * Connect the output of **grid1** to the **position** port of **invader**.
 * Render the **invader** node by double-clicking it. We should see a grid with all the same invaders.
 * For the seed value, we'll generate some random numers. We need as many as there are points in the grid, so we'll use a count node to see how many points we get back.
@@ -128,8 +127,9 @@ Now that we've created our base invader character, we can add features to it to 
 * Connect the output of **translate1** to the **shape** port of **colorize1**. 
 * Set **colorize1** rendered.
 * Publish its **fill** port.
-* In the root network, create a [HSB color node](/node/reference/color/hsb_color.html). Set the **saturation** to **255.00**. 
+* In the root network, create a [HSB color node](/node/reference/color/hsb_color.html). Set the **hue** to **150.00** and the **saturation** to **255.00**. 
 * Copy/paste the existing **random_numbers1** node. This creates a **random_numbers2** node. Note that its input is still connected to the **count1** node.
+* Set the **end** value of **random_numbers2** to **255.00**.
 * Connect the output of **random_numbers2** to the **brightness** port of **hsb_color1**.
 * Connect the output of **hsb_color1** to the **fill** port of our **invader** node.
 
