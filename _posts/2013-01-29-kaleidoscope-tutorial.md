@@ -4,6 +4,7 @@ layout: blog
 title: How to make a kaleidoscope in NodeBox 3
 thumb: kaleidoscope-thumb.png
 ---
+![Kaleidoscope header image](/media/gallery/kaleidoscope/kaleidoscope-header.png)
 
 A [kaleidoscopic image](http://en.wikipedia.org/wiki/Kaleidoscope) is an image generated from another image through mirroring and rotational symmetry. Interesting and unexpected results can be achieved by tweaking a small number of parameters. Sounds like the perfect job for NodeBox!
 
