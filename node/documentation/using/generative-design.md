@@ -76,8 +76,8 @@ Now let's give it a value.
 
 The next step is to use the points for the location of the rect.
 
-* First create an align node and set **Valign** to **Bottom**. I want all rectangles to start on top of the origin point and then translate them. Connect colorize1 to it.
-* Create a translate node. Connect align1 to it's **Shape** port and the accumulation node to it's **Translate** port.
+* First create an align node and set **Valign** to **Bottom**. I want all rectangles to start on top of the origin point and then translate them. Connect colorize1 to align1.
+* Create a translate node. Connect align1 to it's **Shape** port and the accumulation node to its' **Translate** port.
 * Create a group node to merge all paths into one geometry object. Send translate1 to it.
 * Render group1.
 
@@ -86,15 +86,14 @@ The next step is to use the points for the location of the rect.
 You can change the tower by:
 
 * Changing **Value** of number1 which will add segments to the tower.
-* Changing **Seed** of random numbers1 which will change the width of each segment.
-* Changing **Seed** of random numbers2 which will change the height of each segment and calculate a new set of points based on these new values.
+* Changing **Seed** of random_numbers1 which will change the width of each segment.
+* Changing **Seed** of random_numbers2 which will change the height of each segment and calculate a new set of points based on these new values.
 * Try it out first.
 
 We will create a subnetwork from this procedure and publish some variables that will enable us to change the look of the tower.
 
 * Select all by dragging over them.
-* Right-click one of them and choose “group into network”.
-* This will leave you with one node, subnet1. Right-click it again a rename it "tower" (by using right-click again).
+* Right-click one of them and choose “group into network”. Name the network "tower".
 * Right-click tower node and select 'Edit Children'.
 * Right-click on **Value** port of number1, choose "Publish" and call it 'number-of-segments'.
 * Right-click on **Seed** port of random numbers1, choose "Publish" and call it 'change-widths'.
