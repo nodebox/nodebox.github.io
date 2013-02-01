@@ -18,8 +18,8 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Distance](/node/reference/math/distance.html): Calculate the distance between two points.
 * [Divide](/node/reference/math/divide.html): Divide two numbers.
 * [E](/node/reference/math/e.html): The value of the mathematical constant e, the base of the natural logarithm.
-* [Floor](/node/reference/math/floor.html): Round down the value of a number.
 * [Even](/node/reference/math/even.html): Determine if a number is even.
+* [Floor](/node/reference/math/floor.html): Round down the value of a number.
 * [Integer](/node/reference/math/integer.html): Create an integer value that can be used as a variable.
 * [Log](/node/reference/math/log.html): Calculate the natural logarithm of a value.
 * [Make Numbers](/node/reference/math/make_numbers.html): Transform a string to a list of numbers.
@@ -36,12 +36,12 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Random Numbers](/node/reference/math/random_numbers.html): Create a list of random numbers.
 * [Range](/node/reference/math/range.html): Generate a range of numbers.
 * [Reflect](/node/reference/math/reflect.html): Calculate a new point based on the angle and distance from an original point.
+* [Round](/node/reference/math/round.html): Convert a floating-point number to an integer.
 * [Running Total](/node/reference/math/running_total.html): Generate in between totals of a list of numbers.
 * [Sample](/node/reference/math/sample.html): Generate numbers within the given bounds.
 * [Sin](/node/reference/math/sin.html): Calculate the trigonometric sine of an angle.
 * [Sqrt](/node/reference/math/sqrt.html): Calculate the square root of a number.
 * [Subtract](/node/reference/math/subtract.html): Subtract two numbers.
 * [Sum](/node/reference/math/sum.html): Add up all numbers in the list.
-* [Round](/node/reference/math/round.html): Convert a floating-point number to an integer.
 * [Wave](/node/reference/math/wave.html): Calculate a value based on wave equations.
 

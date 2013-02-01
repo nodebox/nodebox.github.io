@@ -19,7 +19,6 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Fit](/node/reference/corevector/fit.html): Fit a shape within bounds.
 * [Fit To](/node/reference/corevector/fit_to.html): Fit a shape to another shape.
 * [Freehand](/node/reference/corevector/freehand.html): Draw directly on the canvas using the mouse.
-* [Geonet](/node/reference/corevector/geonet.html): A network of geometry nodes.
 * [Grid](/node/reference/corevector/grid.html): Create a grid of points.
 * [Group](/node/reference/corevector/group.html): Combine multiple geometries together.
 * [Import Svg](/node/reference/corevector/import_svg.html): Import geometry from a SVG file.
