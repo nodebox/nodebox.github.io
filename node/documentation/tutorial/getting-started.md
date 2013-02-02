@@ -65,10 +65,6 @@ Instead of an ellipse, you should now see a grid of little blue dots in the view
 
 ![Ellipse and grid node, connected together](getting-started-grid1.png)
 
-Another possibility is to create a [translate node](/node/reference/corevector/translate.html) and connect the output of **ellipse1** to the **shape** port of **translate1** and the output of **grid1** to the **translate** port of **translate1**.
-
-![An other connection method](getting-started-connecting-other-way.png)
-
 Rendered and Selected Node
 --------------------------
 NodeBox can only show the output of **one node at a time**. We see the output of this **rendered node** in the viewer pane. Currently, ellipse1 is the rendered node, this is indicated by the little white triangle in the right corner of the node.
@@ -88,7 +84,11 @@ To recap:
 
 Variety
 -------------
-For the moment we're drawing the same ellipse on each point of the grid1 node. Let's create some variation in size and color. 
+Instead of connecting the grid node directly to the ellipse node, another possibility is to create a [translate node](/node/reference/corevector/translate.html) and connect the output of **ellipse1** to the **shape** port of **translate1** and the output of **grid1** to the **translate** port of **translate1**.
+
+![An alternative way of putting ellipses on a grid](getting-started-connecting-other-way.png)
+
+For the moment we're drawing the same ellipse on each point of the grid1 node so let's create some variation in size and color. 
 
 Suppose we want 4 different sizes for the ellipse and 5 different colors. 
 
