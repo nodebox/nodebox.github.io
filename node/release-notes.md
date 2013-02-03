@@ -3,6 +3,13 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.31 (3 Feb 2013)
+---------------------------
+* Experimental support for external devices (over OSC).
+* Experimental support for network requests + JSON parsing.
+* More robust multi-threaded render.
+* Fix bug with spaces in paths.
+
 Version 3.0.30 (29 Jan 2013)
 ----------------------------
 * Subnetworks always render the root node, making working with subnetworks more logical.
