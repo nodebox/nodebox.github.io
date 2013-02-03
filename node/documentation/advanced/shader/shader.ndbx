@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ndbx formatVersion="16" type="file" uuid="85716050-acbc-4529-9265-249c620e0efa">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <link href="python:shader.py" rel="functions"/>
+    <node name="root" prototype="core.network" renderedChild="combine1">
+        <node name="add1" position="4.00,7.00" prototype="math.add">
+            <port name="value1" type="float" value="0.07999973744153976"/>
+        </node>
+        <node name="add2" position="7.00,7.00" prototype="math.add">
+            <port name="value2" type="float" value="0.13999977707862854"/>
+        </node>
+        <node name="colorize1" position="2.00,10.00" prototype="corevector.colorize"/>
+        <node name="colorize2" position="-1.00,10.00" prototype="corevector.colorize">
+            <port name="fill" type="color" value="#1a001fff"/>
+        </node>
+        <node name="combine1" position="1.00,12.00" prototype="list.combine"/>
+        <node name="ellipse1" position="2.00,8.00" prototype="corevector.ellipse"/>
+        <node name="hsb_color1" position="6.00,9.00" prototype="color.hsb_color">
+            <port name="saturation" type="float" value="1.0"/>
+            <port name="range" type="float" value="1.0"/>
+        </node>
+        <node name="integer1" position="5.00,-1.00" prototype="math.integer">
+            <port name="value" type="int" value="4000"/>
+        </node>
+        <node name="multiply1" position="4.00,6.00" prototype="math.multiply">
+            <port name="value2" type="float" value="0.09999997168779373"/>
+        </node>
+        <node name="multiply2" position="7.00,6.00" prototype="math.multiply">
+            <port name="value2" type="float" value="0.9900010824203491"/>
+        </node>
+        <node name="random_numbers1" position="5.00,2.00" prototype="math.random_numbers">
+            <port name="start" type="float" value="20.0"/>
+            <port name="end" type="float" value="30.0"/>
+        </node>
+        <node name="rect1" position="1.00,-1.00" prototype="corevector.rect">
+            <port name="width" type="float" value="650.0"/>
+            <port name="height" type="float" value="650.0"/>
+        </node>
+        <node name="scatter1" position="1.00,2.00" prototype="corevector.scatter">
+            <port name="amount" type="int" value="2000"/>
+        </node>
+        <node function="shader/shader" name="shader" position="6.00,4.00">
+            <port name="position" range="value" type="point" value="0.00,0.00" widget="point"/>
+            <port name="source" range="value" type="point" value="-152.00,-312.00" widget="point"/>
+            <port name="radius" range="value" type="float" value="245.0" widget="float"/>
+            <port name="angle" range="value" type="float" value="-85.0" widget="float"/>
+            <port name="spread" range="value" type="float" value="90.0" widget="float"/>
+        </node>
+        <conn input="scatter1.shape" output="rect1"/>
+        <conn input="scatter1.amount" output="integer1"/>
+        <conn input="random_numbers1.amount" output="integer1"/>
+        <conn input="ellipse1.position" output="scatter1"/>
+        <conn input="add1.value2" output="multiply1"/>
+        <conn input="add2.value1" output="multiply2"/>
+        <conn input="hsb_color1.hue" output="add1"/>
+        <conn input="hsb_color1.brightness" output="add2"/>
+        <conn input="colorize1.shape" output="ellipse1"/>
+        <conn input="colorize1.fill" output="hsb_color1"/>
+        <conn input="colorize2.shape" output="rect1"/>
+        <conn input="multiply1.value1" output="shader"/>
+        <conn input="multiply2.value1" output="shader"/>
+        <conn input="shader.position" output="scatter1"/>
+        <conn input="hsb_color1.alpha" output="shader"/>
+        <conn input="ellipse1.width" output="random_numbers1"/>
+        <conn input="combine1.list2" output="colorize1"/>
+        <conn input="ellipse1.height" output="random_numbers1"/>
+        <conn input="combine1.list1" output="colorize2"/>
+    </node>
+</ndbx>

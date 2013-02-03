@@ -20,7 +20,6 @@ Geometry
 * [Fit](/node/reference/corevector/fit.html): Fit a shape within bounds.
 * [Fit To](/node/reference/corevector/fit_to.html): Fit a shape to another shape.
 * [Freehand](/node/reference/corevector/freehand.html): Draw directly on the canvas using the mouse.
-* [Geonet](/node/reference/corevector/geonet.html): A network of geometry nodes.
 * [Grid](/node/reference/corevector/grid.html): Create a grid of points.
 * [Group](/node/reference/corevector/group.html): Combine multiple geometries together.
 * [Import Svg](/node/reference/corevector/import_svg.html): Import geometry from a SVG file.
@@ -52,12 +51,25 @@ Geometry
 
 String
 ------
-* [String](/node/reference/string/string.html): Create a string value that can be used as a variable.
+* [As Binary List](/node/reference/string/as_binary_list.html): Convert a string into its binary representation
+* [As Binary String](/node/reference/string/as_binary_string.html): Convert a string into its binary representation
+* [As Number List](/node/reference/string/as_number_list.html): Convert a string into a numeric encoding
+* [Character At](/node/reference/string/character_at.html): Output the character at a given index
+* [Characters](/node/reference/string/characters.html): Create a list of characters from a string
 * [Concatenate](/node/reference/string/concatenate.html): Add strings together.
+* [Contains](/node/reference/string/contains.html): Determine if the string contains a given string
+* [Ends With](/node/reference/string/ends_with.html): Determine if the string ends with a given string
+* [Equals](/node/reference/string/equals.html): Determine if the string equals a given string
+* [Format Number](/node/reference/string/format_number.html): Represent a numeric value as a string in a specific way.
 * [Length](/node/reference/string/length.html): Count the number of characters in a string.
 * [Make Strings](/node/reference/string/make_strings.html): Create a list of strings.
+* [Random Character](/node/reference/string/random_character.html): Create a list of random characters taken from a set
+* [Replace](/node/reference/string/replace.html): Replace part of a string
+* [Starts With](/node/reference/string/starts_with.html): Determine if the string starts with a given string
+* [String](/node/reference/string/string.html): Create a string value that can be used as a variable.
+* [Sub String](/node/reference/string/sub_string.html): Take a portion of a string
+* [Trim](/node/reference/string/trim.html): Remove white space from the start and end
 * [Word Count](/node/reference/string/word_count.html): Count the number of words in a string.
-* [Format Number](/node/reference/string/format_number.html): Represent a numeric value as a string in a specific way.
 
 Color
 -----
@@ -82,8 +94,8 @@ Math
 * [Distance](/node/reference/math/distance.html): Calculate the distance between two points.
 * [Divide](/node/reference/math/divide.html): Divide two numbers.
 * [E](/node/reference/math/e.html): The value of the mathematical constant e, the base of the natural logarithm.
-* [Floor](/node/reference/math/floor.html): Round down the value of a number.
 * [Even](/node/reference/math/even.html): Determine if a number is even.
+* [Floor](/node/reference/math/floor.html): Round down the value of a number.
 * [Integer](/node/reference/math/integer.html): Create an integer value that can be used as a variable.
 * [Log](/node/reference/math/log.html): Calculate the natural logarithm of a value.
 * [Make Numbers](/node/reference/math/make_numbers.html): Transform a string to a list of numbers.
@@ -100,13 +112,13 @@ Math
 * [Random Numbers](/node/reference/math/random_numbers.html): Create a list of random numbers.
 * [Range](/node/reference/math/range.html): Generate a range of numbers.
 * [Reflect](/node/reference/math/reflect.html): Calculate a new point based on the angle and distance from an original point.
+* [Round](/node/reference/math/round.html): Convert a floating-point number to an integer.
 * [Running Total](/node/reference/math/running_total.html): Generate in between totals of a list of numbers.
 * [Sample](/node/reference/math/sample.html): Generate numbers within the given bounds.
 * [Sin](/node/reference/math/sin.html): Calculate the trigonometric sine of an angle.
 * [Sqrt](/node/reference/math/sqrt.html): Calculate the square root of a number.
 * [Subtract](/node/reference/math/subtract.html): Subtract two numbers.
 * [Sum](/node/reference/math/sum.html): Add up all numbers in the list.
-* [Round](/node/reference/math/round.html): Convert a floating-point number to an integer.
 * [Wave](/node/reference/math/wave.html): Calculate a value based on wave equations.
 
 List
@@ -139,4 +151,5 @@ Core
 ----
 * [Frame](/node/reference/core/frame.html): Output the value of the current frame. Used for animating ports.
 * [Network](/node/reference/core/network.html): Create an empty subnetwork.
+* [Node](/node/reference/core/node.html): Base node to be extended for custom nodes.
 

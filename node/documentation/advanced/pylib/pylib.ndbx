@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ndbx formatVersion="16" type="file" uuid="a5eab48a-89c3-4c17-a680-3b54b8d5b206">
+    <property name="canvasHeight" value="1000"/>
+    <property name="canvasWidth" value="1000"/>
+    <link href="python:mycode.py" rel="functions"/>
+    <node name="root" prototype="core.network" renderedChild="eval">
+        <node function="mycode/evaluate" name="eval" position="2.00,1.00">
+            <port name="expr" range="value" type="string" value="x + y + z" widget="string"/>
+            <port name="x" range="value" type="float" value="0.0" widget="float"/>
+            <port name="y" range="value" type="float" value="0.0" widget="float"/>
+            <port name="z" range="value" type="float" value="0.0" widget="float"/>
+        </node>
+    </node>
+</ndbx>
