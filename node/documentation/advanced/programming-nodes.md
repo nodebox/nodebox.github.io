@@ -2,6 +2,12 @@
 layout: documentation
 title: Writing your own Nodes
 ---
+This is important:
+==================
+We're currently rewriting the graphics API to be more performant. **Code that access nodebox.graphics will break**. Other code that uses generic Python libraries should be okay.
+
+---
+
 Once you get the hang of it, it becomes fairly easy to build networks and hide lengthy procedures behind a subnetwork facade. However, sometimes there are cases where you wish you could write your own nodes. 
 
 Maybe you want to reuse a cool piece of code in NodeBox that you've written. Maybe NodeBox is missing some key piece of functionality that you need. Or maybe you just want to experiment with writing a new node from scratch. This tutorial shows you how.
