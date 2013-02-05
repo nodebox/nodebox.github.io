@@ -3,6 +3,13 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.32 (4 Feb 2013)
+---------------------------
+* Fix errors in network view.
+* Fix errors in HTTP get node.
+* The export viewer can capture mouse events.
+* Data sheet is faster.
+
 Version 3.0.31 (3 Feb 2013)
 ---------------------------
 * Experimental support for external devices (over OSC).
