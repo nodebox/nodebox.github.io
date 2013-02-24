@@ -3,6 +3,16 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.33 (24 Feb 2013)
+----------------------------
+* Add full-screen support.
+* Nice GUI for device support.
+* Audio analysis is built in.
+* More icons.
+* Lookup node can do nested lookups using the period (e.g. "bounds.x")
+* Distinct node can optionally use a lookup key.
+* Various code cleanups.
+
 Version 3.0.32 (4 Feb 2013)
 ---------------------------
 * Fix errors in network view.
