@@ -41,6 +41,7 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Skew](/node/reference/corevector/skew.html): Skew the shape.
 * [Snap](/node/reference/corevector/snap.html): Snap geometry to a grid.
 * [Sort](/node/reference/corevector/sort.html): Sort points or shapes using different sorting methods.
+* [Stack](/node/reference/corevector/stack.html): Arrange shapes in a horizontal or vertical layout.
 * [Star](/node/reference/corevector/star.html): Create a star shape.
 * [Text On Path](/node/reference/corevector/text_on_path.html): Create a text path that follows a shape.
 * [Textpath](/node/reference/corevector/textpath.html): Create a path out of text.

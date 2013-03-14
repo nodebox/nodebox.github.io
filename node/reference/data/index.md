@@ -6,4 +6,5 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 ---
 * [Import Csv](/node/reference/data/import_csv.html): Import a comma-separated value file containing tabular data.
 * [Lookup](/node/reference/data/lookup.html): Look up a value in a table or object.
+* [Filter Data](/node/reference/data/filter_data.html): Filter the data based on key/value.
 

@@ -42,6 +42,7 @@ Geometry
 * [Skew](/node/reference/corevector/skew.html): Skew the shape.
 * [Snap](/node/reference/corevector/snap.html): Snap geometry to a grid.
 * [Sort](/node/reference/corevector/sort.html): Sort points or shapes using different sorting methods.
+* [Stack](/node/reference/corevector/stack.html): Arrange shapes in a horizontal or vertical layout.
 * [Star](/node/reference/corevector/star.html): Create a star shape.
 * [Text On Path](/node/reference/corevector/text_on_path.html): Create a text path that follows a shape.
 * [Textpath](/node/reference/corevector/textpath.html): Create a path out of text.
@@ -146,10 +147,9 @@ Data
 ----
 * [Import Csv](/node/reference/data/import_csv.html): Import a comma-separated value file containing tabular data.
 * [Lookup](/node/reference/data/lookup.html): Look up a value in a table or object.
+* [Filter Data](/node/reference/data/filter_data.html): Filter the data based on key/value.
 
 Core
 ----
 * [Frame](/node/reference/core/frame.html): Output the value of the current frame. Used for animating ports.
-* [Network](/node/reference/core/network.html): Create an empty subnetwork.
-* [Node](/node/reference/core/node.html): Base node to be extended for custom nodes.
 
