@@ -3,6 +3,11 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.34 (14 Mar 2013)
+----------------------------
+* Add the [stack node](/node/reference/corevector/stack.html).
+* Add the [filter data node](/node/reference/data/filter_data.html).
+
 Version 3.0.33 (24 Feb 2013)
 ----------------------------
 * Add full-screen support.
