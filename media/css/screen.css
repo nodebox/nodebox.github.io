@@ -75,6 +75,13 @@ button {
   color: #999;
 }
 
+.by {
+  font-size: 11px;
+  position: relative;
+  top: -7px;
+  margin-bottom: 5px;
+}
+
 
 /* Header */
 

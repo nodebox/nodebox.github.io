@@ -17,7 +17,7 @@ Below are the final results. To see the process you can visit the [workshop blog
 
 50 Years of Film Speech
 -----------------------
-<small id="by">Jonas Lekevicius, Juste Ziliute and Augustinas Paukste</small>
+<div class="by">Jonas Lekevicius, Juste Ziliute and Augustinas Paukste</div>
 
 Over the last half of the century, language used in cinema has changed quite a lot. Subtitles of hundreds of the most popular movies from 1952 to 2012 reveal changes in speech, values and culture.
 
@@ -27,7 +27,7 @@ The visualisation shows the evolution of the most interesting words as soundwave
 
 Alcohol Consumption / Suicide Statistics
 ----------------------------------------
-<small id="by">Eglė Palubeckytė, Edurne Castillo and Katažina Čaplinskaja</small>
+<div class="by">Eglė Palubeckytė, Edurne Castillo and Katažina Čaplinskaja</div>
 
 This group made two separate projects.
 
@@ -37,7 +37,7 @@ The second project examines the correlation between suicide rate and climate. Cl
 
 Data Composition
 ----------------
-<small id="by">Mellie Sachet and Gabrielė Vingraitė</small>
+<div class="by">Mellie Sachet and Gabrielė Vingraitė</div>
 
 This visualization started out as an exploration showing the most 
 creative countries. They calculated the ratio of famous artists to the total population. Artists are divided in four art categories: music, literature, visual art and theatre.
@@ -48,7 +48,7 @@ Because it was so hard to measure, the project shifted towards turning the data 
 
 Eurovoices
 ----------
-<small id="by">Dalia Kemeklytė and Viktorija Pampuščenko</small>
+<div class="by">Dalia Kemeklytė and Viktorija Pampuščenko</div>
 
 The Eurovision Song Contest would not be the Eurovision Song Contest without its predictable voting process. Rather than voting for the best songs, neighbouring or politically sympathetic countries vote for each other as a block.
 

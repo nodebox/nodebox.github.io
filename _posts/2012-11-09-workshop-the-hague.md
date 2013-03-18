@@ -16,7 +16,7 @@ Below are the final results. To see the process you can visit the [workshop blog
 
 Goldberg Variations
 -------------------
-<small id="by">Anton Sovetov</small>
+<div class="by">Anton Sovetov</div>
 
 Anton wanted to visualize the musical structure of J.S. Bach's Goldberg variations. Using MIDI music files from [Dave's J.S. Bach Page](http://jsbach.net/midi/midi_goldbergvariations.html), and a custom "midimport" node we created, he designed a visualisation of the classical music pieces.
 
@@ -25,7 +25,7 @@ Based on the structure of the music he produced a "hyphenated" layout, cutting u
 
 Studio Dumbar Internship Report
 -------------------------------
-<small id="by">Roey Tsemah</small>
+<div class="by">Roey Tsemah</div>
 
 During his internship at [Studio Dumbar](http://studiodumbar.com/), Roey Tsemah meticulously registered his days: which clients he worked for and for how long, how creative the task was, and how much coffee he needed to get through the day.
 
@@ -34,7 +34,7 @@ With his personal [lifelog](http://en.wikipedia.org/wiki/Lifelog) data in hand, 
 
 Shipwrecks of California
 -------------------------
-<small id="by">Jan Aulbach</small>
+<div class="by">Jan Aulbach</div>
 
 Jan already had a dataset: for a different course he had acquired data of all shipwrecks on the coast of California from 1836 until 1988. The data was analyzed first in [Google Fusion Tables](http://tables.googlelabs.com), then imported into NodeBox.
 
@@ -45,7 +45,7 @@ Jan had easily the most complex network, with multiple levels of nesting, custom
 
 Measuring Happy Planets
 -----------------------
-<small id="by">Jodie Hew</small>
+<div class="by">Jodie Hew</div>
 
 Jodie's was interested in happiness. Specifically, the correlation of happiness and other factors such as population size and ecological footprint.
 
