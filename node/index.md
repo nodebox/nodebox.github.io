@@ -14,7 +14,8 @@ section: node
     </div>
   </div>
   <div class="eight columns">
-    <a class="fancybox fancybox.iframe" href="http://www.youtube.com/embed/s01wX9t6NcE?autoplay=1"><img class="hero-shot" src="/media/homepage/nodebox-screencast-teaser.png"></a>
+    <img class="hero-shot" src="/media/homepage/NB3iconoutlineonly.png">
+<!--<a class="fancybox fancybox.iframe" href=""> http://www.youtube.com/embed/s01wX9t6NcE?autoplay=1 src="/media/homepage/nodebox-screencast-teaser.png"</a>-->
   </div>
 </div>
 
