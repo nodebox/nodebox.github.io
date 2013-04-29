@@ -3,6 +3,10 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.35 (29 Apr 2013)
+----------------------------
+* Add built-in examples.
+
 Version 3.0.34 (14 Mar 2013)
 ----------------------------
 * Add the [stack node](/node/reference/corevector/stack.html).
