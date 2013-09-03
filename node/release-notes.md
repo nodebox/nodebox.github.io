@@ -3,6 +3,13 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.36 (3 Sep 2013)
+----------------------------
+* Support for high-resolution screens.
+* Nodes can have comments.
+* Better icons.
+* General bug-fixes.
+
 Version 3.0.35 (29 Apr 2013)
 ----------------------------
 * Add built-in examples.
