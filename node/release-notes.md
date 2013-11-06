@@ -3,6 +3,11 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.37 (1 Nov 2013)
+---------------------------
+* Unified export: all export features now support the canvasWidth/Height/X/Y values in document settings.
+* The viewer can show export bounds.
+
 Version 3.0.36 (3 Sep 2013)
 ----------------------------
 * Support for high-resolution screens.
