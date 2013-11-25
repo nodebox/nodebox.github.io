@@ -64,8 +64,3 @@ section: node
   </div>
 </div>
 
-<script>
-  $(document).ready(function() {
-    $(".fancybox").fancybox({maxWidth: 800, maxHeight: 600});
-  });
-</script>

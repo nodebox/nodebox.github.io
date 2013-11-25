@@ -21,20 +21,6 @@
   <link type="text/css" rel="stylesheet" media="screen" href="/media/css/syntax.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/media/fancybox/jquery.fancybox.css">
   <link type="text/css" rel="stylesheet" media="screen" href="/media/css/screen.css">
-
-  <script src="/media/js/jquery-1.8.2.min.js"></script>
-  <script src="/media/js/jquery.mousewheel-3.0.6.pack.js"></script>
-  <script src="/media/fancybox/jquery.fancybox.pack.js"></script>
-  <script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1668598-1']);
-  _gaq.push(['_trackPageview']);
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-  </script>
 </head>
 <body id="{{ page.section }}">
 
@@ -105,9 +91,22 @@
   </div>
 </footer>
 
+<script src="/media/js/jquery-1.8.2.min.js"></script>
+<script src="/media/js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script src="/media/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1668598-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 <script type="text/javascript">
 $(document).ready(function() {
-  $("a.thumb").fancybox();
+  $('a.thumb,a.fancybox').fancybox();
 });
 </script>
 <script src="https://nodebox.tenderapp.com/tender_widget.js" type="text/javascript"></script>

@@ -52,10 +52,3 @@ Support
 * Questions or Comments? Visit the [NodeBox forums](http://support.nodebox.net/discussions).
 * Found a bug? Add it to our [GitHub issues page](https://github.com/nodebox/nodebox/issues?state=open).
 * Something else? E-mail questions at <support@nodebox.net>.
-
-
-<script>
-  $(document).ready(function() {
-    $(".fancybox").fancybox({maxWidth: 800, maxHeight: 600});
-  });
-</script>
