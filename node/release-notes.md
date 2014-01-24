@@ -3,6 +3,13 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.38 (24 Jan 2014)
+----------------------------
+* Add round_segments node.
+* Access to external audio through the mic line-in.
+* Improved SVG handling.
+* Some cosmetic user interface changes.
+
 Version 3.0.37 (1 Nov 2013)
 ---------------------------
 * Unified export: all export features now support the canvasWidth/Height/X/Y values in document settings.
