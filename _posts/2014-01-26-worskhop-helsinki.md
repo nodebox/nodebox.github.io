@@ -2,7 +2,7 @@
 categories: gallery
 layout: gallery
 title: NodeBox 3 Helsinki Workshop
-thumb: masterclass-2014-helsinki-thumb.png
+thumb: masterclass-2014-helsinki-thumbmate.png
 images:
   - gallery/workshop_helsinki_2014_Katju.png
   - gallery/workshop_helsinki_2014_Eero_parts.png
