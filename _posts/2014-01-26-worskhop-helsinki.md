@@ -6,8 +6,8 @@ thumb: masterclass-2014-helsinki-thumbmate.png
 images:
   - gallery/workshop_helsinki_2014_Katju.png
   - gallery/workshop_helsinki_2014_Eero_parts.png
-  - gallery/workshop_helsinki_2014_Eero_population.png
-  - gallery/workshop_helsinki_2014_Eero_inmates.png
+  - gallery/workshop_helsinki_2014_Eero_population.jpg
+  - gallery/workshop_helsinki_2014_Eero_inmates.jpg
   - gallery/workshop_helsinki_2014_Eero_type.png
   - gallery/workshop_helsinki_2014_Eero_ClairedeLune.png
   - gallery/workshop_helsinki_2014_Tuomas.png
