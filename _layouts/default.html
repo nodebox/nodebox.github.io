@@ -13,10 +13,23 @@ layout: base
     {{ content }}
   </div>
 
-  {% if page.images %}
+  <!--{% if page.images %}
   <aside class="four columns">
     {% for image in page.images %}
       <a class="thumb" rel="images" href="/media/{{ image }}"><img src="/media/{{ image }}" alt="{{ page.title }}"></a>
     {% endfor %}
   </aside>
-  {% endif %}  
+  {% endif %}-->
+  
+{% if page.images %}
+  <aside class="four columns">
+    {% for image in page.images %}
+      {% if image.size == 2 %}
+        <a class="thumb" rel="images" href="/media/{{ image[0] }}" title="{{ image[1] }}"><img src="/media/{{ image[0] }}" alt="{{ image[1] }}"></a>
+		<div class="caption">{{ image[1] }}</div>
+      {% else %}
+        <a class="thumb" rel="images" href="/media/{{ image }}"><img src="/media/{{ image }}" alt="{{ page.title }}"></a>      
+      {% endif %}
+    {% endfor %}
+  </aside>
+  {% endif %}

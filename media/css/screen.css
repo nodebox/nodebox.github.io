@@ -680,3 +680,16 @@ footer .copyright a {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+/* Aside */
+
+aside {
+    padding-bottom: 10px;
+}
+
+
+<!--aside div.caption {
+    font-size: 80%;
+    margin: -4px 0 7px 0;
+}-->
+

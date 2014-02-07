@@ -4,21 +4,21 @@ layout: gallery
 title: NodeBox 3 Helsinki Workshop
 thumb: masterclass-2014-helsinki-thumbmate.png
 images:
-  - gallery/workshop_helsinki_2014_Katju.png
-  - gallery/workshop_helsinki_2014_Eero_parts.png
-  - gallery/workshop_helsinki_2014_Eero_population.jpg
-  - gallery/workshop_helsinki_2014_Eero_inmates.jpg
-  - gallery/workshop_helsinki_2014_Eero_type.png
-  - gallery/workshop_helsinki_2014_Eero_ClairedeLune.png
-  - gallery/workshop_helsinki_2014_Tuomas.png
-  - gallery/workshop_helsinki_2014_Tuomas_detail.png
-  - gallery/workshop_helsinki_2014_Lea.png
-  - gallery/workshop_helsinki_2014_Lea_group.png
-  - gallery/workshop_helsinki_2014_Lisa.png
-  - gallery/workshop_helsinki_2014_Luyi.png
-  - gallery/workshop_helsinki_2014_Christopher.png
-  - gallery/workshop_helsinki_2014_Cristina.png
-  - gallery/workshop_helsinki_2014_Sulza.png
+  - [gallery/workshop_helsinki_2014_Katju.png, © 2104 Katju Aro - North Sea Fish]
+  - [gallery/workshop_helsinki_2014_Eero_parts.png, © 2014 Eero Pitkanen - Human Parts]
+  - [gallery/workshop_helsinki_2014_Eero_population.jpg, © 2014 Eero Pitkanen - Crowd Making]
+  - [gallery/workshop_helsinki_2014_Eero_inmates.jpg, © 2014 Eero Pitkanen - Guantanamo Style]
+  - [gallery/workshop_helsinki_2014_Eero_type.png, © 2014 Eero Pitkanen - Grid Font]
+  - [gallery/workshop_helsinki_2014_Eero_ClairedeLune.png, © 2014 Eero Pitkanen - Midi Viz]
+  - [gallery/workshop_helsinki_2014_Tuomas.png, © 2014 Tuomas Kärkkäinen - 6 years Afghan war]
+  - [gallery/workshop_helsinki_2014_Tuomas_detail.png, © 2014 Tuomas Kärkkäinen - Incident Detail]
+  - [gallery/workshop_helsinki_2014_Lea.png, © 2014 Lea Suijckerbuijk - Creatures]
+  - [gallery/workshop_helsinki_2014_Lea_group.png, © 2014 Lea Suijckerbuijk - More]
+  - [gallery/workshop_helsinki_2014_Lisa.png, © 2014 Lisa Lee - Killed over What?]
+  - [gallery/workshop_helsinki_2014_Luyi.png, © 2014 Ma Luyi - Rotating Art]
+  - [gallery/workshop_helsinki_2014_Christopher.png, © 2014 Christopher Andersen - Swedish and Sami]
+  - [gallery/workshop_helsinki_2014_Cristina.png, © 2014 Cristina Melcior Vendrell - 100 Types]
+  - [gallery/workshop_helsinki_2014_Sulza.png, © 2014 Alena Sulza - Water logo derivatives]
 ---
 
 We did a workshop at [Aalto University - Finland - Helsinki] (http://www.aalto.fi/en/) from January 27 till January 31 2014. Participants were a selection of students from graphic design and media arts. The focus was on data visualization and on generative design.
