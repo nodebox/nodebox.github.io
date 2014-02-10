@@ -5,7 +5,7 @@ title: SelfieBot at Choke2014
 thumb: piet.png
 images:
   - [gallery/piet.png, Piet De Lombaerde]
-  - [gallery/Choke2014-1.jpg, The location]
+  - [gallery/choke2014-1.jpg, The location]
   - [gallery/inge.jpg, Inge]
   - [gallery/emiel.jpg, Emiel]
   - [gallery/michel.jpg, Michel]
