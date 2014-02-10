@@ -28,16 +28,20 @@ In January Giorgio Olivero form [TODO] (http://www.todo.to.it) one of our partne
 
 Credits.
 ----------------------------
-<div class="by">F. De Bleser, L. Menschaert, L. Nijs</div>
+F. De Bleser, L. Menschaert, L. Nijs
 
-Thanks to.
+Thanks to:
 ----------------------------
 
-<div class="by">Giorgio Olivero (www.todo.to.it)</div>
-<div class="by">Makelangelo (www.todo.to.it)</div>
-<div class="by">Toxi (toxi.co.uk), libraries</div>
-<div class="by">Elhaji Sall (adaptations easel, canvas)</div>
-<div class="by">Olmo Potums, Joran Meynen (master students SLA)</div>
+[Giorgio Olivero] (www.todo.to.it)
+
+[Makelangelo] (http://www.marginallyclever.com/shop/index.php?main_page=product_info&cPath=1&products_id=39)
+
+[Toxi] (toxi.co.uk), libraries
+
+Elhaji Sall, for adaptations to easel and canvas
+
+Olmo Potums, Joran Meynen (master students SLA), support
 
 
 
