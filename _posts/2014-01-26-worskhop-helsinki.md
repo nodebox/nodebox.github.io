@@ -4,7 +4,7 @@ layout: gallery
 title: NodeBox 3 Helsinki Workshop
 thumb: masterclass-2014-helsinki-thumbmate.png
 images:
-  - [gallery/workshop_helsinki_2014_Katju.png, © 2104 Katju Aro - North Sea Fish]
+  - [gallery/workshop_helsinki_2014_Katju.png, © 2014 Katju Aro - North Sea Fish]
   - [gallery/workshop_helsinki_2014_Eero_parts.png, © 2014 Eero Pitkanen - Human Parts]
   - [gallery/workshop_helsinki_2014_Eero_population.jpg, © 2014 Eero Pitkanen - Crowd Making]
   - [gallery/workshop_helsinki_2014_Eero_inmates.jpg, © 2014 Eero Pitkanen - Guantanamo Style]
