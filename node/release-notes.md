@@ -3,6 +3,13 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.39 (27 Mar 2014)
+----------------------------
+* Colors can be imported as hexadecimal values (e.g. #334455 or #ccc).
+* Faster PDF export thanks to a new version of iText.
+* Upgraded to Clojure 1.6.
+* The round node correctly rounds values.
+
 Version 3.0.38 (24 Jan 2014)
 ----------------------------
 * Add round_segments node.

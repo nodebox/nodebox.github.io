@@ -16,9 +16,9 @@ section: download
       <th class="linux">Linux</th>
     </tr>
     <tr>
-      <td class="version"><a href="/node/">NodeBox 3</a><br><small>Version 3.0.38 — <a href="/node/release-notes.html">Release Notes</a></small></td>
-      <td class="mac"><a href="https://secure.nodebox.net/downloads/NodeBox-3.0.38.zip" class="button">Download</a></td>
-      <td class="windows"><a href="https://secure.nodebox.net/downloads/nodebox-3.0.38-setup.exe" class="button">Download</a></td>
+      <td class="version"><a href="/node/">NodeBox 3</a><br><small>Version 3.0.39 — <a href="/node/release-notes.html">Release Notes</a></small></td>
+      <td class="mac"><a href="https://secure.nodebox.net/downloads/NodeBox-3.0.39.zip" class="button">Download</a></td>
+      <td class="windows"><a href="https://secure.nodebox.net/downloads/nodebox-3.0.39-setup.exe" class="button">Download</a></td>
       <td class="linux"><a href="javascript:showLinuxDownloadInstructions()" class="button">Instructions</a></td>
     </tr>
     <tr>
