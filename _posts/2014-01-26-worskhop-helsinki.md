@@ -14,14 +14,14 @@ images:
   - [gallery/workshop_helsinki_2014_Tuomas_detail.png, © 2014 Tuomas Kärkkäinen - Incident Detail]
   - [gallery/workshop_helsinki_2014_Lea.png, © 2014 Lea Suijckerbuijk - Creatures]
   - [gallery/workshop_helsinki_2014_Lea_group.png, © 2014 Lea Suijckerbuijk - More]
-  - [gallery/workshop_helsinki_2014_Lisa.png, © 2014 Lisa Lee - Killed over What?]
+  - [gallery/workshop_helsinki_2014_Lisa.png, © 2014 Lisa Lee - Killed over What]
   - [gallery/workshop_helsinki_2014_Luyi.png, © 2014 Ma Luyi - Rotating Art]
   - [gallery/workshop_helsinki_2014_Christopher.png, © 2014 Christopher Andersen - Swedish and Sami]
   - [gallery/workshop_helsinki_2014_Cristina.png, © 2014 Cristina Melcior Vendrell - 100 Types]
   - [gallery/workshop_helsinki_2014_Sulza.png, © 2014 Alena Sulza - Water logo derivatives]
 ---
 
-We did a workshop at [Aalto University - Finland - Helsinki] (http://www.aalto.fi/en/) from January 27 till January 31 2014. Participants were a selection of students from graphic design and media arts. The focus was on data visualization and on generative design.
+We did a workshop at [Aalto University - Finland - Helsinki](http://www.aalto.fi/en/) from January 27 till January 31 2014. Participants were a selection of students from graphic design and media arts. The focus was on data visualization and on generative design.
 
 Below are some of the final results.
 
