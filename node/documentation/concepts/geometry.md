@@ -43,14 +43,15 @@ Here's a simple example:
 * Turn "Point Numbers" on in the Viewer pane.
 * Create an [ellipse node](/node/reference/corevector/ellipse.html).
 * Create a [resample node](/node/reference/corevector/resample.html). Set the **method** to **By Amount** and the **points** to **20**.
-* Create a [sort node](/node/reference/corevector/sort.html).
+* Create a [point node](/node/reference/corevector/point.html).
+* Create a grey [sort node](/node/reference/corevector/sort.html).
 * Create a [connect node](/node/reference/corevector/connect.html). Set the **fill** to transparent (alpha value = 0).
-* Connect them all together: ellipse1 &rarr; resample1 &rarr; sort1 &rarr; connect1.
+* Connect them all together: ellipse1 &rarr; resample1 &rarr; point1 &rarr; sort1 &rarr; connect1.
 
-![Connect Example](geometry-connect-network.png)
+![Connect Example](geometry-connect-network.jpg)
 
 * Set the connect1 node as rendered. Note that the point numbers go clockwise around the circle, from 0 to 20. 
-* In sort1, change the **scope** to **Points within geometry** and the **order** to **By X**. 
+* In sort1, set the **order** to **By X**. 
 
 The viewer now shows this:
 
@@ -58,4 +59,4 @@ The viewer now shows this:
 
 *What happened?* The connect node connects points of the incoming geometry, in order. By changing the *order* of the points (using the sort node), the shape changes. The points no longer follow the circle in a clockwise direction but are sorted by their X coordinates, in other words, points are sorted from left to right.
 
-By playing with different sort orders you can get some interesting results. Try "Proximity To Point" and dragging the point handle in the viewer. Changing the ellipse to a text path and see what you can come up with (you might want to increase the text size and the number of points in resample).
+By playing with different sort orders you can get some interesting results. Try "Distance To Point" and dragging the point handle in the viewer. Changing the ellipse to a text path and see what you can come up with (you might want to increase the text size and the number of points in resample).
