@@ -50,7 +50,7 @@ Here's a simple example:
 
 ![Connect Example](geometry-connect-network.jpg)
 
-* Set the connect1 node as rendered. Note that the point numbers go clockwise around the circle, from 0 to 20. 
+* Set the connect1 node as rendered. Note that the point numbers go clockwise around the circle, from 0 to 19 (20 in total). 
 * In sort1, set the **order** to **By X**. 
 
 The viewer now shows this:
