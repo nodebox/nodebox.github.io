@@ -55,7 +55,7 @@ Here's a simple example:
 
 The viewer now shows this:
 
-![Connect Example Viewer](geometry-connect-viewer.png)
+![Connect Example Viewer](geometry-connect-viewer.jpg)
 
 *What happened?* The connect node connects points of the incoming geometry, in order. By changing the *order* of the points (using the sort node), the shape changes. The points no longer follow the circle in a clockwise direction but are sorted by their X coordinates, in other words, points are sorted from left to right.
 
