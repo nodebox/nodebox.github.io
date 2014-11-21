@@ -67,7 +67,7 @@ section: home
   <div class="eight columns">
     <h2>Newsletter</h2>
     <p>Sign up for the monthly newsletter.</p>
-      <form action="http://emrg.createsend.com/t/t/s/yhz/" method="post" class="signup">
+      <form action="https://emrg.createsend.com/t/t/s/yhz/" method="post" class="signup">
         <div> 
           <input type="email" placeholder="E-mail" name="cm-yhz-yhz" id="yhz-yhz" />
           <input type="submit" value="Subscribe" />
