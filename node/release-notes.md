@@ -3,6 +3,13 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.42 (20 Jan 2015)
+----------------------------
+* OS X: Compatible with OS X 10.10 Yosemite
+* OS X bundles its own version of Java
+* Windows: upgrade Java to 1.8
+* Increase available memory (OS X / Windows)
+
 Version 3.0.39 (27 Mar 2014)
 ----------------------------
 * Colors can be imported as hexadecimal values (e.g. #334455 or #ccc).
@@ -125,7 +132,7 @@ Version 3.0a23 (27 Sep 2012)
 ----------------------------
 * Better support for nested lists.
 * Add categories to the node selection dialog.
-* Random now looks ["more random"](http://blog.42.nl/articles/when-random-isnt-as-random-as-expected). 
+* Random now looks ["more random"](http://blog.42.nl/articles/when-random-isnt-as-random-as-expected).
 * Add document properties dialog, useful for setting canvas width / height.
 * Rename `delete_bounding` to [delete node](/node/reference/corevector/delete.html).
 * Renaming a node now updates the references of published ports on the parent network.
