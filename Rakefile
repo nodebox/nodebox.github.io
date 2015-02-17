@@ -13,5 +13,5 @@ end
 
 desc 'Run Jekyll in server mode'
 task :server do
-  sh 'jekyll -w serve'
+  sh 'jekyll serve'
 end
