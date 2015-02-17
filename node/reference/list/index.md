@@ -9,6 +9,7 @@ notes: AUTO-GENERATED - DO NOT EDIT. Use the autoref.py script to re-generate th
 * [Cull](/node/reference/list/cull.html): Remove all items from the list where the corresponding boolean is false.
 * [Distinct](/node/reference/list/distinct.html): Remove all duplicate items from the list.
 * [First](/node/reference/list/first.html): Take the first item of the list.
+* [Keys](/node/reference/list/keys.html): Retrieve the keys of a map.
 * [Last](/node/reference/list/last.html): Take the last item of the list.
 * [Pick](/node/reference/list/pick.html): Pick items from the list in random order.
 * [Repeat](/node/reference/list/repeat.html): Repeat the list a number of times.
