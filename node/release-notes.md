@@ -3,6 +3,12 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.43 (17 Feb 2015)
+----------------------------
+* OS X: Fix movie export
+* Use High-DPI icons
+* Add keys node.
+
 Version 3.0.42 (20 Jan 2015)
 ----------------------------
 * OS X: Compatible with OS X 10.10 Yosemite
