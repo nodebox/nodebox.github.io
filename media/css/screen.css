@@ -49,7 +49,7 @@ pre {
   font-size: 90%;
 }
 
-hr { 
+hr {
   border: none;
   border-bottom: 1px dotted #aaa;
   margin-bottom: 30px;
@@ -319,8 +319,8 @@ footer .copyright a {
 
 /* Blog */
 
-#home .post, 
-#blog .post, 
+#home .post,
+#blog .post,
 #gallery .post {
   margin-right: 10px;
 }
@@ -386,7 +386,7 @@ footer .copyright a {
   white-space: nowrap;
 }
 
-#download-table td.version small {
+#download-table small {
   font-weight: normal;
   font-style: oblique;
   color: #999;
@@ -403,6 +403,7 @@ footer .copyright a {
 #download-table .button {
     display: inline-block;
     padding: 5px 15px;
+    margin-bottom: 5px;
     font-weight: bold;
     background: #4E9DF4;
     box-shadow: 0 2px 5px rgba(100, 100, 120, 0.2);
@@ -654,7 +655,7 @@ footer .copyright a {
     display: block;
     width: 100%;
   }
-  
+
   #home .home,
   #documentation .documentation,
   #download .download,
@@ -666,11 +667,11 @@ footer .copyright a {
   #contact .contact {
     border: none;
   }
-  
+
   #page-title {
     margin-top: 20px;
   }
-  
+
 
 }
 
