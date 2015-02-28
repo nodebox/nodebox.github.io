@@ -42,7 +42,7 @@ section: home
       <img src="/media/homepage/nodebox-opengl.jpg" alt="NodeBox OpenGL screenshot">
     </a>
     <h2>NodeBox OpenGL</h2>
-    <small>Code, Animate</small>      
+    <small>Code, Animate</small>
     <p>Fast cross platform graphics library.</p>
     <a class="read-more" href="/opengl/">Read More</a>
   </div>
@@ -62,18 +62,23 @@ section: home
   {% endfor %}
   </div>
 </div>
-  
+
 <div class="connect row">
   <div class="eight columns">
     <h2>Newsletter</h2>
-    <p>Sign up for the monthly newsletter.</p>
-      <form action="https://emrg.createsend.com/t/t/s/yhz/" method="post" class="signup">
-        <div> 
-          <input type="email" placeholder="E-mail" name="cm-yhz-yhz" id="yhz-yhz" />
-          <input type="submit" value="Subscribe" />
+    <p>Sign up for our newsletter.</p>
+      <form action="//nodebox.us7.list-manage.com/subscribe/post?u=18183e7289984568ad8565df3&amp;id=6b928876d6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div>
+          <input type="email" placeholder="E-mail" name="EMAIL" id="mce-EMAIL" />
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" />
         </div>
-      </form>
 
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;"><input type="text" name="b_18183e7289984568ad8565df3_6b928876d6" tabindex="-1" value=""></div>
+      </form>
   </div>
   <div class="eight columns">
     <h2>Workshops</h2>
