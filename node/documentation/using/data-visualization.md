@@ -76,7 +76,7 @@ The result so far is all information as text on top of each other. Next procedur
 * Create a range node and send count1 to **End**.
 * Create a multiply node. Connect range1 to **Value1** and divide1 to **Value2**.
 
-Now we need a few transformation nodes to connect this data to the actual data. 
+Now we need a few transformation nodes to connect this data to the actual data.
 
 * Create a rotate node. Connect multiply1 to **Angle**. Connect textpath1 to **Shape**.
 * Create a translate node. Connect rotate1 to **Shape** and resample1 to **Points**.
@@ -84,10 +84,10 @@ Now we need a few transformation nodes to connect this data to the actual data.
 
 ![earthquakes step 1](data-visualization-earthquakesa.png)
 
-Have a look at the csv file and notice that it has a lot of columns. Let's add the depth and magnitude to it. 
+Have a look at the csv file and notice that it has a lot of columns. Let's add the depth and magnitude to it.
 
 * Create a lookup node and set **Key** to Depth.
-* Create a divide node to enable scaling of the number. Connect lookup2 to **Value1**. 
+* Create a divide node to enable scaling of the number. Connect lookup2 to **Value1**.
 * Create a rect node. Connect divide2 to **Width**. Set **Height** to **5.0**.
 * Create an align node and connect rect1 to it. Set **HAlign** to **Right**.
 * Finally create a combin node to store all shapes in them before the transformation nodes (rotate and translate). Then send this combined shape to rotate1.
@@ -134,7 +134,7 @@ Now for the pie. We will make a pie by using a [arc node](/node/reference/coreve
 * Create a sum node. Connect slice1 to it.
 * Create an arc node. Connect sum2 to **Start_angle** and convert range1 to **Degrees**.
 * Create a colorize node and send arc1 to **Shape**.
-* Select slice1, sum2, arc1 and colorize1. Right-click and **Group into Network**. 
+* Select slice1, sum2, arc1 and colorize1. Right-click and **Group into Network**.
 * Right click it again and rename it 'pie'.
 * Right click it once more and **Edit Children**.
 * Publish **Size** of slice1, name it 'Slicesize'. Publish **Fill** of colorize1, name it 'Fill'.
@@ -143,7 +143,7 @@ This is how the subnetwork and all its published port looks:
 
 ![pie subnet](data-visualization-pie-subnet.png)
 
-Go back to the root network and 
+Go back to the root network and
 
 * Create a range node. Connect numbers1 to **End**.
 * Connect range1 to *Slicesize** of pie.
@@ -184,15 +184,12 @@ In the second section we will create a set of points based on the number of albu
 
 The idea is to generate a number of points. We will do this be using a rect node connected to a scatter node.
 
-* Create a rect node. Set its dimensions to 500 * 500. 
+* Create a rect node. Set its dimensions to 500 * 500.
 * Create a scatter node. Connect rect1 to **Shape**. Connect count2 to **Amount**. We now have 9 points.
-* Create a string node. Connect distinct1 to it.
-* Create a zipmap node. Connect string1 to **Keys** and scatter1 to **Values**.
+* Create a zipmap node. Connect distinct1 to **Keys** and scatter1 to **Values**.
 * Create a lookup node. Connect zip_map1 to **List** and lookup2 to **Key**.
 
 The viewer pane will reveal only the same set of points but if you switch to data view you will see that each point has multiple points behind it (at the same location).
-
-![zipmap step2](data-visualization-metallicb.png)
 
 We will glue these two together.
 
