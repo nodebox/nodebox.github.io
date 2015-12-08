@@ -3,6 +3,14 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.44 (8 Dec 2015)
+---------------------------
+* OS X uses Java FX packaging, which should solve launch issues people were having.
+* Improved SVG import.
+* Copy node now uses percentages for scaling (like the scale node).
+* Handles in full-screen mode.
+* SVG export works better on non-US machines.
+
 Version 3.0.43 (17 Feb 2015)
 ----------------------------
 * OS X: Fix movie export
