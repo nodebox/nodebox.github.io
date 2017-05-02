@@ -3,6 +3,17 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.46 (2 May 2017)
+---------------------------
+* Small UI Tweaks to avoid weird crashes.
+* Add line-level debug info on stack traces.
+* Use standalone version of Jython to avoid packaging ZIP files.
+* Still supports OpenJDK 1.7 (bundled JRE is 1.8.0_131).
+* Enable OS X native fullscreen mode.
+* Upgrade to Clojure 1.8.
+* Fix issues with the stack node.
+* Improved the characterAt and subString nodes.
+
 Version 3.0.44 (8 Dec 2015)
 ---------------------------
 * OS X uses Java FX packaging, which should solve launch issues people were having.
