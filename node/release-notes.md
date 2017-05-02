@@ -9,6 +9,10 @@ Version 3.0.46 (2 May 2017)
 * Add line-level debug info on stack traces.
 * Use standalone version of Jython to avoid packaging ZIP files.
 * Still supports OpenJDK 1.7 (bundled JRE is 1.8.0_131).
+
+Version 3.0.45 (30 May 2016)
+---------------------------
+* Line-based nodes now have correct strokes again.
 * Enable OS X native fullscreen mode.
 * Upgrade to Clojure 1.8.
 * Fix issues with the stack node.
