@@ -3,6 +3,12 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.47 (15 June 2017)
+---------------------------
+* CSV Export.
+* Concatenate node now has 7 ports.
+* Windows build is now built automatically using AppVeyor.
+
 Version 3.0.46 (2 May 2017)
 ---------------------------
 * Small UI Tweaks to avoid weird crashes.
