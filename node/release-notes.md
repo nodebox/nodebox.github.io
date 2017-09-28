@@ -3,6 +3,17 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.49 (28 September 2017)
+---------------------------
+* Fix annoying errors when dragging nodes in the network view.
+* Cleanup build warnings.
+
+Version 3.0.48 (29 June 2017)
+---------------------------
+* Add option to elide quotes in CSV export.
+* Exported CSV files retain key ordering.
+* "," is the default delimter for CSV export.
+
 Version 3.0.47 (15 June 2017)
 ---------------------------
 * CSV Export.
