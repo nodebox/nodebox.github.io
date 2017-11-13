@@ -3,6 +3,14 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.50 (13 November 2017)
+---------------------------
+* When dragging a connection, you can now drag the connection line over the entire node, instead of just the inputs.
+* We've increased the size of the output port hitbox, so it's easier to start a connection.
+* The `import_text` node imports a plain text file, split by lines.
+* The `make_table` node creates a new table out of a number of lists and a set of column headers.
+* We fixed a bug that would manifest when deleting a node while dragging it.
+
 Version 3.0.49 (28 September 2017)
 ---------------------------
 * Fix annoying errors when dragging nodes in the network view.
