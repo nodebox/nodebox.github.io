@@ -3,6 +3,10 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.51 (8 January 2018)
+-------------------------------
+* Don't create connection if output and input are the same.
+
 Version 3.0.50 (13 November 2017)
 ---------------------------
 * When dragging a connection, you can now drag the connection line over the entire node, instead of just the inputs.
