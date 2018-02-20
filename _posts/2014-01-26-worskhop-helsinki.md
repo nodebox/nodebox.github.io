@@ -7,7 +7,7 @@ images:
   - [gallery/workshop_helsinki_2014_Katju.png, © 2014 Katju Aro - North Sea Fish]
   - [gallery/workshop_helsinki_2014_Eero_parts.png, © 2014 Eero Pitkanen - Human Parts]
   - [gallery/workshop_helsinki_2014_Eero_population.jpg, © 2014 Eero Pitkanen - Crowd Making]
-  - [gallery/workshop_helsinki_2014_Eero_inmates.jpg, © 2014 Eero Pitkanen - Guantanamo Style]
+  - [gallery/workshop_helsinki_2014_Eero_inmates.jpg, © 2014 Eero Pitkanen - Orange is the new Orange]
   - [gallery/workshop_helsinki_2014_Eero_type.png, © 2014 Eero Pitkanen - Grid Font]
   - [gallery/workshop_helsinki_2014_Eero_ClairedeLune.png, © 2014 Eero Pitkanen - Midi Viz]
   - [gallery/workshop_helsinki_2014_Tuomas.png, © 2014 Tuomas Kärkkäinen - 6 years Afghan war]
@@ -61,7 +61,7 @@ Murder motives in India.
 ------------------------
 <div class="by">Lisa Lee</div>
 
-I received the data from the National Crime branch of India. The idea was to potray the numbers of murders and the reasons, for each state in India. 
+I received the data from the National Crime branch of India. The idea was to potray the numbers of murders and the reasons, for each state in India.
 
 In most of the aspects Bihar was high on the list of homicide. To build it further I would like visualize data from year 2001 to 2012 and to put in a bit more character to the visualization to make the graphs more like blood splatters.
 
