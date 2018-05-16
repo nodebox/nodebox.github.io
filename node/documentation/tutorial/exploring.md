@@ -52,8 +52,8 @@ The idea is to create a pattern that can be easily changed by using a seed param
 
 Create two [wiggle nodes](/node/reference/corevector/wiggle.html) and connect polygon1 to wiggle1 and polygon2 to wiggle2.
 
-* Set **Offset** to **30** for the wiggle node handling the pentagon.
-* Set **Offset** to **10** for the other one.
+* Set **Offset** to **30 and 30** for the wiggle node handling the pentagon.
+* Set **Offset** to **10 and 10** for the other one.
 * Set **Seed** respectively **0** and **1**
 
 We will generate a new shape based on the two shapes by using a binary operation.
@@ -89,13 +89,15 @@ Now we will create a [grid node](/node/reference/corevector/grid.html) to multip
 
 * Set **Rows** to **1**.
 * Set **Columns** to **10**.
+* Set **Width** to **1000**
 
 Now add a [translate node](/node/reference/corevector/translate.html) to the network and send the pattern (copy1) to the shape port and grid1 to the (blue) translate port.
 
 Finally add another copy node and send translate1 to it.
 
 * Set **Copies** to **10**
-* Set **Translate** to **-50** and **90**
+* Set **Translate** to **-56** and **95**
+* Scale should remain at **100** and **100**
 
 Rendering the copy2 node should return this result:
 
