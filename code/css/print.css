@@ -1,0 +1,8 @@
+body { background: white; }
+header { background: white; }
+#header_image { visibility: hidden; }
+#navigation, #contextual, img.footer { display: none; }
+a { color: black; text-decoration: underline; }
+pre span { color: black !important; }
+
+
