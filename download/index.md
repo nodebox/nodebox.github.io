@@ -23,11 +23,11 @@ section: download
     </tr>
     <tr>
       <td class="version"><a href="/opengl/">NodeBox OpenGL</a><br><small>Version 1.7</small></td>
-      <td colspan="3" class="mac windows linux"><a href="https://secure.nodebox.net/downloads/nodebox-gl-1.7.zip" class="button">Download</a></td>
+      <td colspan="3" class="mac windows linux"><a href="https://github.com/nodebox/nodebox-opengl/releases/download/v1.7/nodebox-gl-1.7.zip" class="button">Download</a></td>
     </tr>
     <tr>
-      <td class="version"><a href="/code/">NodeBox 1</a><br><small>Version 1.9.7rc1</small></td>
-      <td class="mac"><a href="https://secure.nodebox.net/downloads/NodeBox-1.9.7rc1.zip" class="button">Download</a></td>
+      <td class="version"><a href="/code/">NodeBox 1</a><br><small>Version 1.9.7</small></td>
+      <td class="mac"><a href="https://github.com/nodebox/nodebox-pyobjc/releases/download/1.9.7/NodeBox-1.9.7.zip" class="button">Download</a></td>
       <td><em>N/A</em></td>
       <td><em>N/A</em></td>
     </tr>
@@ -49,19 +49,19 @@ section: download
 
   <ul id="bootcamp">
     <li class="three columns">
-      <a href="/node/documentation/tutorial/getting-started.html">
+      <a href="/node/documentation/tutorial/getting-started">
         <img src="/media/node/documentation/index-getting-started.png">
         <span>Getting Started</span>
       </a>
     </li>
     <li class="three columns">
-      <a href="/node/documentation/tutorial/exploring.html">
+      <a href="/node/documentation/tutorial/exploring">
         <img src="/media/node/documentation/index-exploring.png">
         <span>Exploring</span>
       </a>
     </li>
     <li class="three columns">
-      <a href="/node/documentation/tutorial/animation.html">
+      <a href="/node/documentation/tutorial/animation">
         <img src="/media/node/documentation/index-animation.png">
         <span>Basic Animation</span>
       </a>
