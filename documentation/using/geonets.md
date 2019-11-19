@@ -62,7 +62,7 @@ Do the same procedure once more. Create a parameter called **fill** and **set it
 * Implement a variable for dimensions of the gear.
 * Read the [copy stamping](copy-stamping.html) page and try to implement it on this gear example. Create a grid of 4 * 4 gears with difference in size, color and teeth.
 
-![Geonets Gear Advanced](../../media/img/using/geonets-gear-advanced.png)
+![Geonets Gear Advanced](/media/img/using/geonets-gear-advanced.png)
 
 House Geonet
 ------------

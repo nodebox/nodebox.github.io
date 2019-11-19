@@ -1,6 +1,4 @@
-auto: false
-server: false
-pygments: true
+highlighter: rouge
 permalink: /:title/
 multiviews: true
 exclude:

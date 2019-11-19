@@ -39,7 +39,7 @@ Numbers are **draggable**. This means that for each number you can:
 - **Click the arrow keys** to nudge it up or down by 1. Holding ALT and SHIFT nudge by 0.01 and 10, respectively.
 
 Each individual parameter has a contextual menu with two options:
-![The Parameter Menu](../../media/img/using/gui-parameter-menu.png)
+![The Parameter Menu](/media/img/using/gui-parameter-menu.png)
 - **Toggle Expression** allows you to work with expressions. [Read more about using expressions](expressions.html).
 - **Revert to Default** changes the parameter value back to its original value.
 

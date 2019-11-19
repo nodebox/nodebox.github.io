@@ -7,7 +7,7 @@ Sometimes you want **a node to have a specific parameter**. Say that you would l
 
 Handy for all these operations is the **Metadata panel**. You can access it by pressing the Metadata button on top of the Parameters pane. Let's have a look at it. Create a **Rect** node, select it and press the Metadata button. You should see this:
 
-![Metadata The Panel](../../media/img/using/metadata-the-panel.png)
+![Metadata The Panel](/media/img/using/metadata-the-panel.png)
 
 Listed are specifications of the node and its parameters. 
 
