@@ -3,3 +3,7 @@ multiviews: true
 exclude:
   - README.md
   - Rakefile
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
