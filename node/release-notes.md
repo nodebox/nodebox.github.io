@@ -3,6 +3,13 @@ layout: default
 title: NodeBox 3 Release Notes
 section: node
 ---
+Version 3.0.52 (15 January 2021)
+-------------------------------
+* You can now export movies under Mac OS Catalina or later.
+* Option drag bug has been fixed.
+
+This one took a *long* time because of changes to the build process. A huge shout-out to John Cartan and the NodeBox community for their support! ❤️
+
 Version 3.0.51 (8 January 2018)
 -------------------------------
 * Don't create connection if output and input are the same.
