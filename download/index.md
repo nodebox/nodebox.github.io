@@ -18,7 +18,7 @@ section: download
     <tr>
       <td class="version"><a href="/node/">NodeBox 3</a><br><small>Version 3.0.52 — <a href="/node/release-notes.html">Release Notes</a></small></td>
       <td class="mac"><a href="https://github.com/nodebox/nodebox/releases/download/v3.0.52/NodeBox-3.0.52.dmg" class="button">Download</a><br><small>OS X Catalina Required</small></td>
-      <td class="windows"><a href="https://github.com/nodebox/nodebox/releases/download/v3.0.52/NodeBox-3.0.52.msi" class="button">Download</a><br>&nbsp;</td>
+      <td class="windows"><a href="https://github.com/nodebox/nodebox/releases/download/v3.0.53/NodeBox-3.0.53.msi" class="button">Download</a><br>&nbsp;</td>
       <td class="linux"><a href="javascript:showLinuxDownloadInstructions()" class="button">Instructions</a><br>&nbsp;</td>
     </tr>
     <tr>
